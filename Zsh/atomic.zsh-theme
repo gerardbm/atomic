@@ -1,4 +1,4 @@
-#
+#  
 
 #Atomic theme for Oh My Zsh
 ## March 2016 by Gerard Bajona
