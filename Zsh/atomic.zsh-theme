@@ -1,7 +1,5 @@
-#
-
-#Atomic theme for Oh My Zsh
-## March 2016 by Gerard Bajona
+# Atomic theme for Oh My Zsh
+# April 2016, by Gerard Bajona
 
 # Separator
 setopt promptsubst
@@ -31,7 +29,7 @@ ZSH_THEME_GIT_PROMPT_CLEAN="%{$reset_color%} %{$fg[green]%}●"
 PROMPT="%{"$'\e[90m'"%}$ATOMIC_SEPARATOR\
 %{$fg[blue]%}%n \
 %{$fg[white]%}at \
-%{$fg[magenta]%}$(hostname) \
+%{$fg[green]%}$(hostname) \
 %{$fg[white]%}in \
 %{$fg_bold[yellow]%}${current_dir}%{$reset_color%} \
 %{"$'\e[90m'"%}[⌚ %T]

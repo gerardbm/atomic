@@ -1,5 +1,8 @@
 [Background]
 Color=25,27,33
+MaxRandomHue=0
+MaxRandomSaturation=0
+MaxRandomValue=0
 
 [BackgroundIntense]
 Color=25,27,33
