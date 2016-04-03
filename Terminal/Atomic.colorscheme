@@ -8,43 +8,43 @@ Color=25,27,33
 Color=25,27,33
 
 [Color0Intense]
-Color=84,100,110
+Color=85,106,116
 
 [Color1]
-Color=252,45,150
+Color=252,105,112
 
 [Color1Intense]
-Color=255,100,205
+Color=253,142,148
 
 [Color2]
-Color=142,200,50
+Color=185,234,85
 
 [Color2Intense]
-Color=192,250,120
+Color=200,249,150
 
 [Color3]
-Color=251,155,46
+Color=255,171,107
 
 [Color3Intense]
-Color=252,238,130
+Color=255,240,120
 
 [Color4]
-Color=55,150,245
+Color=94,129,197
 
 [Color4Intense]
-Color=100,210,255
+Color=145,180,235
 
 [Color5]
-Color=130,85,254
+Color=156,90,198
 
 [Color5Intense]
-Color=175,155,255
+Color=195,140,230
 
 [Color6]
-Color=0,175,140
+Color=48,159,151
 
 [Color6Intense]
-Color=0,255,210
+Color=120,225,220
 
 [Color7]
 Color=197,197,201

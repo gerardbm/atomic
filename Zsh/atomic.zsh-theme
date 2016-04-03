@@ -1,4 +1,4 @@
-#  
+#
 
 #Atomic theme for Oh My Zsh
 ## March 2016 by Gerard Bajona
@@ -16,9 +16,9 @@ function hostname {
 local current_dir='${PWD/#$HOME/~}'
 
 # Git prefix
-ATOMIC_GIT_PREFIX_01="%{"$'\e[94m'"%}~ on%{$reset_color%} "
-ATOMIC_GIT_PREFIX_02="%{$fg_bold[blue]%}git%{$reset_color%}"
-ATOMIC_GIT_PREFIX_03=":%{$fg[blue]%}"
+ATOMIC_GIT_PREFIX_01="%{"$'\e[96m'"%}~ on%{$reset_color%} "
+ATOMIC_GIT_PREFIX_02="%{$fg_bold[cyan]%}git%{$reset_color%}"
+ATOMIC_GIT_PREFIX_03=":%{$fg[cyan]%}"
 
 # Git information
 local git_info='$(git_prompt_info)'
@@ -29,9 +29,9 @@ ZSH_THEME_GIT_PROMPT_CLEAN=" %{$fg[green]%}●"
 
 # Prompt format
 PROMPT="%{"$'\e[90m'"%}$ATOMIC_SEPARATOR\
-%{$fg[cyan]%}%n \
+%{$fg[blue]%}%n \
 %{$fg[white]%}at \
-%{$fg[green]%}$(hostname) \
+%{"$'\e[94m'"%}$(hostname) \
 %{$fg[white]%}in \
 %{$fg_bold[yellow]%}${current_dir}%{$reset_color%} \
 %{"$'\e[90m'"%}[⌚ %T]

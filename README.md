@@ -1,2 +1,2 @@
 # Atomic
-### Color scheme for multiple editors
+### Multiple colors for multiple applications
