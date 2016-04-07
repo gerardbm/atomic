@@ -1,9 +1,12 @@
 # Atomic
 ### Multiple colors for multiple applications
 
-Atomic is a dark scheme color designed for use with terminal and GUI applications (code editors). Atomic has a seventeen color palette: seven dark accent colors, seven light accent colors, two extra colors for auxiliar purposes and the background color. I designed this palette for people. Each color is easily differentiable from each other.
+Atomic is a dark color scheme designed to use with terminal and several GUI applications (code editors). Color palette consists of sixteen colors for text (selected with high precision: tones easily differenciable for the human eye and luminance equilibrated, which has been calculated following the ITU-R Recommendation BT.601) and the background color. 
 
-![Atomic-colors](https://github.com/gerardbm/Atomic/blob/master/img/atomic-colors.png)
+![Atomic-colors](https://github.com/gerardbm/Atomic/blob/master/img/atomic-accents.png)
+
+It also includes a Zsh theme for your terminal.
+
 ### Zsh theme
 
 ![Atomic-zsh](https://github.com/gerardbm/Atomic/blob/master/img/prompt-zsh.png)
