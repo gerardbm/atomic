@@ -11,10 +11,10 @@ Color=18,28,38
 Color=69,79,89
 
 [Color1]
-Color=240,80,80
+Color=240,66,153
 
 [Color1Intense]
-Color=255,145,145
+Color=242,142,192
 
 [Color2]
 Color=101,159,43
@@ -41,22 +41,22 @@ Color=156,96,216
 Color=201,151,250
 
 [Color6]
-Color=70,153,154
+Color=70,153,153
 
 [Color6Intense]
-Color=125,200,201
+Color=125,200,200
 
 [Color7]
 Color=170,180,190
 
 [Color7Intense]
-Color=170,180,190
+Color=240,80,80
 
 [Foreground]
 Color=170,180,190
 
 [ForegroundIntense]
-Color=240,66,153
+Color=170,180,190
 
 [General]
 Description=Atomic
