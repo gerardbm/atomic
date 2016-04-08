@@ -1,62 +1,62 @@
 [Background]
-Color=25,27,33
+Color=18,28,38
 
 [BackgroundIntense]
-Color=25,27,33
+Color=18,28,38
 
 [Color0]
-Color=25,27,33
+Color=18,28,38
 
 [Color0Intense]
-Color=85,110,115
+Color=69,79,89
 
 [Color1]
-Color=254,97,180
+Color=240,80,80
 
 [Color1Intense]
-Color=255,179,190
+Color=255,145,145
 
 [Color2]
-Color=125,197,0
+Color=101,159,43
 
 [Color2Intense]
-Color=152,247,110
+Color=152,209,95
 
 [Color3]
-Color=230,135,40
+Color=215,108,0
 
 [Color3Intense]
-Color=230,230,110
+Color=240,164,88
 
 [Color4]
-Color=92,165,254
+Color=55,145,235
 
 [Color4Intense]
-Color=160,215,255
+Color=125,190,255
 
 [Color5]
-Color=180,120,254
+Color=156,96,216
 
 [Color5Intense]
-Color=210,189,255
+Color=201,151,250
 
 [Color6]
-Color=90,180,175
+Color=70,153,154
 
 [Color6Intense]
-Color=125,240,220
+Color=125,200,201
 
 [Color7]
-Color=195,205,215
+Color=170,180,190
 
 [Color7Intense]
-Color=255,255,255
+Color=170,180,190
 
 [Foreground]
-Color=195,205,215
+Color=170,180,190
 
 [ForegroundIntense]
-Color=255,255,255
+Color=240,66,153
 
 [General]
 Description=Atomic
