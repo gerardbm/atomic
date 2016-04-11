@@ -18,7 +18,7 @@ In a RGB color wheel, hue angles have been calculated in order to be distinguish
 ```
 ATOMIC COLORS   LUMA    HUE     HEX     (R  G  B)    (H  S  V)
 -------------  ------  -----  -------  --- --- ---  --- --- ---
-Black            10%   210º   #121C26   18  28  38  210 134  38
+Black            10%   210º   #15191D   21  25  29  210  70  29
 Dark Grey        30%   210º   #454F59   69  79  89  210  57  89
 Dark Blue        50%   210º   #3791EB   55 145 235  210 196 235
 Dark Violet      50%   270º   #9C60D8  156  96 216  270 142 216
