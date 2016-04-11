@@ -2,7 +2,7 @@
 Color=18,28,38
 
 [BackgroundIntense]
-Color=18,28,38
+Color=240,80,80
 
 [Color0]
 Color=18,28,38
@@ -50,7 +50,7 @@ Color=125,200,200
 Color=170,180,190
 
 [Color7Intense]
-Color=240,80,80
+Color=170,180,190
 
 [Foreground]
 Color=170,180,190
