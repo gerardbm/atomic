@@ -18,22 +18,22 @@ In a RGB color wheel, hue angles have been calculated in order to be distinguish
 ```
 ATOMIC COLORS   LUMA    HUE     HEX     (R  G  B)    (H  S  V)
 -------------  ------  -----  -------  --- --- ---  --- --- ---
-Black            10%   210º   #15191D   21  25  29  210  70  29
-Dark Grey        30%   210º   #454F59   69  79  89  210  57  89
-Dark Blue        50%   210º   #3791EB   55 145 235  210 196 235
-Dark Violet      50%   270º   #9C60D8  156  96 216  270 142 216
-Dark Magenta     50%   330º   #F04299  240  66 153  330 185 240
-Dark Red         50%     0º   #F05050  240  80  80    0 170 240
-Dark Orange      50%    30º   #D76C00  215 108   0   30 255 215
-Dark Green       50%    90º   #659F2B  101 159  43   90 186 159
-Dark Cyan        50%   180º   #469999   70 153 153  180 138 153
-Light Blue       70%   210º   #7DBEFF  125 190 255  210 130 255
-Light Violet     70%   270º   #C997FA  201 151 250  270 101 250
-Light Magenta    70%   330º   #F28EC0  242 142 192  330 105 242
-Light Orange     70%    30º   #F0A458  240 164  88   30 162 240
-Light Green      70%    90º   #98D15F  152 209  95   90 139 209
-Light Cyan       70%   180º   #7DC8C8  125 200 200  180  96 200
-Light Grey       70%   210º   #AAB4BE  170 180 190  210  26 190
+Background       10%   210º   #15191D   21  25  29  210  28  11
+Auxiliary        30%   210º   #454F59   69  79  89  210  22  35
+Dark Blue        50%   210º   #3791EB   55 145 235  210  77  92
+Dark Violet      50%   270º   #9C60D8  156  96 216  270  56  85
+Dark Magenta     50%   330º   #F04299  240  66 153  330  33  94
+Dark Red         50%     0º   #F05050  240  80  80    0  67  94
+Dark Orange      50%    30º   #D76C00  215 108   0   30 100  84
+Dark Green       50%    90º   #659F2B  101 159  43   90  73  62
+Dark Cyan        50%   180º   #469999   70 153 153  180  54  60
+Light Blue       70%   210º   #7DBEFF  125 190 255  210  51 100
+Light Violet     70%   270º   #C997FA  201 151 250  270  40  98
+Light Magenta    70%   330º   #F28EC0  242 142 192  330  41  95
+Light Orange     70%    30º   #F0A458  240 164  88   30  63  94
+Light Green      70%    90º   #98D15F  152 209  95   90  55  82
+Light Cyan       70%   180º   #7DC8C8  125 200 200  180  38  78
+Light Grey       70%   210º   #AAB4BE  170 180 190  210  11  75
 ```
 
 ### Zsh theme
@@ -64,3 +64,7 @@ How to install the Zsh theme atomic.zsh-theme
 1. Copy the file `honukai.zsh-theme` to `~/.oh-my-zsh/themes/` directory.
 2. Change the theme name to `ZSH_THEME="atomic"` in the file `~/.zshrc`.
 3. Reload Zsh with `source ~/.zshrc`.
+
+### Font
+
+The default font is DejaVu Sans Mono from the [DejaVu](http://dejavu-fonts.org) fonts family (under a [Free license](http://dejavu-fonts.org/wiki/License)). Anyway, Atomic is designed to look good with any kind of typography, as colors are distinguishable to any thickness.
