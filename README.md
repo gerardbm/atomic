@@ -65,10 +65,6 @@ How to install the Zsh theme atomic.zsh-theme
 2. Change the theme name to `ZSH_THEME="atomic"` in the file `~/.zshrc`.
 3. Reload Zsh with `source ~/.zshrc`.
 
-### Font
-
-The default font is DejaVu Sans Mono from the [DejaVu](http://dejavu-fonts.org) fonts family (under a [Free license](http://dejavu-fonts.org/wiki/License)). Anyway, Atomic is designed to look good with any kind of typography, as colors are distinguishable to any thickness.
-
 ### NetBeans
 
 Installation in NetBeans IDE:
@@ -84,3 +80,7 @@ zip -r atomic.zip config
 **Knowin Issues** 
 
 If you are using Windows XP, do not use the archive program built-in to create the zip file of the first step. It does not support file paths longer than a certain length. Use a third party archiver like 7zip, which is free.
+
+### Font family
+
+The default font is DejaVu Sans Mono from the [DejaVu](http://dejavu-fonts.org) fonts family (under a [Free license](http://dejavu-fonts.org/wiki/License)). Anyway, Atomic is designed to look good with any kind of typography, as colors are distinguishable to any thickness.
