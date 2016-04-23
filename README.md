@@ -75,7 +75,7 @@ zip -r atomic.zip config
 ```
 2. Open your NetBeans: `Tools` > `Options` > `Import...` > `Browse...`. Navigate to the zip file you created in the previous step. Make sure the option `Fonts & Colors` is checked and press `Ok` button.
 3. Restart your NetBeans.
-4. To switch between scheme colors, in the `Options` panel go to the `Fonts & Colors` tab and choose a profile (in our case, 'Atomic').
+4. To switch between color schemes, in the `Options` panel go to the `Fonts & Colors` tab and choose a profile (in our case, 'Atomic').
 
 **Knowin Issues** 
 
