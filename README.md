@@ -47,7 +47,7 @@ Atomic Zsh theme has been designed to show useful information (username, hostnam
 - Terminal
 - Vim (Coming soon)
 - Sublime Text (Coming soon)
-- NetBeans (Coming soon)
+- NetBeans
 
 # Installation
 ### Terminal
@@ -68,3 +68,19 @@ How to install the Zsh theme atomic.zsh-theme
 ### Font
 
 The default font is DejaVu Sans Mono from the [DejaVu](http://dejavu-fonts.org) fonts family (under a [Free license](http://dejavu-fonts.org/wiki/License)). Anyway, Atomic is designed to look good with any kind of typography, as colors are distinguishable to any thickness.
+
+### NetBeans
+
+Installation in NetBeans IDE:
+
+1. Download the Atomic repository, unpack the downloaded file (`atomic-master.zip`) and then manually create a new zip file containing the folder `config`. In bash:
+```bash
+zip -r atomic.zip config
+```
+2. Open your NetBeans: `Tools` > `Options` > `Import...` > `Browse...`. Navigate to the zip file you created in the previous step. Make sure the option `Fonts & Colors` is checked and press `Ok` button.
+3. Restart your NetBeans.
+4. To switch between scheme colors, in the `Options` panel go to the `Fonts & Colors` tab and choose a profile (in our case, 'Atomic').
+
+**Knowin Issues** 
+
+If you are using Windows XP, do not use the archive program built-in to create the zip file of the first step. It does not support file paths longer than a certain length. Use a third party archiver like 7zip, which is free.

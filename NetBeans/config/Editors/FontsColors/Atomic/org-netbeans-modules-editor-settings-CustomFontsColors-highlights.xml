@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fontscolors PUBLIC "-//NetBeans//DTD Editor Fonts and Colors settings 1.1//EN" "http://www.netbeans.org/dtds/EditorFontsColors-1_1.dtd">
+<fontscolors>
+    <fontcolor foreColor="ff7dc8c8" name="caret-color-insert-mode"/>
+    <fontcolor name="nbeditor-bracesMatching-sidebar"/>
+    <fontcolor foreColor="ff469999" name="trailing-whitespace"/>
+    <fontcolor foreColor="ff454f59" name="indent-guide-lines"/>
+    <fontcolor foreColor="ff454f59" name="text-limit-line-color"/>
+    <fontcolor foreColor="ff454f59" name="readonly-files"/>
+    <fontcolor foreColor="ff9c60d8" name="hyperlinks"/>
+    <fontcolor foreColor="ff3791eb" name="status-bar-bold"/>
+    <fontcolor foreColor="ff7dc8c8" name="caret-color-overwrite-mode"/>
+    <fontcolor name="status-bar"/>
+    <fontcolor foreColor="fff05050" name="synchronized-text-blocks-ext"/>
+    <fontcolor bgColor="ffd76c00" foreColor="ff15191d" name="highlight-search"/>
+    <fontcolor foreColor="fff0a458" name="synchronized-text-blocks-ext-slave"/>
+    <fontcolor bgColor="fff05050" foreColor="ff15191d" name="nbeditor-bracesMatching-mismatch">
+        <font style="bold"/>
+    </fontcolor>
+    <fontcolor bgColor="ff3791eb" foreColor="ff15191d" name="code-folding"/>
+    <fontcolor bgColor="ff9c60d8" foreColor="ff15191d" name="block-search"/>
+    <fontcolor bgColor="ff469999" foreColor="ff15191d" name="nbeditor-bracesMatching-match-multichar">
+        <font style="bold"/>
+    </fontcolor>
+    <fontcolor foreColor="ff454f59" name="line-number"/>
+    <fontcolor bgColor="ff1b1f23" name="highlight-caret-row"/>
+    <fontcolor bgColor="ffaab4be" foreColor="ff15191d" name="selection"/>
+    <fontcolor bgColor="fff05050" foreColor="ff15191d" name="inc-search"/>
+    <fontcolor name="indent-whitespace"/>
+    <fontcolor foreColor="ff454f59" name="code-folding-bar"/>
+    <fontcolor bgColor="fff05050" foreColor="ff15191d" name="nbeditor-bracesMatching-mismatch-multichar">
+        <font style="bold"/>
+    </fontcolor>
+    <fontcolor bgColor="ff7dc8c8" foreColor="ff15191d" name="nbeditor-bracesMatching-match">
+        <font style="bold"/>
+    </fontcolor>
+    <fontcolor foreColor="ff454f59" name="guarded"/>
+</fontscolors>
