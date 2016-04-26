@@ -16,8 +16,8 @@ local current_dir='${PWD/#$HOME/~}'
 
 # Git prefix
 ATOMIC_GIT_PREFIX_01="%{$fg[white]%}~ on "
-ATOMIC_GIT_PREFIX_02="%{$fg[yellow]%}git%{$reset_color%}"
-ATOMIC_GIT_PREFIX_03=":%{$fg_bold[yellow]%}"
+ATOMIC_GIT_PREFIX_02="%{$fg[cyan]%}git%{$reset_color%}"
+ATOMIC_GIT_PREFIX_03=":%{$fg_bold[cyan]%}"
 
 # Git information
 local git_info='$(git_prompt_info)'
@@ -28,7 +28,7 @@ ZSH_THEME_GIT_PROMPT_CLEAN="%{$reset_color%} %{$fg[green]%}●"
 
 # Prompt format
 PROMPT="%{"$'\e[90m'"%}$ATOMIC_SEPARATOR\
-%{$fg[cyan]%}%n \
+%{$fg[green]%}%n \
 %{$fg[white]%}at \
 %{$fg[blue]%}$(hostname) \
 %{$fg[white]%}in \
