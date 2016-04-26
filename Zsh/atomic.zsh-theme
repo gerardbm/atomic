@@ -16,8 +16,8 @@ local current_dir='${PWD/#$HOME/~}'
 
 # Git prefix
 ATOMIC_GIT_PREFIX_01="%{$fg[white]%}~ on "
-ATOMIC_GIT_PREFIX_02="%{$fg[white]%}git%{$reset_color%}"
-ATOMIC_GIT_PREFIX_03=":%{$fg_bold[cyan]%}"
+ATOMIC_GIT_PREFIX_02="%{$fg[yellow]%}git%{$reset_color%}"
+ATOMIC_GIT_PREFIX_03=":%{$fg_bold[yellow]%}"
 
 # Git information
 local git_info='$(git_prompt_info)'
