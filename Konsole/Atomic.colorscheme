@@ -47,16 +47,16 @@ Color=70,153,153
 Color=125,200,200
 
 [Color7]
-Color=170,180,190
+Color=178,178,178
 
 [Color7Intense]
-Color=170,180,190
+Color=178,178,178
 
 [Foreground]
-Color=170,180,190
+Color=178,178,178
 
 [ForegroundIntense]
-Color=170,180,190
+Color=178,178,178
 
 [General]
 Description=Atomic

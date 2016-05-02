@@ -10,7 +10,7 @@
     <fontcolor foreColor="ff659f2b" name="twig_block_delimiter">
         <font style="bold"/>
     </fontcolor>
-    <fontcolor default="keyword" foreColor="ffaab4be" name="twig_punctuation"/>
+    <fontcolor default="keyword" foreColor="ffB2B2B2" name="twig_punctuation"/>
     <fontcolor default="keyword" name="twig_operator"/>
     <fontcolor default="identifier" name="twig_name"/>
     <fontcolor default="keyword" name="twig_tag"/>

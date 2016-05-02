@@ -11,5 +11,5 @@
     <fontcolor default="keyword" name="directive"/>
     <fontcolor default="comment" name="comment"/>
     <fontcolor default="identifier" foreColor="fff0a458" name="variable"/>
-    <fontcolor default="keyword" foreColor="ffaab4be" name="directiveparam"/>
+    <fontcolor default="keyword" foreColor="ffB2B2B2" name="directiveparam"/>
 </fontscolors>

@@ -5,7 +5,7 @@
     <fontcolor default="Imm operand" foreColor="ff9c60d8" name="ASM_IMM_OP"/>
     <fontcolor default="Directive" foreColor="ff3791eb" name="ASM_DIRECTIVE"/>
     <fontcolor default="Label" foreColor="ff98d15f" name="ASM_LABEL"/>
-    <fontcolor default="Instruction" foreColor="ffaab4be" name="ASM_INSTRUCTION"/>
+    <fontcolor default="Instruction" foreColor="ffB2B2B2" name="ASM_INSTRUCTION"/>
     <fontcolor default="number" name="ASM_NUMBER"/>
     <fontcolor default="Character" foreColor="ff7dc8c8" name="ASM_CHARACTER"/>
     <fontcolor default="Id" foreColor="ff469999" name="ASM_UNKWN_ID"/>

@@ -16,7 +16,7 @@
     <fontcolor default="comment" name="sgml-comment"/>
     <fontcolor default="default" foreColor="ff3791eb" name="tag"/>
     <fontcolor default="whitespace" name="ws"/>
-    <fontcolor default="operator" foreColor="ffaab4be" name="operator"/>
+    <fontcolor default="operator" foreColor="ffB2B2B2" name="operator"/>
     <fontcolor default="char" name="character"/>
     <fontcolor name="mod-class" waveUnderlined="fff05050"/>
     <fontcolor default="default" name="xml-pi"/>

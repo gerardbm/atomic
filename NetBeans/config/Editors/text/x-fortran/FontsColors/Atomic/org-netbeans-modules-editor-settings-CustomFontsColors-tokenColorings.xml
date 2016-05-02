@@ -9,7 +9,7 @@
     <fontcolor default="number" name="number"/>
     <fontcolor default="string" name="preprocessor-system-include-literal"/>
     <fontcolor default="preprocessor" foreColor="ff469999" name="preprocessor-keyword-directive"/>
-    <fontcolor default="keyword" foreColor="ffaab4be" name="operator"/>
+    <fontcolor default="keyword" foreColor="ffB2B2B2" name="operator"/>
     <fontcolor default="char" name="character"/>
     <fontcolor foreColor="ff7dc8c8" name="preprocessor"/>
     <fontcolor default="string" name="string-escape-invalid" waveUnderlined="ffd76c00"/>

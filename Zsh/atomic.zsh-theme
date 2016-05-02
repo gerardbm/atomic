@@ -15,7 +15,7 @@ function hostname {
 local current_dir='${PWD/#$HOME/~}'
 
 # Git prefix
-ATOMIC_GIT_PREFIX_01="%{$fg[white]%}~ on "
+ATOMIC_GIT_PREFIX_01="%{$fg[default]%}~ on "
 ATOMIC_GIT_PREFIX_02="%{$fg[cyan]%}git%{$reset_color%}"
 ATOMIC_GIT_PREFIX_03=":%{$fg_bold[cyan]%}"
 
@@ -29,10 +29,10 @@ ZSH_THEME_GIT_PROMPT_CLEAN="%{$reset_color%} %{$fg[green]%}●"
 # Prompt format
 PROMPT="%{"$'\e[90m'"%}$ATOMIC_SEPARATOR\
 %{$fg[green]%}%n \
-%{$fg[white]%}at \
+%{$fg[default]%}at \
 %{$fg[blue]%}$(hostname) \
-%{$fg[white]%}in \
+%{$fg[default]%}in \
 %{$fg_bold[blue]%}${current_dir}%{$reset_color%} \
 %{"$'\e[90m'"%}[⌚ %T]
 ${git_info}\
-%{$fg[white]%}» %{$reset_color%}"
+%{$fg[default]%}» %{$reset_color%}"

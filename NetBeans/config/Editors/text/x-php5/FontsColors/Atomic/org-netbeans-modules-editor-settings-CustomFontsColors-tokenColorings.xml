@@ -6,7 +6,7 @@
         <font style="bold"/>
     </fontcolor>
     <fontcolor default="uncovered" name="uncovered"/>
-    <fontcolor name="mod-deprecated" strikeThrough="ffaab4be"/>
+    <fontcolor name="mod-deprecated" strikeThrough="ffB2B2B2"/>
     <fontcolor name="mark-occurrences">
         <font style="bold"/>
     </fontcolor>

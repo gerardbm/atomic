@@ -10,7 +10,7 @@
     <fontcolor name="operator"/>
     <fontcolor foreColor="fff28ec0" name="url"/>
     <fontcolor default="identifier" foreColor="fff28ec0" name="field"/>
-    <fontcolor bgColor="ff15191d" foreColor="ffaab4be" name="default">
+    <fontcolor bgColor="ff15191d" foreColor="ffB2B2B2" name="default">
         <font name="DejaVu Sans Mono" size="16" style="plain"/>
     </fontcolor>
     <fontcolor foreColor="ff7dc8c8" name="string"/>
@@ -22,6 +22,6 @@
     </fontcolor>
     <fontcolor name="identifier"/>
     <fontcolor name="warning" waveUnderlined="ffd76c00"/>
-    <fontcolor foreColor="ffaab4be" name="separator"/>
+    <fontcolor foreColor="ffB2B2B2" name="separator"/>
     <fontcolor default="field" foreColor="ff7dbeff" name="markup-attribute"/>
 </fontscolors>

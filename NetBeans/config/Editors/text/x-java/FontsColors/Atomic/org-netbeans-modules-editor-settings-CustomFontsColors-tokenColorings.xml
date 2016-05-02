@@ -3,9 +3,9 @@
 <fontscolors>
     <fontcolor default="identifier" name="mod-enum"/>
     <fontcolor default="identifier" foreColor="ffd76c00" name="mod-parameter-declaration"/>
-    <fontcolor default="method" foreColor="ffaab4be" name="mod-method"/>
+    <fontcolor default="method" foreColor="ffB2B2B2" name="mod-method"/>
     <fontcolor default="identifier" name="mod-annotation-type"/>
-    <fontcolor default="identifier" foreColor="ffaab4be" name="mod-interface"/>
+    <fontcolor default="identifier" foreColor="ffB2B2B2" name="mod-interface"/>
     <fontcolor default="identifier" name="mod-enum-declaration"/>
     <fontcolor default="identifier" foreColor="ff9c60d8" name="mod-class-declaration"/>
     <fontcolor name="mod-private"/>
@@ -18,9 +18,9 @@
     <fontcolor default="character" name="character-escape"/>
     <fontcolor bgColor="ff454f59" name="mark-occurrences"/>
     <fontcolor name="mod-abstract"/>
-    <fontcolor default="field" foreColor="ffaab4be" name="mod-field"/>
+    <fontcolor default="field" foreColor="ffB2B2B2" name="mod-field"/>
     <fontcolor name="mod-public"/>
-    <fontcolor default="identifier" foreColor="ffaab4be" name="mod-constructor"/>
+    <fontcolor default="identifier" foreColor="ffB2B2B2" name="mod-constructor"/>
     <fontcolor default="identifier" foreColor="fff0a458" name="mod-local-variable-declaration"/>
     <fontcolor default="identifier" name="mod-local-variable"/>
     <fontcolor default="keyword" foreColor="ff98d15f" name="keyword-directive"/>
@@ -35,7 +35,7 @@
     <fontcolor default="number" name="number"/>
     <fontcolor default="identifier" foreColor="ff7dbeff" name="mod-constructor-declaration"/>
     <fontcolor default="operator" name="operator"/>
-    <fontcolor default="identifier" foreColor="ffaab4be" name="mod-class"/>
+    <fontcolor default="identifier" foreColor="ffB2B2B2" name="mod-class"/>
     <fontcolor name="mod-unused" waveUnderlined="ffd76c00"/>
     <fontcolor default="string" foreColor="fff28ec0" name="string-escape-invalid" waveUnderlined="ffd76c00"/>
     <fontcolor default="comment" name="html-tag"/>

@@ -24,7 +24,7 @@
     </fontcolor>
     <fontcolor foreColor="ff454f59" name="line-number"/>
     <fontcolor bgColor="ff1b1f23" name="highlight-caret-row"/>
-    <fontcolor bgColor="ffaab4be" foreColor="ff15191d" name="selection"/>
+    <fontcolor bgColor="ff454f59" foreColor="ffb2b2b2" name="selection"/>
     <fontcolor bgColor="fff05050" foreColor="ff15191d" name="inc-search"/>
     <fontcolor name="indent-whitespace"/>
     <fontcolor foreColor="ff454f59" name="code-folding-bar"/>
