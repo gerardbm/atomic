@@ -33,7 +33,7 @@ Light Magenta    70%   330º   #F28EC0  242 142 192  330  41  95
 Light Orange     70%    30º   #F0A458  240 164  88   30  63  94
 Light Green      70%    90º   #98D15F  152 209  95   90  55  82
 Light Cyan       70%   180º   #7DC8C8  125 200 200  180  38  78
-Light Grey       70%   210º   #AAB4BE  170 180 190  210  11  75
+Light Grey       70%     0º   #B2B2B2  178 178 178    0   0  70
 ```
 
 ### Zsh theme
