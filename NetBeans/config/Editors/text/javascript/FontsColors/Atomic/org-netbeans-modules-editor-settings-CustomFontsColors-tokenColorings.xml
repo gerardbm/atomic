@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE fontscolors PUBLIC "-//NetBeans//DTD Editor Fonts and Colors settings 1.1//EN" "http://www.netbeans.org/dtds/EditorFontsColors-1_1.dtd">
 <fontscolors>
-    <fontcolor default="method" foreColor="fff05050" name="mod-method"/>
+    <fontcolor default="method" foreColor="ff7dbeff" name="mod-method"/>
     <fontcolor default="number" name="constant"/>
     <fontcolor default="error" name="error"/>
     <fontcolor default="keyword" name="keyword"/>
     <fontcolor default="whitespace" name="whitespace"/>
-    <fontcolor default="regexp" foreColor="ff9c60d8" name="mod-regexp"/>
+    <fontcolor default="regexp" foreColor="ffc997fa" name="mod-regexp"/>
     <fontcolor foreColor="fff0a458" name="mod-global"/>
     <fontcolor default="operator" name="operator"/>
     <fontcolor default="class" name="mod-class"/>

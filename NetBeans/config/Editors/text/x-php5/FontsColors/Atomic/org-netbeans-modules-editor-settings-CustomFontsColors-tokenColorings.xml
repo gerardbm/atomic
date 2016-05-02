@@ -17,7 +17,7 @@
     <fontcolor default="constant" name="constant">
         <font style="italic"/>
     </fontcolor>
-    <fontcolor default="keyword" foreColor="ff98d15f" name="keyword"/>
+    <fontcolor default="keyword" name="keyword"/>
     <fontcolor name="mod-static">
         <font style="italic"/>
     </fontcolor>

@@ -6,10 +6,10 @@
     <fontcolor default="error" name="error"/>
     <fontcolor default="keyword" name="keyword"/>
     <fontcolor default="whitespace" name="whitespace"/>
-    <fontcolor default="regexp" foreColor="ff9c60d8" name="mod-regexp"/>
+    <fontcolor default="regexp" foreColor="ffc997fa" name="mod-regexp"/>
     <fontcolor foreColor="fff0a458" name="mod-global"/>
     <fontcolor default="operator" name="operator"/>
-    <fontcolor name="mod-class"/>
+    <fontcolor foreColor="ff9c60d8" name="mod-class"/>
     <fontcolor name="mod-unused" waveUnderlined="ffd76c00"/>
     <fontcolor name="mark-occurrences">
         <font style="bold"/>

@@ -5,8 +5,8 @@
     <fontcolor default="string" name="string"/>
     <fontcolor default="keyword" name="keyword"/>
     <fontcolor default="whitespace" name="whitespace"/>
-    <fontcolor default="separator" foreColor="ffcd6c00" name="valuedblock"/>
-    <fontcolor default="valuedblock" foreColor="fff05050" name="block"/>
+    <fontcolor default="separator" foreColor="ff7dbeff" name="valuedblock"/>
+    <fontcolor default="valuedblock" foreColor="ff3791eb" name="block"/>
     <fontcolor default="separator" name="interpunction"/>
     <fontcolor default="number" name="number"/>
     <fontcolor default="comment" name="comment"/>

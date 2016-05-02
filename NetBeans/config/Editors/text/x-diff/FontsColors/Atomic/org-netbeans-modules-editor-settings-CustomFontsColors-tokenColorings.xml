@@ -6,7 +6,7 @@
     </fontcolor>
     <fontcolor default="error" name="error"/>
     <fontcolor foreColor="ff659f2b" name="added"/>
-    <fontcolor foreColor="fff04299" name="removed"/>
+    <fontcolor foreColor="fff05050" name="removed"/>
     <fontcolor foreColor="ff3791eb" name="filename"/>
     <fontcolor name="plain"/>
     <fontcolor name="header"/>

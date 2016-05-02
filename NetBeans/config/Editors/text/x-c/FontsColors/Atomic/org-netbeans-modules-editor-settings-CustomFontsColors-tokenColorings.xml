@@ -17,7 +17,7 @@
         <font style="bold"/>
     </fontcolor>
     <fontcolor default="default" name="cc-highlighting-unused-variables" waveUnderlined="ffd76c00"/>
-    <fontcolor default="method" foreColor="ff9c60d8" name="cc-highlighting-function"/>
+    <fontcolor default="method" foreColor="ff7dbeff" name="cc-highlighting-function"/>
     <fontcolor default="default" foreColor="fff05050" name="cc-highlighting-macros-user"/>
     <fontcolor default="string" foreColor="ff7dc8c8" name="preprocessor-user-include-literal"/>
     <fontcolor default="keyword" foreColor="ff98d15f" name="keyword-directive"/>

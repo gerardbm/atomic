@@ -17,14 +17,14 @@
         <font style="bold"/>
     </fontcolor>
     <fontcolor default="default" name="cc-highlighting-unused-variables" waveUnderlined="ffd76c00"/>
-    <fontcolor default="method" foreColor="ff9c60d8" name="cc-highlighting-function">
+    <fontcolor default="method" foreColor="ff7dbeff" name="cc-highlighting-function">
         <font style="bold"/>
     </fontcolor>
     <fontcolor default="default" foreColor="fff05050" name="cc-highlighting-macros-user"/>
     <fontcolor default="string" foreColor="ff7dc8c8" name="preprocessor-user-include-literal"/>
     <fontcolor default="keyword" foreColor="ff98d15f" name="keyword-directive"/>
-    <fontcolor default="keyword" foreColor="ff3791eb" name="keyword"/>
-    <fontcolor default="default" foreColor="ff969696" name="cc-highlighting-inactive">
+    <fontcolor default="preprocessor-keyword-directive" foreColor="ff3791eb" name="keyword"/>
+    <fontcolor default="default" name="cc-highlighting-inactive">
         <font style="plain"/>
     </fontcolor>
     <fontcolor default="whitespace" name="whitespace"/>
@@ -40,7 +40,7 @@
     <fontcolor default="default" name="cc-highlighting-mark-occurrences">
         <font style="bold"/>
     </fontcolor>
-    <fontcolor default="preprocessor-keyword-directive" foreColor="ff469999" name="preprocessor-keyword"/>
+    <fontcolor default="preprocessor-keyword-directive" name="preprocessor-keyword"/>
     <fontcolor default="comment" name="comment"/>
     <fontcolor default="identifier" name="identifier"/>
     <fontcolor default="method" name="cc-highlighting-function-usage"/>

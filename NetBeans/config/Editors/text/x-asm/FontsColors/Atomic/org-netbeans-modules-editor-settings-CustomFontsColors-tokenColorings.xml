@@ -7,9 +7,9 @@
     <fontcolor default="Label" foreColor="ff98d15f" name="ASM_LABEL"/>
     <fontcolor default="Instruction" foreColor="ffaab4be" name="ASM_INSTRUCTION"/>
     <fontcolor default="number" name="ASM_NUMBER"/>
-    <fontcolor default="Character" foreColor="ff7dbeff" name="ASM_CHARACTER"/>
+    <fontcolor default="Character" foreColor="ff7dc8c8" name="ASM_CHARACTER"/>
     <fontcolor default="Id" foreColor="ff469999" name="ASM_UNKWN_ID"/>
     <fontcolor default="Comment" foreColor="ff454f59" name="ASM_COMMENT"/>
     <fontcolor default="Label" foreColor="ff98d15f" name="ASM_LABEL_INST"/>
-    <fontcolor default="String" foreColor="ff7dbeff" name="ASM_STRING"/>
+    <fontcolor default="String" foreColor="ff7dc8c8" name="ASM_STRING"/>
 </fontscolors>

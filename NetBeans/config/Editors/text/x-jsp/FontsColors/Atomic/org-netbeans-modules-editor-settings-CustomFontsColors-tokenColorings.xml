@@ -7,9 +7,9 @@
     <fontcolor default="default" foreColor="ff3791eb" name="tag-directive"/>
     <fontcolor default="default" name="symbol"/>
     <fontcolor default="default" foreColor="fff05050" name="error" waveUnderlined="fff05050"/>
-    <fontcolor default="default" foreColor="ff7dbeff" name="attribute-value"/>
+    <fontcolor default="default" foreColor="ff7dc8c8" name="attribute-value"/>
     <fontcolor default="default" name="scriptlet-delimiter"/>
-    <fontcolor default="default" foreColor="ff7dc8c8" name="attribute-name"/>
+    <fontcolor default="default" foreColor="ff7dbeff" name="attribute-name"/>
     <fontcolor default="default" foreColor="ff454f59" name="comment"/>
     <fontcolor default="default" foreColor="fff0a458" name="expression-language"/>
     <fontcolor default="default" foreColor="ff3791eb" name="endtag"/>

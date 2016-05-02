@@ -5,10 +5,10 @@
     <fontcolor name="equals"/>
     <fontcolor name="whitespace"/>
     <fontcolor foreColor="ff98d15f" name="value"/>
-    <fontcolor foreColor="ff469999" name="section_delim">
+    <fontcolor foreColor="ff3791eb" name="section_delim">
         <font style="bold"/>
     </fontcolor>
     <fontcolor foreColor="ff454f59" name="comment"/>
-    <fontcolor foreColor="ff7dc8c8" name="section"/>
+    <fontcolor foreColor="ff7dbeff" name="section"/>
     <fontcolor foreColor="fff0a458" name="key"/>
 </fontscolors>

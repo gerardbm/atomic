@@ -7,7 +7,7 @@
     <fontcolor default="whitespace" name="sql-whitespace"/>
     <fontcolor default="default" name="default"/>
     <fontcolor default="comment" name="sql-line-comment"/>
-    <fontcolor default="field" name="sql-identifier"/>
+    <fontcolor default="field" foreColor="fff0a458" name="sql-identifier"/>
     <fontcolor default="number" name="sql-int-literal"/>
     <fontcolor default="operator" name="sql-operator"/>
     <fontcolor default="operator" name="sql-dot"/>

@@ -12,7 +12,7 @@
     <fontcolor name="mark-occurrences">
         <font style="bold"/>
     </fontcolor>
-    <fontcolor foreColor="ff9c60d8" name="at_rule_symbol"/>
+    <fontcolor foreColor="ff469999" name="at_rule_symbol"/>
     <fontcolor default="number" name="numbers"/>
     <fontcolor default="separator" name="brace"/>
     <fontcolor default="operator" name="operators"/>
@@ -20,9 +20,9 @@
     <fontcolor foreColor="ff659f2b" name="mod-local-variable"/>
     <fontcolor default="number" name="hashes"/>
     <fontcolor default="default" name="others"/>
-    <fontcolor default="number" foreColor="ffff6666" name="hash"/>
+    <fontcolor default="number" name="hash"/>
     <fontcolor default="keyword" foreColor="fff0a458" name="keyword"/>
-    <fontcolor default="string" foreColor="fff05050" name="rgb">
+    <fontcolor default="string" foreColor="fff04299" name="rgb">
         <font style="italic"/>
     </fontcolor>
     <fontcolor default="number" foreColor="ff98d15f" name="number"/>
@@ -31,16 +31,16 @@
     <fontcolor default="default" name="whitespaces"/>
     <fontcolor default="string" foreColor="fff28ec0" name="url"/>
     <fontcolor default="operator" name="operator"/>
-    <fontcolor name="mod-class">
+    <fontcolor foreColor="ffc997fa" name="mod-class">
         <font style="italic"/>
     </fontcolor>
-    <fontcolor default="string" foreColor="fff05050" name="string"/>
+    <fontcolor default="string" name="string"/>
     <fontcolor default="keyword" name="mod-custom1"/>
-    <fontcolor foreColor="ffc997fa" name="mod-custom3"/>
+    <fontcolor foreColor="ff7dc8c8" name="mod-custom3"/>
     <fontcolor default="keyword" foreColor="ffd76c00" name="mod-custom2">
         <font style="italic"/>
     </fontcolor>
-    <fontcolor default="identifier" foreColor="ff7dc8c8" name="identifier"/>
+    <fontcolor default="identifier" name="identifier"/>
     <fontcolor default="separator" name="separator"/>
     <fontcolor default="comment" name="comments"/>
 </fontscolors>
