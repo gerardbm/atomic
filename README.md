@@ -45,9 +45,8 @@ Atomic Zsh theme has been designed to show useful information (username, hostnam
 ### Editors and IDEs
 
 - Terminal
-- Vim (Coming soon)
-- Sublime Text (Coming soon)
-- NetBeans
+- NetBeans IDE
+- Sublime Text 3
 
 # Installation
 ### Terminal
@@ -77,7 +76,14 @@ zip -r atomic.zip config
 3. Restart your NetBeans.
 4. To switch between color schemes, in the `Options` panel go to the `Fonts & Colors` tab and choose a profile (in our case, 'Atomic').
 
-**Knowin Issues** 
+### Sublime Text 3
+
+Installation in Sublime Text 3:
+
+1. Download the Atomic repository, unpack the downloaded file and manually place `Atomic.tmTheme` file into `~/.config/sublime-text-3/Packages/User`.
+2. Open your Sublime Text 3: `Preferences` > `Color Scheme` > `User` > `Atomic`. Select it.
+
+**Known Issues** 
 
 If you are using Windows XP, do not use the archive program built-in to create the zip file of the first step. It does not support file paths longer than a certain length. Use a third party archiver like 7zip, which is free.
 
