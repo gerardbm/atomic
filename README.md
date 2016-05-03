@@ -5,7 +5,7 @@ Atomic is a dark color scheme designed to use with terminal, Zsh and several GUI
 
 ### Color palette
 
-The color palette consists of sixteen precision colors choosed procedurally (algorithms), distributed in seven hues and four balanced luminances. Luminance is the perceived brightness, not the lightness of the HSL model.
+The color palette consists of sixteen precision colors selected procedurally (algorithms), distributed in seven hues and four balanced luminances. Luminance is the perceived brightness, not the lightness of the HSL model.
 
 Human eyes don't detect brightness linearly with color —we see red brighter than blue, and green brighter than red—, so the luminance has been balanced following the ITU-R Recommendation BT.601:
 
