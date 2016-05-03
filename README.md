@@ -36,6 +36,8 @@ Light Cyan       70%   180º   #7DC8C8  125 200 200  180  38  78
 Light Grey       70%     0º   #B2B2B2  178 178 178    0   0  70
 ```
 
+![Screenshot](https://github.com/gerardbm/Atomic/blob/master/img/screenshot-st3.png)
+
 ### Zsh theme
 
 Atomic Zsh theme has been designed to show useful information (username, hostname, pwd and current time) without taking the entire line. If a directory is under Git control, in the second line it shows the current branch and status. The top separator helps to visually separate every task.
