@@ -36,7 +36,7 @@ Light Cyan       70%   180º   #7DC8C8  125 200 200  180  38  78
 Light Grey       70%     0º   #B2B2B2  178 178 178    0   0  70
 ```
 
-![Screenshot](https://github.com/gerardbm/Atomic/blob/master/img/screenshot-st3.png)
+![Screenshot](https://raw.githubusercontent.com/gerardbm/Atomic/master/img/screenshot-st3.png)
 
 ### Zsh theme
 
