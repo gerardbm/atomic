@@ -5,11 +5,11 @@
     <fontcolor default="string" name="string"/>
     <fontcolor default="keyword" name="keyword"/>
     <fontcolor default="whitespace" name="whitespace"/>
-    <fontcolor default="keyword" foreColor="ff659f2b" name="command"/>
+    <fontcolor default="keyword" foreColor="ff5DA813" name="command"/>
     <fontcolor default="number" name="number"/>
     <fontcolor name="label"/>
     <fontcolor default="comment" name="comment"/>
-    <fontcolor default="identifier" foreColor="fff0a458" name="identifier"/>
+    <fontcolor default="identifier" foreColor="ffEDA45C" name="identifier"/>
     <fontcolor default="operator" name="operator"/>
     <fontcolor name="character"/>
 </fontscolors>

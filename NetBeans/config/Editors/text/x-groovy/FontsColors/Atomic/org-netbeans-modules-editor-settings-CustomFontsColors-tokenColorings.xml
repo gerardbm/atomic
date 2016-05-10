@@ -2,16 +2,16 @@
 <!DOCTYPE fontscolors PUBLIC "-//NetBeans//DTD Editor Fonts and Colors settings 1.1//EN" "http://www.netbeans.org/dtds/EditorFontsColors-1_1.dtd">
 <fontscolors>
     <fontcolor name="mod-constructor"/>
-    <fontcolor foreColor="ffc997fa" name="mod-method"/>
+    <fontcolor foreColor="ffCA96FF" name="mod-method"/>
     <fontcolor default="error" name="error"/>
-    <fontcolor default="keyword" foreColor="ff3791eb" name="keyword"/>
+    <fontcolor default="keyword" foreColor="ff3790E9" name="keyword"/>
     <fontcolor default="whitespace" name="whitespace"/>
     <fontcolor default="number" name="number"/>
     <fontcolor name="mod-static"/>
-    <fontcolor name="mod-deprecated" strikeThrough="ff454f59"/>
+    <fontcolor name="mod-deprecated" strikeThrough="ff3E4F60"/>
     <fontcolor default="operator" name="operator"/>
-    <fontcolor foreColor="ff9c60d8" name="mod-class"/>
-    <fontcolor name="mod-unused" waveUnderlined="ffd76c00"/>
+    <fontcolor foreColor="ffCA96FF" name="mod-class"/>
+    <fontcolor name="mod-unused" waveUnderlined="ffC97016"/>
     <fontcolor name="mark-occurrences">
         <font style="bold"/>
     </fontcolor>

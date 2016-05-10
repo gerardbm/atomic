@@ -4,14 +4,14 @@
     <fontcolor default="default" foreColor="black" name="jsp-whitespace">
         <font style="bold"/>
     </fontcolor>
-    <fontcolor default="default" foreColor="ff3791eb" name="tag-directive"/>
+    <fontcolor default="default" foreColor="ff3790E9" name="tag-directive"/>
     <fontcolor default="default" name="symbol"/>
-    <fontcolor default="default" foreColor="fff05050" name="error" waveUnderlined="fff05050"/>
-    <fontcolor default="default" foreColor="ff7dc8c8" name="attribute-value"/>
+    <fontcolor default="default" foreColor="ffEC5252" name="error" waveUnderlined="ffEC5252"/>
+    <fontcolor default="default" foreColor="ff6ECFCF" name="attribute-value"/>
     <fontcolor default="default" name="scriptlet-delimiter"/>
-    <fontcolor default="default" foreColor="ff7dbeff" name="attribute-name"/>
-    <fontcolor default="default" foreColor="ff454f59" name="comment"/>
-    <fontcolor default="default" foreColor="fff0a458" name="expression-language"/>
-    <fontcolor default="default" foreColor="ff3791eb" name="endtag"/>
+    <fontcolor default="default" foreColor="ff7DBEFF" name="attribute-name"/>
+    <fontcolor default="default" foreColor="ff3E4F60" name="comment"/>
+    <fontcolor default="default" foreColor="ffEDA45C" name="expression-language"/>
+    <fontcolor default="default" foreColor="ff3790E9" name="endtag"/>
     <fontcolor default="default" name="scriptlet"/>
 </fontscolors>

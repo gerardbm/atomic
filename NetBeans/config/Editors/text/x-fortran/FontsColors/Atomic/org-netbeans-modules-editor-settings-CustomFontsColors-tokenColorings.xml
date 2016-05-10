@@ -2,22 +2,22 @@
 <!DOCTYPE fontscolors PUBLIC "-//NetBeans//DTD Editor Fonts and Colors settings 1.1//EN" "http://www.netbeans.org/dtds/EditorFontsColors-1_1.dtd">
 <fontscolors>
     <fontcolor default="string" name="preprocessor-user-include-literal"/>
-    <fontcolor default="preprocessor" foreColor="ff659f2b" name="keyword-directive"/>
-    <fontcolor default="preprocessor-keyword-directive" foreColor="ff98d15f" name="keyword"/>
+    <fontcolor default="preprocessor" foreColor="ff5DA813" name="keyword-directive"/>
+    <fontcolor default="preprocessor-keyword-directive" foreColor="ff9ACD68" name="keyword"/>
     <fontcolor default="whitespace" name="whitespace"/>
     <fontcolor default="string" name="string-escape"/>
     <fontcolor default="number" name="number"/>
     <fontcolor default="string" name="preprocessor-system-include-literal"/>
-    <fontcolor default="preprocessor" foreColor="ff469999" name="preprocessor-keyword-directive"/>
-    <fontcolor default="keyword" foreColor="ffB2B2B2" name="operator"/>
+    <fontcolor default="preprocessor" foreColor="ff13AEAE" name="preprocessor-keyword-directive"/>
+    <fontcolor default="keyword" foreColor="ffA6B5C5" name="operator"/>
     <fontcolor default="char" name="character"/>
-    <fontcolor foreColor="ff7dc8c8" name="preprocessor"/>
-    <fontcolor default="string" name="string-escape-invalid" waveUnderlined="ffd76c00"/>
+    <fontcolor foreColor="ff6ECFCF" name="preprocessor"/>
+    <fontcolor default="string" name="string-escape-invalid" waveUnderlined="ffC97016"/>
     <fontcolor default="error" name="errors"/>
     <fontcolor default="keyword" name="keyword-operator"/>
     <fontcolor default="string" name="string"/>
-    <fontcolor default="identifier" foreColor="ff7dc8c8" name="preprocessor-identifier"/>
-    <fontcolor default="preprocessor-keyword-directive" foreColor="ff469999" name="preprocessor-keyword"/>
+    <fontcolor default="identifier" foreColor="ff6ECFCF" name="preprocessor-identifier"/>
+    <fontcolor default="preprocessor-keyword-directive" foreColor="ff13AEAE" name="preprocessor-keyword"/>
     <fontcolor default="comment" name="comment"/>
     <fontcolor default="identifier" name="identifier"/>
     <fontcolor default="separator" name="separator"/>

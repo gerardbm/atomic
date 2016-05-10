@@ -10,8 +10,8 @@
     <fontcolor default="string" name="string"/>
     <fontcolor default="whitespace" name="whitespace"/>
     <fontcolor default="default" name="eol"/>
-    <fontcolor default="default" foreColor="ff3791eb" name="tag-lib-prefix"/>
+    <fontcolor default="default" foreColor="ff3790E9" name="tag-lib-prefix"/>
     <fontcolor default="operator" name="operators"/>
-    <fontcolor default="identifier" foreColor="ffd76c00" name="identifier"/>
+    <fontcolor default="identifier" foreColor="ffC97016" name="identifier"/>
     <fontcolor default="number" name="numeric-literals"/>
 </fontscolors>

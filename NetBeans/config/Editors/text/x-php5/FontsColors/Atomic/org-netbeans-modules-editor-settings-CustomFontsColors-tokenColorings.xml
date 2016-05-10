@@ -6,13 +6,13 @@
         <font style="bold"/>
     </fontcolor>
     <fontcolor default="uncovered" name="uncovered"/>
-    <fontcolor name="mod-deprecated" strikeThrough="ffB2B2B2"/>
+    <fontcolor name="mod-deprecated" strikeThrough="ffA6B5C5"/>
     <fontcolor name="mark-occurrences">
         <font style="bold"/>
     </fontcolor>
     <fontcolor default="field" name="mod-field"/>
-    <fontcolor foreColor="fff05050" name="heredocdelimiter"/>
-    <fontcolor default="separator" foreColor="ff9c60d8" name="phpopenclose"/>
+    <fontcolor foreColor="ffEC5252" name="heredocdelimiter"/>
+    <fontcolor default="separator" foreColor="ffA35AED" name="phpopenclose"/>
     <fontcolor default="covered" name="covered"/>
     <fontcolor default="constant" name="constant">
         <font style="italic"/>
@@ -26,7 +26,7 @@
     <fontcolor default="inferred" name="inferred"/>
     <fontcolor default="operator" name="operator"/>
     <fontcolor name="mod-class"/>
-    <fontcolor name="mod-unused" waveUnderlined="ff999999"/>
+    <fontcolor name="mod-unused" waveUnderlined="ffC97016"/>
     <fontcolor default="comment" name="commentline"/>
     <fontcolor default="comment" name="htmltag">
         <font style="bold"/>
@@ -37,7 +37,7 @@
     <fontcolor default="comment" name="phpdockeyword">
         <font style="bold"/>
     </fontcolor>
-    <fontcolor foreColor="fff0a458" name="variable"/>
+    <fontcolor foreColor="ffEDA45C" name="variable"/>
     <fontcolor default="identifier" name="identifier"/>
     <fontcolor default="separator" name="separator"/>
 </fontscolors>

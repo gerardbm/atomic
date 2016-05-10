@@ -5,12 +5,12 @@
     <fontcolor default="string" name="string"/>
     <fontcolor default="keyword" name="keyword"/>
     <fontcolor default="whitespace" name="whitespace"/>
-    <fontcolor default="separator" foreColor="ff7dbeff" name="valuedblock"/>
-    <fontcolor default="valuedblock" foreColor="ff3791eb" name="block"/>
+    <fontcolor default="separator" foreColor="ff7DBEFF" name="valuedblock"/>
+    <fontcolor default="valuedblock" foreColor="ff3790E9" name="block"/>
     <fontcolor default="separator" name="interpunction"/>
     <fontcolor default="number" name="number"/>
     <fontcolor default="comment" name="comment"/>
-    <fontcolor default="identifier" foreColor="fff0a458" name="variable"/>
-    <fontcolor default="identifier" foreColor="ff659f2b" name="reference"/>
+    <fontcolor default="identifier" foreColor="ffEDA45C" name="variable"/>
+    <fontcolor default="identifier" foreColor="ff5DA813" name="reference"/>
     <fontcolor default="identifier" name="literal"/>
 </fontscolors>

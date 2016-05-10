@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE fontscolors PUBLIC "-//NetBeans//DTD Editor Fonts and Colors settings 1.1//EN" "http://www.netbeans.org/dtds/EditorFontsColors-1_1.dtd">
 <fontscolors>
-    <fontcolor default="smarty" foreColor="ff7dbeff" name="argument"/>
+    <fontcolor default="smarty" foreColor="ff7DBEFF" name="argument"/>
     <fontcolor default="smarty" name="other"/>
-    <fontcolor name="error" waveUnderlined="fff05050"/>
+    <fontcolor name="error" waveUnderlined="ffEC5252"/>
     <fontcolor default="smarty" name="whitespace"/>
-    <fontcolor default="smarty" foreColor="ff98d15f" name="smarty_function"/>
-    <fontcolor default="smarty" foreColor="ff659f2b" name="smarty_delimiter"/>
+    <fontcolor default="smarty" foreColor="ff9ACD68" name="smarty_function"/>
+    <fontcolor default="smarty" foreColor="ff5DA813" name="smarty_delimiter"/>
     <fontcolor default="default" name="smarty"/>
     <fontcolor default="smarty" name="pipe"/>
-    <fontcolor default="smarty" foreColor="ffc997fa" name="smarty_operator"/>
-    <fontcolor default="smarty" foreColor="fff28ec0" name="variable_modifier"/>
-    <fontcolor default="smarty" foreColor="ff7dc8c8" name="string"/>
-    <fontcolor default="smarty" foreColor="fff0a458" name="php_variable"/>
-    <fontcolor default="smarty" foreColor="ff7dc8c8" name="argument_value"/>
-    <fontcolor default="smarty" foreColor="ffd76c00" name="config_variable"/>
-    <fontcolor default="smarty" foreColor="ff454f59" name="comment"/>
+    <fontcolor default="smarty" foreColor="ffCA96FF" name="smarty_operator"/>
+    <fontcolor default="smarty" foreColor="ffFF9191" name="variable_modifier"/>
+    <fontcolor default="smarty" foreColor="ff6ECFCF" name="string"/>
+    <fontcolor default="smarty" foreColor="ffEDA45C" name="php_variable"/>
+    <fontcolor default="smarty" foreColor="ff6ECFCF" name="argument_value"/>
+    <fontcolor default="smarty" foreColor="ffC97016" name="config_variable"/>
+    <fontcolor default="smarty" foreColor="ff3E4F60" name="comment"/>
 </fontscolors>

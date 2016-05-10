@@ -23,8 +23,8 @@ ATOMIC_GIT_PREFIX_03=":%{$fg_bold[cyan]%}"
 local git_info='$(git_prompt_info)'
 ZSH_THEME_GIT_PROMPT_PREFIX="${ATOMIC_GIT_PREFIX_01}${ATOMIC_GIT_PREFIX_02}${ATOMIC_GIT_PREFIX_03}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} "
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$reset_color%} %{$fg[red]%}●"
-ZSH_THEME_GIT_PROMPT_CLEAN="%{$reset_color%} %{$fg[green]%}●"
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$reset_color%} %{$fg[red]%}x"
+ZSH_THEME_GIT_PROMPT_CLEAN="%{$reset_color%} %{$fg[green]%}o"
 
 # Prompt format
 PROMPT="%{"$'\e[90m'"%}$ATOMIC_SEPARATOR\
