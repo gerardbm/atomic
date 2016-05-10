@@ -16,8 +16,8 @@ In a RGB color wheel, hue angles have been calculated in order to be distinguish
 ![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/atomic-scheme.png)
 
 ```
-ATOMIC COLORS   LUMA    HUE    HEX     R   G   B    HUE  SAT  LIGHT
--------------  ------  ----  -------  --- --- ---  ---- ---- ------
+ATOMIC COLORS   LUMA    HUE    HEX    (R - G - B)   (H -- S -- L)
+-------------  ------  ----  -------  -----------  ----------------
 Background       10%   210º  #141A1F   20  26  31  210º  21%  10.0%
 Comments         30%   210º  #3E4F60   62  79  96  210º  21%  31.0%
 Dark Grey        50%   210º  #6B859E  107 133 158  210º  21%  52.0%
@@ -34,7 +34,6 @@ Light Red        70%   330º  #FF9191  255 145 145    0º 100%  78.5%
 Light Orange     70%    30º  #EDA45C  237 164  92   30º  80%  64.5%
 Light Green      70%    90º  #9ACD68  154 205 104   90º  50%  60.5%
 Light Cyan       70%   180º  #6ECFCF  110 207 207  180º  50%  62.0%
-
 ```
 
 ![Screenshot 01](https://raw.githubusercontent.com/gerardbm/Atomic/master/img/screenshot-st3-css.png)
@@ -80,16 +79,16 @@ zip -r atomic.zip config
 3. Restart your NetBeans.
 4. To switch between color schemes, in the `Options` panel go to the `Fonts & Colors` tab and choose a profile (in our case, 'Atomic').
 
+**Known Issues**
+
+If you are [still] using Windows XP, do not use the archive program built-in to create the zip file (step 1). It does not support file paths longer than a certain length. Use a third party archiver like 7zip, which is free.
+
 ### Sublime Text 3
 
 Installation in Sublime Text 3:
 
-1. Download the Atomic repository, unpack the downloaded file and manually place `Atomic.tmTheme` file into `~/.config/sublime-text-3/Packages/User`.
-2. Open your Sublime Text 3: `Preferences` > `Color Scheme` > `User` > `Atomic`. Select it.
-
-**Known Issues**
-
-If you are using Windows XP, do not use the archive program built-in to create the zip file of the first step. It does not support file paths longer than a certain length. Use a third party archiver like 7zip, which is free.
+1. Download the Atomic repository, unpack the downloaded file and manually place `Atomic.tmTheme` file into `~/.config/sublime-text-3/Packages/Atomic/`.
+2. Open your Sublime Text 3: `Preferences` > `Color Scheme` > `Atomic` > `Atomic`. Select it.
 
 ### Font family
 
