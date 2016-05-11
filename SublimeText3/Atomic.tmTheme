@@ -2390,6 +2390,41 @@
 				<string>#5DA813</string>
 			</dict>
 		</dict>
+
+		<!-- GitGutter -->
+		<dict>
+			<key>name</key>
+			<string>GitGutter: Deleted</string>
+			<key>scope</key>
+			<string>markup.deleted.git_gutter</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#EC5252</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>GitGutter: Changed</string>
+			<key>scope</key>
+			<string>markup.changed.git_gutter</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#3790E9</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>GitGutter: Inserted</string>
+			<key>scope</key>
+			<string>markup.inserted.git_gutter</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#5DA813</string>
+			</dict>
+		</dict>
 	</array>
 	<key>uuid</key>
 	<string>B470FCA3-62EA-433D-AA89-B71E3852CF19</string>
