@@ -90,6 +90,13 @@ Installation in Sublime Text 3:
 1. Download the Atomic repository, unpack the downloaded file and manually place `Atomic.tmTheme` file into `~/.config/sublime-text-3/Packages/Atomic/`.
 2. Open your Sublime Text 3: `Preferences` > `Color Scheme` > `Atomic` > `Atomic`. Select it.
 
+### Cmus
+
+Installation in cmus:
+
+1. Download the Atomic repository, unpack the downloaded file and manually place `atomic.theme` file into `~/.cmus/`.
+2. Open your cmus and type: `:colorscheme atomic`. Enjoy!
+
 ### Font family
 
 The default font is DejaVu Sans Mono from the [DejaVu](http://dejavu-fonts.org) fonts family (under a [Free license](http://dejavu-fonts.org/wiki/License)). Anyway, Atomic is designed to look good with any kind of typography, as colors are distinguishable to any thickness.
