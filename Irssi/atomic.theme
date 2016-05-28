@@ -111,10 +111,10 @@ abstracts = {
 	channel = "$*";
 
 	# nick is printed
-	nick = "%_$*%_";
+	nick = "$*";
 
 	# nick host is printed
-	nickhost = "%w[$*%w]";
+	nickhost = "%w($*%w)";
 
 	# server name is printed
 	server = "%_$*%_";
@@ -138,7 +138,7 @@ abstracts = {
 
 	# nick/host is printed (parts, quits, etc.)
 	channick = "%w$*%n";
-	chanhost = "%K{nickhost %K$*%n}%n";
+	chanhost = "{nickhost %K$*%n}%n";
 
 	# highlighted channel name is printed
 	channelhilight = "%B$*%n";
@@ -151,7 +151,7 @@ abstracts = {
 	##
 
 	# the basic styling of how to print message, $0 = nick mode, $1 = nick
-	msgnick = "%n$0$1-%w|%n %|";
+	msgnick = "%n$0$1- %K·%w|%K·%n %|";
 
 	# message from you is printed. "msgownnick" specifies the styling of the
 	# nick ($0 part in msgnick) and "ownmsgnick" specifies the styling of the
@@ -171,7 +171,7 @@ abstracts = {
 
 	# $0 = nick mode, $1 = nick
 	ownmsgnick = "{msgnick $0 $1-}";
-	ownnick = "%C$*%n";
+	ownnick = "%C$0%n";
 
 	# public message in channel, $0 = nick mode, $1 = nick
 	pubmsgnick = "{msgnick $0 $1-}";
@@ -179,7 +179,7 @@ abstracts = {
 
 	# public message in channel meant for me, $0 = nick mode, $1 = nick
 	pubmsgmenick = "{msgnick $0 $1-}";
-	menick = "%C$*%n";
+	menick = "$*";
 
 	# public highlighted message in channel
 	# $0 = highlight color, $1 = nick mode, $2 = nick
@@ -189,27 +189,27 @@ abstracts = {
 	msgchannel = "%K:%c$*%n";
 
 	# private message, $0 = nick, $1 = host
-	privmsg = "[%R$0%K(%r$1-%K)%n] ";
+	privmsg = "[%c$0%K(%r$1-%K)%n] ";
 
 	# private message from you, $0 = "msg", $1 = target nick
-	ownprivmsg = "[%r$0%K(%R$1-%K)%n] ";
+	ownprivmsg = "[%C$0%K(%R$1-%K)%n] ";
 
 	# own private message in query
-	ownprivmsgnick = "{msgnick  $*}";
-	ownprivnick = "%_$*%n";
+	ownprivmsgnick = "{msgnick $*}";
+	ownprivnick = "%_%Y$*%n";
 
 	# private message in query
-	privmsgnick = "{msgnick  %R$*%n}";
+	privmsgnick = "{msgnick %c$*%n}";
 
 	##
 	## Actions (/ME stuff)
 	##
 
 	# used internally by this theme
-	action_core = "%W$0-%B";
+	action_core = "%W$0-%R";
 
 	# generic one that's used by most actions
-	action = "%B--*%n{action_core %B$*}";
+	action = "{action_core %R$*}%|";
 
 	# own action, both private/public
 	ownaction = "{action $*}";
@@ -327,40 +327,48 @@ abstracts = {
 formats = {
 	"fe-common/core" = {
 		# channels joins
-		join = "{channick %w$[-35]0} %g|>%n {chanhost $1} %Khas joined%n";
+		join = "{channick %g$[-24]0} %K·%g|>%n %|{chanhost $1} %Khas joined%n";
 		# channel parts
-		part = "{channick %w$[-34]0} %y<|%n {chanhost $1} %Khas left%n";
+		part = "{channick %y$[-24]0} %y<|%K·%n %|{chanhost $1} %Khas left%n";
 		# channels quits
-		quit = "{channick %w$[-34]0} %r<|%n {chanhost $1} %Khas quit %w[%K{reason $2}%w]%n";
+		quit = "{channick %r$[-24]0} %r<|%K·%n %|{chanhost $1} %Khas quit %w(%K{reason $2}%w)%n";
 		# channel kicks
-		kick = "{channick %w$[-34]2} %m<|%n {chanhost $1} %Kkicked {channick $0} %w(%K$3%w)%n";
+		kick = "{channick %m$[-24]0} %m<|%K·%n %|{chanhost $1} %wkicked by {channick %c$2%n} %w(%K$3%w)%n";
 		# channels nick changes
-		nick_changed = "{channick %w$[-34]0} %b-|-%n %Kis now known as {channick $1}%n";
+		nick_changed = "{channick %b$[-24]0} %b-|-%n %|%Kis now known as {channick %b$1}%n";
+		your_nick_changed = "%b$[-24]0 -|- %KYou're now known as {nick %b$1}%n";
 		# channel topic changes
-		new_topic = "{nick %c$[-34]0} %w:|:%n %WTopic change (%B{channel $1}) %Wto: %c$2%n";
+		new_topic = "{nick %c$[-24]0} %K·%w|%K·%n %|%WTopic change (%B{channel $1}) %Wto: %c$2%n";
 
-		# messages
-		own_msg = "{ownmsgnick {ownnick $[-35]0$2}}$1";
-		own_msg_channel = "{ownmsgnick {ownnick $[-35]0$3}{msgchannel $1}}$2";
-		pubmsg_me = "{pubmsgmenick {menick $[-35]0}$2}$1";
-		pubmsg_me_channel = "{pubmsgmenick {menick $[-35]0$3}{msgchannel $1}}$2";
-		pubmsg_hilight = "{pubmsghinick $[-35]0 $0 $1$3%n}$2";
-		pubmsg_hilight_channel = "{pubmsghinick $[-35]0 $1$4{msgchannel $2}}$3";
-		pubmsg = "{pubmsgnick {pubnick $[-35]0$2}}$1";
-		pubmsg_channel = "{pubmsgnick {pubnick $[-35]0$2}}$1";
+		# own messages
+		own_msg = "{ownmsgnick {ownnick %g$2%Y$[-23]0}}%C$1%n";
+		own_msg_channel = "{ownmsgnick {ownnick %g$3%Y$[-23]0}{msgchannel %C$1%n}}$2";
+
+		# public messages
+		pubmsg = "{pubmsgnick {pubnick %g$2%c$[-23]0}}%W$1%n";
+		pubmsg_channel = "{pubmsgnick {pubnick %g$2%c$[-23]0}}%W$1%n";
+
+		# mention me
+		pubmsg_me = "{pubmsgmenick {menick %g$2%Y$[-23]0}}%W$1%n";
+		pubmsg_me_channel = "{pubmsgmenick {menick $[-23]0$3}{msgchannel $1}}$2";
+
+		# mentions
+		pubmsg_hilight = "{pubmsghinick $0 $0 $[-24]1$3%n}$2";
+		pubmsg_hilight_channel = "{pubmsghinick $0 $[-24]1$4{msgchannel $2}}$3";
 
 		# query
-		own_msg_private_query = "{ownprivmsgnick {ownprivnick $[-35]2}}$1";
-		msg_private_query = "{privmsgnick $[-35]0}$2";
+		own_msg_private_query = "{ownprivmsgnick {ownprivnick $[-24]2}}%C$1%n";
+		msg_private_query = "{privmsgnick $[-24]0}$2";
 
-		# chanmode_change = "%bmode/{channelhilight $0} {mode $1} by {nick $2}";
-		# server_chanmode_change = "{netsplit ServerMode}/{channelhilight $0} {mode $1} by {nick $2}";
-		# channel_mode = "%rmode/{channelhilight $0} {mode $1}";
+		# day change
+		daychange = "%m-%K[00:00]%n %G$[-24]S %K:%G|%K:%n %GDay changed to %%d %%b %%Y%n";
 	};
 	"fe-common/irc" = {
-		own_action = "{ownaction $[-32]0} $1";
-		action_public = "{pubaction $[-32]0}$1";
-		action_private = "{pvtaction $[-32]0}$1";
-		action_private_query = "{pvtaction_query $[-32]0} $2";
+		chanmode_change = "{channelhilight $[-24]0} %K:%w|%K: %w(%Kmode {mode $1}%w) by {nick %c$2}";
+    	channel_mode = "{channelhilight $[-24]0} %K:%w|%K: %w(%wmode {mode $1}%w)";
+		own_action = "{ownaction $[-24]0} %K·%R|:%n %|%R$1%n";
+		action_public = "{pubaction $[-24]0}%K·%R|:%n %|%R$1%n";
+		action_private = "{pvtaction $[-24]0}%K·%R|:%n %|%R$1%n";
+		action_private_query = "{pvtaction_query $[-24]0} %K·%R|:%n %|%R$2%n";
 	};
 };
