@@ -97,6 +97,13 @@ Installation in cmus:
 1. Download the Atomic repository, unpack the downloaded file and manually place `atomic.theme` file into `~/.cmus/`.
 2. Open your cmus and type: `:colorscheme atomic`. Enjoy!
 
+### Irssi
+
+Installation in irssi:
+
+1. Download the Atomic repository, unpack the downloaded file and manually place `atomic.theme` file into `~/.irssi/`.
+2. Open your irssi and type: `/set theme atomic`. You can save changes with `/save`.
+
 ### Font family
 
 The default font is DejaVu Sans Mono from the [DejaVu](http://dejavu-fonts.org) fonts family (under a [Free license](http://dejavu-fonts.org/wiki/License)). Anyway, Atomic is designed to look good with any kind of typography, as colors are distinguishable to any thickness.
