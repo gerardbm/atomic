@@ -5,7 +5,7 @@
 # Separator
 setopt promptsubst
 DARK_GREY=$'%{\e[90m%}';
-ATOMIC_SEPARATOR=$'${(r:(($COLUMNS - 7))::/:)}[%{$fg[white]%}%T$DARK_GREY]';
+ATOMIC_SEPARATOR=$'$DARK_GREY${(r:(($COLUMNS - 7))::-:)}[%{$fg[white]%}%D{%R}$DARK_GREY]';
 
 # Hostname
 function hostname {
@@ -28,7 +28,7 @@ ZSH_THEME_GIT_PROMPT_DIRTY="%{$reset_color%} %{$fg[red]%}x"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$reset_color%} %{$fg[green]%}o"
 
 # Prompt format
-PROMPT="$DARK_GREY$ATOMIC_SEPARATOR\
+PROMPT="$ATOMIC_SEPARATOR\
 %{$fg[green]%}%n \
 %{$fg[default]%}at \
 %{$fg[blue]%}$(hostname) \
