@@ -4,7 +4,7 @@
 
 # Separator
 setopt promptsubst
-ATOMIC_SEPARATOR=$'${(r:(($COLUMNS - 10))::─:)}[⌚ %T]─';
+ATOMIC_SEPARATOR=$'${(r:(($COLUMNS - 8))::─:)}[%T]─';
 
 # Hostname
 function hostname {
