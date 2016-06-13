@@ -4,7 +4,7 @@
 
 # Separator
 setopt promptsubst
-ATOMIC_SEPARATOR=$'${(r:$COLUMNS::-:)}';
+ATOMIC_SEPARATOR=$'${(r:(($COLUMNS - 10))::─:)}[⌚ %T]─';
 
 # Hostname
 function hostname {
@@ -32,7 +32,6 @@ PROMPT="%{"$'\e[90m'"%}$ATOMIC_SEPARATOR\
 %{$fg[default]%}at \
 %{$fg[blue]%}$(hostname) \
 %{$fg[default]%}in \
-%{$fg_bold[blue]%}${current_dir}%{$reset_color%} \
-%{"$'\e[90m'"%}[⌚ %T]
+%{$fg_bold[blue]%}${current_dir}%{$reset_color%}
 ${git_info}\
 %{$fg[default]%}» %{$reset_color%}"
