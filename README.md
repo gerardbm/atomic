@@ -104,6 +104,14 @@ Installation in irssi:
 1. Download the Atomic repository, unpack the downloaded file and manually place `atomic.theme` file into `~/.irssi/`.
 2. Open your irssi and type: `/set theme atomic`. You can save changes with `/save`.
 
+### Tmux
+
+Installation in Tmux:
+
+1. The file `.tmux.conf` has two sections: the theme and the scheme color. 
+2. Copy the sections you are interested in and paste them to your `~/.tmux.conf` file.
+3. If you pasted the theme settings you can reload the new config with the command: `Ctrl+a && r`.
+
 ### Font family
 
 The default font is DejaVu Sans Mono from the [DejaVu](http://dejavu-fonts.org) fonts family (under a [Free license](http://dejavu-fonts.org/wiki/License)). Anyway, Atomic is designed to look good with any kind of typography, as colors are distinguishable to any thickness.
