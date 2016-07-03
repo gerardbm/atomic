@@ -108,7 +108,7 @@ Installation in irssi:
 
 Installation in Tmux:
 
-1. The file `.tmux.conf` has two sections: the theme and the scheme color. 
+1. The file `.tmux.conf` has two sections: the theme and the scheme color.
 2. Copy the sections you are interested in and paste them to your `~/.tmux.conf` file.
 3. If you pasted the theme settings you can reload the new config with the command: `Ctrl+a && r`.
 
