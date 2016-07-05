@@ -1,6 +1,16 @@
-# Atomic theme for Oh My Zsh
-# April 2016, by Gerard Bajona
-# URL: https://github.com/gerardbm/Atomic
+#----------------------------------------------------------------
+#   _____    _
+#  |__  /___| |__
+#    / // __| '_ \
+#   / /_\__ \ | | |
+#  /____|___/_| |_|
+#
+#----------------------------------------------------------------
+#  Theme: Atomic
+#  License: MIT
+#  Author: Gerard Bajona
+#  URL: https://github.com/gerardbm/Atomic
+#----------------------------------------------------------------
 
 # Separator
 setopt promptsubst
