@@ -108,7 +108,7 @@ abstracts = {
   timestamp = "%m-%K[%w$*%K]%n";
 
   # any kind of text that needs hilighting, default is to bold
-  hilight = "%_$*%_";
+  hilight = "$*";
 
   # any kind of error message, default is bright red
   error = "%R$*%n";
@@ -140,7 +140,7 @@ abstracts = {
 
   # highlighted nick/host is printed (joins)
   channick_hilight = "%K$*%n";
-  chanhost_hilight = "{nickhost %R$*%n}";
+  chanhost_hilight = "{nickhost $*}";
 
   # nick/host is printed (parts, quits, etc.)
   channick = "%w$*%n";
@@ -150,7 +150,7 @@ abstracts = {
   channelhilight = "%B$*%n";
 
   # ban/ban exception/invite list mask is printed
-  ban = "%M$*%n";
+  ban = "%m$*%n";
 
   #----------------------------------------------------------------
   # Messages
@@ -177,7 +177,7 @@ abstracts = {
 
   # $0 = nick mode, $1 = nick
   ownmsgnick = "{msgnick $0 $1-}";
-  ownnick = "%C$0%n";
+  ownnick = "$0%n";
 
   # public message in channel, $0 = nick mode, $1 = nick
   pubmsgnick = "{msgnick $0 $1-}";
@@ -195,14 +195,14 @@ abstracts = {
   msgchannel = "%K:%c$*%n";
 
   # private message, $0 = nick, $1 = host
-  privmsg = "[%c$0%K(%r$1-%K)%n] ";
+  privmsg = "[$0%K(%r$1-%K)%n] ";
 
   # private message from you, $0 = "msg", $1 = target nick
-  ownprivmsg = "[%C$0%K(%R$1-%K)%n] ";
+  ownprivmsg = "[$0%K(%R$1-%K)%n] ";
 
   # own private message in query
   ownprivmsgnick = "{msgnick $*}";
-  ownprivnick = "%_%Y$*%n ";
+  ownprivnick = "%_%Y$*%_%n ";
 
   # private message in query
   privmsgnick = "{msgnick %c$* %n }";
@@ -212,10 +212,10 @@ abstracts = {
   #----------------------------------------------------------------
 
   # used internally by this theme
-  action_core = "%W$0-%M";
+  action_core = "%W$0-%R";
 
   # generic one that's used by most actions
-  action = "{action_core %M$*}%|";
+  action = "{action_core %R$*}%|";
 
   # own action, both private/public
   ownaction = "{action $*}";
@@ -224,7 +224,7 @@ abstracts = {
   ownaction_target = "{action_core $0}%K:%c$1%n";
 
   # private action sent by others
-  pvtaction = "%_ (*) $*%n";
+  pvtaction = " (*) $*%n";
   pvtaction_query = "{action $*}";
 
   # public action sent by others
@@ -249,9 +249,9 @@ abstracts = {
   ctcp = "%g$*%n";
 
   # wallops
-  wallop = "%_$*%n: ";
+  wallop = "$*%n: ";
   wallop_nick = "%n$*";
-  wallop_action = "%_ * $*%n ";
+  wallop_action = " * $*%n ";
 
   # netsplits
   netsplit = "%R$*%n";
@@ -432,17 +432,17 @@ formats = {
     chansetup_line = "%w                 ~|~ %|%#{channel $[15]0} %|$[10]1 $[10]2 $3";
     chansetup_footer = "%w                 ~|~ %|";
     # own messages
-    own_msg = "{ownmsgnick {ownnick %Y$[-16]0%C$2}}%W$1%n";
-    own_msg_channel = "{ownmsgnick {ownnick %Y$[-16]0%g$3}{msgchannel %W$1%n}}$2";
+    own_msg = "{ownmsgnick {ownnick %_%Y$[-16]0%_%C$2}}%W$1%n";
+    own_msg_channel = "{ownmsgnick {ownnick %_%Y$[-16]0%_%C$3}{msgchannel %W$1%n}}$2";
     # public messages
     pubmsg = "{pubmsgnick {pubnick %c$[-16]0%C$2}}%W$1%n";
     pubmsg_channel = "{pubmsgnick {pubnick %c$[-16]0%C$2}}%W$1%n";
     # mention me
-    pubmsg_me = "{pubmsgmenick {menick %Y$[-16]0%C$2}}%W$1%n";
-    pubmsg_me_channel = "{pubmsgmenick {menick $[-16]0%C$3}{msgchannel $1}}$2";
+    pubmsg_me = "{pubmsgmenick {menick %_%M$[-16]0%_%C$2}}%W$1%n";
+    pubmsg_me_channel = "{pubmsgmenick {menick $[-16]0%_%M$3%_%n}{msgchannel $1}}$2";
     # mentions
-    pubmsg_hilight = "{pubmsghinick $0 $0 %Y$[-16]1%C$3%n}$2";
-    pubmsg_hilight_channel = "{pubmsghinick $0 %Y$[-16]1%n$4{msgchannel $2}}$3";
+    pubmsg_hilight = "{pubmsghinick $0 $0 %_%M$[-16]1%_%C$3%n}$2";
+    pubmsg_hilight_channel = "{pubmsghinick $0 %_%M$[-16]1%_%n$4{msgchannel $2}}$3";
     # query
     own_msg_private = "{ownprivmsg msg $[-16]0}$1";
     own_msg_private_query = "{ownprivmsgnick {ownprivnick $[-16]2}}%W$1%n";
@@ -636,17 +636,17 @@ formats = {
     who = "%w                 ~|~ %|%#{channelhilight $[-10]0} %|{nick $[!9]1} $[!3]2 $[!2]3 $4@$5 {comment {hilight $6}}";
     end_of_who = "%w                 ~|~ %|End of /WHO list";
     own_notice = "%w                 ~|~ %|{ownnotice notice $0}$1";
-    own_action = "{ownaction $[-16]0} %M~|~ %|$1%n";
+    own_action = "{ownaction $[-16]0} %R~|~ %|$1%n";
     own_action_target = "%w                 ~|~ %|{ownaction_target $0 $2}$1";
     own_ctcp = "%w                 ~|~ %|{ownctcp ctcp $0}$1 $2";
     notice_server = "%w                 ~|~ %|{servernotice $0}$1";
     notice_public = "%w                 ~|~ %|{notice $0{pubnotice_channel $1}}$2";
     notice_private = "%w                 ~|~ %|{notice $0{pvtnotice_host $1}}$2";
     # action public
-    action_public = "{pubaction $[-16]0}%M~|~ %|$1%n";
-    action_public_channel = "{pubaction $[-16]0%M~|~ %|{msgchannel $1}}$2%n";
-    action_private = "{pvtaction $[-16]0}%M~|~ %|$1%n";
-    action_private_query = "{pvtaction_query $[-16]0} %M~|~ %|$2%n";
+    action_public = "{pubaction $[-16]0}%R~|~ %|$1%n";
+    action_public_channel = "{pubaction $[-16]0%R~|~ %|{msgchannel $1}}$2%n";
+    action_private = "{pvtaction $[-16]0}%R~|~ %|$1%n";
+    action_private_query = "{pvtaction_query $[-16]0} %R~|~ %|$2%n";
     # end action public
     ctcp_reply = "%w                 ~|~ %|CTCP {hilight $0} reply from {nick $1}: $2";
     ctcp_reply_channel = "%w                 ~|~ %|CTCP {hilight $0} reply from {nick $1} in channel {channel $3}: $2";
