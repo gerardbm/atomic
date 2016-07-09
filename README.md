@@ -110,8 +110,12 @@ Installation in Tmux:
 
 1. The file `.tmux.conf` has two sections: the theme and the scheme color.
 2. Copy the sections you are interested in and paste them to your `~/.tmux.conf` file.
-3. If you pasted the theme settings you can reload the new config with the command: `Ctrl+a && r`.
+3. Reload the new config using the command `Ctrl+a r`.
+4. Make sure you have the Powerline fonts installed. (Status bar uses the Powerline look).
 
 ### Font family
 
 The default font is DejaVu Sans Mono from the [DejaVu](http://dejavu-fonts.org) fonts family (under a [Free license](http://dejavu-fonts.org/wiki/License)). Anyway, Atomic is designed to look good with any kind of typography, as colors are distinguishable to any thickness.
+
+Some themes (tmux) require the installation of Powerline fonts.
+URL: https://github.com/powerline/fonts
