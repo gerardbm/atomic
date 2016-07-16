@@ -29,7 +29,7 @@ set color_titleline_fg=black
 set color_titleline_bg=gray
 
 # Bottom status line
-set color_statusline_fg=gray
+set color_statusline_fg=cyan
 set color_statusline_bg=default
 
 # Bottom command line
