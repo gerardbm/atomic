@@ -59,9 +59,9 @@ Installation in KDE:
 1. Copy the file `Atomic.colorscheme` to `~/.kde/share/apps/konsole/` directory (or `~/.local/share/konsole/` directory if your KDE version is 5 or higher).
 2. Open your terminal: `Settings` > `Edit Current Profile` > `Appearance` and choose «Atomic».
 
-## Zsh theme
+## Zsh
 
-How to install the Zsh theme atomic.zsh-theme
+Installation in Zsh:
 
 1. Copy the file `honukai.zsh-theme` to `~/.oh-my-zsh/themes/` directory.
 2. Change the theme name to `ZSH_THEME="atomic"` in the file `~/.zshrc`.
