@@ -3,7 +3,7 @@
 
 Atomic is a dark color scheme designed to use with terminal, Zsh and several GUI applications (code editors).
 
-### Color palette
+## Color palette
 
 The color palette consists of sixteen precision colors selected procedurally (algorithms), distributed in six hues and four balanced luma. Luma is the perceived brightness, not the lightness of the HSL model.
 
@@ -39,27 +39,27 @@ Light Cyan       70%   180º  #6ECFCF  110 207 207  180º  50%  62.0%
 ![Screenshot 01](https://raw.githubusercontent.com/gerardbm/Atomic/master/img/screenshot-st3-css.png)
 ![Screenshot 02](https://raw.githubusercontent.com/gerardbm/Atomic/master/img/screenshot-st3-php.png)
 
-### Zsh theme
+## Zsh theme
 
-Atomic Zsh theme has been designed to show useful information (username, hostname, pwd and current time) without taking the entire line. If a directory is under Git control, in the second line it shows the current branch and status. The top separator helps to visually separate every task.
+Atomic Zsh theme has been designed to show useful information (username, hostname and pwd) without taking the entire line. If a directory is under Git control, in the second line it shows the current branch and status. The top separator helps to visually separate every task and shows the current time.
 
 ![Atomic-zsh](https://github.com/gerardbm/Atomic/blob/master/img/prompt-zsh.png)
 
-### Editors and IDEs
+## Editors and IDEs
 
-- Terminal
-- NetBeans IDE
-- Sublime Text 3
+- [x] Terminal
+- [x] NetBeans IDE
+- [x] Sublime Text
 
 # Installation
-### Terminal
+## Terminal
 
 Installation in KDE:
 
 1. Copy the file `Atomic.colorscheme` to `~/.kde/share/apps/konsole/` directory (or `~/.local/share/konsole/` directory if your KDE version is 5 or higher).
 2. Open your terminal: `Settings` > `Edit Current Profile` > `Appearance` and choose «Atomic».
 
-### Zsh theme
+## Zsh theme
 
 How to install the Zsh theme atomic.zsh-theme
 
@@ -67,7 +67,42 @@ How to install the Zsh theme atomic.zsh-theme
 2. Change the theme name to `ZSH_THEME="atomic"` in the file `~/.zshrc`.
 3. Reload Zsh with `source ~/.zshrc`.
 
-### NetBeans
+## Tmux
+
+Installation in Tmux:
+
+1. The file `.tmux.conf` has two sections: the theme and the scheme color.
+2. Copy the sections you are interested in and paste them to your `~/.tmux.conf` file.
+3. Reload the new config using the command `Ctrl+a r`.
+4. Make sure you have the Powerline fonts installed. (Status bar uses the Powerline look).
+
+## Cmus
+
+Installation in cmus:
+
+1. Download the Atomic repository, unpack the downloaded file and manually place `atomic.theme` file into `~/.cmus/`.
+2. Open your cmus and type: `:colorscheme atomic`. Enjoy!
+
+## Irssi
+
+Installation in irssi:
+
+1. Download the Atomic repository, unpack the downloaded file and manually place `atomic.theme` file into `~/.irssi/`.
+2. Open your irssi and type: `/set theme atomic`. You can save changes with `/save`.
+
+## Sublime Text
+
+Atomic scheme color for Sublime Text has its own repository, so it allows the installation through Package Control.
+
+1. Make sure you already have Package Control installed.
+2. Choose `Install Package` from the Command Palette (`Ctrl+Shift+P` on Windows/Linux, `⇧⌘P` on OS X).
+3. Select Atomic in the menu: `Preferences` > `Atomic` > `Atomic`.
+
+More info at: [https://github.com/gerardbm/Sublime-Atomic-Scheme](https://github.com/gerardbm/Sublime-Atomic-Scheme)
+
+With `auto_upgrade` enabled, Package Control will keep all installed packages up-to-date!
+
+## NetBeans
 
 Installation in NetBeans IDE:
 
@@ -83,37 +118,7 @@ zip -r atomic.zip config
 
 If you are [still] using Windows XP, do not use the archive program built-in to create the zip file (step 1). It does not support file paths longer than a certain length. Use a third party archiver like 7zip, which is free.
 
-### Sublime Text 3
-
-Installation in Sublime Text 3:
-
-1. Download the Atomic repository, unpack the downloaded file and manually place `Atomic.tmTheme` file into `~/.config/sublime-text-3/Packages/Atomic/`.
-2. Open your Sublime Text 3: `Preferences` > `Color Scheme` > `Atomic` > `Atomic`. Select it.
-
-### Cmus
-
-Installation in cmus:
-
-1. Download the Atomic repository, unpack the downloaded file and manually place `atomic.theme` file into `~/.cmus/`.
-2. Open your cmus and type: `:colorscheme atomic`. Enjoy!
-
-### Irssi
-
-Installation in irssi:
-
-1. Download the Atomic repository, unpack the downloaded file and manually place `atomic.theme` file into `~/.irssi/`.
-2. Open your irssi and type: `/set theme atomic`. You can save changes with `/save`.
-
-### Tmux
-
-Installation in Tmux:
-
-1. The file `.tmux.conf` has two sections: the theme and the scheme color.
-2. Copy the sections you are interested in and paste them to your `~/.tmux.conf` file.
-3. Reload the new config using the command `Ctrl+a r`.
-4. Make sure you have the Powerline fonts installed. (Status bar uses the Powerline look).
-
-### Font family
+## Font family
 
 The default font is DejaVu Sans Mono from the [DejaVu](http://dejavu-fonts.org) fonts family (under a [Free license](http://dejavu-fonts.org/wiki/License)). Anyway, Atomic is designed to look good with any kind of typography, as colors are distinguishable to any thickness.
 
