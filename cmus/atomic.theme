@@ -38,7 +38,6 @@ set color_cmdline_bg=default
 set color_error=red
 set color_info=yellow
 
-
 # Currently playing track
 #----------------------------------------------------------------
 
