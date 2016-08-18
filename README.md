@@ -17,22 +17,32 @@ In a RGB color wheel, hue angles have been calculated in order to be distinguish
 
 **Night mode**
 
-Hue of base colors is 210º, so they are generated mainly of blue and green colors. During the day, these colors don't carry any problem, but at night blue light negatively affects health and sleep patterns: it affects levels of the sleep-inducing hormone melatonin more than any other wavelength.
+Hue of base colors is 210º, so they have a lot of blue and green. During the day, these colors don't carry any problem, but at night blue light negatively affects health and sleep patterns: it affects levels of the sleep-inducing hormone melatonin more than any other wavelength.
 
-In the following color palette, hue of base colors is 0º instead of 210º, so blue and red colors have been lowered drastically.
+In the following color palette, hue of base colors is 0º instead of 210º, so values of blue and green colors have been lowered drastically.
 
 ![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/atomic-scheme-night-mode.png)
 
-## Scheme colors
-Editors and IDEs:
+### Code editors and IDEs
+
+Default mode:
 
 - [x] Terminal
-- [x] NetBeans IDE
+- [x] NetBeans
 - [x] Sublime Text
 
-**Night mode**
+Night mode:
 
 - [x] Terminal
+
+### Themes
+
+- [x] Zsh
+- [x] Tmux
+- [x] Cmus
+- [x] Irssi
+
+## Installation
 
 ### Terminal
 
@@ -41,9 +51,9 @@ Installation in KDE:
 1. Copy the file `Atomic.colorscheme` to `~/.kde/share/apps/konsole/` directory (or `~/.local/share/konsole/` directory if your KDE version is 5 or higher).
 2. Open your terminal: `Settings` > `Edit Current Profile` > `Appearance` and choose «Atomic».
 
-### NetBeans IDE
+### NetBeans
 
-Installation in NetBeans IDE:
+Installation in NetBeans:
 
 1. Download the Atomic repository, unpack the downloaded file (`atomic-master.zip`) and then manually create a new zip file containing the folder `config`. In bash:
 ```bash
@@ -69,12 +79,7 @@ More info at: [https://github.com/gerardbm/Sublime-Atomic-Scheme](https://github
 
 With `auto_upgrade` enabled, Package Control will keep all installed packages up-to-date!
 
-## Themes
-
-- [x] Zsh
-- [x] Tmux
-- [x] Cmus
-- [x] Irssi
+- - -
 
 ### Zsh
 
@@ -121,12 +126,16 @@ Installation in irssi:
 1. Download the Atomic repository, unpack the downloaded file and manually place `atomic.theme` file into `~/.irssi/`.
 2. Open your irssi and type: `/set theme atomic`. You can save changes with `/save`.
 
+- - -
+
 ## Font family
 
 The default font family is **DejaVu Sans Mono** from the [DejaVu](http://dejavu-fonts.org) fonts family (under a [Free license](http://dejavu-fonts.org/wiki/License)). Anyway, Atomic is designed to look good with any kind of typography, as colors are distinguishable to any thickness.
 
 Some themes (tmux) require the installation of Powerline fonts.
 URL: https://github.com/powerline/fonts
+
+- - -
 
 ## The values
 
