@@ -130,6 +130,7 @@ let g:airline#extensions#tabline#enabled = 1
 call airline#parts#define_accent('mode', 'black')
 ```
 Also, make sure you have the Powerline fonts installed, like in Tmux.
+
 ### Cmus
 
 Description:
