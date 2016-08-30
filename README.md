@@ -84,8 +84,6 @@ With `auto_upgrade` enabled, Package Control will keep all installed packages up
 
 ### Zsh
 
-Description:
-
 Atomic Zsh theme has been designed to show useful information (username, hostname and pwd) without taking the entire line. If a directory is under Git control, in the second line it shows the current branch and status. Top separator helps to visually separate every task and shows the current time.
 
 Installation in Zsh:
@@ -95,8 +93,6 @@ Installation in Zsh:
 3. Reload Zsh with `source ~/.zshrc`.
 
 ### Tmux
-
-Description:
 
 This config file has two sections: key bindings and status bar design. Most of the key bindings have double navigation, using arrow keys and using Vim keys (hjkl). It fits perfectly in a workflow with vim. Status displays system information (hostname, session, time and date), very useful for working in fullscreen mode.
 
@@ -108,8 +104,6 @@ Installation in Tmux:
 4. Make sure you have the Powerline fonts installed. (Status bar uses the Powerline look).
 
 ### Vim-airline
-
-Description:
 
 It's a vim-airline theme using Atomic colors and it's vailable for Terminal and Gvim.
 
@@ -132,8 +126,6 @@ call airline#parts#define_accent('mode', 'black')
 Also, make sure you have the Powerline fonts installed, like in Tmux.
 
 ### Cmus
-
-Description:
 
 Simply, it's a theme using Atomic colors. Cmus themes don't allow other configurations.
 
