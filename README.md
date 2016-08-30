@@ -111,12 +111,15 @@ Installation in Tmux:
 
 Description:
 
+It's a vim-airline theme using Atomic colors and it's vailable for Terminal and Gvim.
+
 Installation in Vim:
 
 1. Install the plugin [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes) in your Vim.
 2. Copy the file `atomic.vim` to your 'vim-airline-themes' directory: `../vim-airline-themes/autoload/airline/themes/`.
 3. Add the following settings to your `.vimrc`:
-```
+4. Then, open your Vim and type: `:AirlineTheme atomic`.
+```viml
 " Use 'atomic' by default
 let g:airline_theme='atomic'
 " Enable it if you use the Powerline fonts
@@ -126,7 +129,6 @@ let g:airline#extensions#tabline#enabled = 1
 " It disables bold text, so it looks like tmux status bar
 call airline#parts#define_accent('mode', 'black')
 ```
-4. Then, open your Vim and type: `:AirlineTheme atomic`.
 
 ### Cmus
 
