@@ -39,6 +39,7 @@ Night mode:
 
 - [x] Zsh
 - [x] Tmux
+- [x] Vim-airline
 - [x] Cmus
 - [x] Irssi
 
@@ -105,6 +106,27 @@ Installation in Tmux:
 2. Copy the sections you are interested in and paste them to your `~/.tmux.conf` file.
 3. Reload the new config using the command `Ctrl+a r`.
 4. Make sure you have the Powerline fonts installed. (Status bar uses the Powerline look).
+
+### Vim-airline
+
+Description:
+
+Installation in Vim:
+
+1. Install the plugin [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes) in your Vim.
+2. Copy the file `atomic.vim` to your 'vim-airline-themes' directory: `../vim-airline-themes/autoload/airline/themes/`.
+3. Add the following settings to your `.vimrc`:
+```
+" Use 'atomic' by default
+let g:airline_theme='atomic'
+" Enable it if you use the Powerline fonts
+let g:airline_powerline_fonts = 1
+" Enable a tabs line at the top
+let g:airline#extensions#tabline#enabled = 1
+" It disables bold text, so it looks like tmux status bar
+call airline#parts#define_accent('mode', 'black')
+```
+4. Then, open your Vim and type: `:AirlineTheme atomic`.
 
 ### Cmus
 
