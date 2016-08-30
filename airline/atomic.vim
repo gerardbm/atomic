@@ -109,7 +109,7 @@ let g:airline_section_z = airline#section#create(['--%1p%%-- ',
 	\ ': %c'])
 
 " Here we define the color map for ctrlp.  We check for the g:loaded_ctrlp
-" variable so that related functionality is loaded iff the user is using
+" variable so that related functionality is loaded if the user is using
 " ctrlp. Note that this is optional, and if you do not define ctrlp colors
 " they will be chosen automatically from the existing palette.
 if !get(g:, 'loaded_ctrlp', 0)
