@@ -1,39 +1,42 @@
 # Atomic
 ### Multiple colors for multiple applications
 
-Atomic is a dark color scheme designed to use with terminal, Zsh and several GUI applications (code editors).
+Atomic is a dark color scheme designed to use with terminal, Vim/Neovim and several GUI code editors. This repository also includes themes for some terminal applications (tmux, irssi, cmus...) and Zsh.
 
 ### Color palette
 
 The color palette consists of sixteen precision colors selected procedurally (algorithms), distributed in six hues and four balanced luma. Luma is the perceived brightness, not the lightness of the HSL model.
 
-Human eyes don't detect brightness linearly with color —we see red color brighter than blue color, and green color brighter than red color—, so the luma has been balanced following the ITU-R Recommendation BT.601:
+Human eyes don't detect brightness linearly with color —we see red color brighter than blue color, and green color brighter than red color—, so luma has been balanced following the ITU-R Recommendation BT.601:
 
 `Y' = 0.299 R' + 0.587 G' + 0.114 B'`
 
 In a RGB color wheel, hue angles have been calculated in order to be distinguishable for the human eye and keeping harmony: two analogous colors (0º and 30º), their complementary (180º and 210º) and tetrad (90º and 270º).
 
-![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/atomic-scheme.png)
+![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/main-colors-dark.png)
 
 **Night mode**
 
-Hue of base colors is 210º, so they have a lot of blue and green. During the day, these colors don't carry any problem, but at night blue light negatively affects health and sleep patterns: it affects levels of the sleep-inducing hormone melatonin more than any other wavelength.
+In the previous palette, hue of **base colors** (1, 8, 9 and 16) is 210º, so colors have more blue and green than red. During the day, these colors don't carry any problem, but at night blue light negatively affects health and sleep patterns: it affects levels of the sleep-inducing hormone melatonin more than any other wavelength.
 
-In the following color palette, hue of base colors is 0º instead of 210º, so values of blue and green colors have been lowered drastically.
+In the following color palette, hue of **base colors** (1, 8, 9 and 16) is 30º instead of 210º (actually, it's the complementary hue). That means values of blue and green colors have been reduced inversely, while value of red color have been increased in the same proportion.
 
-![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/atomic-scheme-night-mode.png)
+![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/main-colors-night.png)
 
 ### Code editors and IDEs
 
-Default mode:
+Dark mode (hue 210º):
 
-- [x] Terminal
-- [x] NetBeans
-- [x] Sublime Text
+- [x] Terminal (konsole, xfce4-terminal, gnome-terminal and URxvt)
+- [x] Vim & Neovim (coming soon)
+- [x] NetBeans IDE
+- [x] [Sublime Text](https://github.com/gerardbm/sublime-atomic-scheme)
 
-Night mode:
+Night mode (hue 30º):
 
-- [x] Terminal
+- [x] Terminal (konsole, xfce4-terminal, gnome-terminal and URxvt)
+- [x] Vim & Neovim (coming soon)
+- [x] [Sublime Text](https://github.com/gerardbm/sublime-atomic-scheme)
 
 ### Themes
 
@@ -47,10 +50,27 @@ Night mode:
 
 ### Terminal
 
-Installation in KDE:
+Installation for **konsole**:
 
 1. Copy the file `Atomic.colorscheme` to `~/.kde/share/apps/konsole/` directory (or `~/.local/share/konsole/` directory if your KDE version is 5 or higher).
 2. Open your terminal: `Settings` > `Edit Current Profile` > `Appearance` and choose «Atomic».
+
+Installation for **gnome-terminal**:
+
+1. Download the script `install-atomic.sh`.
+2. Assign it execution permissions: `chmod +x install-atomic.sh`.
+3. Open your terminal and execute the script: `./install-atomic.sh`.
+
+Installation for **xfce4-terminal**:
+
+1. Copy the file `terminalrc` to your `~/.config/xfce4/terminal/` directory or paste its content into it if you already have this file.
+
+Installation for **URxvt**:
+
+1. Copy the content of the file `Xresources.dark` or `Xresources.night` to your `.Xresources` file.
+2. Load the resource file with the command: `xrdb ~/.Xresources`.
+
+You will find more information on the .Xresources file in the [Arch Linux wiki](https://wiki.archlinux.org/index.php/X_resources).
 
 ### NetBeans
 
@@ -149,42 +169,44 @@ Installation in irssi:
 
 The default font family is **DejaVu Sans Mono** from the [DejaVu](http://dejavu-fonts.org) fonts family (under a [Free license](http://dejavu-fonts.org/wiki/License)). Anyway, Atomic is designed to look good with any kind of typography, as colors are distinguishable to any thickness.
 
-Some themes (tmux) require the installation of Powerline fonts.
+Some themes (tmux and vim-airline) require the installation of Powerline fonts.
 URL: https://github.com/powerline/fonts
 
 - - -
 
 ## The values
 
-**Default values**
+**Dark mode values**
 
 ```
-ATOMIC COLORS   LUMA    HUE    HEX    (R - G - B)   (H -- S -- L)
--------------  ------  ----  -------  -----------  ----------------
-Background       10%   210º  #141A1F   20  26  31  210º  21%  10.0%
-Comments         30%   210º  #3E4F60   62  79  96  210º  21%  31.0%
-Dark Grey        50%   210º  #6B859E  107 133 158  210º  21%  52.0%
-Dark Blue        50%   210º  #3790E9   55 144 233  210º  80%  56.5%
-Dark Violet      50%   270º  #A35AED  163  90 237  270º  80%  64.0%
-Dark Red         50%     0º  #EC5252  236  82  82    0º  80%  62.3%
-Dark Orange      50%    30º  #C97016  201 112  22   30º  80%  43.8%
-Dark Green       50%    90º  #5DA813   93 168  19   90º  80%  36.5%
-Dark Cyan        50%   180º  #13AEAE   19 174 174  180º  80%  38.0%
-Light Grey       70%   210º  #A6B5C5  166 181 197  210º  21%  71.0%
-Light Blue       70%   210º  #7DBEFF  125 190 255  210º 100%  74.6%
-Light Violet     70%   270º  #CA96FF  202 150 255  270º 100%  79.4%
-Light Red        70%     0º  #FF9191  255 145 145    0º 100%  78.5%
-Light Orange     70%    30º  #EDA45C  237 164  92   30º  80%  64.5%
-Light Green      70%    90º  #9ACD68  154 205 104   90º  50%  60.5%
-Light Cyan       70%   180º  #6ECFCF  110 207 207  180º  50%  62.0%
+ID  ATOMIC COLORS   LUMA    HUE    HEX    (R - G - B)   (H -- S -- L)
+--  -------------  ------  ----  -------  -----------  ----------------
+ 1  Base 01          10%   210º  #141A1F   20  26  31  210º  21%  10.0% |
+ 9  Base 02          15%   210º  #202931   32  41  49  210º  21%  16.0% | Base
+ 8  Base 03          40%   210º  #53697F   83 105 127  210º  21%  41.0% | Colors
+16  Base 04          70%   210º  #A6B5C5  166 181 197  210º  21%  71.0% |
+--  -------------  ------  ----  -------  -----------  ----------------
+ 2  Dark Red         50%     0º  #EC5252  236  82  82    0º  80%  62.3% |
+ 4  Dark Orange      50%    30º  #C97016  201 112  22   30º  80%  43.8% |
+ 3  Dark Green       50%    90º  #5DA813   93 168  19   90º  80%  36.5% | Dark
+ 7  Dark Cyan        50%   180º  #13AEAE   19 174 174  180º  80%  38.0% | Accent
+ 5  Dark Blue        50%   210º  #3790E9   55 144 233  210º  80%  56.5% |
+ 6  Dark Violet      50%   270º  #A35AED  163  90 237  270º  80%  64.0% |
+--  -------------  ------  ----  -------  -----------  ----------------
+10  Light Red        70%     0º  #FF9191  255 145 145    0º 100%  78.5% |
+12  Light Orange     70%    30º  #EDA45C  237 164  92   30º  80%  64.5% |
+11  Light Green      70%    90º  #9ACD68  154 205 104   90º  50%  60.5% | Light
+15  Light Cyan       70%   180º  #6ECFCF  110 207 207  180º  50%  62.0% | Accent
+13  Light Blue       70%   210º  #7DBEFF  125 190 255  210º 100%  74.6% |
+14  Light Violet     70%   270º  #CA96FF  202 150 255  270º 100%  79.4% |
 ```
 
 **Night mode values**
 ```
-ATOMIC COLORS   LUMA    HUE    HEX    (R - G - B)   (H -- S -- L)
--------------  ------  ----  -------  -----------  ----------------
-Background       10%     0º  #221616   34  22  22    0º  21%  11.0%
-Comments         30%     0º  #674343  103  67  67    0º  21%  33.5%
-Dark Grey        50%     0º  #A27171  162 113 113    0º  21%  54.0%
-Light Grey       70%     0º  #C7A9A9  199 169 169    0º  21%  72.0%
+ID  ATOMIC COLORS   LUMA    HUE    HEX    (R - G - B)   (H -- S -- L)
+--  -------------  ------  ----  -------  -----------  ----------------
+ 1  Base 01          10%    30º  #1E1813   30  24  19   30º  21%   9.6% |
+ 9  Base 02          15%    30º  #2E261E   46  38  30   30º  21%  15.0% | Base
+ 8  Base 03          40%    30º  #76614D  118  97  77   30º  21%  38.2% | Colors
+16  Base 04          70%    30º  #C0AF9F  192 175 159   30º  21%  68.8% |
 ```

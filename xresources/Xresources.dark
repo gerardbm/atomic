@@ -1,0 +1,19 @@
+urxvt*foreground: #A6B5C5
+urxvt*background: #141A1F
+
+*color0:  #141A1F
+*color1:  #EC5252
+*color2:  #5DA813
+*color3:  #C97016
+*color4:  #3790E9
+*color5:  #A35AED
+*color6:  #13AEAE
+*color7:  #53697F
+*color8:  #202931
+*color9:  #FF9191
+*color10: #9ACD68
+*color11: #EDA45C
+*color12: #7DBEFF
+*color13: #CA96FF
+*color14: #6ECFCF
+*color15: #A6B5C5
