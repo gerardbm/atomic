@@ -1,14 +1,14 @@
 [Background]
-Color=34,22,22
+Color=30,24,19
 
 [BackgroundIntense]
-Color=103,67,67
+Color=46,38,30
 
 [Color0]
-Color=34,22,22
+Color=30,24,19
 
 [Color0Intense]
-Color=103,67,67
+Color=46,38,30
 
 [Color1]
 Color=236,82,82
@@ -47,16 +47,16 @@ Color=19,174,174
 Color=110,207,207
 
 [Color7]
-Color=162,113,113
+Color=118,97,77
 
 [Color7Intense]
-Color=199,169,169
+Color=192,175,159
 
 [Foreground]
-Color=199,169,169
+Color=192,175,159
 
 [ForegroundIntense]
-Color=199,169,169
+Color=192,175,159
 
 [General]
 Description=Atomic Night

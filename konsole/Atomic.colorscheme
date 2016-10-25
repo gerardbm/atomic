@@ -2,13 +2,13 @@
 Color=20,26,31
 
 [BackgroundIntense]
-Color=62,79,96
+Color=32,41,49
 
 [Color0]
 Color=20,26,31
 
 [Color0Intense]
-Color=62,79,96
+Color=32,41,49
 
 [Color1]
 Color=236,82,82
@@ -47,7 +47,7 @@ Color=19,174,174
 Color=110,207,207
 
 [Color7]
-Color=107,133,158
+Color=83,105,127
 
 [Color7Intense]
 Color=166,181,197
