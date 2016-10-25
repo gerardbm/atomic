@@ -7,9 +7,10 @@
 #
 #----------------------------------------------------------------
 #  Theme   : Atomic
+#  Version : 1.0.1
 #  License : MIT
 #  Author  : Gerard Bajona
-#  URL     : https://github.com/gerardbm/Atomic
+#  URL     : https://github.com/gerardbm/atomic
 #----------------------------------------------------------------
 
 # Default colors
@@ -45,20 +46,20 @@ set color_info=yellow
 set color_win_cur=green
 
 # Active selection
-set color_win_cur_sel_fg=lightgreen
-set color_win_cur_sel_bg=default
+set color_win_cur_sel_fg=green
+set color_win_cur_sel_bg=darkgray
 
 # Inactive selection
 set color_win_inactive_cur_sel_fg=gray
-set color_win_inactive_cur_sel_bg=default
+set color_win_inactive_cur_sel_bg=darkgray
 
 # Non-playing tracks
 #----------------------------------------------------------------
 
 # Active selection
-set color_win_sel_fg=lightcyan
-set color_win_sel_bg=default
+set color_win_sel_fg=cyan
+set color_win_sel_bg=darkgray
 
 # Inactive selection
 set color_win_inactive_sel_fg=gray
-set color_win_inactive_sel_bg=default
+set color_win_inactive_sel_bg=darkgray
