@@ -8,7 +8,7 @@
     <fontcolor default="whitespace" name="whitespace"/>
     <fontcolor default="number" name="number"/>
     <fontcolor name="mod-static"/>
-    <fontcolor name="mod-deprecated" strikeThrough="ff3E4F60"/>
+    <fontcolor name="mod-deprecated" strikeThrough="ff53697F"/>
     <fontcolor default="operator" name="operator"/>
     <fontcolor foreColor="ffCA96FF" name="mod-class"/>
     <fontcolor name="mod-unused" waveUnderlined="ffC97016"/>

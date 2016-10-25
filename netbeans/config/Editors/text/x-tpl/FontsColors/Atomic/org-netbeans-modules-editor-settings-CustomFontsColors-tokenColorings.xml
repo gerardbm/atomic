@@ -15,5 +15,5 @@
     <fontcolor default="smarty" foreColor="ffEDA45C" name="php_variable"/>
     <fontcolor default="smarty" foreColor="ff6ECFCF" name="argument_value"/>
     <fontcolor default="smarty" foreColor="ffC97016" name="config_variable"/>
-    <fontcolor default="smarty" foreColor="ff3E4F60" name="comment"/>
+    <fontcolor default="smarty" foreColor="ff53697F" name="comment"/>
 </fontscolors>

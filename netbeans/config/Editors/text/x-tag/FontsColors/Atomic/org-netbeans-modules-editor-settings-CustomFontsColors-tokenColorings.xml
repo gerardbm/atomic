@@ -8,7 +8,7 @@
     <fontcolor default="default" foreColor="ff6ECFCF" name="attribute-value"/>
     <fontcolor default="default" name="scriptlet-delimiter"/>
     <fontcolor default="default" foreColor="ff7DBEFF" name="attribute-name"/>
-    <fontcolor default="default" foreColor="ff3E4F60" name="comment"/>
+    <fontcolor default="default" foreColor="ff53697F" name="comment"/>
     <fontcolor default="default" foreColor="ffEDA45C" name="expression-language"/>
     <fontcolor default="default" foreColor="ff3790E9" name="endtag"/>
     <fontcolor default="default" name="scriptlet"/>

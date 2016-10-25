@@ -8,7 +8,7 @@
     <fontcolor foreColor="ff3790E9" name="section_delim">
         <font style="bold"/>
     </fontcolor>
-    <fontcolor foreColor="ff3E4F60" name="comment"/>
+    <fontcolor foreColor="ff53697F" name="comment"/>
     <fontcolor foreColor="ff7DBEFF" name="section"/>
     <fontcolor foreColor="ffEDA45C" name="key"/>
 </fontscolors>

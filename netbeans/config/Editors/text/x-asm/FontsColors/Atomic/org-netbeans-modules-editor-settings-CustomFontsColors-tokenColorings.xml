@@ -9,7 +9,7 @@
     <fontcolor default="number" name="ASM_NUMBER"/>
     <fontcolor default="Character" foreColor="ff6ECFCF" name="ASM_CHARACTER"/>
     <fontcolor default="Id" foreColor="ff13AEAE" name="ASM_UNKWN_ID"/>
-    <fontcolor default="Comment" foreColor="ff3E4F60" name="ASM_COMMENT"/>
+    <fontcolor default="Comment" foreColor="ff53697F" name="ASM_COMMENT"/>
     <fontcolor default="Label" foreColor="ff9ACD68" name="ASM_LABEL_INST"/>
     <fontcolor default="String" foreColor="ff6ECFCF" name="ASM_STRING"/>
 </fontscolors>

@@ -11,7 +11,7 @@
         <font style="bold"/>
     </fontcolor>
     <fontcolor default="field" name="mod-field"/>
-    <fontcolor foreColor="ff6B859E" name="heredocdelimiter"/>
+    <fontcolor foreColor="ffEC5252" name="heredocdelimiter"/>
     <fontcolor default="separator" foreColor="ffA35AED" name="phpopenclose"/>
     <fontcolor default="covered" name="covered"/>
     <fontcolor default="constant" name="constant">

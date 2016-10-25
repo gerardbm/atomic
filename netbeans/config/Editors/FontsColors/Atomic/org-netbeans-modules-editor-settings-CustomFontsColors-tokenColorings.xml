@@ -17,7 +17,7 @@
     <fontcolor default="default" foreColor="ff5DA813" name="entity-reference"/>
     <fontcolor default="string" name="markup-attribute-value"/>
     <fontcolor default="identifier" foreColor="ff5DA813" name="method"/>
-    <fontcolor foreColor="ff3E4F60" name="comment"/>
+    <fontcolor foreColor="ff53697F" name="comment"/>
     <fontcolor name="identifier"/>
     <fontcolor name="warning" waveUnderlined="ffC97016"/>
     <fontcolor foreColor="ffA6B5C5" name="separator"/>
