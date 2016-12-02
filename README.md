@@ -28,23 +28,23 @@ In the following color palette, hue of **base colors** (1, 8, 9 and 16) is 30º 
 Dark mode (hue 210º):
 
 - [x] Terminal (konsole, xfce4-terminal, gnome-terminal and URxvt)
-- [x] Vim & Neovim (coming soon)
+- [x] Vim & Neovim
 - [x] NetBeans IDE
 - [x] [Sublime Text](https://github.com/gerardbm/sublime-atomic-scheme)
 
 Night mode (hue 30º):
 
 - [x] Terminal (konsole, xfce4-terminal, gnome-terminal and URxvt)
-- [x] Vim & Neovim (coming soon)
+- [x] Vim & Neovim (only for terminal)
 - [x] [Sublime Text](https://github.com/gerardbm/sublime-atomic-scheme)
 
 ### Themes
 
-- [x] Zsh
-- [x] Tmux
-- [x] Vim-airline
 - [x] Cmus
 - [x] Irssi
+- [x] Tmux
+- [x] Vim-airline
+- [x] Zsh
 
 ## Installation
 
