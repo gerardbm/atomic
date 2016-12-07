@@ -7,7 +7,7 @@
 "
 "----------------------------------------------------------------
 "  Theme   : Atomic
-"  Version : 1.0.0
+"  Version : 1.1.0
 "  License : MIT
 "  Author  : Gerard Bajona
 "  URL     : https://github.com/gerardbm/atomic
@@ -94,7 +94,7 @@ execute 'hi TabLineFill '  . s:envir . 'fg=' . s:acc50 . ' ' . s:envir . 'bg=' .
 execute 'hi StatusLine '   . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=none'
 execute 'hi StatusLineNC ' . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=none'
 " -------------------------.
-execute 'hi WildMenu '     . s:envir . 'fg=' . s:acc70 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=bold'
+execute 'hi WildMenu '     . s:envir . 'fg=' . s:base1 . ' ' . s:envir . 'bg=' . s:acc50 . ' ' . s:envir . '=none'
 execute 'hi VertSplit '    . s:envir . 'fg=' . s:acc50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi Directory '    . s:envir . 'fg=' . s:acc50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi Visual '       . s:envir . 'fg=' . s:base1 . ' ' . s:envir . 'bg=' . s:base3 . ' ' . s:envir . '=none'
@@ -114,20 +114,20 @@ execute 'hi SpellCap '     . s:envir . 'fg=' . s:acc50 . ' ' . s:envir . 'bg=' .
 execute 'hi SpellLocal '   . s:envir . 'fg=' . s:aco50 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=italic'
 execute 'hi SpellRare '    . s:envir . 'fg=' . s:acv50 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=italic'
 " -------------------------.
-execute 'hi DiffAdd '      . s:envir . 'fg=' . s:acg50 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=bold,italic'
-execute 'hi DiffAdded '    . s:envir . 'fg=' . s:acg50 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=bold,italic'
-execute 'hi DiffChange '   . s:envir . 'fg=' . s:aco50 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=bold,italic'
-execute 'hi DiffDelete '   . s:envir . 'fg=' . s:acr50 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=bold,italic'
-execute 'hi DiffRemoved '  . s:envir . 'fg=' . s:acr50 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=bold,italic'
-execute 'hi DiffText '     . s:envir . 'fg=' . s:acv50 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=bold,italic'
+execute 'hi DiffAdd '      . s:envir . 'fg=' . s:acg50 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=italic'
+execute 'hi DiffAdded '    . s:envir . 'fg=' . s:acg50 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=italic'
+execute 'hi DiffChange '   . s:envir . 'fg=' . s:acb50 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=italic'
+execute 'hi DiffDelete '   . s:envir . 'fg=' . s:acr50 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=italic'
+execute 'hi DiffRemoved '  . s:envir . 'fg=' . s:acr50 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=italic'
+execute 'hi DiffText '     . s:envir . 'fg=' . s:acv50 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=italic'
 
 " Cursorline
 "----------------------------------------------------------------
 if version >= 700
 	execute 'hi CursorLine '   . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=none'
-	execute 'hi CursorLineNr ' . s:envir . 'fg=' . s:acc70 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=bold'
+	execute 'hi CursorLineNr ' . s:envir . 'fg=' . s:aco70 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=bold'
 	execute 'hi PMenu '        . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=none'
-	execute 'hi PMenuSel '     . s:envir . 'fg=' . s:acc70 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=bold'
+	execute 'hi PMenuSel '     . s:envir . 'fg=' . s:base1 . ' ' . s:envir . 'bg=' . s:acc50 . ' ' . s:envir . '=none'
 	execute 'hi CursorColumn ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=none'
 	execute 'hi SignColumn '   . s:envir . 'bg=' . s:base3 . ' ' . s:envir . '=none'
 endif
@@ -190,10 +190,18 @@ execute 'hi SyntasticStyleError '   . s:envir . 'fg=' . s:acg70 . ' ' . s:envir 
 execute 'hi SyntasticStyleWarning ' . s:envir . 'fg=' . s:acg70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=bold,underline'
 
 " Neomake
+"----------------------------------------------------------------
 execute 'hi NeomakeErrorSign '   . s:envir . 'fg=' . s:acr50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi NeomakeWarningSign ' . s:envir . 'fg=' . s:aco50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi NeomakeMessageSign ' . s:envir . 'fg=' . s:acg50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi NeomakeInfoSign '    . s:envir . 'fg=' . s:acc50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+
+" GitGutter
+"----------------------------------------------------------------
+execute 'hi GitGutterAdd '          . s:envir . 'fg=' . s:acg50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi GitGutterChange '       . s:envir . 'fg=' . s:acb50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi GitGutterDelete '       . s:envir . 'fg=' . s:acr50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi GitGutterChangeDelete ' . s:envir . 'fg=' . s:acr50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 
 " Vim
 "----------------------------------------------------------------
