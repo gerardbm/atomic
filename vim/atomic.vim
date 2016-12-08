@@ -7,7 +7,7 @@
 "
 "----------------------------------------------------------------
 "  Theme   : Atomic
-"  Version : 1.1.0
+"  Version : 1.2.3
 "  License : MIT
 "  Author  : Gerard Bajona
 "  URL     : https://github.com/gerardbm/atomic
@@ -271,14 +271,50 @@ execute 'hi htmlScriptTag '      . s:envir . 'fg=' . s:acb50 . ' ' . s:envir . '
 execute 'hi htmlSpecialTagName ' . s:envir . 'fg=' . s:acb50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi htmlArg '            . s:envir . 'fg=' . s:acb70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi htmlTitle '          . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi htmlSpecialChar '    . s:envir . 'fg=' . s:acr70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi htmlSpecialChar '    . s:envir . 'fg=' . s:aco50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 
 augroup htmlAtomic
 autocmd!
 autocmd ColorScheme atomic
 		\ execute 'hi htmlEqual ' . s:envir . 'fg=' . s:base4 |
-		\ autocmd Filetype html
+		\ autocmd Filetype html,php
 		\ syn match htmlEqual /=/
+		\ containedin=htmlTag
+augroup END
+
+" XML
+" ----------------------------------------------------------------
+execute 'hi xmlTag '             . s:envir . 'fg=' . s:acb50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi xmlTagName '         . s:envir . 'fg=' . s:acb50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi xmlEndTag '          . s:envir . 'fg=' . s:acb50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi xmlNamespace '       . s:envir . 'fg=' . s:acb50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+" -------------------------------.
+execute 'hi xmlEntity '          . s:envir . 'fg=' . s:aco50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi xmlEntityPunct '     . s:envir . 'fg=' . s:aco50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+" -------------------------------.
+execute 'hi xmlAttrib '          . s:envir . 'fg=' . s:acb70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi xmlAttribPunct '     . s:envir . 'fg=' . s:acb70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi xmlString '          . s:envir . 'fg=' . s:acc70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+" -------------------------------.
+execute 'hi xmlProcessingDelim ' . s:envir . 'fg=' . s:acb50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi xmlProcessing '      . s:envir . 'fg=' . s:acc50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+" -------------------------------.
+execute 'hi xmlCdataCdata '      . s:envir . 'fg=' . s:acc70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi xmlCdataStart '      . s:envir . 'fg=' . s:acc50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi xmlCdataEnd '        . s:envir . 'fg=' . s:acc50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi xmlCdata '           . s:envir . 'fg=' . s:acv70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+" -------------------------------.
+execute 'hi xmlDocType '         . s:envir . 'fg=' . s:acb70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi xmlDocTypeDecl '     . s:envir . 'fg=' . s:acb50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi xmlDocTypeKeyword '  . s:envir . 'fg=' . s:acb50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi xmlInlineDTD '       . s:envir . 'fg=' . s:acc50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+
+augroup xmlAtomic
+autocmd!
+autocmd ColorScheme atomic
+		\ execute 'hi xmlName ' . s:envir . 'fg=' . s:acb50 |
+		\ autocmd Filetype xml
+		\ syn match xmlName /xml/
 		\ containedin=ALL
 augroup END
 
@@ -305,7 +341,7 @@ execute 'hi phpKeyword '              . s:envir . 'fg=' . s:acg70 . ' ' . s:envi
 execute 'hi phpStatement '            . s:envir . 'fg=' . s:acg70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi phpConditional '          . s:envir . 'fg=' . s:acg70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi phpRepeat '               . s:envir . 'fg=' . s:acg70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi phpLabel '                . s:envir . 'fg=' . s:acv70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi phpLabel '                . s:envir . 'fg=' . s:acg70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi phpException '            . s:envir . 'fg=' . s:acr70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 " ------------------------------------.
 execute 'hi phpDefine '               . s:envir . 'fg=' . s:acc50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
