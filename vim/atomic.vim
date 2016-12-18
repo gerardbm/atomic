@@ -7,7 +7,7 @@
 "
 "----------------------------------------------------------------
 "  Theme   : Atomic
-"  Version : 1.2.3
+"  Version : 1.2.5
 "  License : MIT
 "  Author  : Gerard Bajona
 "  URL     : https://github.com/gerardbm/atomic
@@ -203,7 +203,7 @@ execute 'hi GitGutterChange '       . s:envir . 'fg=' . s:acb50 . ' ' . s:envir 
 execute 'hi GitGutterDelete '       . s:envir . 'fg=' . s:acr50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi GitGutterChangeDelete ' . s:envir . 'fg=' . s:acr50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 
-" Vim
+" VimL
 "----------------------------------------------------------------
 execute 'hi vimVar '          . s:envir . 'fg=' . s:aco70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi vimNumber '       . s:envir . 'fg=' . s:acr50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
@@ -489,7 +489,16 @@ execute 'hi jsStorageClass '  . s:envir . 'fg=' . s:acb50 . ' ' . s:envir . 'bg=
 execute 'hi jsClassKeyword '  . s:envir . 'fg=' . s:acb50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi jsBrackets '      . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi jsSpecial '       . s:envir . 'fg=' . s:acr70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi jsThis '          . s:envir . 'fg=' . s:aco50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi jsThis '          . s:envir . 'fg=' . s:acr70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+
+augroup jsAtomic
+autocmd!
+autocmd ColorScheme atomic
+		\ execute 'hi jsNew ' . s:envir . 'fg=' . s:acg70 |
+		\ autocmd Filetype javascript
+		\ syn keyword jsNew new
+		\ containedin=jsOperator
+augroup END
 
 " Makefile
 " ----------------------------------------------------------------
