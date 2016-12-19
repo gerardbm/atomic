@@ -5,13 +5,15 @@ Atomic is a dark color scheme designed to use with terminal, Vim/Neovim and seve
 
 ### Color palette
 
-The color palette consists of sixteen precision colors selected procedurally (algorithms), distributed in six hues and four balanced luma. Luma is the perceived brightness, not the lightness of the HSL model.
+The color palette consists of sixteen precision colors selected procedurally (algorithms), distributed in six hues and four balanced Luma (Y'). Note that Luma (Y') is the perceived brightness; don't confuse it with the lightness of the HSL color model.
 
-Human eyes don't detect brightness linearly with color —we see red color brighter than blue color, and green color brighter than red color—, so luma has been balanced following the ITU-R Recommendation BT.601:
+Human vision doesn't detect brightness linearly with color: in a pixel (R'G'B'), we see red color (255, 0, 0) brighter than blue color (0, 0, 255), and green color (0, 255, 0) brighter than red color (255, 0, 0). So, in order to balance the color contrast, the perceived brightness has been corrected following the ITU-R Recommendation BT.601:
 
-`Y' = 0.299 R' + 0.587 G' + 0.114 B'`
+`Luma (Y') = 0.299 R' + 0.587 G' + 0.114 B'`
 
-In a RGB color wheel, hue angles have been calculated in order to be distinguishable for the human eye and keeping harmony: two analogous colors (0º and 30º), their complementary (180º and 210º) and tetrad (90º and 270º).
+This algorithm is also [suggested by W3C](https://www.w3.org/TR/AERT#color-contrast), however it's still open to change.
+
+In a RGB color wheel, hues have been selected in order to be distinguishable for the human eye and keeping harmony: two analogous colors (0º and 30º), their complementary (180º and 210º) and tetrad (90º and 270º).
 
 ![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/main-colors-dark.png)
 
@@ -19,7 +21,7 @@ In a RGB color wheel, hue angles have been calculated in order to be distinguish
 
 In the previous palette, hue of **base colors** (1, 8, 9 and 16) is 210º, so colors have more blue and green than red. During the day, these colors don't carry any problem, but at night blue light negatively affects health and sleep patterns: it affects levels of the sleep-inducing hormone melatonin more than any other wavelength.
 
-In the following color palette, hue of **base colors** (1, 8, 9 and 16) is 30º instead of 210º (actually, it's the complementary hue). That means values of blue and green colors have been reduced inversely, while value of red color have been increased in the same proportion.
+In the following color palette, hue of base colors is 30º instead of 210º (actually, it's the complementary hue). That means values of blue and green colors have been reduced inversely, while value of red color have been increased in the same proportion.
 
 ![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/main-colors-night.png)
 
