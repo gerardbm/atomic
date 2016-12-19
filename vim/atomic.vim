@@ -155,7 +155,7 @@ execute 'hi Statement '      . s:envir . 'fg=' . s:acg50 . ' ' . s:envir . 'bg='
 execute 'hi Conditional '    . s:envir . 'fg=' . s:acg70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi Repeat '         . s:envir . 'fg=' . s:acg70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi Label '          . s:envir . 'fg=' . s:acg70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi Operator '       . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi Operator '       . s:envir . 'fg=' . s:acg70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi Keyword '        . s:envir . 'fg=' . s:acg50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi Exception '      . s:envir . 'fg=' . s:acr70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 " ---------------------------.
@@ -173,7 +173,7 @@ execute 'hi Typedef '        . s:envir . 'fg=' . s:acc50 . ' ' . s:envir . 'bg='
 execute 'hi Special '        . s:envir . 'fg=' . s:aco50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi SpecialChar '    . s:envir . 'fg=' . s:acr70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi Tag '            . s:envir . 'fg=' . s:acv70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi Delimiter '      . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi Delimiter '      . s:envir . 'fg=' . s:acr50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi Debug '          . s:envir . 'fg=' . s:base1 . ' ' . s:envir . 'bg=' . s:aco50 . ' ' . s:envir . '=none'
 " ---------------------------.
 execute 'hi Underlined '     . s:envir . 'fg=' . s:acb70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=underline'
@@ -242,9 +242,10 @@ execute 'hi vimSetMod '       . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=
 execute 'hi vimSetEqual '     . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi vimOption '       . s:envir . 'fg=' . s:acv70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi vimSynType '      . s:envir . 'fg=' . s:acv50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi vimOper '         . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi vimOper '         . s:envir . 'fg=' . s:acg70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi vimSep '          . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi vimSetSep '       . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi vimParenSep '     . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi vimCtrlChar '     . s:envir . 'fg=' . s:acv50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi vimContinue '     . s:envir . 'fg=' . s:acv70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi vimCommentTitle ' . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=none'
@@ -322,9 +323,9 @@ augroup END
 " ----------------------------------------------------------------
 execute 'hi phpRegion '               . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi phpParent '               . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi phpOperator '             . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi phpComparison '           . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi phpMemberSelector '       . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi phpOperator '             . s:envir . 'fg=' . s:acg70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi phpComparison '           . s:envir . 'fg=' . s:acg70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi phpMemberSelector '       . s:envir . 'fg=' . s:acg70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 " ------------------------------------.
 execute 'hi phpVarSelector '          . s:envir . 'fg=' . s:aco50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi phpIdentifier '           . s:envir . 'fg=' . s:aco70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
@@ -370,18 +371,6 @@ execute 'hi phpDocCustomTags '        . s:envir . 'fg=' . s:base3 . ' ' . s:envi
 " ------------------------------------.
 execute 'hi phpFCKeyword '            . s:envir . 'fg=' . s:acb50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi phpSCKeyword '            . s:envir . 'fg=' . s:acc50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-
-augroup phpAtomic
-autocmd!
-autocmd ColorScheme atomic
-		\ execute 'hi phpDelimiter ' . s:envir . 'fg=' . s:acv50 |
-		\ autocmd Filetype php,html
-		\ syn region phpRegion matchgroup=phpDelimiter
-		\ start="<?php" end="?>"                                contains=@phpClTop
-		\ start="<?\(php\)\=" end="?>"                          contains=@phpClTop
-		\ start="<%\(=\)\=" end="%>"                            contains=@phpClTop
-		\ start=+<script language=["']php["']>+ end=+</script>+ contains=@phpClTop
-augroup END
 
 " CSS
 " ----------------------------------------------------------------
@@ -448,7 +437,7 @@ augroup END
 " ----------------------------------------------------------------
 execute 'hi javaScriptBraces '       . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi javaScriptParens '       . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi javaScriptOperator '     . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi javaScriptOperator '     . s:envir . 'fg=' . s:acg70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi javaScriptIdentifier '   . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi javaScriptConstant '     . s:envir . 'fg=' . s:acv70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 " -----------------------------------.
@@ -491,15 +480,6 @@ execute 'hi jsBrackets '      . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=
 execute 'hi jsSpecial '       . s:envir . 'fg=' . s:acr70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi jsThis '          . s:envir . 'fg=' . s:acr70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 
-augroup jsAtomic
-autocmd!
-autocmd ColorScheme atomic
-		\ execute 'hi jsNew ' . s:envir . 'fg=' . s:acg70 |
-		\ autocmd Filetype javascript
-		\ syn keyword jsNew new
-		\ containedin=jsOperator
-augroup END
-
 " Makefile
 " ----------------------------------------------------------------
 execute 'hi makeIdent '      . s:envir . 'fg=' . s:aco70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
@@ -521,7 +501,7 @@ execute 'hi cmakeArgument '      . s:envir . 'fg=' . s:acv70 . ' ' . s:envir . '
 execute 'hi cmakeVariableValue ' . s:envir . 'fg=' . s:aco70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi cmakeEnvironment '   . s:envir . 'fg=' . s:acr70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi cmakeEscaped '       . s:envir . 'fg=' . s:acr70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi cmakeOperators '     . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi cmakeOperators '     . s:envir . 'fg=' . s:acg70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi cmakeString '        . s:envir . 'fg=' . s:acc70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 
 " C
@@ -553,7 +533,7 @@ execute 'hi cRepeat '           . s:envir . 'fg=' . s:acg70 . ' ' . s:envir . 'b
 execute 'hi cConditional '      . s:envir . 'fg=' . s:acg70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi cStatement '        . s:envir . 'fg=' . s:acg50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 " ------------------------------.
-execute 'hi cOperator '         . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi cOperator '         . s:envir . 'fg=' . s:acg70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi cUserLabel '        . s:envir . 'fg=' . s:aco70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi cLabel '            . s:envir . 'fg=' . s:acg70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 
@@ -571,7 +551,7 @@ execute 'hi cppBoolean '            . s:envir . 'fg=' . s:acv50 . ' ' . s:envir 
 execute 'hi cppConstant '           . s:envir . 'fg=' . s:acv70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi cppStatement '          . s:envir . 'fg=' . s:acg50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi cppSpecialCharacter '   . s:envir . 'fg=' . s:acr70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi cppOperator '           . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi cppOperator '           . s:envir . 'fg=' . s:acg70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi cppRawString '          . s:envir . 'fg=' . s:acc70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi cppRawStringDelimiter ' . s:envir . 'fg=' . s:acc70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 
@@ -621,7 +601,7 @@ execute 'hi shArithmetic '     . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg
 " -----------------------------.
 execute 'hi shCase '           . s:envir . 'fg=' . s:acg70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi shCaseEsac '       . s:envir . 'fg=' . s:acg50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi shOperator '       . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi shOperator '       . s:envir . 'fg=' . s:acg70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi shSetList '        . s:envir . 'fg=' . s:acc50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi shOption '         . s:envir . 'fg=' . s:acb50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 
@@ -658,7 +638,7 @@ execute 'hi pythonComment '     . s:envir . 'fg=' . s:base3 . ' ' . s:envir . 'b
 execute 'hi pythonInclude '     . s:envir . 'fg=' . s:acc50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi pythonImport '      . s:envir . 'fg=' . s:acc50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 " ------------------------------.
-execute 'hi pythonOperator '    . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi pythonOperator '    . s:envir . 'fg=' . s:acg70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi pythonStatement '   . s:envir . 'fg=' . s:acg50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi pythonAsync '       . s:envir . 'fg=' . s:acb50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi pythonConditional ' . s:envir . 'fg=' . s:acg70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
@@ -732,7 +712,7 @@ execute 'hi rubyExceptional '            . s:envir . 'fg=' . s:acr70 . ' ' . s:e
 " ---------------------------------------.
 execute 'hi rubySymbol '                 . s:envir . 'fg=' . s:acr70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi rubyCurlyBlock '             . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi rubyOperator '               . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi rubyOperator '               . s:envir . 'fg=' . s:acg70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 
 " Perl
 " ----------------------------------------------------------------
