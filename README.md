@@ -7,7 +7,7 @@ Atomic is a dark color scheme designed to use with terminal, Vim/Neovim and seve
 
 The color palette consists of sixteen precision colors selected procedurally (algorithms), distributed in six hues and four balanced Luma (Y'). Note that Luma (Y') is the perceived brightness; don't confuse it with the lightness of the HSL color model.
 
-Human vision doesn't detect brightness linearly with color: in a pixel (R'G'B'), we see red color (255, 0, 0) brighter than blue color (0, 0, 255), and green color (0, 255, 0) brighter than red color (255, 0, 0). So, in order to balance the color contrast, the perceived brightness has been corrected following the ITU-R Recommendation BT.601:
+Human vision doesn't detect brightness linearly with color: in a pixel (R'G'B'), we see red color (255, 0, 0) brighter than blue color (0, 0, 255), and green color (0, 255, 0) brighter than red color (255, 0, 0). So, in order to balance the color contrast, the perceived brightness has been corrected according to the ITU-R Recommendation BT.601:
 
 `Luma (Y') = 0.299 R' + 0.587 G' + 0.114 B'`
 
