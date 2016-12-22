@@ -21,7 +21,7 @@ In a RGB color wheel, hues have been selected in order to be distinguishable for
 
 In the previous palette, hue of **base colors** (1, 8, 9 and 16) is 210º, so colors have more blue and green than red. During the day, these colors don't carry any problem, but at night blue light negatively affects health and sleep patterns: it affects levels of the sleep-inducing hormone melatonin more than any other wavelength.
 
-In the following color palette, hue of base colors is 30º instead of 210º (actually, it's the complementary hue). That means values of blue and green colors have been reduced inversely, while value of red color have been increased in the same proportion.
+In the following color palette, hue of base colors is 30º instead of 210º (actually, it's the complementary hue). That means values of blue and green colors have been reduced inversely, while value of red color has been increased in the same proportion.
 
 ![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/main-colors-night.png)
 
