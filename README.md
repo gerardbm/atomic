@@ -37,7 +37,7 @@ Dark mode (hue 210º):
 Night mode (hue 30º):
 
 - [x] Terminal (konsole, xfce4-terminal, gnome-terminal and URxvt)
-- [x] Vim & Neovim (only for terminal)
+- [x] Vim & Neovim
 - [x] [Sublime Text](https://github.com/gerardbm/sublime-atomic-scheme)
 
 ### Themes
@@ -73,6 +73,28 @@ Installation for **URxvt**:
 2. Load the resource file with the command: `xrdb ~/.Xresources`.
 
 You will find more information on the .Xresources file in the [Arch Linux wiki](https://wiki.archlinux.org/index.php/X_resources).
+
+### Vim
+
+Installation in Vim/Neovim:
+
+1. Copy the file `atomic.vim` contained into the `vim` directory of this repository and paste it into `~/.vim/colors/` (Vim) or `~/.config/nvim/colors/` (Neovim).
+2. Set the colorscheme in your Vim/Neovim configuration file: `colorscheme atomic`.
+3. If you are in a GUI for Vim (as gvim), you have commands to switch between dark and night mode:
+	- `AtomicDark`: sets the dark mode (default).
+	- `AtomicNight`: sets the night mode.
+
+Or switch them depending on the current time. In your `.gvimrc`:
+
+```viml
+function! AtomicSwitcher()
+	if (strftime("%H") > 8) && (strftime("%H") < 20)
+		AtomicDark
+	else
+		AtomicNight
+	endif
+endfunction
+```
 
 ### NetBeans
 
