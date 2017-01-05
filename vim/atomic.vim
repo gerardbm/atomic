@@ -1,13 +1,13 @@
 "----------------------------------------------------------------
-"  __     ___
-"  \ \   / (_)_ __ ___
-"   \ \ / /| | '_ ` _ \
-"    \ V / | | | | | | |
-"     \_/  |_|_| |_| |_|
+"      ___   __                  _
+"     /   | / /_____  ____ ___  (_)____
+"    / /| |/ __/ __ \/ __ `__ \/ / ___/
+"   / ___ / /_/ /_/ / / / / / / / /__
+"  /_/  |_\__/\____/_/ /_/ /_/_/\___/
 "
 "----------------------------------------------------------------
 "  Theme   : Atomic
-"  Version : 1.2.7
+"  Version : 2.0.0
 "  License : MIT
 "  Author  : Gerard Bajona
 "  URL     : https://github.com/gerardbm/atomic
@@ -23,7 +23,7 @@ if exists('syntax_on')
 	syntax reset
 endif
 
-" Color definitions
+" Color definitions and settings
 "----------------------------------------------------------------
 let g:colors_name = 'atomic'
 
@@ -55,10 +55,34 @@ else
 	let s:envir = 'gui'
 
 	" Base colors
-	let s:base1 = '#141A1F' " Luma 10%
-	let s:base2 = '#202931' " Luma 15%
-	let s:base3 = '#53697F' " Luma 40%
-	let s:base4 = '#A6B5C5' " Luma 70%
+	if exists("g:atomic_mode")
+		let s:mode = g:atomic_mode
+	else
+		let s:mode = 0
+	endif
+
+	if s:mode == 1
+		" Night mode
+		let s:base1 = '#1E1813' " Luma 10%
+		let s:base2 = '#2E261E' " Luma 15%
+		let s:base3 = '#76614D' " Luma 40%
+		let s:base4 = '#C0AF9F' " Luma 70%
+	else
+		" Dark mode
+		let s:base1 = '#141A1F' " Luma 10%
+		let s:base2 = '#202931' " Luma 15%
+		let s:base3 = '#53697F' " Luma 40%
+		let s:base4 = '#A6B5C5' " Luma 70%
+	endif
+
+	function! SetAtomic(mode)
+		let g:atomic_mode = a:mode
+	endfunction
+
+	command! AtomicDark call SetAtomic(0)
+				\ | colorscheme atomic
+	command! AtomicNight call SetAtomic(1)
+				\ | colorscheme atomic
 
 	" Dark accent colors
 	let s:acb50 = '#3790E9'
@@ -205,50 +229,51 @@ execute 'hi GitGutterChangeDelete ' . s:envir . 'fg=' . s:acr50 . ' ' . s:envir 
 
 " VimL
 "----------------------------------------------------------------
-execute 'hi vimVar '          . s:envir . 'fg=' . s:aco70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi vimNumber '       . s:envir . 'fg=' . s:acr50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi vimCommand '      . s:envir . 'fg=' . s:acc50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi vimIsCommand '    . s:envir . 'fg=' . s:acc50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi vimNotFunc '      . s:envir . 'fg=' . s:acg70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-" ----------------------------.
-execute 'hi vimFunction '     . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi vimUserFunc '     . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi vimFuncName '     . s:envir . 'fg=' . s:acg50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi vimFuncBody '     . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi vimFuncKey '      . s:envir . 'fg=' . s:acc50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi vimFuncVar '      . s:envir . 'fg=' . s:aco50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi vimFuncSid '      . s:envir . 'fg=' . s:acb70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi vimFuncBlank '    . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-" ----------------------------.
-execute 'hi vimAddress '      . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi vimSubst '        . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-" ----------------------------.
-execute 'hi vimMap '          . s:envir . 'fg=' . s:acb50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi vimMapMod '       . s:envir . 'fg=' . s:acb70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi vimMapModKey '    . s:envir . 'fg=' . s:acb70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi vimNotation '     . s:envir . 'fg=' . s:acb70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi vimBracket '      . s:envir . 'fg=' . s:acb70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi vimMapRhs '       . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi vimMapRhsExtend ' . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi vimMapLhs '       . s:envir . 'fg=' . s:acr70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-" ----------------------------.
-execute 'hi vimAugroupKey '   . s:envir . 'fg=' . s:acc50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi vimAutoCmd '      . s:envir . 'fg=' . s:acc50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi vimAutoEvent '    . s:envir . 'fg=' . s:aco50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-" ----------------------------.
-execute 'hi vimLet '          . s:envir . 'fg=' . s:acc50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi vimSet '          . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi vimSetMod '       . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi vimSetEqual '     . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi vimOption '       . s:envir . 'fg=' . s:acv70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi vimSynType '      . s:envir . 'fg=' . s:acv50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi vimOper '         . s:envir . 'fg=' . s:acg70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi vimSep '          . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi vimSetSep '       . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi vimParenSep '     . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi vimCtrlChar '     . s:envir . 'fg=' . s:acv50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi vimContinue '     . s:envir . 'fg=' . s:acv70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi vimCommentTitle ' . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=none'
+execute 'hi vimVar '           . s:envir . 'fg=' . s:aco70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi vimNumber '        . s:envir . 'fg=' . s:acr50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi vimCommand '       . s:envir . 'fg=' . s:acc50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi vimIsCommand '     . s:envir . 'fg=' . s:acc50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi vimNotFunc '       . s:envir . 'fg=' . s:acg70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+" -----------------------------.
+execute 'hi vimFunction '      . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi vimUserFunc '      . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi vimFuncName '      . s:envir . 'fg=' . s:acg50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi vimFuncBody '      . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi vimFuncKey '       . s:envir . 'fg=' . s:acc50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi vimFuncVar '       . s:envir . 'fg=' . s:aco50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi vimFuncSid '       . s:envir . 'fg=' . s:acb70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi vimFuncBlank '     . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+" -----------------------------.
+execute 'hi vimAddress '       . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi vimSubst '         . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+" -----------------------------.
+execute 'hi vimMap '           . s:envir . 'fg=' . s:acb50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi vimMapMod '        . s:envir . 'fg=' . s:acb70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi vimMapModKey '     . s:envir . 'fg=' . s:acb70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi vimNotation '      . s:envir . 'fg=' . s:acb70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi vimBracket '       . s:envir . 'fg=' . s:acb70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi vimMapRhs '        . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi vimMapRhsExtend '  . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi vimMapLhs '        . s:envir . 'fg=' . s:acr70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+" -----------------------------.
+execute 'hi vimAugroupKey '    . s:envir . 'fg=' . s:acc50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi vimAutoCmd '       . s:envir . 'fg=' . s:acc50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi vimAutoEvent '     . s:envir . 'fg=' . s:aco50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+" -----------------------------.
+execute 'hi vimLet '           . s:envir . 'fg=' . s:acc50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi vimSet '           . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi vimSetMod '        . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi vimSetEqual '      . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi vimOption '        . s:envir . 'fg=' . s:acv70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi vimSynType '       . s:envir . 'fg=' . s:acv50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi vimOper '          . s:envir . 'fg=' . s:acg70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi vimSep '           . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi vimSetSep '        . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi vimParenSep '      . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi vimCtrlChar '      . s:envir . 'fg=' . s:acv50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi vimContinue '      . s:envir . 'fg=' . s:acv70 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+execute 'hi vimCommentTitle '  . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=none'
+execute 'hi vimCommentString ' . s:envir . 'fg=' . s:base3 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=none'
 
 augroup vimAtomic
 autocmd!
