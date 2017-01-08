@@ -30,75 +30,148 @@ let g:colors_name = 'atomic'
 if !has('gui_running')
 	let s:envir = 'cterm'
 
-	" Base colors
-	let s:base1 = 0
-	let s:base2 = 8
-	let s:base3 = 7
-	let s:base4 = 15
-
-	" Dark accent colors
-	let s:acb50 = 4
-	let s:acv50 = 5
-	let s:acr50 = 1
-	let s:aco50 = 3
-	let s:acg50 = 2
-	let s:acc50 = 6
-
-	" Light accent colors
-	let s:acb70 = 12
-	let s:acv70 = 13
-	let s:acr70 = 9
-	let s:aco70 = 11
-	let s:acg70 = 10
-	let s:acc70 = 14
+	if &t_Co == 8
+		let s:base1 = 0
+		let s:base2 = 0
+		let s:base3 = 7
+		let s:base4 = 7
+		" ---------
+		let s:acb50 = 4
+		let s:acv50 = 5
+		let s:acr50 = 1
+		let s:aco50 = 3
+		let s:acg50 = 2
+		let s:acc50 = 6
+		" ---------
+		let s:acb70 = 4
+		let s:acv70 = 5
+		let s:acr70 = 1
+		let s:aco70 = 3
+		let s:acg70 = 2
+		let s:acc70 = 6
+	else
+		let s:base1 = 0
+		let s:base2 = 8
+		let s:base3 = 7
+		let s:base4 = 15
+		" ---------
+		let s:acb50 = 4
+		let s:acv50 = 5
+		let s:acr50 = 1
+		let s:aco50 = 3
+		let s:acg50 = 2
+		let s:acc50 = 6
+		" ---------
+		let s:acb70 = 12
+		let s:acv70 = 13
+		let s:acr70 = 9
+		let s:aco70 = 11
+		let s:acg70 = 10
+		let s:acc70 = 14
+	endif
 else
 	let s:envir = 'gui'
 
-	" Base colors
 	if exists("g:atomic_mode")
 		let s:mode = g:atomic_mode
 	else
 		let s:mode = 0
 	endif
 
-	if s:mode == 1
-		" Night mode
-		let s:base1 = '#1E1813' " Luma 10%
-		let s:base2 = '#2E261E' " Luma 15%
-		let s:base3 = '#76614D' " Luma 40%
-		let s:base4 = '#C0AF9F' " Luma 70%
-	else
+	" Base colors
+	if s:mode == 0
 		" Dark mode
+		" -----------------------
 		let s:base1 = '#141A1F' " Luma 10%
 		let s:base2 = '#202931' " Luma 15%
 		let s:base3 = '#53697F' " Luma 40%
 		let s:base4 = '#A6B5C5' " Luma 70%
+
+		" Extra
+		let s:base5 = '#0C3D6E' " Luma 20% (column)
+		let s:base6 = '#354351' " Luma 25% (select)
+	elseif s:mode == 1
+		" Night mode
+		" -----------------------
+		let s:base1 = '#1E1813' " Luma 10%
+		let s:base2 = '#2E261E' " Luma 15%
+		let s:base3 = '#76614D' " Luma 40%
+		let s:base4 = '#C0AF9F' " Luma 70%
+
+		" Extra
+		let s:base5 = '#522D09' " Luma 20% (column)
+		let s:base6 = '#4B3E31' " Luma 25% (select)
+	elseif s:mode == 2
+		" Light mode
+		" -----------------------
+		let s:base1 = '#F8F0E7' " Luma 95%
+		let s:base2 = '#F2E3D4' " Luma 90%
+		let s:base3 = '#B7916C' " Luma 60%
+		let s:base4 = '#594A3A' " Luma 30%
+
+		" Extra
+		let s:base5 = '#F6D1AC' " Luma 20% (column)
+		let s:base6 = '#D6CBC0' " Luma 25% (select)
 	endif
 
-	function! SetAtomic(mode)
-		let g:atomic_mode = a:mode
-	endfunction
+	" Accent colors
+	if (s:mode == 1 || s:mode == 0)
+		" Dark background
+		" -----------------------
+		" Dark accent colors
+		let s:acb50 = '#3790E9'
+		let s:acv50 = '#A35AED'
+		let s:acr50 = '#EC5252'
+		let s:aco50 = '#C97016'
+		let s:acg50 = '#5DA813'
+		let s:acc50 = '#13AEAE'
 
-	command! AtomicDark call SetAtomic(0)
+		" Light accent colors
+		let s:acb70 = '#7DBEFF'
+		let s:acv70 = '#CA96FF'
+		let s:acr70 = '#FF9191'
+		let s:aco70 = '#EDA45C'
+		let s:acg70 = '#9ACD68'
+		let s:acc70 = '#6ECFCF'
+
+		" Extra
+		let s:diffr = '#650B0B'
+		let s:diffg = '#1C3206'
+		let s:diffb = '#092D50'
+		let s:diffv = '#3D0C6E'
+	else
+		" Light background
+		" -----------------------
+		" Light accent colors
+		let s:acb50 = '#095CAE' " |
+		let s:acv50 = '#7C19DF' " |
+		let s:acr50 = '#C11C1C' " | Luma 30%
+		let s:aco50 = '#824100' " | instead of 50%
+		let s:acg50 = '#346900' " |
+		let s:acc50 = '#006E6E' " |
+
+		" Dark accent colors
+		let s:acb70 = '#3790E9' " |
+		let s:acv70 = '#A35AED' " |
+		let s:acr70 = '#EC5252' " | Luma 50%
+		let s:aco70 = '#C97016' " | instead of 70%
+		let s:acg70 = '#5DA813' " |
+		let s:acc70 = '#13AEAE' " |
+
+		" Extra
+		let s:diffr = '#FFDBDB'
+		let s:diffg = '#D9F4BE'
+		let s:diffb = '#D5EAFF'
+		let s:diffv = '#EEDDFF'
+	endif
+
+	command! AtomicDark let g:atomic_mode = 0
 				\ | colorscheme atomic
-	command! AtomicNight call SetAtomic(1)
+	command! AtomicNight let g:atomic_mode = 1
+				\ | colorscheme atomic
+	command! AtomicLight let g:atomic_mode = 2
 				\ | colorscheme atomic
 
-	" Dark accent colors
-	let s:acb50 = '#3790E9'
-	let s:acv50 = '#A35AED'
-	let s:acr50 = '#EC5252'
-	let s:aco50 = '#C97016'
-	let s:acg50 = '#5DA813'
-	let s:acc50 = '#13AEAE'
-
-	" Light accent colors
-	let s:acb70 = '#7DBEFF'
-	let s:acv70 = '#CA96FF'
-	let s:acr70 = '#FF9191'
-	let s:aco70 = '#EDA45C'
-	let s:acg70 = '#9ACD68'
-	let s:acc70 = '#6ECFCF'
 endif
 
 " UI
@@ -121,7 +194,6 @@ execute 'hi StatusLineNC ' . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' .
 execute 'hi WildMenu '     . s:envir . 'fg=' . s:base1 . ' ' . s:envir . 'bg=' . s:acc50 . ' ' . s:envir . '=none'
 execute 'hi VertSplit '    . s:envir . 'fg=' . s:acc50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi Directory '    . s:envir . 'fg=' . s:acc50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-execute 'hi Visual '       . s:envir . 'fg=' . s:base1 . ' ' . s:envir . 'bg=' . s:base3 . ' ' . s:envir . '=none'
 " -------------------------.
 execute 'hi ModeMsg '      . s:envir . 'fg=' . s:acc50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
 execute 'hi MoreMsg '      . s:envir . 'fg=' . s:acc50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
@@ -132,32 +204,54 @@ execute 'hi ErrorMsg '     . s:envir . 'fg=' . s:acr50 . ' ' . s:envir . 'bg=' .
 " -------------------------.
 execute 'hi Folded '       . s:envir . 'fg=' . s:acc50 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=none'
 execute 'hi FoldColumn '   . s:envir . 'fg=' . s:acc50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
-" -------------------------.
-execute 'hi SpellBad '     . s:envir . 'fg=' . s:acr50 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=italic'
-execute 'hi SpellCap '     . s:envir . 'fg=' . s:acc50 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=italic'
-execute 'hi SpellLocal '   . s:envir . 'fg=' . s:aco50 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=italic'
-execute 'hi SpellRare '    . s:envir . 'fg=' . s:acv50 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=italic'
-" -------------------------.
-execute 'hi DiffAdd '      . s:envir . 'fg=' . s:acg50 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=italic'
-execute 'hi DiffAdded '    . s:envir . 'fg=' . s:acg50 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=italic'
-execute 'hi DiffChange '   . s:envir . 'fg=' . s:acb50 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=italic'
-execute 'hi DiffDelete '   . s:envir . 'fg=' . s:acr50 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=italic'
-execute 'hi DiffRemoved '  . s:envir . 'fg=' . s:acr50 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=italic'
-execute 'hi DiffText '     . s:envir . 'fg=' . s:acv50 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=italic'
+
+if has('gui_running')
+	execute 'hi SpellBad '     . s:envir . '=undercurl'
+	execute 'hi SpellCap '     . s:envir . '=undercurl'
+	execute 'hi SpellLocal '   . s:envir . '=undercurl'
+	execute 'hi SpellRare '    . s:envir . '=undercurl'
+	" -------------------------.
+	execute 'hi DiffAdd '      . s:envir . 'bg=' . s:diffg . ' ' . s:envir . '=none'
+	execute 'hi DiffAdded '    . s:envir . 'bg=' . s:diffg . ' ' . s:envir . '=none'
+	execute 'hi DiffChange '   . s:envir . 'bg=' . s:diffb . ' ' . s:envir . '=none'
+	execute 'hi DiffDelete '   . s:envir . 'bg=' . s:diffr . ' ' . s:envir . '=none'
+	execute 'hi DiffRemoved '  . s:envir . 'bg=' . s:diffr . ' ' . s:envir . '=none'
+	execute 'hi DiffText '     . s:envir . 'bg=' . s:diffv . ' ' . s:envir . '=none'
+	" -------------------------.
+	execute 'hi Visual '       . s:envir . 'bg=' . s:base6 . ' ' . s:envir . '=none'
+else
+	execute 'hi SpellBad '     . s:envir . 'fg=' . s:acr50 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=italic,underline'
+	execute 'hi SpellCap '     . s:envir . 'fg=' . s:acc50 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=italic,underline'
+	execute 'hi SpellLocal '   . s:envir . 'fg=' . s:aco50 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=italic,underline'
+	execute 'hi SpellRare '    . s:envir . 'fg=' . s:acv50 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=italic,underline'
+	" -------------------------.
+	execute 'hi DiffAdd '      . s:envir . 'fg=' . s:acg50 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=italic'
+	execute 'hi DiffAdded '    . s:envir . 'fg=' . s:acg50 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=italic'
+	execute 'hi DiffChange '   . s:envir . 'fg=' . s:acb50 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=italic'
+	execute 'hi DiffDelete '   . s:envir . 'fg=' . s:acr50 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=italic'
+	execute 'hi DiffRemoved '  . s:envir . 'fg=' . s:acr50 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=italic'
+	execute 'hi DiffText '     . s:envir . 'fg=' . s:acv50 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=italic'
+	" -------------------------.
+	execute 'hi Visual '       . s:envir . 'fg=' . s:base1 . ' ' . s:envir . 'bg=' . s:base3 . ' ' . s:envir . '=none'
+endif
 
 " Cursorline
 "----------------------------------------------------------------
 if version >= 700
-	execute 'hi CursorLine '   . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=none'
-	execute 'hi CursorLineNr ' . s:envir . 'fg=' . s:aco70 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=bold'
 	execute 'hi PMenu '        . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=none'
 	execute 'hi PMenuSel '     . s:envir . 'fg=' . s:base1 . ' ' . s:envir . 'bg=' . s:acc50 . ' ' . s:envir . '=none'
-	execute 'hi CursorColumn ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=none'
 	execute 'hi SignColumn '   . s:envir . 'bg=' . s:base3 . ' ' . s:envir . '=none'
 endif
 
 if version >= 703
-	execute 'hi ColorColumn ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=none'
+	if has('gui_running')
+		execute 'hi ColorColumn ' . s:envir . 'bg=' . s:base5 . ' ' . s:envir . '=none'
+	else
+		execute 'hi ColorColumn ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=none'
+	endif
+	execute 'hi CursorLine '   . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=none'
+	execute 'hi CursorLineNr ' . s:envir . 'fg=' . s:aco70 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=bold'
+	execute 'hi CursorColumn ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=none'
 endif
 
 " Standard
