@@ -21,23 +21,29 @@ In a RGB color wheel, hues have been selected in order to be distinguishable for
 
 In the previous palette, hue of **base colors** (1, 8, 9 and 16) is 210º, so colors have more blue and green than red. During the day, these colors don't carry any problem, but at night blue light negatively affects health and sleep patterns: it affects levels of the sleep-inducing hormone melatonin more than any other wavelength.
 
-In the following color palette, hue of base colors is 30º instead of 210º (actually, it's the complementary hue). That means values of blue and green colors have been reduced inversely, while value of red color has been increased in the same proportion.
+Night mode palette uses a different hue of base colors: 30º instead of 210º (actually, it's the complementary hue). That means values of blue and green colors have been reduced inversely, while value of red color has been increased in the same proportion.
 
 ![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/main-colors-night.png)
+
+**Light mode**
+
+Light mode is useful when the screen receives a high illumination or we have to code in a very bright environment. Our eyes will not have to adapt the light sensibility every time we look at the screen.
+
+Luma of this palette has been calculated keeping the proportion of the other palettes and inverting the values, so there is a symmetry between dark and light palettes. However, the bright light interferes the contrast, so contrast has been increased in a 5% to ensure the readability.
+
+![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/main-colors-light.png)
 
 ### Code editors and IDEs
 
 Dark mode (hue 210º):
 
-- [x] Terminal (konsole, xfce4-terminal, gnome-terminal and URxvt)
+- [x] Terminal
+	- konsole
+	- xfce4-terminal
+	- gnome-terminal
+	- URxvt
 - [x] Vim & Neovim
 - [x] NetBeans IDE
-- [x] [Sublime Text](https://github.com/gerardbm/sublime-atomic-scheme)
-
-Night mode (hue 30º):
-
-- [x] Terminal (konsole, xfce4-terminal, gnome-terminal and URxvt)
-- [x] Vim & Neovim
 - [x] [Sublime Text](https://github.com/gerardbm/sublime-atomic-scheme)
 
 ### Themes
@@ -157,6 +163,7 @@ Installation in Vim:
 2. Copy the file `atomic.vim` to your 'vim-airline-themes' directory: `../vim-airline-themes/autoload/airline/themes/`.
 3. Add the following settings to your `.vimrc`.
 4. And finally type: `:AirlineTheme atomic`.
+
 ```viml
 " Use 'atomic' by default
 let g:airline_theme='atomic'
@@ -167,6 +174,7 @@ let g:airline#extensions#tabline#enabled = 1
 " It disables bold text, so it looks like tmux status bar
 call airline#parts#define_accent('mode', 'black')
 ```
+
 Also, make sure you have the Powerline fonts installed, like in Tmux.
 
 ### Cmus
@@ -233,4 +241,29 @@ ID  ATOMIC COLORS   LUMA    HUE    HEX    (R - G - B)   (H -- S -- L)
  9  Base 02          15%    30º  #2E261E   46  38  30   30º  21%  15.0% | Base
  8  Base 03          40%    30º  #76614D  118  97  77   30º  21%  38.2% | Colors
 16  Base 04          70%    30º  #C0AF9F  192 175 159   30º  21%  68.8% |
+```
+
+**Light mode values**
+
+```
+ID  ATOMIC COLORS   LUMA    HUE    HEX    (R - G - B)   (H -- S -- L)
+--  -------------  ------  ----  -------  -----------  ----------------
+ 1  Base 01          95%    30º  #F8F0E7  248 240 231   30º  55%  94.0% |
+ 9  Base 02          90%    30º  #F2E3D4  242 227 212   30º  55%  89.0% | Base
+ 8  Base 03          60%    30º  #B7916C  183 145 108   30º  34%  57.0% | Colors
+16  Base 04          30%    30º  #594A3A   89  74  58   30º  21%  29.0% |
+--  -------------  ------  ----  -------  -----------  ----------------
+ 2  Dark Red         30%     0º  #C11C1C  193  28  28    0º  75%  43.2% |
+ 4  Dark Orange      30%    30º  #824100  201 112  22   30º 100%  25.5% |
+ 3  Dark Green       30%    90º  #346900   93 168  19   90º 100%  20.5% | Dark
+ 7  Dark Cyan        30%   180º  #006E6E   19 174 174  180º 100%  21.5% | Accent
+ 5  Dark Blue        30%   210º  #095CAE   55 144 233  210º  90%  36.0% |
+ 6  Dark Violet      30%   270º  #7C19DF  163  90 237  270º  80%  48.5% |
+--  -------------  ------  ----  -------  -----------  ----------------
+10  Light Red        50%     0º  #EC5252  236  82  82    0º  80%  62.3% |
+12  Light Orange     50%    30º  #C97016  201 112  22   30º  80%  43.8% |
+11  Light Green      50%    90º  #5DA813   93 168  19   90º  80%  36.5% | Light
+15  Light Cyan       50%   180º  #13AEAE   19 174 174  180º  80%  38.0% | Accent
+13  Light Blue       50%   210º  #3790E9   55 144 233  210º  80%  56.5% |
+14  Light Violet     50%   270º  #A35AED  163  90 237  270º  80%  64.0% |
 ```
