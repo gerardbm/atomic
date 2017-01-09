@@ -89,6 +89,7 @@ Installation in Vim/Neovim:
 3. If you are in a GUI for Vim (as gvim), you have commands to switch between dark and night mode:
 	- `AtomicDark`: sets the dark mode (default).
 	- `AtomicNight`: sets the night mode.
+	- `AtomicLight`: sets the light mode.
 
 Or switch them depending on the current time. In your `.gvimrc`:
 
