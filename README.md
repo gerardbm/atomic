@@ -1,7 +1,7 @@
 # Atomic
 ### Multiple colors for multiple applications
 
-Atomic is a dark color scheme designed to use with terminal, Vim/Neovim and several GUI code editors. This repository also includes themes for some terminal applications (tmux, irssi, cmus...) and Zsh.
+Atomic is a dark color scheme designed to use with terminal, Vim/Neovim and several GUI code editors. This repository also includes themes for some terminal applications (vim-airline, irssi, cmus...) and Zsh.
 
 ### Color palette
 
@@ -50,7 +50,6 @@ Dark mode (hue 210º):
 
 - [x] Cmus
 - [x] Irssi
-- [x] Tmux
 - [x] Vim-airline
 - [x] Zsh
 
@@ -143,17 +142,6 @@ Installation in Zsh:
 2. Change the theme name to `ZSH_THEME="atomic"` in the file `~/.zshrc`.
 3. Reload Zsh with `source ~/.zshrc`.
 
-### Tmux
-
-This config file has two sections: key bindings and status bar design. Most of the key bindings have double navigation, using arrow keys and using Vim keys (hjkl). It fits perfectly in a workflow with vim. Status displays system information (hostname, session, time and date), very useful for working in fullscreen mode.
-
-Installation in Tmux:
-
-1. The file `.tmux.conf` has two sections: the theme and the scheme color.
-2. Copy the sections you are interested in and paste them to your `~/.tmux.conf` file.
-3. Reload the new config using the command `Ctrl+a r`.
-4. Make sure you have the Powerline fonts installed. (Status bar uses the Powerline look).
-
 ### Vim-airline
 
 It's a vim-airline theme using Atomic colors and it's vailable for Terminal and Gvim.
@@ -170,13 +158,13 @@ Installation in Vim:
 let g:airline_theme='atomic'
 " Enable it if you use the Powerline fonts
 let g:airline_powerline_fonts = 1
-" Enable a tabs line at the top
+" Enable the tabline at the top
 let g:airline#extensions#tabline#enabled = 1
-" It disables bold text, so it looks like tmux status bar
+" It disables the bold text in vim modes
 call airline#parts#define_accent('mode', 'black')
 ```
 
-Also, make sure you have the Powerline fonts installed, like in Tmux.
+Make sure you have the Powerline fonts installed.
 
 ### Cmus
 
@@ -202,7 +190,7 @@ Installation in irssi:
 
 The default font family is **DejaVu Sans Mono** from the [DejaVu](http://dejavu-fonts.org) fonts family (under a [Free license](http://dejavu-fonts.org/wiki/License)). Anyway, Atomic is designed to look good with any kind of typography, as colors are distinguishable to any thickness.
 
-Some themes (tmux and vim-airline) require the installation of Powerline fonts.
+Some themes (vim-airline) require the installation of Powerline fonts.
 URL: https://github.com/powerline/fonts
 
 - - -
