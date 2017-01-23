@@ -1,0 +1,56 @@
+# vim: filetype=muttrc
+#----------------------------------------------------------------
+#   __  __       _   _
+#  |  \/  |_   _| |_| |_
+#  | |\/| | | | | __| __|
+#  | |  | | |_| | |_| |_
+#  |_|  |_|\__,_|\__|\__|
+#
+#----------------------------------------------------------------
+#  Theme   : Atomic
+#  Version : 1.0.0
+#  License : MIT
+#  Author  : Gerard Bajona
+#  URL     : https://github.com/gerardbm/atomic
+#----------------------------------------------------------------
+
+# UI ------------------------------------------------------------
+color status        default    brightblack
+color indicator     cyan       brightblack
+color tree          red        default
+
+# general -------------------------------------------------------
+color normal        default    default
+color message       default    default
+color markers       green      default
+color error         red        default
+color tilde         white      default
+color attachment    yellow     default
+color search        brightred  default
+
+# index ---------------------------------------------------------
+color index         default    default         "~A"        # All messages
+color index         magenta    default         "~E"        # Expired messages
+color index         yellow     default         "~F"        # Flagged messages
+color index         red        default         "~D"        # Deleted messages
+color index         green      default         "~N"        # New messages
+color index         green      default         "~O"        # Old messages
+color index         green      default         "~U"        # Unread messages
+color index         green      default         "~U~$"      # Unread, unreferenced messages
+color index         green      default         "~(~N)"     # Messages in threads with some unread
+color index         green      default         "~v~(~N)"   # Collapsed thread with some unread
+color index         green      default         "~v~(~F~N)" # Collapsed thread with some unread & flagged
+
+# message headers -----------------------------------------------
+color hdrdefault    cyan       default
+color header        cyan       default         "^(From)"
+color header        cyan       default         "^(Subject)"
+
+# message body ----------------------------------------------------------
+color quoted        blue       default
+color signature     white      default
+color bold          black      default
+color underline     black      default
+color normal        default    default
+color body          magenta    default         "([a-z][a-z0-9+-]*://(((([a-z0-9_.!~*'();:&=+$,-]|%[0-9a-f][0-9a-f])*@)?((([a-z0-9]([a-z0-9-]*[a-z0-9])?)\\.)*([a-z]([a-z0-9-]*[a-z0-9])?)\\.?|[0-9]+\\.[0-9]+\\.[0-9]+\\.[0-9]+)(:[0-9]+)?)|([a-z0-9_.!~*'()$,;:@&=+-]|%[0-9a-f][0-9a-f])+)(/([a-z0-9_.!~*'():@&=+$,-]|%[0-9a-f][0-9a-f])*(;([a-z0-9_.!~*'():@&=+$,-]|%[0-9a-f][0-9a-f])*)*(/([a-z0-9_.!~*'():@&=+$,-]|%[0-9a-f][0-9a-f])*(;([a-z0-9_.!~*'():@&=+$,-]|%[0-9a-f][0-9a-f])*)*)*)?(\\?([a-z0-9_.!~*'();/?:@&=+$,-]|%[0-9a-f][0-9a-f])*)?(#([a-z0-9_.!~*'();/?:@&=+$,-]|%[0-9a-f][0-9a-f])*)?|(www|ftp)\\.(([a-z0-9]([a-z0-9-]*[a-z0-9])?)\\.)*([a-z]([a-z0-9-]*[a-z0-9])?)\\.?(:[0-9]+)?(/([-a-z0-9_.!~*'():@&=+$,]|%[0-9a-f][0-9a-f])*(;([-a-z0-9_.!~*'():@&=+$,]|%[0-9a-f][0-9a-f])*)*(/([-a-z0-9_.!~*'():@&=+$,]|%[0-9a-f][0-9a-f])*(;([-a-z0-9_.!~*'():@&=+$,]|%[0-9a-f][0-9a-f])*)*)*)?(\\?([-a-z0-9_.!~*'();/?:@&=+$,]|%[0-9a-f][0-9a-f])*)?(#([-a-z0-9_.!~*'();/?:@&=+$,]|%[0-9a-f][0-9a-f])*)?)[^].,:;!)? \t\r\n<>\"]"
+
