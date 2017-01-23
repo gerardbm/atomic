@@ -1,7 +1,7 @@
 # Atomic
 ### Multiple colors for multiple applications
 
-Atomic is a dark color scheme designed to use with terminal, Vim/Neovim and several GUI code editors. This repository also includes themes for some terminal applications (vim-airline, irssi, cmus...) and Zsh.
+Atomic is a dark color scheme designed to use with terminal, Vim/Neovim and several GUI code editors. This repository also includes themes for some terminal applications (vim-airline, irssi, mutt, cmus...) and Zsh.
 
 ### Color palette
 
@@ -48,9 +48,10 @@ Dark mode (hue 210º):
 
 ### Themes
 
-- [x] Cmus
-- [x] Irssi
 - [x] Vim-airline
+- [x] Irssi
+- [x] Mutt
+- [x] Cmus
 - [x] Zsh
 
 ## Installation
@@ -166,15 +167,6 @@ call airline#parts#define_accent('mode', 'black')
 
 Make sure you have the Powerline fonts installed.
 
-### Cmus
-
-Simply, it's a theme using Atomic colors. Cmus themes don't allow other configurations.
-
-Installation in cmus:
-
-1. Download the Atomic repository, unpack the downloaded file and manually place `atomic.theme` file into `~/.cmus/`.
-2. Open your cmus and type: `:colorscheme atomic`. Enjoy!
-
 ### Irssi
 
 This theme has been created to make the reading easier and more intuitive.
@@ -183,6 +175,28 @@ Installation in irssi:
 
 1. Download the Atomic repository, unpack the downloaded file and manually place `atomic.theme` file into `~/.irssi/`.
 2. Open your irssi and type: `/set theme atomic`. You can save changes with `/save`.
+
+### Mutt
+
+Intuitive theme to distinguish easily between read and unread emails, flagged, deleted and threads. Into the body message, colors follow a common sense pattern of an email scheme.
+
+Installation in mutt:
+
+1. Download the Atomic repository, unpack it and place `atomic.muttrc` to your `~/.mutt` directory.
+2. Then source this file from your `~/.muttrc`. For example:
+
+`
+source $HOME/.mutt/atomic.muttrc
+`
+
+### Cmus
+
+Simply, it's a theme using Atomic colors. Cmus themes don't allow other configurations.
+
+Installation in cmus:
+
+1. Download the Atomic repository, unpack the downloaded file and manually place `atomic.theme` file into `~/.cmus/`.
+2. Open your cmus and type: `:colorscheme atomic`. Enjoy!
 
 - - -
 
