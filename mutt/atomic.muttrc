@@ -46,7 +46,7 @@ color hdrdefault    cyan       default
 color header        cyan       default         "^(From)"
 color header        cyan       default         "^(Subject)"
 
-# message body ----------------------------------------------------------
+# message body --------------------------------------------------
 color quoted        blue       default
 color signature     white      default
 color bold          black      default

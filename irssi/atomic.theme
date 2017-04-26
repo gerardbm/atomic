@@ -7,7 +7,7 @@
 #
 #----------------------------------------------------------------
 #  Theme   : Atomic
-#  Version : 2.0.3
+#  Version : 2.1.0
 #  License : MIT
 #  Author  : Gerard Bajona
 #  URL     : http://github.com/gerardbm/Atomic
@@ -106,7 +106,7 @@ abstracts = {
   #line_start = "%G-%n!%B-%n ";
 
   # timestamp styling, nothing by default
-  timestamp = "%x08 %w$* %K%x00%n";
+  timestamp = "%x08 %w$* %n%K%n";
 
   # any kind of text that needs hilighting, default is to bold
   hilight = "$*";
@@ -304,15 +304,14 @@ abstracts = {
   sbstart = "";
   # text at the end of statusbars. Use space so that it's never
   # used for anything.
-  sbend = " %X08%x00 ";
+  sbend = " ";
 
   topicsbstart = "{sbstart $*}";
   topicsbend = "{sbend $*}";
 
   prompt = " %W» %n";
 
-  # sb = "%W $* %X08%x00%X00%x08";
-  sb = "%W $* %X07-";
+  sb = "%W $* %X07";
   sbmode = "%c(%g+$*%c)";
   sbaway = " %c(%gzZzZ%c)";
   sbservertag = ":%y$0 %c(%wchange with %y^X%c)";
@@ -342,7 +341,7 @@ formats = {
     line_start_irssi = "{line_start}";
     timestamp = "{timestamp $Z} ";
     servertag = "[%b$0]";
-    daychange = "%x08 %w$Z %K%x00%n %G$[-16]S ~%w│%G~ Day changed to %%d %%b %%Y%n";
+    daychange = "%x08 %w$Z %n%K%n %G$[-16]S ~%w│%G~ Day changed to %%d %%b %%Y%n";
     talking_with = "%w                 ~│~ %|You are now talking with {nick $0}";
     refnum_too_low = "%w                 ~│~ %|Window number must be greater than 1";
     error_server_sticky = "%w                 ~│~ %|Window's server is sticky and it cannot be changed without -unsticky option";
@@ -780,12 +779,12 @@ formats = {
     script_error = "%w                 ~│~ %|{error Error in script {hilight $0}:}";
   };
   "Irssi::Script::adv_windowlist" = {
-    awl_display_key           = "%k%7$N %w%0 %W%0$H$C$S%n";
-    awl_display_key_active    = "%k%4$N %b%0 %b%0$H$C$S%n";
-    awl_display_key_visible   = "%k%3$N %y%0 %b%0$H$C$S%n";
-    awl_display_nokey         = "%k%5$N %m%0 %m%0$H$C$S%n";
-    awl_display_nokey_active  = "%k%2$N %g%0 %g%0$H$C$S%n";
-    awl_display_nokey_visible = "%k%1$N %r%0 %r%0$H$C$S%n";
+	awl_display_key = "%n$N: %W$H$C$S%n";
+	awl_display_key_active = "%n$N: %b$H$C$S%n";
+	awl_display_key_visible = "%n$N: %b$H$C$S%n";
+	awl_display_nokey = "%n$N: %m$H$C$S%n";
+	awl_display_nokey_active = "%n$N: %g$H$C$S%n";
+	awl_display_nokey_visible = "%n$N: %r$H$C$S%n";
     awl_separator = "";
     awl_display_header = "";
   };
