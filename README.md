@@ -7,11 +7,21 @@ Atomic is a dark color scheme designed to use with terminal, Vim/Neovim and seve
 
 The color palette consists of sixteen precision colors selected procedurally (algorithms), distributed in six hues and four balanced Luma (Y'). Note that Luma (Y') is the perceived brightness; don't confuse it with the lightness of the HSL color model.
 
-Human vision doesn't detect brightness linearly with color: in a pixel (R'G'B'), we see red color (255, 0, 0) brighter than blue color (0, 0, 255), and green color (0, 255, 0) brighter than red color (255, 0, 0). So, in order to balance the color contrast, the perceived brightness has been corrected according to the ITU-R Recommendation BT.601:
+Human vision doesn't detect brightness linearly with color: in a pixel (R'G'B'), we see red color (#FF0000) darker than green color (#00FF00), and green color (#00FF00) brighter than red (#FF0000) and blue (#0000FF).
+
+![Atomic-luma](https://github.com/gerardbm/Atomic/blob/master/img/luma.png)
+
+\*Note: CR means 'contrast ratio'.
+
+So Luma (Y') has been balanced according to the ITU-R Recommendation BT.601:
 
 `Luma (Y') = 0.299 R' + 0.587 G' + 0.114 B'`
 
 This algorithm is also [suggested by W3C](https://www.w3.org/TR/AERT#color-contrast), however it's still open to change.
+
+![Atomic-luma](https://github.com/gerardbm/Atomic/blob/master/img/unbalanced_luma.png)
+
+![Atomic-luma](https://github.com/gerardbm/Atomic/blob/master/img/balanced_luma.png)
 
 In a RGB color wheel, hues have been selected in order to be distinguishable for the human eye and keeping harmony: two analogous colors (0º and 30º), their complementary (180º and 210º) and tetrad (90º and 270º).
 
