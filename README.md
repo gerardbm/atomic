@@ -62,8 +62,8 @@ Hue of base colors is 45º for this palette.
 - [x] Terminal
 	- konsole
 	- xfce4-terminal
-	- gnome-terminal
 	- URxvt
+	- XTerm
 - [x] Vim & Neovim
 - [x] NetBeans IDE
 - [x] [Sublime Text](https://github.com/gerardbm/sublime-atomic-scheme)
@@ -85,17 +85,11 @@ Installation for **konsole**:
 1. Copy the file `Atomic.colorscheme` to `~/.kde/share/apps/konsole/` directory (or `~/.local/share/konsole/` directory if your KDE version is 5 or higher).
 2. Open your terminal: `Settings` > `Edit Current Profile` > `Appearance` and choose «Atomic».
 
-Installation for **gnome-terminal**:
-
-1. Download the script `install-atomic.sh`.
-2. Assign it execution permissions: `chmod +x install-atomic.sh`.
-3. Open your terminal and execute the script: `./install-atomic.sh`.
-
 Installation for **xfce4-terminal**:
 
 1. Copy the file `terminalrc` to your `~/.config/xfce4/terminal/` directory or paste its content into it if you already have this file.
 
-Installation for **URxvt**:
+Installation for **URxvt** and **XTerm**:
 
 1. Copy the content of the file `Xresources.dark` or `Xresources.night` to your `.Xresources` file.
 2. Load the resource file with the command: `xrdb ~/.Xresources`.
