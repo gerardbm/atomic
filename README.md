@@ -91,7 +91,7 @@ Installation for **xfce4-terminal**:
 
 Installation for **URxvt** and **XTerm**:
 
-1. Copy the content of the file `Xresources.dark` or `Xresources.night` to your `.Xresources` file.
+1. Copy the content from the files `Xresources.*` to your `.Xresources`.
 2. Load the resource file with the command: `xrdb ~/.Xresources`.
 
 You will find more information on the .Xresources file in the [Arch Linux wiki](https://wiki.archlinux.org/index.php/X_resources).
