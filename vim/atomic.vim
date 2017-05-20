@@ -7,7 +7,7 @@
 "
 "----------------------------------------------------------------
 "  Theme   : Atomic
-"  Version : 2.0.0
+"  Version : 3.0.0
 "  License : MIT
 "  Author  : Gerard Bajona
 "  URL     : https://github.com/gerardbm/atomic
@@ -75,102 +75,213 @@ else
 	if exists("g:atomic_mode")
 		let s:mode = g:atomic_mode
 	else
-		let s:mode = 0
+		let s:mode = 1
 	endif
 
-	" Base colors
-	if s:mode == 0
-		" Dark mode
+	" Base colors 1 & 2
+	" -----------------------
+	if s:mode == 1
+		" Dark blue (soft)
 		" -----------------------
 		let s:base1 = '#141A1F' " Luma 10%
-		let s:base2 = '#202931' " Luma 15%
-		let s:base3 = '#53697F' " Luma 40%
-		let s:base4 = '#A6B5C5' " Luma 70%
-
-		" Extra
-		let s:base5 = '#0C3D6E' " Luma 20% (column)
-		let s:base6 = '#354351' " Luma 25% (select)
-	elseif s:mode == 1
-		" Night mode
+		let s:base2 = '#1A2128' " Luma 13%
+	elseif s:mode == 2
+		" Dark blue (hard)
+		" -----------------------
+		let s:base1 = '#0A0D0F' " Luma 5%
+		let s:base2 = '#11151A' " Luma 8%
+	elseif s:mode == 3
+		" Dark cyan (soft)
+		" -----------------------
+		let s:base1 = '#121C1C' " Luma 10%
+		let s:base2 = '#172424' " Luma 13%
+	elseif s:mode == 4
+		" Dark cyan (hard)
+		" -----------------------
+		let s:base1 = '#080D0D' " Luma 5%
+		let s:base2 = '#0E1616' " Luma 8%
+	elseif s:mode == 5
+		" Night orange (soft)
 		" -----------------------
 		let s:base1 = '#1E1813' " Luma 10%
-		let s:base2 = '#2E261E' " Luma 15%
-		let s:base3 = '#76614D' " Luma 40%
+		let s:base2 = '#251F18' " Luma 13%
+	elseif s:mode == 6
+		" Night orange (hard)
+		" -----------------------
+		let s:base1 = '#0E0B09' " Luma 5%
+		let s:base2 = '#17130F' " Luma 8%
+	elseif s:mode == 7
+		" Night red (soft)
+		" -----------------------
+		let s:base1 = '#211515' " Luma 10%
+		let s:base2 = '#2B1C1C' " Luma 13%
+	elseif s:mode == 8
+		" Night red (hard)
+		" -----------------------
+		let s:base1 = '#100A0A' " Luma 5%
+		let s:base2 = '#1A1111' " Luma 8%
+	elseif s:mode == 9
+		" Light mode (soft)
+		" -----------------------
+		let s:base1 = '#EFE6C9' " Luma 90%
+		let s:base2 = '#EBDFBA' " Luma 87%
+	elseif s:mode == 10
+		" Light mode (hard)
+		" -----------------------
+		let s:base1 = '#F7F2E4' " Luma 95%
+		let s:base2 = '#F2EBD4' " Luma 92%
+	endif
+
+	" Base colors 3 & 4
+	" -----------------------
+	if s:mode == 1 || s:mode == 2
+		" Dark blue
+		" -----------------------
+		let s:base3 = '#6B859E' " Luma 50%
+		let s:base4 = '#A6B5C5' " Luma 70%
+
+		"  Extra for GUI
+		let s:base5 = '#193958' " Luma 20% (column)
+		let s:base6 = '#2A3540' " Luma 20% (select)
+	elseif s:mode == 3 || s:mode == 4
+		" Dark cyan
+		" -----------------------
+		let s:base3 = '#5E8F8F' " Luma 50%
+		let s:base4 = '#99BDBD' " Luma 70%
+
+		"  Extra for GUI
+		let s:base5 = '#134040' " Luma 20% (column)
+		let s:base6 = '#253939' " Luma 20% (select)
+	elseif s:mode == 5 || s:mode == 6
+		" Night orange
+		" -----------------------
+		let s:base3 = '#957B62' " Luma 50%
 		let s:base4 = '#C0AF9F' " Luma 70%
 
-		" Extra
-		let s:base5 = '#522D09' " Luma 20% (column)
-		let s:base6 = '#4B3E31' " Luma 25% (select)
-	elseif s:mode == 2
+		"  Extra for GUI
+		let s:base5 = '#472E15' " Luma 20% (column)
+		let s:base6 = '#3B3127' " Luma 20% (select)
+	elseif s:mode == 7 || s:mode == 8
+		" Night red
+		" -----------------------
+		let s:base3 = '#A27171' " Luma 50%
+		let s:base4 = '#C7A9A9' " Luma 70%
+
+		"  Extra for GUI
+		let s:base5 = '#651D1D' " Luma 20% (column)
+		let s:base6 = '#442C2C' " Luma 20% (select)
+	elseif s:mode == 9 || s:mode == 10
 		" Light mode
 		" -----------------------
-		let s:base1 = '#F8F0E7' " Luma 95%
-		let s:base2 = '#F2E3D4' " Luma 90%
-		let s:base3 = '#B7916C' " Luma 60%
-		let s:base4 = '#594A3A' " Luma 30%
+		let s:base3 = '#8D815C' " Luma 50%
+		let s:base4 = '#554D37' " Luma 30%
 
-		" Extra
-		let s:base5 = '#F6D1AC' " Luma 20% (column)
-		let s:base6 = '#D6CBC0' " Luma 25% (select)
+		"  Extra for GUI
+		let s:base5 = '#E0CE96' " Luma 80% (column)
+		let s:base6 = '#D3CDBB' " Luma 80% (select)
 	endif
 
 	" Accent colors
-	if (s:mode == 1 || s:mode == 0)
+	" -----------------------
+	if s:mode >= 1 && s:mode <= 8
 		" Dark background
 		" -----------------------
 		" Dark accent colors
-		let s:acb50 = '#3790E9'
-		let s:acv50 = '#A35AED'
-		let s:acr50 = '#EC5252'
-		let s:aco50 = '#C97016'
-		let s:acg50 = '#5DA813'
-		let s:acc50 = '#13AEAE'
+		let s:acb50 = '#3890E9' " |
+		let s:acv50 = '#A359ED' " |
+		let s:acr50 = '#EC5252' " | Luma 50%
+		let s:aco50 = '#C97016' " |
+		let s:acg50 = '#5DA713' " |
+		let s:acc50 = '#13AFAF' " |
 
 		" Light accent colors
-		let s:acb70 = '#7DBEFF'
-		let s:acv70 = '#CA96FF'
-		let s:acr70 = '#FF9191'
-		let s:aco70 = '#EDA45C'
-		let s:acg70 = '#9ACD68'
-		let s:acc70 = '#6ECFCF'
+		let s:acb70 = '#7DBEFF' " |
+		let s:acv70 = '#CB96FF' " |
+		let s:acr70 = '#FF9191' " | Luma 70%
+		let s:aco70 = '#EDA55D' " |
+		let s:acg70 = '#9ACD68' " |
+		let s:acc70 = '#6ECFCF' " |
 
-		" Extra
-		let s:diffr = '#650B0B'
-		let s:diffg = '#1C3206'
-		let s:diffb = '#092D50'
-		let s:diffv = '#3D0C6E'
+		"  Extra for GUI
+		let s:diffr = '#4E0404'
+		let s:diffg = '#122202'
+		let s:diffb = '#031F3A'
+		let s:diffv = '#2D0556'
+		let s:difgg = s:acg70
 	else
 		" Light background
 		" -----------------------
-		" Light accent colors
+		" Dark accent colors
 		let s:acb50 = '#095CAE' " |
 		let s:acv50 = '#7C19DF' " |
 		let s:acr50 = '#C11C1C' " | Luma 30%
-		let s:aco50 = '#824100' " | instead of 50%
+		let s:aco50 = '#824100' " | (instead of 50%)
 		let s:acg50 = '#346900' " |
 		let s:acc50 = '#006E6E' " |
 
-		" Dark accent colors
-		let s:acb70 = '#3790E9' " |
-		let s:acv70 = '#A35AED' " |
+		" Light accent colors
+		let s:acb70 = '#3890E9' " |
+		let s:acv70 = '#A359ED' " |
 		let s:acr70 = '#EC5252' " | Luma 50%
-		let s:aco70 = '#C97016' " | instead of 70%
-		let s:acg70 = '#5DA813' " |
-		let s:acc70 = '#13AEAE' " |
+		let s:aco70 = '#C97016' " | (instead of 70%)
+		let s:acg70 = '#5DA713' " |
+		let s:acc70 = '#13AFAF' " |
 
-		" Extra
+		"  Extra for GUI
 		let s:diffr = '#FFDBDB'
-		let s:diffg = '#D9F4BE'
+		let s:diffg = '#D6F7B6'
 		let s:diffb = '#D5EAFF'
 		let s:diffv = '#EEDDFF'
+		let s:difgg = s:acg50
 	endif
 
-	command! AtomicDark let g:atomic_mode = 0
+	" Commands
+	command! AtomicDarkBlueSoft        let g:atomic_mode = 1
 				\ | colorscheme atomic
-	command! AtomicNight let g:atomic_mode = 1
+	command! AtomicDarkBlueHard        let g:atomic_mode = 2
 				\ | colorscheme atomic
-	command! AtomicLight let g:atomic_mode = 2
+	command! AtomicDarkCyanSoft        let g:atomic_mode = 3
 				\ | colorscheme atomic
+	command! AtomicDarkCyanHard        let g:atomic_mode = 4
+				\ | colorscheme atomic
+	command! AtomicNightOrangeSoft     let g:atomic_mode = 5
+				\ | colorscheme atomic
+	command! AtomicNightOrangeHard     let g:atomic_mode = 6
+				\ | colorscheme atomic
+	command! AtomicNightRedSoft        let g:atomic_mode = 7
+				\ | colorscheme atomic
+	command! AtomicNightRedHard        let g:atomic_mode = 8
+				\ | colorscheme atomic
+	command! AtomicLightSoft           let g:atomic_mode = 9
+				\ | colorscheme atomic
+	command! AtomicLightHard           let g:atomic_mode = 10
+				\ | colorscheme atomic
+
+	function! CycleModes()
+		let s:cycle = g:atomic_mode
+
+		if s:cycle == 1
+			let g:atomic_mode = 2
+		elseif s:cycle == 2
+			let g:atomic_mode = 3
+		elseif s:cycle == 3
+			let g:atomic_mode = 4
+		elseif s:cycle == 4
+			let g:atomic_mode = 5
+		elseif s:cycle == 5
+			let g:atomic_mode = 6
+		elseif s:cycle == 6
+			let g:atomic_mode = 7
+		elseif s:cycle == 7
+			let g:atomic_mode = 8
+		elseif s:cycle == 8
+			let g:atomic_mode = 9
+		elseif s:cycle == 9
+			let g:atomic_mode = 10
+		elseif s:cycle == 10
+			let g:atomic_mode = 1
+		endif
+	endfunction
 
 endif
 
@@ -216,7 +327,7 @@ if has('gui_running')
 	execute 'hi DiffChange '   . s:envir . 'bg=' . s:diffb . ' ' . s:envir . '=none'
 	execute 'hi DiffDelete '   . s:envir . 'bg=' . s:diffr . ' ' . s:envir . '=none'
 	execute 'hi DiffRemoved '  . s:envir . 'bg=' . s:diffr . ' ' . s:envir . '=none'
-	execute 'hi DiffText '     . s:envir . 'bg=' . s:diffv . ' ' . s:envir . '=none'
+	execute 'hi DiffText '     . s:envir . 'fg=' . s:difgg . ' ' . s:envir . 'bg=' . s:diffg . ' ' . s:envir . '=bold'
 	" -------------------------.
 	execute 'hi Visual '       . s:envir . 'bg=' . s:base6 . ' ' . s:envir . '=none'
 else
@@ -225,12 +336,12 @@ else
 	execute 'hi SpellLocal '   . s:envir . 'fg=' . s:aco50 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=italic,underline'
 	execute 'hi SpellRare '    . s:envir . 'fg=' . s:acv50 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=italic,underline'
 	" -------------------------.
-	execute 'hi DiffAdd '      . s:envir . 'fg=' . s:acg50 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=italic'
-	execute 'hi DiffAdded '    . s:envir . 'fg=' . s:acg50 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=italic'
-	execute 'hi DiffChange '   . s:envir . 'fg=' . s:acb50 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=italic'
-	execute 'hi DiffDelete '   . s:envir . 'fg=' . s:acr50 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=italic'
-	execute 'hi DiffRemoved '  . s:envir . 'fg=' . s:acr50 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=italic'
-	execute 'hi DiffText '     . s:envir . 'fg=' . s:acv50 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=italic'
+	execute 'hi DiffAdd '      . s:envir . 'fg=' . s:acg50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+	execute 'hi DiffAdded '    . s:envir . 'fg=' . s:acg50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+	execute 'hi DiffChange '   . s:envir . 'fg=' . s:acb50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+	execute 'hi DiffDelete '   . s:envir . 'fg=' . s:acr50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+	execute 'hi DiffRemoved '  . s:envir . 'fg=' . s:acr50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none'
+	execute 'hi DiffText '     . s:envir . 'fg=' . s:acg50 . ' ' . s:envir . 'bg=' . s:base1 . ' ' . s:envir . '=none,bold'
 	" -------------------------.
 	execute 'hi Visual '       . s:envir . 'fg=' . s:base1 . ' ' . s:envir . 'bg=' . s:base3 . ' ' . s:envir . '=none'
 endif
@@ -238,7 +349,7 @@ endif
 " Cursorline
 "----------------------------------------------------------------
 if version >= 700
-	execute 'hi PMenu '        . s:envir . 'fg=' . s:base4 . ' ' . s:envir . 'bg=' . s:base2 . ' ' . s:envir . '=none'
+	execute 'hi PMenu '        . s:envir . 'fg=' . s:base1 . ' ' . s:envir . 'bg=' . s:base3 . ' ' . s:envir . '=none'
 	execute 'hi PMenuSel '     . s:envir . 'fg=' . s:base1 . ' ' . s:envir . 'bg=' . s:acc50 . ' ' . s:envir . '=none'
 	execute 'hi SignColumn '   . s:envir . 'bg=' . s:base3 . ' ' . s:envir . '=none'
 endif

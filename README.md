@@ -93,7 +93,7 @@ Installation for **xfce4-terminal** (include extra modes with +5% contrast).
 1. Copy the file `terminalrc` to your `~/.config/xfce4/terminal/` directory or paste its content into it if you already have this file.
 2. Restart the terminal.
 
-Installation for **konsole** (only dark mode blue is available):
+Installation for **konsole** (only dark blue mode is available):
 
 1. Copy the file `Atomic.colorscheme` to `~/.kde/share/apps/konsole/` directory (or `~/.local/share/konsole/` directory if your KDE version is 5).
 2. Open your terminal: `Settings` > `Edit Current Profile` > `Appearance` and choose «Atomic».
@@ -105,20 +105,34 @@ Installation in Vim/Neovim:
 1. Copy the file `atomic.vim` contained into the `vim` directory of this repository and paste it into `~/.vim/colors/` (Vim) or `~/.config/nvim/colors/` (Neovim).
 2. Set the colorscheme in your Vim/Neovim configuration file: `colorscheme atomic`.
 3. If you are in a GUI for Vim (as gvim), you have commands to switch between modes:
-	- `AtomicDark`: sets the dark mode (default).
-	- `AtomicNight`: sets the night mode.
-	- `AtomicLight`: sets the light mode.
+	- (1) `AtomicDarkBlueSoft`: sets the dark blue mode (default).
+	- (2) `AtomicDarkBlueHard`: extra, +5% contrast.
+	- (3) `AtomicDarkCyanSoft`: sets the dark cyan mode.
+	- (4) `AtomicDarkCyanHard`: extra, +5% contrast.
+	- (5) `AtomicNightOrangeSoft`: sets the night orange mode.
+	- (6) `AtomicNightOrangeHard`: extra, +5% contrast.
+	- (7) `AtomicNightRedSoft`: sets the night red mode.
+	- (8) `AtomicNightRedHard`: extra, +5% contrast.
+	- (9) `AtomicLightSoft`: sets the light mode.
+	- (10) `AtomicLightHard`: extra, +5% contrast.
 
 Or switch them depending on the current time. In your `.gvimrc`:
 
 ```viml
 function! AtomicSwitcher()
 	if (strftime("%H") > 8) && (strftime("%H") < 20)
-		AtomicDark
+		AtomicLightSoft
 	else
-		AtomicLight
+		AtomicNightRedHard
 	endif
 endfunction
+```
+
+Even cycle them (from 1 to  10) with a shortcut. Paste this in your `.gvimrc`:
+
+```viml
+nnoremap <S-F9> :call CycleModes()<CR>:colorscheme atomic<CR>
+vnoremap <S-F9> :<C-u>call CycleModes()<CR>:colorscheme atomic<CR>gv
 ```
 
 ### NetBeans
