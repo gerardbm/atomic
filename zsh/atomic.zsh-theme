@@ -7,19 +7,11 @@
 #
 #----------------------------------------------------------------
 #  Theme   : Atomic
-#  Version : 1.0.2
+#  Version : 1.1.0
 #  License : MIT
 #  Author  : Gerard Bajona
 #  URL     : https://github.com/gerardbm/atomic
 #----------------------------------------------------------------
-
-# Top separator
-setopt promptsubst
-ATOMIC_DG=$'%{\e[90m%}'
-ATOMIC_LN=$'${(r:(($COLUMNS - 9))::—:)}'
-ATOMIC_SL="%{$fg[white]%}/"
-ATOMIC_TM="%{$fg[default]%}%D{ %R }"
-ATOMIC_TOP="${ATOMIC_DG}${ATOMIC_LN}${ATOMIC_SL}${ATOMIC_TM}${ATOMIC_SL}"
 
 # Hostname
 function hostname {
@@ -42,7 +34,7 @@ ZSH_THEME_GIT_PROMPT_DIRTY="%{$reset_color%} %{$fg[red]%}x"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$reset_color%} %{$fg[green]%}o"
 
 # Prompt format
-PROMPT="$ATOMIC_TOP
+PROMPT="
 %{$fg[green]%}%n %{$fg[default]%}at %{$fg[blue]%}$(hostname) \
 %{$fg[default]%}in %{$fg_bold[blue]%}${current_dir}%{$reset_color%} \
 ${git_info}%{$fg[default]%}» %{$reset_color%}"
