@@ -167,7 +167,7 @@ With `auto_upgrade` enabled, Package Control will keep all installed packages up
 
 ### Zsh
 
-Atomic Zsh theme has been designed to show useful information (username, hostname and pwd) without taking the entire line. If a directory is under Git control, in the second line it shows the current branch and status. Top separator helps to visually separate every task and shows the current time.
+Atomic Zsh theme has been designed to show useful information (username, hostname and pwd) without taking the entire line. If a directory is under Git control, in the second line it shows the current branch and status.
 
 Installation in Zsh:
 

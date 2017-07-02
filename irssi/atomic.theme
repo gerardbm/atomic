@@ -7,7 +7,7 @@
 #
 #----------------------------------------------------------------
 #  Theme   : Atomic
-#  Version : 3.0.0
+#  Version : 3.0.1
 #  License : MIT
 #  Author  : Gerard Bajona
 #  URL     : http://github.com/gerardbm/atomic
@@ -552,9 +552,9 @@ formats = {
     no_topic = "%w                   * │ %|No topic set for {channelhilight $0}";
     topic_info = "%w                   * │ %|Topic set by %c{nick $0} %w{nickhost $2} %C{comment $1}%n";
     # chanmode
-    chanmode_change = "%w                   * │ %|{channelhilight $0} %|%w(mode {mode $1}) by {nick %c$2%n}";
-    channel_mode = "%w                   * │ %|{channelhilight $0} %|%w(mode {mode $1})%n";
-    server_chanmode_change = "%w                   * │ %|{channelhilight $0} %|{netsplit ServerMode} %w{mode $1} by {nick $2}";
+    chanmode_change = "%w                   * │ %|{channelhilight $0} %w(mode {mode $1}) by {nick %c$2%n}";
+    channel_mode = "%w                   * │ %|{channelhilight $0} %w(mode {mode $1})%n";
+    server_chanmode_change = "%w                   * │ %|{channelhilight $0} {netsplit ServerMode} %w{mode $1} by {nick $2}";
     # end chanmode
     bantype = "%w                   * │ %|Ban type changed to {channel $0}";
     no_bans = "%w                   * │ %|No bans in channel {channel $0}";
