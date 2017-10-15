@@ -12,6 +12,12 @@
 "  Author  : Gerard Bajona
 "  URL     : https://github.com/gerardbm/atomic
 " ----------------------------------------------------------------
+"  Colors will be adapted to the current colorscheme. For better
+"  contrast use the atomic colorscheme: it has ten color palettes
+"  with sixteen colors selected procedurally (algorithms).
+"
+"  Atomic colorscheme: https://github.com/gerardbm/vim-atomic
+" ----------------------------------------------------------------
 
 let g:airline#themes#atomic#palette = {}
 

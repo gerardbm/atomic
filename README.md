@@ -177,14 +177,14 @@ Installation in Zsh:
 
 ### Vim-airline
 
-It's a vim-airline theme using Atomic colors and it's vailable for Terminal and Gvim.
+Atomic theme for vim-airline-themes (a plugin for vim).
 
 Installation in Vim:
 
-1. Install the plugin [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes) in your Vim.
-2. Copy the file `atomic.vim` to your 'vim-airline-themes' directory: `../vim-airline-themes/autoload/airline/themes/`.
-3. Add the following settings to your `.vimrc`.
-4. And finally type: `:AirlineTheme atomic`.
+1. Make sure you already have this plugin [vim-airline](https://github.com/vim-airline/vim-airline).
+2. Install the plugin [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes).
+3. Type this `:AirlineTheme atomic` to use the atomic theme in the current session.
+4. Add the following settings to your `.vimrc`.
 
 ```viml
 " Use 'atomic' by default
@@ -196,6 +196,8 @@ let g:airline#extensions#tabline#enabled = 1
 " It disables the bold text in vim modes
 call airline#parts#define_accent('mode', 'black')
 ```
+
+For better contrast, install the plugin [vim-atomic](https://github.com/gerardbm/vim-atomic) and set by default the atomic colorscheme. If it's not installed, it will use the colors of your current colorscheme. If it's installed, vim-airline-atomic will be adapted to the current atomic mode (Dark, Night, Light) automatically.
 
 Make sure you have the Powerline fonts installed.
 
