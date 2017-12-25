@@ -61,9 +61,11 @@ for ARG in "$@"; do
 		dir_zsh="$HOME/.oh-my-zsh/themes/"
 		atomic_zsh1="$script_dir/zsh/atomic.zsh-theme"
 		atomic_zsh2="$script_dir/zsh/atomic-powerline.zsh-theme"
+		atomic_zsh3="$script_dir/zsh/atomic-lambda.zsh-theme"
 		mkdir -p "$dir_zsh"
 		$USE "$atomic_zsh1" "$dir_zsh"
 		$USE "$atomic_zsh2" "$dir_zsh"
+		$USE "$atomic_zsh3" "$dir_zsh"
 	fi
 	if [ "$ARG" == "vim" ]; then
 		dir_vim="$HOME/.vim/colors/"

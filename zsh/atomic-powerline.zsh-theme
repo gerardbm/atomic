@@ -1,48 +1,90 @@
-#----------------------------------------------------------------
-#   _____    _
-#  |__  /___| |__
-#    / // __| '_ \
-#   / /_\__ \ | | |
-#  /____|___/_| |_|
+# vim:ft=zsh
+# -----------------------------------------------------------------------------
+#           __                  _
+#    ____ _/ /_____  ____ ___  (_)____
+#   / __ `/ __/ __ \/ __ `__ \/ / ___/
+#  / /_/ / /_/ /_/ / / / / / / / /__
+#  \__,_/\__/\____/_/ /_/ /_/_/\___/ series
 #
-#----------------------------------------------------------------
-#  Theme   : Atomic Powerline
-#  Version : 1.0.0
+# -----------------------------------------------------------------------------
+#  Theme   : atomic-powerline
+#  Version : 2.0.0
 #  License : MIT
 #  Author  : Gerard Bajona
 #  URL     : https://github.com/gerardbm/atomic
-#----------------------------------------------------------------
+# -----------------------------------------------------------------------------
 
-# Top separator
-setopt promptsubst
-ATOMIC_DG=$'%{\e[90m%}'
-ATOMIC_LN=$'${(r:(($COLUMNS - 9))::—:)}'
-ATOMIC_SL="%{$fg[cyan]%}%{$fg[black]%}"
-ATOMIC_TM="%{$bg[cyan]%}%D{ %R }"
-ATOMIC_TOP="${ATOMIC_DG}${ATOMIC_LN}${ATOMIC_SL}${ATOMIC_TM}%{$reset_color%}"
+# Status machine
+function status_machine() {
+	PREFIX="%{$fg[black]%}%(?:%{$bg[cyan]%}:%{$bg[yellow]%}%s)"
+	LOCALE="%n@$(hostname)"
+	SUFFIX="%{$bg[white]%}%(?:%{$fg[cyan]%}:%{$fg[yellow]%}%s)"
+	echo "$PREFIX $LOCALE $SUFFIX"
+}
 
 # Hostname
 function hostname {
-	echo $HOST
+	echo "$HOST"
 }
 
-# Current directory
-local current_dir='${PWD/#$HOME/~}'
-
-# Git prefix
-ATOMIC_GIT1="\n%{$fg[default]%}~ on "
-ATOMIC_GIT2="%{$fg[cyan]%}git%{$reset_color%}"
-ATOMIC_GIT3=":%{$fg_bold[cyan]%}"
+# PWD
+function get_pwd() {
+	echo "${PWD/$HOME/~}"
+}
 
 # Git information
-local git_info='$(git_prompt_info)'
-ZSH_THEME_GIT_PROMPT_PREFIX="${ATOMIC_GIT1}${ATOMIC_GIT2}${ATOMIC_GIT3}"
-ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} "
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$reset_color%} %{$fg[red]%}x"
-ZSH_THEME_GIT_PROMPT_CLEAN="%{$reset_color%} %{$fg[green]%}o"
+function atomic_git() {
+	ref=$(git symbolic-ref HEAD 2> /dev/null) || return
+	GIT_STATUS=$(git_prompt_status)
+	MOD_STATUS="%{$fg_bold[black]%}$GIT_STATUS"
+	PREFIX=$ZSH_THEME_GIT_PROMPT_PREFIX
+	SUFFIX="%{$reset_color%}%{$fg[white]$bg[default]%}"
+	HEADS="${ref#refs/heads/}"
+	DIRTY=$ZSH_THEME_GIT_PROMPT_DIRTY
+	CLEAN=$ZSH_THEME_GIT_PROMPT_CLEAN
+	if [[ -n $GIT_STATUS ]] && GIT_STATUS="$GIT_STATUS"; then
+		echo "$PREFIX$HEADS $DIRTY $MOD_STATUS $SUFFIX"
+	else
+		echo "$PREFIX$HEADS $CLEAN"
+	fi
+}
 
-# Prompt format
-PROMPT="$ATOMIC_TOP
-%{$fg[green]%}%n %{$fg[default]%}at %{$fg[blue]%}$(hostname) \
-%{$fg[default]%}in %{$fg_bold[blue]%}${current_dir}%{$reset_color%} \
-${git_info}%{$fg[default]%}» %{$reset_color%}"
+# Git prompt: info
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[black]$bg[white]%}  "
+ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
+
+# Git prompt: dirty/clean
+ZSH_THEME_GIT_PROMPT_DIRTY="x "
+ZSH_THEME_GIT_PROMPT_CLEAN="o %{$fg[white]$bg[default]%}"
+
+# Git prompt: status
+ZSH_THEME_GIT_PROMPT_ADDED="+"
+ZSH_THEME_GIT_PROMPT_RENAMED=">"
+ZSH_THEME_GIT_PROMPT_MODIFIED="!"
+ZSH_THEME_GIT_PROMPT_DELETED="-"
+ZSH_THEME_GIT_PROMPT_UNMERGED="#"
+ZSH_THEME_GIT_PROMPT_UNTRACKED="?"
+
+# Git prompt: remote status
+ZSH_THEME_GIT_PROMPT_AHEAD="↑"
+ZSH_THEME_GIT_PROMPT_BEHIND="↓"
+ZSH_THEME_GIT_PROMPT_DIVERGED="/"
+ZSH_THEME_GIT_PROMPT_EQUAL_REMOTE="="
+
+# Git right prompt
+function atomic_rprompt() {
+	SHORT_SHA=$(git_prompt_short_sha)
+	if [[ -n $SHORT_SHA ]] && SHORT_SHA="$SHORT_SHA"; then
+		PREFIX="%{$fg[white]%}%{$reset_color%}"
+		RPROMPT="%{$fg[black]$bg[white]%} $SHORT_SHA "
+		echo "$PREFIX$RPROMPT"
+	fi
+}
+
+# Prompt
+PROMPT='
+$(status_machine)\
+%{$fg[black]$bg[white]%} $(get_pwd) \
+%{$fg[white]$bg[default]%}$(atomic_git) %{$reset_color%}'
+
+RPROMPT='$(atomic_rprompt)%{$reset_color%}'

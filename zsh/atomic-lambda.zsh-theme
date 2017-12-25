@@ -7,21 +7,16 @@
 #  \__,_/\__/\____/_/ /_/ /_/_/\___/ series
 #
 # -----------------------------------------------------------------------------
-#  Theme   : atomic
-#  Version : 2.0.0
+#  Theme   : atomic-lambda
+#  Version : 1.0.0
 #  License : MIT
 #  Author  : Gerard Bajona
 #  URL     : https://github.com/gerardbm/atomic
 # -----------------------------------------------------------------------------
 
-# Status username
-function status_username() {
-	echo "%(?:%{$fg[green]%}%n:%{$fg[yellow]%}%n%s)"
-}
-
-# Hostname
-function hostname {
-	echo "$HOST"
+# Status lambda
+function status_lambda() {
+	echo "%(?:%{$fg[cyan]%}λ:%{$fg[red]%}λ%s)"
 }
 
 # PWD
@@ -46,7 +41,7 @@ function atomic_git() {
 }
 
 # Git prompt: info
-GIT_PREFIX="\n- on %{$fg[cyan]%}git%{$reset_color%}:%{$fg_bold[cyan]%}"
+GIT_PREFIX="%{$fg[cyan]%}git%{$reset_color%}:%{$fg_bold[cyan]%}"
 ZSH_THEME_GIT_PROMPT_PREFIX="${GIT_PREFIX}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
 
@@ -78,10 +73,7 @@ function atomic_rprompt() {
 
 # Prompt
 PROMPT='
-$(status_username) \
-%{$fg[default]%}at \
-%{$fg[blue]%}$(hostname) \
-%{$fg[default]%}in \
+$(status_lambda) \
 %{$fg_bold[yellow]%}$(get_pwd)%{$reset_color%} \
 $(atomic_git)» %{$reset_color%}'
 
