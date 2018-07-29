@@ -78,15 +78,15 @@ Hue of base colors is 45º for this palette.
 
 ## Installation
 
-Atomic themes for cmus, irssi, mutt, zsh and colorschemes for vim/nvim can be installed using the script `install.sh`. For example, to copy `atomic.zsh-theme` into its path use the following command:
+Atomic themes for cmus, irssi, mutt and zsh can be installed using the script `install.sh`. For example, to copy `atomic.zsh-theme` into its path use the following command:
 
 `./install.sh -m copy zsh`
 
 If you want to 'symlink' instead of 'copy', use the symlink option:
 
-`./install.sh -m symlink cmus irssi vim nvim`
+`./install.sh -m symlink cmus irssi`
 
-Moreover, atomic colorscheme for vim/nvim can be installed directly from the following repository: [gerardbm/vim-atomic](https://github.com/gerardbm/vim-atomic).
+Atomic colorscheme for Vim and Neovim can be installed directly from the following repository: [gerardbm/vim-atomic](https://github.com/gerardbm/vim-atomic).
 
 Atomic theme for vim-airline is available from the official repository, just type: `:AirlineTheme atomic`.
 

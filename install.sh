@@ -67,16 +67,4 @@ for ARG in "$@"; do
 		$USE "$atomic_zsh2" "$dir_zsh"
 		$USE "$atomic_zsh3" "$dir_zsh"
 	fi
-	if [ "$ARG" == "vim" ]; then
-		dir_vim="$HOME/.vim/colors/"
-		atomic_vim="$script_dir/vim/atomic.vim"
-		mkdir -p "$dir_vim"
-		$USE "$atomic_vim" "$dir_vim"
-	fi
-	if [ "$ARG" == "nvim" ]; then
-		dir_nvim="$HOME/.config/nvim/colors/"
-		atomic_nvim="$script_dir/vim/atomic.vim"
-		mkdir -p "$dir_nvim"
-		$USE "$atomic_nvim" "$dir_nvim"
-	fi
 done
