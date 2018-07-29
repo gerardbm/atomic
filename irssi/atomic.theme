@@ -393,14 +393,14 @@ formats = {
     chansetup_line = "%w                   * │ %|%#{channel $[15]0} %|$[10]1 $[10]2 $3";
     chansetup_footer = "%w                   * │ %|";
     # own messages
-	own_msg = "{ownmsgnick {ownnick %M$[-20]0%g$2}}%W$1%n";
-	own_msg_channel = "{ownmsgnick {ownnick %M$[-20]0%g$3}{msgchannel %W$1%n}}$2";
+    own_msg = "{ownmsgnick {ownnick %M$[-20]0%g$2}}%W$1%n";
+    own_msg_channel = "{ownmsgnick {ownnick %M$[-20]0%g$3}{msgchannel %W$1%n}}$2";
     # public messages
-	pubmsg = "{pubmsgnick {pubnick %c$[-20]0%g$2}}%W$1%n";
-	pubmsg_channel = "{pubmsgnick {pubnick %c$[-20]0%g$2}}%W$1%n";
+    pubmsg = "{pubmsgnick {pubnick %c$[-20]0%g$2}}%W$1%n";
+    pubmsg_channel = "{pubmsgnick {pubnick %c$[-20]0%g$2}}%W$1%n";
     # mention me
-	pubmsg_me = "{pubmsgmenick {menick %_%Y$[-20]0%_%g$2}}%W$1%n";
-	pubmsg_me_channel = "{pubmsgmenick {menick $[-20]0%_%Y$3%_%n}{msgchannel $1}}$2";
+    pubmsg_me = "{pubmsgmenick {menick %_%Y$[-20]0%_%g$2}}%W$1%n";
+    pubmsg_me_channel = "{pubmsgmenick {menick $[-20]0%_%Y$3%_%n}{msgchannel $1}}$2";
     # mentions
     pubmsg_hilight = "{pubmsghinick $0 %_%Y$[-20]1%_%g$3%n}$2";
     pubmsg_hilight_channel = "{pubmsghinick $0 %_%Y$[-20]1%_%n$4{msgchannel $2}}$3";
