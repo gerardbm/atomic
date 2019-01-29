@@ -1,7 +1,7 @@
 # Atomic
 ### Multiple colors for multiple applications
 
-Atomic is a dark color scheme designed to use with terminal, Vim/Neovim and several GUI code editors. This repository also includes themes for some terminal applications (vim-airline, irssi, mutt, cmus...) and Zsh.
+Atomic is a dark color scheme designed to use with terminal, Vim/Neovim and several GUI code editors. This repository also includes themes for some terminal applications (vim-airline, irssi, mutt, cmus, vifm...) and Zsh.
 
 ### Color palette
 
@@ -74,11 +74,12 @@ Hue of base colors is 45º for this palette.
 - [x] Irssi
 - [x] Mutt
 - [x] Cmus
+- [x] Vifm
 - [x] Zsh
 
 ## Installation
 
-Atomic themes for cmus, irssi, mutt and zsh can be installed using the script `install.sh`. For example, to copy `atomic.zsh-theme` into its path use the following command:
+Atomic themes for cmus, irssi, mutt, vifm and zsh can be installed using the script `install.sh`. For example, to copy `atomic.zsh-theme` into its path use the following command:
 
 `./install.sh -m copy zsh`
 
@@ -96,7 +97,7 @@ For more specific information, read the following articles:
 
 1. Installation for [terminals](https://github.com/gerardbm/atomic/blob/master/INSTALL_TERM.md) (URxvt, XTerm, xfce4-terminal, konsole).
 2. Installation for [code editors](https://github.com/gerardbm/atomic/blob/master/INSTALL_EDITORS.md) (Vim, Neovim, Sublime Text, NetBeans, vim-airline).
-3. Installation for [command-line tools](https://github.com/gerardbm/atomic/blob/master/INSTALL_TOOLS.md) (cmus, irssi, mutt, zsh).
+3. Installation for [command-line tools](https://github.com/gerardbm/atomic/blob/master/INSTALL_TOOLS.md) (cmus, irssi, mutt, vifm, zsh).
 
 - - -
 

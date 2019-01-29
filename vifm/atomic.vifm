@@ -1,0 +1,82 @@
+" vim: filetype=vifm
+"----------------------------------------------------------------
+"  __     ___  __
+"  \ \   / (_)/ _|_ __ ___
+"   \ \ / /| | |_| '_ ` _ \
+"    \ V / | |  _| | | | | |
+"     \_/  |_|_| |_| |_| |_|
+"
+"----------------------------------------------------------------
+"  Theme   : Atomic
+"  Version : 1.0.0
+"  License : MIT
+"  Author  : Gerard Bajona
+"  URL     : https://github.com/gerardbm/atomic
+"----------------------------------------------------------------
+
+" You can edit this file by hand.
+" The " character at the beginning of a line comments out the line.
+" Blank lines are ignored.
+
+" The Default color scheme is used for any directory that does not have
+" a specified scheme and for parts of user interface like menus. A
+" color scheme set for a base directory will also
+" be used for the sub directories.
+
+" The standard ncurses colors are:
+" Default = -1 = None, can be used for transparency or default color
+" Black = 0
+" Red = 1
+" Green = 2
+" Yellow = 3
+" Blue = 4
+" Magenta = 5
+" Cyan = 6
+" White = 7
+
+" Light versions of colors are also available (set bold attribute):
+" LightBlack
+" LightRed
+" LightGreen
+" LightYellow
+" LightBlue
+" LightMagenta
+" LightCyan
+" LightWhite
+
+" Available attributes (some of them can be combined):
+" bold
+" underline
+" reverse or inverse
+" standout
+" none
+
+" Vifm supports 256 colors you can use color numbers 0-255
+" (requires properly set up terminal: set your TERM environment variable
+" (directly or using resources) to some color terminal name (e.g.
+" xterm-256color) from /usr/lib/terminfo/; you can check current number
+" of colors in your terminal with tput colors command)
+
+" highlight group cterm=attrs ctermfg=foreground_color ctermbg=background_color
+
+highlight clear
+
+highlight Win cterm=none ctermfg=15 ctermbg=0
+highlight Directory cterm=bold ctermfg=4 ctermbg=-1
+highlight Executable cterm=bold ctermfg=2 ctermbg=-1
+highlight TopLine cterm=none ctermfg=6 ctermbg=8
+highlight Border cterm=none ctermfg=1 ctermbg=8
+highlight StatusLine cterm=none ctermfg=6 ctermbg=8
+highlight CmdLine cterm=none ctermfg=15 ctermbg=0
+highlight Link cterm=bold ctermfg=6 ctermbg=-1
+highlight BrokenLink cterm=bold ctermfg=1 ctermbg=-1
+highlight Socket cterm=bold ctermfg=5 ctermbg=-1
+highlight Device cterm=bold ctermfg=5 ctermbg=-1
+highlight Fifo cterm=bold ctermfg=6 ctermbg=-1
+highlight Selected cterm=none ctermfg=3 ctermbg=-1
+highlight CurrLine cterm=bold,reverse ctermfg=-1 ctermbg=-1
+highlight TopLineSel cterm=none ctermfg=6 ctermbg=-1
+highlight WildMenu cterm=underline,reverse ctermfg=7 ctermbg=0
+highlight ErrorMsg cterm=none ctermfg=1 ctermbg=0
+highlight JobLine cterm=bold,reverse ctermfg=0 ctermbg=7
+highlight SuggestBox cterm=bold ctermfg=-1 ctermbg=-1

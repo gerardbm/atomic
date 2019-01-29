@@ -14,12 +14,12 @@
 #                 2) symlink
 #
 # PACKAGES
-#     cmus irssi mutt nvim vim zsh
+#     cmus irssi mutt vifm zsh
 #     Separate them with a whitespace.
 #
 # EXAMPLES
-#     ./install.sh -m copy cmus irssi mutt nvim vim zsh
-#     ./install.sh -m symlink vim cmus
+#     ./install.sh -m copy cmus irssi mutt vifm zsh
+#     ./install.sh -m symlink vifm cmus
 #
 # -----------------------------------------------------------------------------
 
@@ -54,6 +54,12 @@ for ARG in "$@"; do
 	if [ "$ARG" == "mutt" ]; then
 		dir_mutt="$HOME/.mutt/"
 		atomic_mutt="$script_dir/mutt/atomic.muttrc"
+		mkdir -p "$dir_mutt"
+		$USE "$atomic_mutt" "$dir_mutt"
+	fi
+	if [ "$ARG" == "vifm" ]; then
+		dir_mutt="$HOME/.config/vifm/colors/"
+		atomic_mutt="$script_dir/vifm/atomic.vifm"
 		mkdir -p "$dir_mutt"
 		$USE "$atomic_mutt" "$dir_mutt"
 	fi
