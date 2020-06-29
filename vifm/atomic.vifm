@@ -8,7 +8,7 @@
 "
 "----------------------------------------------------------------
 "  Theme   : Atomic
-"  Version : 1.0.0
+"  Version : 1.1.0
 "  License : MIT
 "  Author  : Gerard Bajona
 "  URL     : https://github.com/gerardbm/atomic
@@ -80,3 +80,9 @@ highlight WildMenu cterm=underline,reverse ctermfg=7 ctermbg=0
 highlight ErrorMsg cterm=none ctermfg=1 ctermbg=0
 highlight JobLine cterm=bold,reverse ctermfg=0 ctermbg=7
 highlight SuggestBox cterm=bold ctermfg=-1 ctermbg=-1
+
+highlight /^.*\.(htm|html|xhtml|epub|pdf)$/ ctermfg=green
+highlight /^.*\.(wav|mp3|ogg|oga|flac|m4a)$/ ctermfg=blue
+highlight /^.*\.(avi|mp4|flv|mkv|mov|wmv|webm|mpg|mpeg|ts)$/ ctermfg=magenta
+highlight /^.*\.(jpg|jpeg|png|gif|tif|tiff|webp|bmp|svg|svgz)$/ ctermfg=yellow
+highlight /^.*\.(zip|gz|bz2|xz|tar|tgz|tbz2|7z|rar|iso|rpm|deb)$/ ctermfg=red
