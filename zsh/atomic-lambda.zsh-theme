@@ -8,7 +8,7 @@
 #
 # -----------------------------------------------------------------------------
 #  Theme   : atomic-lambda
-#  Version : 1.0.0
+#  Version : 1.0.1
 #  License : MIT
 #  Author  : Gerard Bajona
 #  URL     : https://github.com/gerardbm/atomic
@@ -71,10 +71,18 @@ function atomic_rprompt() {
 	fi
 }
 
+# Arrow
+function atomic_arrow() {
+	AA1="%{$FG[007]%}>"
+	AA2="%{$FG[006]%}>"
+	AA3="%{$FG[014]%}>"
+	echo "$AA1$AA2$AA3%{$reset_color%}"
+}
+
 # Prompt
 PROMPT='
 $(status_lambda) \
 %{$fg_bold[yellow]%}$(get_pwd)%{$reset_color%} \
-$(atomic_git)» %{$reset_color%}'
+$(atomic_git)$(atomic_arrow) %{$reset_color%}'
 
 RPROMPT='$(atomic_rprompt)%{$reset_color%}'
