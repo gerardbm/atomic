@@ -8,7 +8,7 @@
 "
 "----------------------------------------------------------------
 "  Theme   : Atomic
-"  Version : 1.1.1
+"  Version : 1.1.2
 "  License : MIT
 "  Author  : Gerard Bajona
 "  URL     : https://github.com/gerardbm/atomic
@@ -73,8 +73,8 @@ highlight BrokenLink cterm=bold ctermfg=1 ctermbg=-1
 highlight Socket cterm=bold ctermfg=5 ctermbg=-1
 highlight Device cterm=bold ctermfg=5 ctermbg=-1
 highlight Fifo cterm=bold ctermfg=6 ctermbg=-1
-highlight Selected cterm=none ctermfg=0 ctermbg=7
-highlight CurrLine cterm=bold ctermfg=-1 ctermbg=-1
+highlight CurrLine cterm=reverse ctermfg=-1 ctermbg=-1
+highlight Selected cterm=reverse ctermfg=7 ctermbg=0
 highlight TopLineSel cterm=none ctermfg=6 ctermbg=-1
 highlight WildMenu cterm=underline,reverse ctermfg=7 ctermbg=0
 highlight ErrorMsg cterm=none ctermfg=1 ctermbg=0
