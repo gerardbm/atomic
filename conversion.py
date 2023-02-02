@@ -2,19 +2,19 @@
 # -*- coding: utf-8 -*-
 """Create a color palette"""
 
-import colorsys
+from hsluv import hsluv_to_rgb
 from PIL import Image, ImageDraw
 
-H = 210
-L = 56.6
-S = 80
+H = 180
+S = 85
+L = 65
 
 # Equivalence
 # R = 56
 # G = 144
 # B = 233
 
-result = colorsys.hls_to_rgb(H/360, L/100, S/100)
+result = hsluv_to_rgb([H, S, L])
 
 # Convert to 256 format
 RGB = []
