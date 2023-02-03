@@ -5,41 +5,41 @@
 from hsluv import hsluv_to_rgb
 from PIL import Image, ImageDraw
 
-H = 180
-S = 85
+H = 0
+S = 100
 L = 65
 
-# Equivalence
-# R = 56
-# G = 144
-# B = 233
+GAP = 0
+DEG = 20
+RAD = int(360/DEG)
+w, h = 400, RAD*30
+image = Image.new("RGB", (w, h), color=(13, 14, 15))
 
-result = hsluv_to_rgb([H, S, L])
+for c in range(RAD):
+    hsluv = hsluv_to_rgb([H, S, L])
 
-# Convert to 256 format
-RGB = []
-for i in result:
-    i = round(i*255)
-    RGB.extend([i])
+    RGB = []
+    for i in hsluv:
+        i = round(i*255)
+        RGB.extend([i])
 
-print(RGB)
+    # print(RGB)
 
-# Convert to HEX format
-HEXa = []
-for i in result:
-    i = round(i*255)
-    HEXa.extend([f'{i:02X}'])
+    HEXa = []
+    for i in hsluv:
+        i = round(i*255)
+        HEXa.extend([f'{i:02X}'])
 
-HEX = '#'+''.join(HEXa)
+    HEX = '#'+''.join(HEXa)
 
-print(HEX)
+    print("Color", c, HEX)
 
-# Display the colors
-w, h = 200, 600
-shape = [(100, 25), (5, 5)]
+    shape = [(100, GAP), (300, GAP+25)]
 
-image = Image.new("RGB", (w, h), color=(20, 26, 31))
+    fig = ImageDraw.Draw(image)
+    fig.rectangle(shape, fill=(RGB[0], RGB[1], RGB[2]))
+    fig.rectangle(shape, fill=(RGB[0], RGB[1], RGB[2]))
+    GAP = GAP+30
+    H = H+DEG
 
-fig1 = ImageDraw.Draw(image)
-fig1.rectangle(shape, fill=(RGB[0], RGB[1], RGB[2]))
 image.save('conversion.png')
