@@ -2,21 +2,22 @@
 # -*- coding: utf-8 -*-
 """Create a color palette"""
 
+import os
 from hsluv import hsluv_to_rgb
 from PIL import Image, ImageDraw
 
 H = 0
-S = 100
-L = 65
+S = 85
+LUV = 55
 
 GAP = 0
-DEG = 20
+DEG = 10
 RAD = int(360/DEG)
 w, h = 400, RAD*30
 image = Image.new("RGB", (w, h), color=(13, 14, 15))
 
 for c in range(RAD):
-    hsluv = hsluv_to_rgb([H, S, L])
+    hsluv = hsluv_to_rgb([H, S, LUV])
 
     RGB = []
     for i in hsluv:
@@ -32,9 +33,9 @@ for c in range(RAD):
 
     HEX = '#'+''.join(HEXa)
 
-    print("Color", c, HEX)
+    # print("Color", c, HEX)
 
-    shape = [(100, GAP), (300, GAP+25)]
+    shape = [(100, GAP), (300, GAP+30)]
 
     fig = ImageDraw.Draw(image)
     fig.rectangle(shape, fill=(RGB[0], RGB[1], RGB[2]))
@@ -42,4 +43,17 @@ for c in range(RAD):
     GAP = GAP+30
     H = H+DEG
 
-image.save('conversion.png')
+# Instant preview
+
+IMAGE='conversion.png'
+image.save(IMAGE)
+
+PS=str("ps -ef | grep -v grep | grep 'mupdf' ")
+FL=str("| grep -o '" + IMAGE + "' > /dev/null")
+
+CHECK=os.system(PS+FL)
+
+if CHECK == 256:
+    os.system("mupdf '" + IMAGE + "' 2>/dev/null &")
+else:
+    os.system("pkill -HUP mupdf 2>/dev/null")
