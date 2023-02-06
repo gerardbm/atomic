@@ -16,24 +16,22 @@ image = Image.new("RGB", (w, h), color=(b0[0], b0[1], b0[2]))
 print("Color 0 =", b0)
 
 # Colors
-h1 = 0   ; s1 = 90   ; l1 = 65  ; bacr1  = [] ; zacr1  = [] #acr50
-h2 = 45   ; s2 = 90   ; l2 = 65  ; baco1  = [] ; zaco1  = [] #aco50
-h3 = 90   ; s3 = 90   ; l3 = 65  ; bacg1  = [] ; zacg1  = [] #acg50
-h4 = 185  ; s4 = 90   ; l4 = 65  ; bacc1  = [] ; zacc1  = [] #acc50
-h5 = 240  ; s5 = 90   ; l5 = 65  ; bacb1  = [] ; zacb1  = [] #acb50
-h6 = 290  ; s6 = 90   ; l6 = 65  ; bacv1  = [] ; zacv1  = [] #acv50
-
-h7 = 20   ; s7 = 90  ; l7 = 65  ; bacr2  = [] ; zacr2  = [] #acr70
-h8 = 30   ; s8 = 90  ; l8 = 65  ; baco2  = [] ; zaco2  = [] #aco70
-h9 = 125  ; s9 = 90  ; l9 = 65  ; bacg2  = [] ; zacg2  = [] #acg70
-h10 = 150 ; s10 = 90 ; l10 = 65 ; bacc2 = [] ; zacc2 = [] #acc70
-h11 = 270 ; s11 = 90 ; l11 = 65 ; bacb2 = [] ; zacb2 = [] #acb70
-h12 = 320 ; s12 = 90 ; l12 = 65 ; bacv2 = [] ; zacv2 = [] #acv70
-
-h13 = 235 ; s13 = 21  ; l13 = 65 ; base4 = [] ; zase4 = [] #base4
-h14 = 235 ; s14 = 21  ; l14 = 50 ; base3 = [] ; zase3 = [] #base3
-h15 = 235 ; s15 = 21  ; l15 = 8  ; base2 = [] ; zase2 = [] #base2
-h16 = 235 ; s16 = 21  ; l16 = 4  ; base1 = [] ; zase1 = [] #base1
+h1  = 7   ; s1 = 100 ; l1 = 65  ; bacr1 = []  ; zacr1 = [] #acr50
+h2  = 35  ; s2 = 100 ; l2 = 65  ; baco1 = []  ; zaco1 = [] #aco50
+h3  = 120 ; s3 = 100 ; l3 = 65  ; bacg1 = []  ; zacg1 = [] #acg50
+h4  = 180 ; s4 = 100 ; l4 = 65  ; bacc1 = []  ; zacc1 = [] #acc50
+h5  = 245 ; s5 = 100 ; l5 = 65  ; bacb1 = []  ; zacb1 = [] #acb50
+h6  = 290 ; s6 = 100 ; l6 = 65  ; bacv1 = []  ; zacv1 = [] #acv50
+h7  = 7   ; s7 = 60  ; l7 = 65  ; bacr2 = []  ; zacr2 = [] #acr70
+h8  = 35  ; s8 = 60  ; l8 = 65  ; baco2 = []  ; zaco2 = [] #aco70
+h9  = 120 ; s9 = 60  ; l9 = 65  ; bacg2 = []  ; zacg2 = [] #acg70
+h10 = 180 ; s10 = 60 ; l10 = 65 ; bacc2 = []  ; zacc2 = [] #acc70
+h11 = 245 ; s11 = 60 ; l11 = 65 ; bacb2 = []  ; zacb2 = [] #acb70
+h12 = 290 ; s12 = 60 ; l12 = 65 ; bacv2 = []  ; zacv2 = [] #acv70
+h13 = 235 ; s13 = 30 ; l13 = 65 ; base4 = []  ; zase4 = [] #base4
+h14 = 235 ; s14 = 30 ; l14 = 50 ; base3 = []  ; zase3 = [] #base3
+h15 = 235 ; s15 = 30 ; l15 = 8  ; base2 = []  ; zase2 = [] #base2
+h16 = 235 ; s16 = 30 ; l16 = 4  ; base1 = []  ; zase1 = [] #base1
 
 # Conversion to RGB
 a1 = hsluv_to_rgb([h1, s1, l1])
@@ -184,23 +182,6 @@ fig16.rectangle(shape16, fill=(base1[0], base1[1], base1[2]))
 # print("Color 14 =", base3)
 # print("Color 15 =", base2)
 # print("Color 16 =", base1)
-
-# print("Color 1 =", hexr1)
-# print("Color 2 =", hexo1)
-# print("Color 3 =", hexg1)
-# print("Color 4 =", hexc1)
-# print("Color 5 =", hexb1)
-# print("Color 6 =", hexv1)
-# print("Color 7 =", hexr2)
-# print("Color 8 =", hexo2)
-# print("Color 9 =", hexg2)
-# print("Color 10 =", hexc2)
-# print("Color 11 =", hexb2)
-# print("Color 12 =", hexv2)
-# print("Color 13 =", hexa4)
-# print("Color 14 =", hexa3)
-# print("Color 15 =", hexa2)
-# print("Color 16 =", hexa1)
 
 print("#define base1", hexa1)
 print("#define base2", hexa2)
