@@ -11,10 +11,10 @@ S = 85
 LUV = 55
 
 GAP = 0
-DEG = 10
+DEG = 30
 RAD = int(360/DEG)
 w, h = 400, RAD*30
-image = Image.new("RGB", (w, h), color=(13, 14, 15))
+image = Image.new("RGB", (w, h), color=("#0D0E0F"))
 
 for c in range(RAD):
     hsluv = hsluv_to_rgb([H, S, LUV])
@@ -38,8 +38,7 @@ for c in range(RAD):
     shape = [(100, GAP), (300, GAP+30)]
 
     fig = ImageDraw.Draw(image)
-    fig.rectangle(shape, fill=(RGB[0], RGB[1], RGB[2]))
-    fig.rectangle(shape, fill=(RGB[0], RGB[1], RGB[2]))
+    fig.rectangle(shape, fill=(HEX))
     GAP = GAP+30
     H = H+DEG
 
