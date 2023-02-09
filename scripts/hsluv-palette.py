@@ -7,22 +7,30 @@ from hsluv import hsluv_to_rgb
 from PIL import Image, ImageDraw, ImageFont, ImageEnhance
 
 # Colors
-H01 = 235 ; S01 = 30  ; L01 = 4  ; BASE1 = [] ; ZASE1 = [] #base1
-H02 = 235 ; S02 = 30  ; L02 = 7  ; BASE2 = [] ; ZASE2 = [] #base2
-H03 = 235 ; S03 = 30  ; L03 = 46 ; BASE3 = [] ; ZASE3 = [] #base3
-H04 = 235 ; S04 = 30  ; L04 = 66 ; BASE4 = [] ; ZASE4 = [] #base4
-H05 = 15  ; S05 = 100 ; L05 = 66 ; BACR1 = [] ; ZACR1 = [] #acr50
-H06 = 50  ; S06 = 100 ; L06 = 66 ; BACO1 = [] ; ZACO1 = [] #aco50
-H07 = 110 ; S07 = 100 ; L07 = 66 ; BACG1 = [] ; ZACG1 = [] #acg50
-H08 = 175 ; S08 = 100 ; L08 = 66 ; BACC1 = [] ; ZACC1 = [] #acc50
-H09 = 245 ; S09 = 100 ; L09 = 66 ; BACB1 = [] ; ZACB1 = [] #acb50
-H10 = 280 ; S10 = 100 ; L10 = 66 ; BACV1 = [] ; ZACV1 = [] #acv50
-H11 = 15  ; S11 = 73  ; L11 = 66 ; BACR2 = [] ; ZACR2 = [] #acr70
-H12 = 50  ; S12 = 73  ; L12 = 66 ; BACO2 = [] ; ZACO2 = [] #aco70
-H13 = 110 ; S13 = 73  ; L13 = 66 ; BACG2 = [] ; ZACG2 = [] #acg70
-H14 = 175 ; S14 = 73  ; L14 = 66 ; BACC2 = [] ; ZACC2 = [] #acc70
-H15 = 245 ; S15 = 73  ; L15 = 66 ; BACB2 = [] ; ZACB2 = [] #acb70
-H16 = 280 ; S16 = 73  ; L16 = 66 ; BACV2 = [] ; ZACV2 = [] #acv70
+BA = 235
+
+Sn = 100
+Sb = 65
+
+Ln = 65
+Lb = 68
+
+H01 = BA  ; S01 = 35 ; L01 = 7  ; BASE1 = [] ; ZASE1 = [] #base1
+H02 = BA  ; S02 = 35 ; L02 = 10 ; BASE2 = [] ; ZASE2 = [] #base2
+H03 = BA  ; S03 = 35 ; L03 = 50 ; BASE3 = [] ; ZASE3 = [] #base3
+H04 = BA  ; S04 = 35 ; L04 = Lb ; BASE4 = [] ; ZASE4 = [] #base4
+H05 = 10  ; S05 = Sn ; L05 = Ln ; BACR1 = [] ; ZACR1 = [] #acr50
+H06 = 55  ; S06 = Sn ; L06 = Ln ; BACO1 = [] ; ZACO1 = [] #aco50
+H07 = 105 ; S07 = Sn ; L07 = Ln ; BACG1 = [] ; ZACG1 = [] #acg50
+H08 = 170 ; S08 = Sn ; L08 = Ln ; BACC1 = [] ; ZACC1 = [] #acc50
+H09 = 235 ; S09 = Sn ; L09 = Ln ; BACB1 = [] ; ZACB1 = [] #acb50
+H10 = 285 ; S10 = Sn ; L10 = Ln ; BACV1 = [] ; ZACV1 = [] #acv50
+H11 = 10  ; S11 = Sb ; L11 = Lb ; BACR2 = [] ; ZACR2 = [] #acr70
+H12 = 55  ; S12 = Sb ; L12 = Lb ; BACO2 = [] ; ZACO2 = [] #aco70
+H13 = 105 ; S13 = Sb ; L13 = Lb ; BACG2 = [] ; ZACG2 = [] #acg70
+H14 = 170 ; S14 = Sb ; L14 = Lb ; BACC2 = [] ; ZACC2 = [] #acc70
+H15 = 235 ; S15 = Sb ; L15 = Lb ; BACB2 = [] ; ZACB2 = [] #acb70
+H16 = 285 ; S16 = Sb ; L16 = Lb ; BACV2 = [] ; ZACV2 = [] #acv70
 
 # Conversion to RGB
 
@@ -93,8 +101,8 @@ for i in A15: i = round(i*255); ZACB2.extend([f'{i:02X}']); HEX15 = '#'+''.join(
 for i in A16: i = round(i*255); ZACV2.extend([f'{i:02X}']); HEX16 = '#'+''.join(ZACV2)
 
 # Define the individual width
-W = 100
-H = 80
+W = 75
+H = 75
 SEP = 45
 T = 10
 LH = 15 # line-height
@@ -193,163 +201,195 @@ font = ImageFont.truetype("/home/gerard/.fonts/terminesspowerline/ter-powerline-
 
 # BASE1
 num01 = ImageDraw.Draw(image)
-num01.text((SH, SV), "01", font=font, fill=HEX04)
+num01.text((SH, SV), "i: 01", font=font, fill=HEX04)
 num01_l = ImageDraw.Draw(image)
-num01_l.text((SH, SV+LH), str(f"L: {L01}%"), font=font, fill=HEX04)
-num01_s = ImageDraw.Draw(image)
-num01_s.text((SH, SV+LH*2), str(f"H: {H01}°"), font=font, fill=HEX04)
+num01_l.text((SH, SV+LH*3), str(f"L: {L01}%"), font=font, fill=HEX04)
 num01_h = ImageDraw.Draw(image)
-num01_h.text((T, SH+H), HEX01, font=font, fill=HEX04)
+num01_h.text((SH, SV+LH*1), str(f"H: {H01}°"), font=font, fill=HEX04)
+num01_s = ImageDraw.Draw(image)
+num01_s.text((SH, SV+LH*2), str(f"S: {S01}%"), font=font, fill=HEX04)
+num01_x = ImageDraw.Draw(image)
+num01_x.text((T, SH+H), HEX01, font=font, fill=HEX04)
 
 # BASE3
 num08 = ImageDraw.Draw(image)
-num08.text((SH+W*1, SV), "08", font=font, fill=HEX01)
+num08.text((SH+W*1, SV), "i: 08", font=font, fill=HEX01)
 num08_l = ImageDraw.Draw(image)
-num08_l.text((SH+W*1, SV+LH), str(f"L: {L03}%"), font=font, fill=HEX01)
-num08_s = ImageDraw.Draw(image)
-num08_s.text((SH+W*1, SV+LH*2), str(f"H: {H03}°"), font=font, fill=HEX01)
+num08_l.text((SH+W*1, SV+LH*3), str(f"L: {L03}%"), font=font, fill=HEX01)
 num08_h = ImageDraw.Draw(image)
-num08_h.text((T+W*1, SV+H), HEX03, font=font, fill=HEX03)
+num08_h.text((SH+W*1, SV+LH*1), str(f"H: {H03}°"), font=font, fill=HEX01)
+num08_s = ImageDraw.Draw(image)
+num08_s.text((SH+W*1, SV+LH*2), str(f"S: {S03}%"), font=font, fill=HEX01)
+num08_x = ImageDraw.Draw(image)
+num08_x.text((T+W*1, SV+H), HEX03, font=font, fill=HEX03)
 
 # BACB1
 num05 = ImageDraw.Draw(image)
-num05.text((SH+W*2, SV), "05", font=font, fill=HEX01)
+num05.text((SH+W*2, SV), "i: 05", font=font, fill=HEX01)
 num05_l = ImageDraw.Draw(image)
-num05_l.text((SH+W*2, SV+LH), str(f"L: {L09}%"), font=font, fill=HEX01)
-num05_s = ImageDraw.Draw(image)
-num05_s.text((SH+W*2, SV+LH*2), str(f"H: {H09}°"), font=font, fill=HEX01)
+num05_l.text((SH+W*2, SV+LH*3), str(f"L: {L09}%"), font=font, fill=HEX01)
 num05_h = ImageDraw.Draw(image)
-num05_h.text((T+W*2, SV+H), HEX09, font=font, fill=HEX09)
+num05_h.text((SH+W*2, SV+LH*1), str(f"H: {H09}°"), font=font, fill=HEX01)
+num05_s = ImageDraw.Draw(image)
+num05_s.text((SH+W*2, SV+LH*2), str(f"S: {S09}%"), font=font, fill=HEX01)
+num05_x = ImageDraw.Draw(image)
+num05_x.text((T+W*2, SV+H), HEX09, font=font, fill=HEX09)
 
 # BACV1
 num06 = ImageDraw.Draw(image)
-num06.text((SH+W*3, SV), "06", font=font, fill=HEX01)
+num06.text((SH+W*3, SV), "i: 06", font=font, fill=HEX01)
 num06_l = ImageDraw.Draw(image)
-num06_l.text((SH+W*3, SV+LH), str(f"L: {L10}%"), font=font, fill=HEX01)
-num06_s = ImageDraw.Draw(image)
-num06_s.text((SH+W*3, SV+LH*2), str(f"H: {H10}°"), font=font, fill=HEX01)
+num06_l.text((SH+W*3, SV+LH*3), str(f"L: {L10}%"), font=font, fill=HEX01)
 num06_h = ImageDraw.Draw(image)
-num06_h.text((T+W*3, SV+H), HEX10, font=font, fill=HEX10)
+num06_h.text((SH+W*3, SV+LH*1), str(f"H: {H10}°"), font=font, fill=HEX01)
+num06_h = ImageDraw.Draw(image)
+num06_h.text((SH+W*3, SV+LH*2), str(f"S: {S10}%"), font=font, fill=HEX01)
+num06_x = ImageDraw.Draw(image)
+num06_x.text((T+W*3, SV+H), HEX10, font=font, fill=HEX10)
 
 # BACR1
 num02 = ImageDraw.Draw(image)
-num02.text((SH+W*4, SV), "02", font=font, fill=HEX01)
+num02.text((SH+W*4, SV), "i: 02", font=font, fill=HEX01)
 num02_l = ImageDraw.Draw(image)
-num02_l.text((SH+W*4, SV+LH), str(f"L: {L05}%"), font=font, fill=HEX01)
-num02_s = ImageDraw.Draw(image)
-num02_s.text((SH+W*4, SV+LH*2), str(f"H: {H05}°"), font=font, fill=HEX01)
+num02_l.text((SH+W*4, SV+LH*3), str(f"L: {L05}%"), font=font, fill=HEX01)
 num02_h = ImageDraw.Draw(image)
-num02_h.text((T+W*4, SV+H), HEX05, font=font, fill=HEX05)
+num02_h.text((SH+W*4, SV+LH*1), str(f"H: {H05}°"), font=font, fill=HEX01)
+num02_s = ImageDraw.Draw(image)
+num02_s.text((SH+W*4, SV+LH*2), str(f"S: {S05}%"), font=font, fill=HEX01)
+num02_x = ImageDraw.Draw(image)
+num02_x.text((T+W*4, SV+H), HEX05, font=font, fill=HEX05)
 
 # BACO1
 num04 = ImageDraw.Draw(image)
-num04.text((SH+W*5, SV), "04", font=font, fill=HEX01)
+num04.text((SH+W*5, SV), "i: 04", font=font, fill=HEX01)
 num04_l = ImageDraw.Draw(image)
-num04_l.text((SH+W*5, SV+LH), str(f"L: {L06}%"), font=font, fill=HEX01)
-num04_s = ImageDraw.Draw(image)
-num04_s.text((SH+W*5, SV+LH*2), str(f"H: {H06}°"), font=font, fill=HEX01)
+num04_l.text((SH+W*5, SV+LH*3), str(f"L: {L06}%"), font=font, fill=HEX01)
 num04_h = ImageDraw.Draw(image)
-num04_h.text((T+W*5, SV+H), HEX06, font=font, fill=HEX06)
+num04_h.text((SH+W*5, SV+LH*1), str(f"H: {H06}°"), font=font, fill=HEX01)
+num04_s = ImageDraw.Draw(image)
+num04_s.text((SH+W*5, SV+LH*2), str(f"S: {S06}%"), font=font, fill=HEX01)
+num04_x = ImageDraw.Draw(image)
+num04_x.text((T+W*5, SV+H), HEX06, font=font, fill=HEX06)
 
 # BACG1
 num03 = ImageDraw.Draw(image)
-num03.text((SH+W*6, SV), "03", font=font, fill=HEX01)
+num03.text((SH+W*6, SV), "i: 03", font=font, fill=HEX01)
 num03_l = ImageDraw.Draw(image)
-num03_l.text((SH+W*6, SV+LH), str(f"L: {L07}%"), font=font, fill=HEX01)
-num03_s = ImageDraw.Draw(image)
-num03_s.text((SH+W*6, SV+LH*2), str(f"H: {H07}°"), font=font, fill=HEX01)
+num03_l.text((SH+W*6, SV+LH*3), str(f"L: {L07}%"), font=font, fill=HEX01)
 num03_h = ImageDraw.Draw(image)
-num03_h.text((T+W*6, SV+H), HEX07, font=font, fill=HEX07)
+num03_h.text((SH+W*6, SV+LH*1), str(f"H: {H07}°"), font=font, fill=HEX01)
+num03_s = ImageDraw.Draw(image)
+num03_s.text((SH+W*6, SV+LH*2), str(f"S: {S07}%"), font=font, fill=HEX01)
+num03_x = ImageDraw.Draw(image)
+num03_x.text((T+W*6, SV+H), HEX07, font=font, fill=HEX07)
 
 # BACC1
 num07 = ImageDraw.Draw(image)
-num07.text((SH+W*7, SV), "07", font=font, fill=HEX01)
+num07.text((SH+W*7, SV), "i: 07", font=font, fill=HEX01)
 num07_l = ImageDraw.Draw(image)
-num07_l.text((SH+W*7, SV+LH), str(f"L: {L08}%"), font=font, fill=HEX01)
-num07_s = ImageDraw.Draw(image)
-num07_s.text((SH+W*7, SV+LH*2), str(f"H: {H08}°"), font=font, fill=HEX01)
+num07_l.text((SH+W*7, SV+LH*3), str(f"L: {L08}%"), font=font, fill=HEX01)
 num07_h = ImageDraw.Draw(image)
-num07_h.text((T+W*7, SV+H), HEX08, font=font, fill=HEX08)
+num07_h.text((SH+W*7, SV+LH*1), str(f"H: {H08}°"), font=font, fill=HEX01)
+num07_s = ImageDraw.Draw(image)
+num07_s.text((SH+W*7, SV+LH*2), str(f"S: {S08}%"), font=font, fill=HEX01)
+num07_x = ImageDraw.Draw(image)
+num07_x.text((T+W*7, SV+H), HEX08, font=font, fill=HEX08)
 
 # BASE2
 num09 = ImageDraw.Draw(image)
-num09.text((SH, SV+H+SEP), "09", font=font, fill=HEX04)
+num09.text((SH, SV+H+SEP), "i: 09", font=font, fill=HEX04)
 num09_l = ImageDraw.Draw(image)
-num09_l.text((SH, SV+H+SEP+LH), str(f"L: {L02}%"), font=font, fill=HEX04)
-num09_s = ImageDraw.Draw(image)
-num09_s.text((SH, SV+H+SEP+LH*2), str(f"H: {H02}°"), font=font, fill=HEX04)
+num09_l.text((SH, SV+H+SEP+LH*3), str(f"L: {L02}%"), font=font, fill=HEX04)
 num09_h = ImageDraw.Draw(image)
-num09_h.text((T, SV+H*2+SEP), HEX02, font=font, fill=HEX04)
+num09_h.text((SH, SV+H+SEP+LH*1), str(f"H: {H02}°"), font=font, fill=HEX04)
+num09_s = ImageDraw.Draw(image)
+num09_s.text((SH, SV+H+SEP+LH*2), str(f"S: {S02}%"), font=font, fill=HEX04)
+num09_x = ImageDraw.Draw(image)
+num09_x.text((T, SV+H*2+SEP), HEX02, font=font, fill=HEX04)
 
 # BASE4
 num16 = ImageDraw.Draw(image)
-num16.text((SH+W*1, SV+H+SEP), "16", font=font, fill=HEX01)
+num16.text((SH+W*1, SV+H+SEP), "i: 16", font=font, fill=HEX01)
 num16_l = ImageDraw.Draw(image)
-num16_l.text((SH+W*1, SV+H+SEP+LH), str(f"L: {L04}%"), font=font, fill=HEX01)
-num16_s = ImageDraw.Draw(image)
-num16_s.text((SH+W*1, SV+H+SEP+LH*2), str(f"H: {H04}°"), font=font, fill=HEX01)
+num16_l.text((SH+W*1, SV+H+SEP+LH*3), str(f"L: {L04}%"), font=font, fill=HEX01)
 num16_h = ImageDraw.Draw(image)
-num16_h.text((T+W*1, SV+H*2+SEP), HEX04, font=font, fill=HEX04)
+num16_h.text((SH+W*1, SV+H+SEP+LH*1), str(f"H: {H04}°"), font=font, fill=HEX01)
+num16_s = ImageDraw.Draw(image)
+num16_s.text((SH+W*1, SV+H+SEP+LH*2), str(f"S: {S04}%"), font=font, fill=HEX01)
+num16_x = ImageDraw.Draw(image)
+num16_x.text((T+W*1, SV+H*2+SEP), HEX04, font=font, fill=HEX04)
 
 # BACB2
 num13 = ImageDraw.Draw(image)
-num13.text((SH+W*2, SV+H+SEP), "13", font=font, fill=HEX01)
+num13.text((SH+W*2, SV+H+SEP), "i: 13", font=font, fill=HEX01)
 num13_l = ImageDraw.Draw(image)
-num13_l.text((SH+W*2, SV+H+SEP+LH), str(f"L: {L15}%"), font=font, fill=HEX01)
-num13_s = ImageDraw.Draw(image)
-num13_s.text((SH+W*2, SV+H+SEP+LH*2), str(f"H: {H15}°"), font=font, fill=HEX01)
+num13_l.text((SH+W*2, SV+H+SEP+LH*3), str(f"L: {L15}%"), font=font, fill=HEX01)
 num13_h = ImageDraw.Draw(image)
-num13_h.text((T+W*2, SV+H*2+SEP), HEX15, font=font, fill=HEX15)
+num13_h.text((SH+W*2, SV+H+SEP+LH*1), str(f"H: {H15}°"), font=font, fill=HEX01)
+num13_s = ImageDraw.Draw(image)
+num13_s.text((SH+W*2, SV+H+SEP+LH*2), str(f"S: {S15}%"), font=font, fill=HEX01)
+num13_x = ImageDraw.Draw(image)
+num13_x.text((T+W*2, SV+H*2+SEP), HEX15, font=font, fill=HEX15)
 
 # BACV2
 num14 = ImageDraw.Draw(image)
-num14.text((SH+W*3, SV+H+SEP), "14", font=font, fill=HEX01)
+num14.text((SH+W*3, SV+H+SEP), "i: 14", font=font, fill=HEX01)
 num14_l = ImageDraw.Draw(image)
-num14_l.text((SH+W*3, SV+H+SEP+LH), str(f"L: {L16}%"), font=font, fill=HEX01)
-num14_s = ImageDraw.Draw(image)
-num14_s.text((SH+W*3, SV+H+SEP+LH*2), str(f"H: {H16}°"), font=font, fill=HEX01)
+num14_l.text((SH+W*3, SV+H+SEP+LH*3), str(f"L: {L16}%"), font=font, fill=HEX01)
 num14_h = ImageDraw.Draw(image)
-num14_h.text((T+W*3, SV+H*2+SEP), HEX16, font=font, fill=HEX16)
+num14_h.text((SH+W*3, SV+H+SEP+LH*1), str(f"H: {H16}°"), font=font, fill=HEX01)
+num14_s = ImageDraw.Draw(image)
+num14_s.text((SH+W*3, SV+H+SEP+LH*2), str(f"S: {S16}%"), font=font, fill=HEX01)
+num14_x = ImageDraw.Draw(image)
+num14_x.text((T+W*3, SV+H*2+SEP), HEX16, font=font, fill=HEX16)
 
 # BACR2
 num10 = ImageDraw.Draw(image)
-num10.text((SH+W*4, SV+H+SEP), "10", font=font, fill=HEX01)
+num10.text((SH+W*4, SV+H+SEP), "i: 10", font=font, fill=HEX01)
 num10_l = ImageDraw.Draw(image)
-num10_l.text((SH+W*4, SV+H+SEP+LH), str(f"L: {L11}%"), font=font, fill=HEX01)
-num10_s = ImageDraw.Draw(image)
-num10_s.text((SH+W*4, SV+H+SEP+LH*2), str(f"H: {H11}°"), font=font, fill=HEX01)
+num10_l.text((SH+W*4, SV+H+SEP+LH*3), str(f"L: {L11}%"), font=font, fill=HEX01)
 num10_h = ImageDraw.Draw(image)
-num10_h.text((T+W*4, SV+H*2+SEP), HEX11, font=font, fill=HEX11)
+num10_h.text((SH+W*4, SV+H+SEP+LH*1), str(f"H: {H11}°"), font=font, fill=HEX01)
+num10_s = ImageDraw.Draw(image)
+num10_s.text((SH+W*4, SV+H+SEP+LH*2), str(f"S: {S11}%"), font=font, fill=HEX01)
+num10_x = ImageDraw.Draw(image)
+num10_x.text((T+W*4, SV+H*2+SEP), HEX11, font=font, fill=HEX11)
 
 # BACO2
 num12 = ImageDraw.Draw(image)
-num12.text((SH+W*5, SV+H+SEP), "12", font=font, fill=HEX01)
+num12.text((SH+W*5, SV+H+SEP), "i: 12", font=font, fill=HEX01)
 num12_l = ImageDraw.Draw(image)
-num12_l.text((SH+W*5, SV+H+SEP+LH), str(f"L: {L12}%"), font=font, fill=HEX01)
-num12_s = ImageDraw.Draw(image)
-num12_s.text((SH+W*5, SV+H+SEP+LH*2), str(f"H: {H12}°"), font=font, fill=HEX01)
+num12_l.text((SH+W*5, SV+H+SEP+LH*3), str(f"L: {L12}%"), font=font, fill=HEX01)
 num12_h = ImageDraw.Draw(image)
-num12_h.text((T+W*5, SV+H*2+SEP), HEX12, font=font, fill=HEX12)
+num12_h.text((SH+W*5, SV+H+SEP+LH*1), str(f"H: {H12}°"), font=font, fill=HEX01)
+num12_s = ImageDraw.Draw(image)
+num12_s.text((SH+W*5, SV+H+SEP+LH*2), str(f"S: {S12}%"), font=font, fill=HEX01)
+num12_x = ImageDraw.Draw(image)
+num12_x.text((T+W*5, SV+H*2+SEP), HEX12, font=font, fill=HEX12)
 
 # BACG2
 num11 = ImageDraw.Draw(image)
-num11.text((SH+W*6, SV+H+SEP), "11", font=font, fill=HEX01)
+num11.text((SH+W*6, SV+H+SEP), "i: 11", font=font, fill=HEX01)
 num11_l = ImageDraw.Draw(image)
-num11_l.text((SH+W*6, SV+H+SEP+LH), str(f"L: {L13}%"), font=font, fill=HEX01)
-num11_s = ImageDraw.Draw(image)
-num11_s.text((SH+W*6, SV+H+SEP+LH*2), str(f"H: {H13}°"), font=font, fill=HEX01)
+num11_l.text((SH+W*6, SV+H+SEP+LH*3), str(f"L: {L13}%"), font=font, fill=HEX01)
 num11_h = ImageDraw.Draw(image)
-num11_h.text((T+W*6, SV+H*2+SEP), HEX13, font=font, fill=HEX13)
+num11_h.text((SH+W*6, SV+H+SEP+LH*1), str(f"H: {H13}°"), font=font, fill=HEX01)
+num11_s = ImageDraw.Draw(image)
+num11_s.text((SH+W*6, SV+H+SEP+LH*2), str(f"S: {S13}%"), font=font, fill=HEX01)
+num11_x = ImageDraw.Draw(image)
+num11_x.text((T+W*6, SV+H*2+SEP), HEX13, font=font, fill=HEX13)
 
 # BACC2
 num15 = ImageDraw.Draw(image)
-num15.text((SH+W*7, SV+H+SEP), "15", font=font, fill=HEX01)
+num15.text((SH+W*7, SV+H+SEP), "i: 15", font=font, fill=HEX01)
 num15_l = ImageDraw.Draw(image)
-num15_l.text((SH+W*7, SV+H+SEP+LH), str(f"L: {L14}%"), font=font, fill=HEX01)
-num15_s = ImageDraw.Draw(image)
-num15_s.text((SH+W*7, SV+H+SEP+LH*2), str(f"H: {H14}°"), font=font, fill=HEX01)
+num15_l.text((SH+W*7, SV+H+SEP+LH*3), str(f"L: {L14}%"), font=font, fill=HEX01)
 num15_h = ImageDraw.Draw(image)
-num15_h.text((T+W*7, SV+H*2+SEP), HEX14, font=font, fill=HEX14)
+num15_h.text((SH+W*7, SV+H+SEP+LH*1), str(f"H: {H14}°"), font=font, fill=HEX01)
+num15_s = ImageDraw.Draw(image)
+num15_s.text((SH+W*7, SV+H+SEP+LH*2), str(f"S: {S14}%"), font=font, fill=HEX01)
+num15_x = ImageDraw.Draw(image)
+num15_x.text((T+W*7, SV+H*2+SEP), HEX14, font=font, fill=HEX14)
 
 print("#define base1", HEX01)
 print("#define base2", HEX02)
@@ -367,8 +407,6 @@ print("#define acg70", HEX13)
 print("#define acc70", HEX14)
 print("#define acb70", HEX15)
 print("#define acv70", HEX16)
-
-# image.save('palette.png')
 
 IMAGE='palette.png'
 image.save(IMAGE)
