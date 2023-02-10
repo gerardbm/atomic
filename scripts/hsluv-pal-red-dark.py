@@ -7,7 +7,7 @@ from hsluv import hsluv_to_rgb
 from PIL import Image, ImageDraw, ImageFont, ImageEnhance
 
 # Colors
-BA = 235
+BA = 10
 
 Sn = 100
 Sb = 65
@@ -15,18 +15,18 @@ Sb = 65
 Ln = 65
 Lb = 68
 
-H01 = BA  ; S01 = 35 ; L01 = 7  ; BASE1 = [] ; ZASE1 = [] #base1
-H02 = BA  ; S02 = 35 ; L02 = 10 ; BASE2 = [] ; ZASE2 = [] #base2
+H01 = BA  ; S01 = 35 ; L01 = 4  ; BASE1 = [] ; ZASE1 = [] #base1
+H02 = BA  ; S02 = 35 ; L02 = 7 ; BASE2 = [] ; ZASE2 = [] #base2
 H03 = BA  ; S03 = 35 ; L03 = 50 ; BASE3 = [] ; ZASE3 = [] #base3
 H04 = BA  ; S04 = 35 ; L04 = Lb ; BASE4 = [] ; ZASE4 = [] #base4
-H05 = 10  ; S05 = Sn ; L05 = Ln ; BACR1 = [] ; ZACR1 = [] #acr50
-H06 = 55  ; S06 = Sn ; L06 = Ln ; BACO1 = [] ; ZACO1 = [] #aco50
+H05 = 0   ; S05 = Sn ; L05 = Ln ; BACR1 = [] ; ZACR1 = [] #acr50
+H06 = 35  ; S06 = Sn ; L06 = Ln ; BACO1 = [] ; ZACO1 = [] #aco50
 H07 = 105 ; S07 = Sn ; L07 = Ln ; BACG1 = [] ; ZACG1 = [] #acg50
 H08 = 170 ; S08 = Sn ; L08 = Ln ; BACC1 = [] ; ZACC1 = [] #acc50
 H09 = 235 ; S09 = Sn ; L09 = Ln ; BACB1 = [] ; ZACB1 = [] #acb50
 H10 = 285 ; S10 = Sn ; L10 = Ln ; BACV1 = [] ; ZACV1 = [] #acv50
-H11 = 10  ; S11 = Sb ; L11 = Lb ; BACR2 = [] ; ZACR2 = [] #acr70
-H12 = 55  ; S12 = Sb ; L12 = Lb ; BACO2 = [] ; ZACO2 = [] #aco70
+H11 = 0   ; S11 = Sb ; L11 = Lb ; BACR2 = [] ; ZACR2 = [] #acr70
+H12 = 35  ; S12 = Sb ; L12 = Lb ; BACO2 = [] ; ZACO2 = [] #aco70
 H13 = 105 ; S13 = Sb ; L13 = Lb ; BACG2 = [] ; ZACG2 = [] #acg70
 H14 = 170 ; S14 = Sb ; L14 = Lb ; BACC2 = [] ; ZACC2 = [] #acc70
 H15 = 235 ; S15 = Sb ; L15 = Lb ; BACB2 = [] ; ZACB2 = [] #acb70
@@ -209,7 +209,7 @@ num01_h.text((SH, SV+LH*1), str(f"H: {H01}°"), font=font, fill=HEX04)
 num01_s = ImageDraw.Draw(image)
 num01_s.text((SH, SV+LH*2), str(f"S: {S01}%"), font=font, fill=HEX04)
 num01_x = ImageDraw.Draw(image)
-num01_x.text((T, SH+H), HEX01, font=font, fill=HEX04)
+num01_x.text((T, SV+H), HEX01, font=font, fill=HEX04)
 
 # BASE3
 num08 = ImageDraw.Draw(image)
@@ -408,7 +408,7 @@ print("#define acc70", HEX14)
 print("#define acb70", HEX15)
 print("#define acv70", HEX16)
 
-IMAGE='palette.png'
+IMAGE='red-dark.png'
 image.save(IMAGE)
 
 PS=str("ps -ef | grep -v grep | grep 'mupdf' ")
