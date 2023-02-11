@@ -7,7 +7,7 @@ from hsluv import hsluv_to_rgb
 from PIL import Image, ImageDraw, ImageFont, ImageEnhance
 
 # Colors
-BA = 55
+BA = 10
 
 Sn = 100
 Sb = 65
@@ -15,10 +15,10 @@ Sb = 65
 Ln = 65
 Lb = 68
 
-H01 = BA  ; S01 = 35 ; L01 = 4  ; BASE1 = [] ; ZASE1 = [] #base1
-H02 = BA  ; S02 = 35 ; L02 = 7  ; BASE2 = [] ; ZASE2 = [] #base2
-H03 = BA  ; S03 = 35 ; L03 = 50 ; BASE3 = [] ; ZASE3 = [] #base3
-H04 = BA  ; S04 = 35 ; L04 = Lb ; BASE4 = [] ; ZASE4 = [] #base4
+H01 = BA  ; S01 = 25 ; L01 = 3  ; BASE1 = [] ; ZASE1 = [] #base1
+H02 = BA  ; S02 = 25 ; L02 = 6 ; BASE2 = [] ; ZASE2 = [] #base2
+H03 = BA  ; S03 = 25 ; L03 = 50 ; BASE3 = [] ; ZASE3 = [] #base3
+H04 = BA  ; S04 = 25 ; L04 = Lb ; BASE4 = [] ; ZASE4 = [] #base4
 H05 = 0   ; S05 = Sn ; L05 = Ln ; BACR1 = [] ; ZACR1 = [] #acr50
 H06 = 35  ; S06 = Sn ; L06 = Ln ; BACO1 = [] ; ZACO1 = [] #aco50
 H07 = 105 ; S07 = Sn ; L07 = Ln ; BACG1 = [] ; ZACG1 = [] #acg50
@@ -408,7 +408,9 @@ print("#define acc70", HEX14)
 print("#define acb70", HEX15)
 print("#define acv70", HEX16)
 
-IMAGE='orange-dark.png'
+print(f"URxvt.keysym.C-8: command:\\033]10;{HEX04}\\007\\033]11;{HEX01}\\007\\033]12;{HEX04}\\007\\033]704;{HEX11}\\007\\033]706;{HEX14}\\007\\033]707;{HEX15}\\007\\033]708;{HEX01}\\007\\033]4;0;{HEX01}\\007\\033]4;1;{HEX05}\\007\\033]4;2;{HEX07}\\007\\033]4;3;{HEX06}\\007\\033]4;4;{HEX09}\\007\\033]4;5;{HEX10}\\007\\033]4;6;{HEX08}\\007\\033]4;7;{HEX03}\\007\\033]4;8;{HEX02}\\007\\033]4;9;{HEX11}\\007\\033]4;10;{HEX13}\\007\\033]4;11;{HEX12}\\007\\033]4;12;{HEX15}\\007\\033]4;13;{HEX16}\\007\\033]4;14;{HEX14}\\007\\033]4;15;{HEX04}\\007")
+
+IMAGE='red-dark.png'
 image.save(IMAGE)
 
 PS=str("ps -ef | grep -v grep | grep 'mupdf' ")

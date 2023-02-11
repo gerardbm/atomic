@@ -1,36 +1,39 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""Create a color palette"""
+# pylint: disable=C0103,C0321,C0301
+"""Atomic Night Medium Contrast"""
 
 import os
 from hsluv import hsluv_to_rgb
-from PIL import Image, ImageDraw, ImageFont, ImageEnhance
+from PIL import Image, ImageDraw, ImageFont
 
 # Colors
-BA = 10
+BA = 60
 
+# Saturation
 Sn = 100
 Sb = 65
 
+# Lightness
 Ln = 65
 Lb = 68
 
-H01 = BA  ; S01 = 35 ; L01 = 4  ; BASE1 = [] ; ZASE1 = [] #base1
-H02 = BA  ; S02 = 35 ; L02 = 7 ; BASE2 = [] ; ZASE2 = [] #base2
-H03 = BA  ; S03 = 35 ; L03 = 50 ; BASE3 = [] ; ZASE3 = [] #base3
-H04 = BA  ; S04 = 35 ; L04 = Lb ; BASE4 = [] ; ZASE4 = [] #base4
+H01 = BA  ; S01 = 30 ; L01 = 7  ; BASE1 = [] ; ZASE1 = [] #base1
+H02 = BA  ; S02 = 30 ; L02 = 10 ; BASE2 = [] ; ZASE2 = [] #base2
+H03 = BA  ; S03 = 30 ; L03 = 50 ; BASE3 = [] ; ZASE3 = [] #base3
+H04 = BA  ; S04 = 30 ; L04 = Lb ; BASE4 = [] ; ZASE4 = [] #base4
 H05 = 0   ; S05 = Sn ; L05 = Ln ; BACR1 = [] ; ZACR1 = [] #acr50
-H06 = 35  ; S06 = Sn ; L06 = Ln ; BACO1 = [] ; ZACO1 = [] #aco50
-H07 = 105 ; S07 = Sn ; L07 = Ln ; BACG1 = [] ; ZACG1 = [] #acg50
-H08 = 170 ; S08 = Sn ; L08 = Ln ; BACC1 = [] ; ZACC1 = [] #acc50
-H09 = 235 ; S09 = Sn ; L09 = Ln ; BACB1 = [] ; ZACB1 = [] #acb50
-H10 = 285 ; S10 = Sn ; L10 = Ln ; BACV1 = [] ; ZACV1 = [] #acv50
+H06 = 60  ; S06 = Sn ; L06 = Ln ; BACO1 = [] ; ZACO1 = [] #aco50
+H07 = 120 ; S07 = Sn ; L07 = Ln ; BACG1 = [] ; ZACG1 = [] #acg50
+H08 = 180 ; S08 = Sn ; L08 = Ln ; BACC1 = [] ; ZACC1 = [] #acc50
+H09 = 240 ; S09 = Sn ; L09 = Ln ; BACB1 = [] ; ZACB1 = [] #acb50
+H10 = 300 ; S10 = Sn ; L10 = Ln ; BACV1 = [] ; ZACV1 = [] #acv50
 H11 = 0   ; S11 = Sb ; L11 = Lb ; BACR2 = [] ; ZACR2 = [] #acr70
-H12 = 35  ; S12 = Sb ; L12 = Lb ; BACO2 = [] ; ZACO2 = [] #aco70
-H13 = 105 ; S13 = Sb ; L13 = Lb ; BACG2 = [] ; ZACG2 = [] #acg70
-H14 = 170 ; S14 = Sb ; L14 = Lb ; BACC2 = [] ; ZACC2 = [] #acc70
-H15 = 235 ; S15 = Sb ; L15 = Lb ; BACB2 = [] ; ZACB2 = [] #acb70
-H16 = 285 ; S16 = Sb ; L16 = Lb ; BACV2 = [] ; ZACV2 = [] #acv70
+H12 = 60  ; S12 = Sb ; L12 = Lb ; BACO2 = [] ; ZACO2 = [] #aco70
+H13 = 120 ; S13 = Sb ; L13 = Lb ; BACG2 = [] ; ZACG2 = [] #acg70
+H14 = 180 ; S14 = Sb ; L14 = Lb ; BACC2 = [] ; ZACC2 = [] #acc70
+H15 = 240 ; S15 = Sb ; L15 = Lb ; BACB2 = [] ; ZACB2 = [] #acb70
+H16 = 300 ; S16 = Sb ; L16 = Lb ; BACV2 = [] ; ZACV2 = [] #acv70
 
 # Conversion to RGB
 
@@ -408,7 +411,9 @@ print("#define acc70", HEX14)
 print("#define acb70", HEX15)
 print("#define acv70", HEX16)
 
-IMAGE='red-dark.png'
+print(f"URxvt.keysym.C-5: command:\\033]10;{HEX04}\\007\\033]11;{HEX01}\\007\\033]12;{HEX04}\\007\\033]704;{HEX11}\\007\\033]706;{HEX14}\\007\\033]707;{HEX15}\\007\\033]708;{HEX01}\\007\\033]4;0;{HEX01}\\007\\033]4;1;{HEX05}\\007\\033]4;2;{HEX07}\\007\\033]4;3;{HEX06}\\007\\033]4;4;{HEX09}\\007\\033]4;5;{HEX10}\\007\\033]4;6;{HEX08}\\007\\033]4;7;{HEX03}\\007\\033]4;8;{HEX02}\\007\\033]4;9;{HEX11}\\007\\033]4;10;{HEX13}\\007\\033]4;11;{HEX12}\\007\\033]4;12;{HEX15}\\007\\033]4;13;{HEX16}\\007\\033]4;14;{HEX14}\\007\\033]4;15;{HEX04}\\007")
+
+IMAGE='../img/atomic-night-mc.png'
 image.save(IMAGE)
 
 PS=str("ps -ef | grep -v grep | grep 'mupdf' ")

@@ -1,36 +1,39 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""Create a color palette"""
+# pylint: disable=C0103,C0321,C0301
+"""Atomic Light Low Contrast"""
 
 import os
 from hsluv import hsluv_to_rgb
-from PIL import Image, ImageDraw, ImageFont, ImageEnhance
+from PIL import Image, ImageDraw, ImageFont
 
 # Colors
-BA = 55
+BA = 60
 
+# Saturation
 Sn = 100
-Sb = 65
+Sb = 100
 
-Ln = 65
-Lb = 68
+# Lightness
+Ln = 40
+Lb = 50
 
-H01 = BA  ; S01 = 35 ; L01 = 7  ; BASE1 = [] ; ZASE1 = [] #base1
-H02 = BA  ; S02 = 35 ; L02 = 10 ; BASE2 = [] ; ZASE2 = [] #base2
-H03 = BA  ; S03 = 35 ; L03 = 50 ; BASE3 = [] ; ZASE3 = [] #base3
-H04 = BA  ; S04 = 35 ; L04 = Lb ; BASE4 = [] ; ZASE4 = [] #base4
+H01 = BA  ; S01 = 55 ; L01 = 89 ; BASE1 = [] ; ZASE1 = [] #base1
+H02 = BA  ; S02 = 45 ; L02 = 86 ; BASE2 = [] ; ZASE2 = [] #base2
+H03 = BA  ; S03 = 35 ; L03 = 30 ; BASE3 = [] ; ZASE3 = [] #base4
+H04 = BA  ; S04 = 35 ; L04 = 50 ; BASE4 = [] ; ZASE4 = [] #base3
 H05 = 0   ; S05 = Sn ; L05 = Ln ; BACR1 = [] ; ZACR1 = [] #acr50
-H06 = 35  ; S06 = Sn ; L06 = Ln ; BACO1 = [] ; ZACO1 = [] #aco50
-H07 = 105 ; S07 = Sn ; L07 = Ln ; BACG1 = [] ; ZACG1 = [] #acg50
-H08 = 170 ; S08 = Sn ; L08 = Ln ; BACC1 = [] ; ZACC1 = [] #acc50
-H09 = 235 ; S09 = Sn ; L09 = Ln ; BACB1 = [] ; ZACB1 = [] #acb50
-H10 = 285 ; S10 = Sn ; L10 = Ln ; BACV1 = [] ; ZACV1 = [] #acv50
+H06 = 60  ; S06 = Sn ; L06 = Ln ; BACO1 = [] ; ZACO1 = [] #aco50
+H07 = 120 ; S07 = Sn ; L07 = Ln ; BACG1 = [] ; ZACG1 = [] #acg50
+H08 = 180 ; S08 = Sn ; L08 = Ln ; BACC1 = [] ; ZACC1 = [] #acc50
+H09 = 240 ; S09 = Sn ; L09 = Ln ; BACB1 = [] ; ZACB1 = [] #acb50
+H10 = 300 ; S10 = Sn ; L10 = Ln ; BACV1 = [] ; ZACV1 = [] #acv50
 H11 = 0   ; S11 = Sb ; L11 = Lb ; BACR2 = [] ; ZACR2 = [] #acr70
-H12 = 35  ; S12 = Sb ; L12 = Lb ; BACO2 = [] ; ZACO2 = [] #aco70
-H13 = 105 ; S13 = Sb ; L13 = Lb ; BACG2 = [] ; ZACG2 = [] #acg70
-H14 = 170 ; S14 = Sb ; L14 = Lb ; BACC2 = [] ; ZACC2 = [] #acc70
-H15 = 235 ; S15 = Sb ; L15 = Lb ; BACB2 = [] ; ZACB2 = [] #acb70
-H16 = 285 ; S16 = Sb ; L16 = Lb ; BACV2 = [] ; ZACV2 = [] #acv70
+H12 = 60  ; S12 = Sb ; L12 = Lb ; BACO2 = [] ; ZACO2 = [] #aco70
+H13 = 120 ; S13 = Sb ; L13 = Lb ; BACG2 = [] ; ZACG2 = [] #acg70
+H14 = 180 ; S14 = Sb ; L14 = Lb ; BACC2 = [] ; ZACC2 = [] #acc70
+H15 = 240 ; S15 = Sb ; L15 = Lb ; BACB2 = [] ; ZACB2 = [] #acb70
+H16 = 300 ; S16 = Sb ; L16 = Lb ; BACV2 = [] ; ZACV2 = [] #acv70
 
 # Conversion to RGB
 
@@ -201,19 +204,19 @@ font = ImageFont.truetype("/home/gerard/.fonts/terminesspowerline/ter-powerline-
 
 # BASE1
 num01 = ImageDraw.Draw(image)
-num01.text((SH, SV), "i: 01", font=font, fill=HEX04)
+num01.text((SH, SV), "i: 01", font=font, fill=HEX03)
 num01_l = ImageDraw.Draw(image)
-num01_l.text((SH, SV+LH*3), str(f"L: {L01}%"), font=font, fill=HEX04)
+num01_l.text((SH, SV+LH*3), str(f"L: {L01}%"), font=font, fill=HEX03)
 num01_h = ImageDraw.Draw(image)
-num01_h.text((SH, SV+LH*1), str(f"H: {H01}°"), font=font, fill=HEX04)
+num01_h.text((SH, SV+LH*1), str(f"H: {H01}°"), font=font, fill=HEX03)
 num01_s = ImageDraw.Draw(image)
-num01_s.text((SH, SV+LH*2), str(f"S: {S01}%"), font=font, fill=HEX04)
+num01_s.text((SH, SV+LH*2), str(f"S: {S01}%"), font=font, fill=HEX03)
 num01_x = ImageDraw.Draw(image)
-num01_x.text((T, SV+H), HEX01, font=font, fill=HEX04)
+num01_x.text((T, SV+H), HEX01, font=font, fill=HEX03)
 
-# BASE3
+# BASE3 -> moved to BASE4
 num08 = ImageDraw.Draw(image)
-num08.text((SH+W*1, SV), "i: 08", font=font, fill=HEX01)
+num08.text((SH+W*1, SV), "i: 16", font=font, fill=HEX01)
 num08_l = ImageDraw.Draw(image)
 num08_l.text((SH+W*1, SV+LH*3), str(f"L: {L03}%"), font=font, fill=HEX01)
 num08_h = ImageDraw.Draw(image)
@@ -297,19 +300,19 @@ num07_x.text((T+W*7, SV+H), HEX08, font=font, fill=HEX08)
 
 # BASE2
 num09 = ImageDraw.Draw(image)
-num09.text((SH, SV+H+SEP), "i: 09", font=font, fill=HEX04)
+num09.text((SH, SV+H+SEP), "i: 09", font=font, fill=HEX03)
 num09_l = ImageDraw.Draw(image)
-num09_l.text((SH, SV+H+SEP+LH*3), str(f"L: {L02}%"), font=font, fill=HEX04)
+num09_l.text((SH, SV+H+SEP+LH*3), str(f"L: {L02}%"), font=font, fill=HEX03)
 num09_h = ImageDraw.Draw(image)
-num09_h.text((SH, SV+H+SEP+LH*1), str(f"H: {H02}°"), font=font, fill=HEX04)
+num09_h.text((SH, SV+H+SEP+LH*1), str(f"H: {H02}°"), font=font, fill=HEX03)
 num09_s = ImageDraw.Draw(image)
-num09_s.text((SH, SV+H+SEP+LH*2), str(f"S: {S02}%"), font=font, fill=HEX04)
+num09_s.text((SH, SV+H+SEP+LH*2), str(f"S: {S02}%"), font=font, fill=HEX03)
 num09_x = ImageDraw.Draw(image)
-num09_x.text((T, SV+H*2+SEP), HEX02, font=font, fill=HEX04)
+num09_x.text((T, SV+H*2+SEP), HEX02, font=font, fill=HEX03)
 
-# BASE4
+# BASE4 -> moved to BASE3
 num16 = ImageDraw.Draw(image)
-num16.text((SH+W*1, SV+H+SEP), "i: 16", font=font, fill=HEX01)
+num16.text((SH+W*1, SV+H+SEP), "i: 08", font=font, fill=HEX01)
 num16_l = ImageDraw.Draw(image)
 num16_l.text((SH+W*1, SV+H+SEP+LH*3), str(f"L: {L04}%"), font=font, fill=HEX01)
 num16_h = ImageDraw.Draw(image)
@@ -393,8 +396,8 @@ num15_x.text((T+W*7, SV+H*2+SEP), HEX14, font=font, fill=HEX14)
 
 print("#define base1", HEX01)
 print("#define base2", HEX02)
-print("#define base3", HEX03)
-print("#define base4", HEX04)
+print("#define base3", HEX04)
+print("#define base4", HEX03)
 print("#define acr50", HEX05)
 print("#define aco50", HEX06)
 print("#define acg50", HEX07)
@@ -408,7 +411,9 @@ print("#define acc70", HEX14)
 print("#define acb70", HEX15)
 print("#define acv70", HEX16)
 
-IMAGE='orange-soft.png'
+print(f"URxvt.keysym.C-9: command:\\033]10;{HEX03}\\007\\033]11;{HEX01}\\007\\033]12;{HEX03}\\007\\033]704;{HEX11}\\007\\033]706;{HEX14}\\007\\033]707;{HEX15}\\007\\033]708;{HEX01}\\007\\033]4;0;{HEX01}\\007\\033]4;1;{HEX05}\\007\\033]4;2;{HEX07}\\007\\033]4;3;{HEX06}\\007\\033]4;4;{HEX09}\\007\\033]4;5;{HEX10}\\007\\033]4;6;{HEX08}\\007\\033]4;7;{HEX04}\\007\\033]4;8;{HEX02}\\007\\033]4;9;{HEX11}\\007\\033]4;10;{HEX13}\\007\\033]4;11;{HEX12}\\007\\033]4;12;{HEX15}\\007\\033]4;13;{HEX16}\\007\\033]4;14;{HEX14}\\007\\033]4;15;{HEX03}\\007")
+
+IMAGE='../img/atomic-light-lc.png'
 image.save(IMAGE)
 
 PS=str("ps -ef | grep -v grep | grep 'mupdf' ")
