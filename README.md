@@ -22,11 +22,11 @@ In a RGB color wheel, hues have been selected in order to be distinguishable for
 
 ![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/atomic-space-mc.png)
 
-In the previous palettes, the base colors have more blue and green than red. During the day, these colors don't carry any problem, but at night blue light negatively affects health and sleep patterns: it affects levels of the sleep-inducing hormone melatonin more than any other wavelength.
+In this palette, the base colors have more blue and green than red. During the day, these colors don't carry any problem, but at night blue light negatively affects health and sleep patterns: it affects levels of the sleep-inducing hormone melatonin more than any other wavelength.
 
 **Night Mode**: base colors use the orange color (hue 60°).
 
-Night modes use a different hue of base color: 60° (orange) instead of 240° (blue). Actually, they are their respective complementary colors. That means values of blue and green colors have been reduced inversely, while value of red color has been increased in the same proportion.
+Night modes uses a different hue of base color: 60° (orange) instead of 240° (blue). Actually, they are complementary colors. That means values of blue and green colors have been reduced inversely, while value of red color has been increased in the same proportion.
 
 ![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/atomic-night-mc.png)
 
