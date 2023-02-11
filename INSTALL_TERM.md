@@ -2,7 +2,7 @@
 
 ## URxvt and XTerm
 
-Installation for **URxvt** and **XTerm** (include extra modes with +5% contrast).
+Installation for **URxvt** and **XTerm** (include extra modes with +4% contrast).
 
 1. Copy the content from the files `Xresources.*` to your `.Xresources`.
 2. Load the resource file with the command: `xrdb ~/.Xresources`.
@@ -12,7 +12,7 @@ You will find more information on the .Xresources file in the [Arch Linux wiki](
 
 ## xfce4-terminal
 
-Installation for **xfce4-terminal** (include extra modes with +5% contrast).
+Installation for **xfce4-terminal** (include extra modes with +4% contrast).
 
 1. Copy the file `terminalrc` to your `~/.config/xfce4/terminal/` directory or paste its content into it if you already have this file.
 2. Restart the terminal.

@@ -42,3 +42,35 @@
 *.colorBD : acc70
 *.colorUL : acb70
 
+! XTerm
+xterm*background  : base1
+xterm*foreground  : base4
+xterm*cursorColor : base4
+
+xterm*color0  : base1
+xterm*color1  : acr50
+xterm*color2  : acg50
+xterm*color3  : aco50
+xterm*color4  : acb50
+xterm*color5  : acv50
+xterm*color6  : acc50
+xterm*color7  : base3
+xterm*color8  : base2
+xterm*color9  : acr70
+xterm*color10 : acg70
+xterm*color11 : aco70
+xterm*color12 : acb70
+xterm*color13 : acv70
+xterm*color14 : acc70
+xterm*color15 : base4
+
+xterm*colorIT : acr70
+xterm*colorBD : acc70
+xterm*colorUL : acb70
+
+! Rofi colors       bg     fg     altbg  hlbg   hlfg
+rofi.color-normal : base1, base4, base1, base2, acc50
+rofi.color-urgent : base1, acg50, base2, base1, acc50
+rofi.color-active : base1, acg50, base2, base2, acg50
+rofi.color-window : base1, acc50, base3
+rofi.bw           : 1
