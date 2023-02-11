@@ -1,4 +1,4 @@
-# Atomic
+# Atomic HSLuv
 
 Colors recalculated in 2023!
 
@@ -38,17 +38,11 @@ Light mode is useful when the screen receives a high illumination or we have to 
 
 ### Code editors and IDEs
 
-Due to the colors recalculation, this editors have to be adapted.
-
-- [ ] Terminal
+- [x] Terminal
 	- [x] URxvt (`.Xresources`)
 	- [x] XTerm (`.Xresources`)
-	- [ ] xfce4-terminal
-	- [ ] konsole
-- [ ] [Vim and Neovim](https://github.com/gerardbm/vim-atomic)
+- [x] [Vim and Neovim](https://github.com/gerardbm/vim-atomic)
 	- [x] Vim-airline
-- [ ] NetBeans IDE
-- [ ] [Sublime Text](https://github.com/gerardbm/sublime-atomic-scheme)
 
 ### Themes
 
@@ -77,8 +71,8 @@ Atomic colorscheme for Sublime Text is available from the official package manag
 
 For more specific information, read the following articles:
 
-1. Installation for [terminals](https://github.com/gerardbm/atomic/blob/master/INSTALL_TERM.md) (URxvt, XTerm, xfce4-terminal, konsole).
-2. Installation for [code editors](https://github.com/gerardbm/atomic/blob/master/INSTALL_EDITORS.md) (Vim, Neovim, Sublime Text, NetBeans, vim-airline).
+1. Installation for [terminals](https://github.com/gerardbm/atomic/blob/master/INSTALL_TERM.md) (URxvt, XTerm).
+2. Installation for [code editors](https://github.com/gerardbm/atomic/blob/master/INSTALL_EDITORS.md) (Vim, Neovim, vim-airline).
 3. Installation for [command-line tools](https://github.com/gerardbm/atomic/blob/master/INSTALL_TOOLS.md) (cmus, irssi, mutt, vifm, zsh).
 
 - - -
@@ -89,3 +83,7 @@ Atomic is designed to look good with any kind of typography, as colors are disti
 
 Some themes (vim-airline, zsh) require the installation of Powerline fonts.
 URL: https://github.com/powerline/fonts
+
+## Old atomic color scheme
+
+Check the [old-atomic](https://github.com/gerardbm/old-atomic) repository for old colors (selected using different algorithms).
