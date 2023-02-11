@@ -18,7 +18,7 @@ Ln = 40
 Lb = 50
 
 H01 = BA  ; S01 = 55 ; L01 = 93 ; BASE1 = [] ; ZASE1 = [] #base1
-H02 = BA  ; S02 = 50 ; L02 = 96 ; BASE2 = [] ; ZASE2 = [] #base2
+H02 = BA  ; S02 = 50 ; L02 = 90 ; BASE2 = [] ; ZASE2 = [] #base2
 H03 = BA  ; S03 = 33 ; L03 = Ln ; BASE3 = [] ; ZASE3 = [] #base4
 H04 = BA  ; S04 = 22 ; L04 = 50 ; BASE4 = [] ; ZASE4 = [] #base3
 H05 = 0   ; S05 = Sn ; L05 = Ln ; BACR1 = [] ; ZACR1 = [] #acr50
