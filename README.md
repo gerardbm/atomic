@@ -17,11 +17,7 @@ In a RGB color wheel, hues have been selected in order to be distinguishable for
 
 **Space Mode**: base colors use the blue color (hue 240°).
 
-![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/atomic-space-hc.png)
-
 ![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/atomic-space-mc.png)
-
-![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/atomic-space-lc.png)
 
 In the previous palettes, the base colors have more blue and green than red. During the day, these colors don't carry any problem, but at night blue light negatively affects health and sleep patterns: it affects levels of the sleep-inducing hormone melatonin more than any other wavelength.
 
@@ -29,11 +25,7 @@ In the previous palettes, the base colors have more blue and green than red. Dur
 
 Night modes use a different hue of base color: 60° (orange) instead of 240° (blue). Actually, they are their respective complementary colors. That means values of blue and green colors have been reduced inversely, while value of red color has been increased in the same proportion.
 
-![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/atomic-night-hc.png)
-
 ![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/atomic-night-mc.png)
-
-![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/atomic-night-lc.png)
 
 **Light Mode**: base colors use the orange color (he 60°).
 
@@ -41,11 +33,7 @@ Light mode is useful when the screen receives a high illumination or we have to 
 
 Hue of base colors is 45º for this palette.
 
-![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/atomic-light-hc.png)
-
 ![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/atomic-light-mc.png)
-
-![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/atomic-light-lc.png)
 
 ### Code editors and IDEs
 
