@@ -1,0 +1,44 @@
+! Atomic Night MC
+#define base1 #181510
+#define base2 #1F1B15
+#define base3 #827562
+#define base4 #B5A38A
+#define acr50 #FF6C91
+#define aco50 #C59700
+#define acg50 #55B300
+#define acc50 #00B1A4
+#define acb50 #00A7F0
+#define acv50 #EA65FF
+#define acr70 #E58C9F
+#define aco70 #C3A161
+#define acg70 #78B560
+#define acc70 #66B3AA
+#define acb70 #6CACDF
+#define acv70 #D38CE0
+
+*.foreground  : base4
+*.background  : base1
+*.cursorColor : base4
+
+*.color0  : base1
+*.color1  : acr50
+*.color2  : acg50
+*.color3  : aco50
+*.color4  : acb50
+*.color5  : acv50
+*.color6  : acc50
+*.color7  : base3
+*.color8  : base2
+*.color9  : acr70
+*.color10 : acg70
+*.color11 : aco70
+*.color12 : acb70
+*.color13 : acv70
+*.color14 : acc70
+*.color15 : base4
+
+! Manpage colors
+*.colorIT : acr70
+*.colorBD : acc70
+*.colorUL : acb70
+

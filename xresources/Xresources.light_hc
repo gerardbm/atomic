@@ -1,0 +1,44 @@
+! Atomic Light HC
+#define base1 #FBF6EE
+#define base2 #F6EDE0
+#define base3 #84755E
+#define base4 #4F4537
+#define acr50 #BC004F
+#define aco50 #775A00
+#define acg50 #306B00
+#define acc50 #006A62
+#define acb50 #006492
+#define acv50 #A400B6
+#define acr70 #EA0064
+#define aco70 #957200
+#define acg70 #3F8700
+#define acc70 #00867C
+#define acb70 #007EB7
+#define acv70 #CD00E2
+
+*.foreground  : base4
+*.background  : base1
+*.cursorColor : base4
+
+*.color0  : base1
+*.color1  : acr50
+*.color2  : acg50
+*.color3  : aco50
+*.color4  : acb50
+*.color5  : acv50
+*.color6  : acc50
+*.color7  : base3
+*.color8  : base2
+*.color9  : acr70
+*.color10 : acg70
+*.color11 : aco70
+*.color12 : acb70
+*.color13 : acv70
+*.color14 : acc70
+*.color15 : base4
+
+! Manpage colors
+*.colorIT : acr70
+*.colorBD : acc70
+*.colorUL : acb70
+

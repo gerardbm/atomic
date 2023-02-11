@@ -40,8 +40,8 @@ Light mode is useful when the screen receives a high illumination or we have to 
 
 Due to the colors recalculation, this editors have to be adapted.
 
-- [ ] Terminal
-	- [ ] URxvt
+- [.] Terminal
+	- [x] URxvt
 	- [ ] XTerm
 	- [ ] xfce4-terminal
 	- [ ] konsole
