@@ -1,19 +1,22 @@
 # Atomic
+
+Colors recalculated in 2023!
+
 ### Multiple colors for multiple applications
 
-Atomic is a dark color scheme designed to use with terminal, Vim/Neovim and several GUI code editors. This repository also includes themes for some terminal applications (vim-airline, irssi, mutt, cmus, vifm...) and Zsh.
+Atomic is a dark color scheme designed to use with terminal, Vim/Neovim and several GUI code editors. This repository also includes themes for some terminal applications (vim-airline, irssi, mutt, cmus, vifm) and Zsh.
 
 ### Color palette
 
-The color palette consists of **sixteen precision colors** selected procedurally (algorithms), distributed in six hues and four perceived lightness (L\*).
+The color palette consists of **sixteen precision colors** selected procedurally (algorithms), distributed in six hues and four perceived lightness, according to the color space **HSLuv** («_an alternative to HSL designed for perceptual uniformity based on human experiments_».
 
 Don't confuse the perceived brightness with the lightness of the HSL color model. Human vision doesn't detect brightness linearly with color: in a pixel (R'G'B'), we see red color (#FF0000) darker than green color (#00FF00), and green color (#00FF00) brighter than red (#FF0000) and blue (#0000FF) colors.
 
 So the perceived lightness has been balanced according to the ITU-R Recommendation BT.709:
 
-`Luma (Y) = 0.2126 R + 0.7152 G + 0.0722 B`
+`Luma (Y') = 0.2126 R' + 0.7152 G' + 0.0722 B'`
 
-In a RGB color wheel, hues have been selected in order to be distinguishable for the human eye and keeping harmony: one color every 60°.
+In a RGB color wheel, hues have been selected in order to be distinguishable for the human eye and keeping harmony: that means one color every 60°.
 
 **Space Mode**: base colors use the blue color (hue 240°).
 
@@ -29,23 +32,23 @@ Night modes use a different hue of base color: 60° (orange) instead of 240° (b
 
 **Light Mode**: base colors use the orange color (he 60°).
 
-Light mode is useful when the screen receives a high illumination or we have to code in a very bright environment. Our eyes will not have to adapt the light sensibility every time we look at the screen.
-
-Hue of base colors is 45º for this palette.
+Light mode is useful when the screen receives a high illumination or we have to code in a bright environment. Our eyes will not have to adapt the light sensibility every time we look at the screen.
 
 ![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/atomic-light-mc.png)
 
 ### Code editors and IDEs
 
-- [x] Terminal
-	- URxvt
-	- XTerm
-	- xfce4-terminal
-	- konsole
-- [x] [Vim and Neovim](https://github.com/gerardbm/vim-atomic)
+Due to the colors recalculation, this editors have to be adapted.
+
+- [ ] Terminal
+	- [ ] URxvt
+	- [ ] XTerm
+	- [ ] xfce4-terminal
+	- [ ] konsole
+- [ ] [Vim and Neovim](https://github.com/gerardbm/vim-atomic)
 	- [x] Vim-airline
-- [x] NetBeans IDE
-- [x] [Sublime Text](https://github.com/gerardbm/sublime-atomic-scheme)
+- [ ] NetBeans IDE
+- [ ] [Sublime Text](https://github.com/gerardbm/sublime-atomic-scheme)
 
 ### Themes
 
