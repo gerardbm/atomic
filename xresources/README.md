@@ -1,31 +1,27 @@
 ### Atomic color schemes for URxvt and XTerm
 
-To use one of these color schemes, copy the content from one of these files to your `~/.Xresources`.
+<!-- To use one of these color schemes, copy the content from one of these files to your `~/.Xresources`. -->
 
-- `Xresources.darkb_s`  => Dark blue, soft contrast (default)
-- `Xresources.darkb_h`  => Dark blue, hard contrast (extra, +5% contrast)
+<!-- - `Xresources.space_hc`  => Space Mode, high contrast (+4%) -->
+<!-- - `Xresources.space_mc`  => Space Mode, medium contrast (default) -->
+<!-- - `Xresources.space_lc`  => Space Mode, low contrast (-4%) -->
 
-- `Xresources.darkc_s`  => Dark cyan, soft contrast (base colors alternative)
-- `Xresources.darkc_h`  => Dark cyan, hard contrast (extra alternative, +5% contrast)
+<!-- - `Xresources.night_hc`  => Night Mode, high contrast (+4%) -->
+<!-- - `Xresources.night_mc`  => Night Mode, medium contrast (default) -->
+<!-- - `Xresources.night_lc`  => Night Mode, low contrast (-4%) -->
 
-- `Xresources.nighto_s` => Night orange, soft contrast (base colors alternative)
-- `Xresources.nighto_h` => Night orange, hard contrast (extra alternative, +5% contrast)
+<!-- - `Xresources.light_hc`  => Light Mode, high contrast (+4%) -->
+<!-- - `Xresources.light_mc`  => Light Mode, medium contrast (default) -->
+<!-- - `Xresources.light_lc`  => Light Mode, low contrast (-4%) -->
 
-- `Xresources.nightr_s` => Night red, soft contrast (base colors alternative)
-- `Xresources.nightr_h` => Night red, hard contrast (extra alternative, +5% contrast)
+If you use URxvt, you have the optional `Xresources.URxvtSwitch`. This file contains 9 commands to switch between the 3 color schemes and their 3 contrast options, on the fly! This is the commands list:
 
-- `Xresources.light_s`  => Light, soft contrast (default)
-- `Xresources.light_h`  => Light, hard contrast (extra, +5% contrast)
-
-If you use URxvt, you have the optional `Xresources.URxvtSwitch`. This file contains 10 commands to switch between the 10 color schemes, on the fly! This is the commands list:
-
-- <kbd>CTRL</kbd>+<kbd>1</kbd> => Dark blue, soft
-- <kbd>CTRL</kbd>+<kbd>2</kbd> => Dark blue, hard
-- <kbd>CTRL</kbd>+<kbd>3</kbd> => Dark cyan, soft
-- <kbd>CTRL</kbd>+<kbd>4</kbd> => Dark cyan, hard
-- <kbd>CTRL</kbd>+<kbd>5</kbd> => Night orange, soft
-- <kbd>CTRL</kbd>+<kbd>6</kbd> => Night orange, hard
-- <kbd>CTRL</kbd>+<kbd>7</kbd> => Night red, soft
-- <kbd>CTRL</kbd>+<kbd>8</kbd> => Night red, hard
-- <kbd>CTRL</kbd>+<kbd>9</kbd> => Light, soft
-- <kbd>CTRL</kbd>+<kbd>0</kbd> => Light, hard
+- <kbd>CTRL</kbd>+<kbd>1</kbd> => Space Mode HC
+- <kbd>CTRL</kbd>+<kbd>2</kbd> => Space Mode MC
+- <kbd>CTRL</kbd>+<kbd>3</kbd> => Space Mode LC
+- <kbd>CTRL</kbd>+<kbd>4</kbd> => Night Mode HC
+- <kbd>CTRL</kbd>+<kbd>5</kbd> => Night Mode MC
+- <kbd>CTRL</kbd>+<kbd>6</kbd> => Night Mode LC
+- <kbd>CTRL</kbd>+<kbd>7</kbd> => Light Mode HC
+- <kbd>CTRL</kbd>+<kbd>8</kbd> => Light Mode MC
+- <kbd>CTRL</kbd>+<kbd>9</kbd> => Light Mode LC
