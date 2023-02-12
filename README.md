@@ -6,7 +6,11 @@ Colors have been recalculated in 2023 using HSLuv!
 
 Atomic is a dark color scheme designed to use with terminals. This repository provides support for URxvt and XTerm; it also includes themes for some terminal applications (vim-airline, irssi, mutt, cmus, vifm) and Zsh. To use it in Vim/Neovim, check the repository [vim-atomic](https://github.com/gerardbm/vim-atomic).
 
-![Atomic Color Scheme: example under i3wm](https://github.com/gerardbm/Atomic/blob/master/img/example.png)
+![Atomic Space Screenshot](https://github.com/gerardbm/atomic/blob/master/img/screenshot/Atomic-Space-Screenshot.png)
+
+![Atomic Night Screenshot](https://github.com/gerardbm/atomic/blob/master/img/screenshot/Atomic-Night-Screenshot.png)
+
+![Atomic Light Screenshot](https://github.com/gerardbm/atomic/blob/master/img/screenshot/Atomic-Light-Screenshot.png)
 
 ### Color palette
 
