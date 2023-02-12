@@ -10,7 +10,7 @@ Atomic is a dark color scheme designed to use with terminals. This repository pr
 
 The color palette consists of **sixteen precision colors** selected procedurally (algorithms), distributed in six hues and four perceived lightness, according to the color space **HSLuv** («_an alternative to HSL designed for perceptual uniformity based on human experiments_».
 
-Don't confuse the perceived brightness with the lightness of the HSL color model. Human vision doesn't detect brightness linearly with color: in a pixel (R'G'B') we see red color (#FF0000) darker than green color (#00FF00), and green color (#00FF00) brighter than red (#FF0000) and blue (#0000FF) colors.
+Don't confuse the perceived brightness with the lightness of the HSL color model. Human vision doesn't detect brightness linearly with color: in a pixel (R'G'B') we see red color (`#FF0000`) darker than green color (`#00FF00`), and green color (`#00FF00`) brighter than red (`#FF0000`) and blue (`#0000FF`) colors.
 
 So the perceived lightness has been balanced according to the ITU-R Recommendation BT.709:
 

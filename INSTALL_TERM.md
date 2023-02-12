@@ -8,4 +8,4 @@ Installation for **URxvt** and **XTerm** (include extra modes with +4% contrast)
 2. Load the resource file with the command: `xrdb ~/.Xresources`.
 3. Restart the terminal.
 
-You will find more information on the `.Xresources` file in the [Arch Linux wiki](https://wiki.archlinux.org/index.php/X_resources).
+You will find more information on the file `.Xresources` in the [Arch Linux wiki](https://wiki.archlinux.org/index.php/X_resources).
