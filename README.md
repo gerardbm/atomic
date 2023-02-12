@@ -6,6 +6,8 @@ Colors have been recalculated in 2023 using HSLuv!
 
 Atomic is a dark color scheme designed to use with terminals. This repository provides support for URxvt and XTerm; it also includes themes for some terminal applications (vim-airline, irssi, mutt, cmus, vifm) and Zsh. To use it in Vim/Neovim, check the repository [vim-atomic](https://github.com/gerardbm/vim-atomic).
 
+![Atomic Color Scheme: example under i3wm](https://github.com/gerardbm/Atomic/blob/master/img/example.png)
+
 ### Color palette
 
 The color palette consists of **sixteen precision colors** selected procedurally (algorithms), distributed in six hues and four perceived lightness, according to the color space **HSLuv** («_an alternative to HSL designed for perceptual uniformity based on human experiments_».
