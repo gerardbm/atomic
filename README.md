@@ -1,4 +1,4 @@
-# Atomic 2.0
+# Atomic Color Scheme
 
 Colors have been recalculated in 2023 using HSLuv!
 
