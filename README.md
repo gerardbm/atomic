@@ -1,16 +1,16 @@
-# Atomic HSLuv
+# Atomic 2.0
 
-Colors recalculated in 2023!
+Colors have been recalculated in 2023 using HSLuv!
 
 ### Multiple colors for multiple applications
 
-Atomic is a dark color scheme designed to use with terminal, Vim/Neovim and several GUI code editors. This repository also includes themes for some terminal applications (vim-airline, irssi, mutt, cmus, vifm) and Zsh.
+Atomic is a dark color scheme designed to use with terminals. This repository provides support for URxvt and XTerm; it also includes themes for some terminal applications (vim-airline, irssi, mutt, cmus, vifm) and Zsh. To use it in Vim/Neovim, check the repository [vim-atomic](https://github.com/gerardbm/vim-atomic).
 
 ### Color palette
 
 The color palette consists of **sixteen precision colors** selected procedurally (algorithms), distributed in six hues and four perceived lightness, according to the color space **HSLuv** («_an alternative to HSL designed for perceptual uniformity based on human experiments_».
 
-Don't confuse the perceived brightness with the lightness of the HSL color model. Human vision doesn't detect brightness linearly with color: in a pixel (R'G'B'), we see red color (#FF0000) darker than green color (#00FF00), and green color (#00FF00) brighter than red (#FF0000) and blue (#0000FF) colors.
+Don't confuse the perceived brightness with the lightness of the HSL color model. Human vision doesn't detect brightness linearly with color: in a pixel (R'G'B') we see red color (#FF0000) darker than green color (#00FF00), and green color (#00FF00) brighter than red (#FF0000) and blue (#0000FF) colors.
 
 So the perceived lightness has been balanced according to the ITU-R Recommendation BT.709:
 
@@ -42,7 +42,7 @@ Light mode is useful when the screen receives a high illumination or we have to 
 	- [x] URxvt (`.Xresources`)
 	- [x] XTerm (`.Xresources`)
 - [x] [Vim and Neovim](https://github.com/gerardbm/vim-atomic)
-	- [x] Vim-airline
+	- [x] Vim-airline (included in [vim-airline](https://github.com/vim-airline/vim-airline))
 
 ### Themes
 
