@@ -32,7 +32,7 @@ In this palette, the base colors have more blue and green than red. During the d
 
 **Night Mode**: base colors use the orange color (hue 60°).
 
-Night modes uses a different hue of base color: 60° (orange) instead of 240° (blue). Actually, they are complementary colors. That means values of blue and green colors have been reduced inversely, while value of red color has been increased in the same proportion.
+Night mode uses a different hue of base color: 60° (orange) instead of 240° (blue). Actually, they are complementary colors. That means values of blue and green colors have been reduced inversely, while value of red color has been increased in the same proportion.
 
 ![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/atomic-night-mc.png)
 
