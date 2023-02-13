@@ -394,6 +394,7 @@ num15_s.text((SH+W*7, SV+H+SEP+LH*2), str(f"S: {S14}%"), font=font, fill=HEX01)
 num15_x = ImageDraw.Draw(image)
 num15_x.text((T+W*7, SV+H*2+SEP), HEX14, font=font, fill=HEX14)
 
+# Output for URxvt
 print("#define base1", HEX01)
 print("#define base2", HEX02)
 print("#define base3", HEX04)
@@ -413,6 +414,29 @@ print("#define acv70", HEX16)
 
 print(f"URxvt.keysym.C-8: command:\\033]10;{HEX03}\\007\\033]11;{HEX01}\\007\\033]12;{HEX03}\\007\\033]704;{HEX11}\\007\\033]706;{HEX14}\\007\\033]707;{HEX15}\\007\\033]708;{HEX01}\\007\\033]4;0;{HEX01}\\007\\033]4;1;{HEX05}\\007\\033]4;2;{HEX07}\\007\\033]4;3;{HEX06}\\007\\033]4;4;{HEX09}\\007\\033]4;5;{HEX10}\\007\\033]4;6;{HEX08}\\007\\033]4;7;{HEX04}\\007\\033]4;8;{HEX02}\\007\\033]4;9;{HEX11}\\007\\033]4;10;{HEX13}\\007\\033]4;11;{HEX12}\\007\\033]4;12;{HEX15}\\007\\033]4;13;{HEX16}\\007\\033]4;14;{HEX14}\\007\\033]4;15;{HEX03}\\007")
 
+# Output the values
+print("Id Color            Hue   Sat   Luv    Hex")
+print("-- --------------  ----  ----  ----  -------")
+print(f"{'01':<2} {'Base 1':<14} {H01:>4}° {S01:>4}% {L01:>4}% {HEX01:>8}")
+print(f"{'09':<2} {'Base 2':<14} {H02:>4}° {S02:>4}% {L02:>4}% {HEX02:>8}")
+print(f"{'08':<2} {'Base 3':<14} {H03:>4}° {S03:>4}% {L03:>4}% {HEX03:>8}")
+print(f"{'16':<2} {'Base 4':<14} {H04:>4}° {S04:>4}% {L04:>4}% {HEX04:>8}")
+print("-- --------------  ----  ----  ----  -------")
+print(f"{'02':<2} {'Dark Red':<14} {H05:>4}° {S05:>4}% {L05:>4}% {HEX05:>8}")
+print(f"{'04':<2} {'Dark Orange':<14} {H06:>4}° {S06:>4}% {L06:>4}% {HEX06:>8}")
+print(f"{'03':<2} {'Dark Green':<14} {H07:>4}° {S07:>4}% {L07:>4}% {HEX07:>8}")
+print(f"{'07':<2} {'Dark Cyan':<14} {H08:>4}° {S08:>4}% {L08:>4}% {HEX08:>8}")
+print(f"{'05':<2} {'Dark Blue':<14} {H09:>4}° {S09:>4}% {L09:>4}% {HEX09:>8}")
+print(f"{'06':<2} {'Dark Violet':<14} {H10:>4}° {S10:>4}% {L10:>4}% {HEX10:>8}")
+print("-- --------------  ----  ----  ----  -------")
+print(f"{'10':<2} {'Light Red':<14} {H11:>4}° {S11:>4}% {L11:>4}% {HEX11:>8}")
+print(f"{'12':<2} {'Light Orange':<14} {H12:>4}° {S12:>4}% {L12:>4}% {HEX12:>8}")
+print(f"{'11':<2} {'Light Green':<14} {H13:>4}° {S13:>4}% {L13:>4}% {HEX13:>8}")
+print(f"{'15':<2} {'Light Cyan':<14} {H14:>4}° {S14:>4}% {L14:>4}% {HEX14:>8}")
+print(f"{'13':<2} {'Light Blue':<14} {H15:>4}° {S15:>4}% {L15:>4}% {HEX15:>8}")
+print(f"{'14':<2} {'Light Violet':<14} {H16:>4}° {S16:>4}% {L16:>4}% {HEX16:>8}")
+
+# Generate the image
 IMAGE='../img/atomic-light-mc.png'
 image.save(IMAGE)
 

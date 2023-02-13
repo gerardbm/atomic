@@ -90,6 +90,83 @@ Atomic is designed to look good with any kind of typography, as colors are disti
 Some themes (vim-airline, zsh) require the installation of Powerline fonts.
 URL: https://github.com/powerline/fonts
 
+## The values
+
+Space Mode
+
+```
+Id Color            Hue   Sat   Luv    Hex
+-- --------------  ----  ----  ----  -------
+01 Base 1          240°   30%    7%  #11161B
+09 Base 2          240°   30%   10%  #171C22
+08 Base 3          240°   30%   50%  #67798B
+16 Base 4          240°   30%   68%  #91A8C1
+-- --------------  ----  ----  ----  -------
+02 Dark Red          0°  100%   65%  #FF6C91
+04 Dark Orange      60°  100%   65%  #C59700
+03 Dark Green      120°  100%   65%  #55B300
+07 Dark Cyan       180°  100%   65%  #00B1A4
+05 Dark Blue       240°  100%   65%  #00A7F0
+06 Dark Violet     300°  100%   65%  #EA65FF
+-- --------------  ----  ----  ----  -------
+10 Light Red         0°   65%   68%  #E58C9F
+12 Light Orange     60°   65%   68%  #C3A161
+11 Light Green     120°   65%   68%  #78B560
+15 Light Cyan      180°   65%   68%  #66B3AA
+13 Light Blue      240°   65%   68%  #6CACDF
+14 Light Violet    300°   65%   68%  #D38CE0
+```
+
+Night Mode
+
+```
+Id Color            Hue   Sat   Luv    Hex
+-- --------------  ----  ----  ----  -------
+01 Base 1           60°   30%    7%  #181510
+09 Base 2           60°   30%   10%  #1F1B15
+08 Base 3           60°   30%   50%  #827562
+16 Base 4           60°   30%   68%  #B5A38A
+-- --------------  ----  ----  ----  -------
+02 Dark Red          0°  100%   65%  #FF6C91
+04 Dark Orange      60°  100%   65%  #C59700
+03 Dark Green      120°  100%   65%  #55B300
+07 Dark Cyan       180°  100%   65%  #00B1A4
+05 Dark Blue       240°  100%   65%  #00A7F0
+06 Dark Violet     300°  100%   65%  #EA65FF
+-- --------------  ----  ----  ----  -------
+10 Light Red         0°   65%   68%  #E58C9F
+12 Light Orange     60°   65%   68%  #C3A161
+11 Light Green     120°   65%   68%  #78B560
+15 Light Cyan      180°   65%   68%  #66B3AA
+13 Light Blue      240°   65%   68%  #6CACDF
+14 Light Violet    300°   65%   68%  #D38CE0
+```
+
+Light Mode
+
+```
+Id Color            Hue   Sat   Luv    Hex
+-- --------------  ----  ----  ----  -------
+01 Base 1           60°   55%   93%  #F6E9D7
+09 Base 2           60°   45%   90%  #F0E0CA
+08 Base 3           60°   35%   30%  #4F4537
+16 Base 4           60°   35%   50%  #84755E
+-- --------------  ----  ----  ----  -------
+02 Dark Red          0°  100%   40%  #BC004F
+04 Dark Orange      60°  100%   40%  #775A00
+03 Dark Green      120°  100%   40%  #306B00
+07 Dark Cyan       180°  100%   40%  #006A62
+05 Dark Blue       240°  100%   40%  #006492
+06 Dark Violet     300°  100%   40%  #A400B6
+-- --------------  ----  ----  ----  -------
+10 Light Red         0°  100%   50%  #EA0064
+12 Light Orange     60°  100%   50%  #957200
+11 Light Green     120°  100%   50%  #3F8700
+15 Light Cyan      180°  100%   50%  #00867C
+13 Light Blue      240°  100%   50%  #007EB7
+14 Light Violet    300°  100%   50%  #CD00E2
+```
+
 ## Old atomic color scheme
 
 Check the [old-atomic](https://github.com/gerardbm/old-atomic) repository for old colors (selected using different algorithms).
