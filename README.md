@@ -12,6 +12,10 @@ Atomic is a dark color scheme designed to use with terminals. This repository pr
 
 ![Atomic Light Screenshot](https://github.com/gerardbm/atomic/blob/master/img/screenshots/Atomic-Light-Screenshot.png)
 
+![Testing Atomic with vim](https://github.com/gerardbm/atomic/blob/master/img/screenshots/vim.png)
+
+![Testing Atomic with cmatrix](https://github.com/gerardbm/atomic/blob/master/img/screenshots/cmatrix.png)
+
 ### Color palette
 
 The color palette consists of **sixteen precision colors** selected procedurally (algorithms), distributed in six hues and four perceived lightness, according to the color space **HSLuv** («_an alternative to HSL designed for perceptual uniformity based on human experiments_».
