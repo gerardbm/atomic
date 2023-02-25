@@ -30,11 +30,35 @@ In a RGB color wheel, hues have been selected in order to be distinguishable for
 
 In this palette, the base colors have more blue and green than red. During the day, these colors don't carry any problem, but at night blue light negatively affects health and sleep patterns: it affects levels of the sleep-inducing hormone melatonin more than any other wavelength.
 
+**Onion Mode**: base colors use the purple color (hue 300°).
+
+This is an alternative mode with purple color.
+
+![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/atomic-onion-mc.png)
+
+**Blood Mode**: base colors use the red color (hue 0°).
+
+This is an alternative mode with blood color.
+
+![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/atomic-blood-mc.png)
+
 **Night Mode**: base colors use the orange color (hue 60°).
 
-Night mode uses a different hue of base color: 60° (orange) instead of 240° (blue). Actually, they are complementary colors. That means values of blue and green colors have been reduced inversely, while value of red color has been increased in the same proportion.
+This is an alternative mode with orange color.
 
 ![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/atomic-night-mc.png)
+
+**Grass Mode**: base colors use the green color (hue 120°).
+
+This is an alternative mode with green color.
+
+![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/atomic-grass-mc.png)
+
+**Ocean Mode**: base colors use the cyan color (hue 180°).
+
+This is an alternative mode with cyan color.
+
+![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/atomic-ocean-mc.png)
 
 **Light Mode**: base colors use the orange color (hue 60°).
 
@@ -117,7 +141,29 @@ Id Color            Hue   Sat   Luv    Hex    (R - G - B)
 14 Light Violet    300°   65%   68%  #D38CE0  211 140 224
 ```
 
-Night Mode
+Onion Mode (only base colors change)
+
+```
+Id Color            Hue   Sat   Luv    Hex    (R - G - B)
+-- --------------  ----  ----  ----  -------  -----------
+01 Base 1          300°   30%    7%  #1C121E   28  18  30
+09 Base 2          300°   30%   10%  #231726   35  23  38
+08 Base 3          300°   30%   50%  #906A97  144 106 151
+16 Base 4          300°   30%   68%  #BB9BC2  187 155 194
+```
+
+Blood Mode (only base colors change)
+
+```
+Id Color            Hue   Sat   Luv    Hex    (R - G - B)
+-- --------------  ----  ----  ----  -------  -----------
+01 Base 1            0°   30%    7%  #221114   34  17  20
+09 Base 2            0°   30%   10%  #2A161A   42  22  26
+08 Base 3            0°   30%   50%  #A56572  165 101 114
+16 Base 4            0°   30%   68%  #C69BA2  198 155 162
+```
+
+Night Mode (only base colors change)
 
 ```
 Id Color            Hue   Sat   Luv    Hex    (R - G - B)
@@ -126,20 +172,28 @@ Id Color            Hue   Sat   Luv    Hex    (R - G - B)
 09 Base 2           60°   30%   10%  #1F1B15   31  27  21
 08 Base 3           60°   30%   50%  #827562  130 117  98
 16 Base 4           60°   30%   68%  #B5A38A  181 163 138
+```
+
+Grass Mode (only base colors change)
+
+```
+Id Color            Hue   Sat   Luv    Hex    (R - G - B)
 -- --------------  ----  ----  ----  -------  -----------
-02 Dark Red          0°  100%   65%  #FF6C91  255 108 145
-04 Dark Orange      60°  100%   65%  #C59700  197 151   0
-03 Dark Green      120°  100%   65%  #55B300   85 179   0
-07 Dark Cyan       180°  100%   65%  #00B1A4    0 177 164
-05 Dark Blue       240°  100%   65%  #00A7F0    0 167 240
-06 Dark Violet     300°  100%   65%  #EA65FF  234 101 255
+01 Base 1          120°   30%    7%  #121710   18  23  16
+09 Base 2          120°   30%   10%  #171D15   23  29  21
+08 Base 3          120°   30%   50%  #687D62  104 125  98
+16 Base 4          120°   30%   68%  #92AE89  146 174 137
+```
+
+Ocean Mode (only base colors change)
+
+```
+Id Color            Hue   Sat   Luv    Hex    (R - G - B)
 -- --------------  ----  ----  ----  -------  -----------
-10 Light Red         0°   65%   68%  #E58C9F  229 140 159
-12 Light Orange     60°   65%   68%  #C3A161  195 161  97
-11 Light Green     120°   65%   68%  #78B560  120 181  96
-15 Light Cyan      180°   65%   68%  #66B3AA  102 179 170
-13 Light Blue      240°   65%   68%  #6CACDF  108 172 223
-14 Light Violet    300°   65%   68%  #D38CE0  211 140 224
+01 Base 1          180°   30%    7%  #111716   17  23  22
+09 Base 2          180°   30%   10%  #161D1C   22  29  28
+08 Base 3          180°   30%   50%  #657C78  101 124 120
+16 Base 4          180°   30%   68%  #8DACA8  141 172 168
 ```
 
 Light Mode
