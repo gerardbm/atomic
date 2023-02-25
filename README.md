@@ -12,10 +12,6 @@ Atomic is a dark color scheme designed to use with terminals. This repository pr
 
 ![Atomic Light Screenshot](https://github.com/gerardbm/atomic/blob/master/img/screenshots/Atomic-Light-Screenshot.png)
 
-![Testing Atomic with vim](https://github.com/gerardbm/atomic/blob/master/img/screenshots/vim.png)
-
-![Testing Atomic with cmatrix](https://github.com/gerardbm/atomic/blob/master/img/screenshots/cmatrix.png)
-
 ### Color palette
 
 The color palette consists of **sixteen precision colors** selected procedurally (algorithms), distributed in six hues and four perceived lightness, according to the color space **HSLuv** («_an alternative to HSL designed for perceptual uniformity based on human experiments_».
@@ -26,13 +22,11 @@ So the perceived lightness has been balanced according to the ITU-R Recommendati
 
 `Luma (Y') = 0.2126 R' + 0.7152 G' + 0.0722 B'`
 
-In a RGB color wheel, hues have been selected in order to be distinguishable for the human eye and keeping harmony: that means one color every 60°.
+In a RGB color wheel, hues have been selected in order to be distinguishable for the human eye and keeping harmony: that means **one color every 60°**.
 
 **Space Mode**: base colors use the blue color (hue 240°).
 
 ![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/atomic-space-mc.png)
-
-In this palette, the base colors have more blue and green than red. During the day, these colors don't carry any problem, but at night blue light negatively affects health and sleep patterns: it affects levels of the sleep-inducing hormone melatonin more than any other wavelength.
 
 **Onion Mode**: base colors use the purple color (hue 300°).
 
@@ -224,6 +218,10 @@ Id Color            Hue   Sat   Luv    Hex    (R - G - B)
 13 Light Blue      240°  100%   50%  #007EB7    0 126 183
 14 Light Violet    300°  100%   50%  #CD00E2  205   0 226
 ```
+
+![Testing Atomic with vim](https://github.com/gerardbm/atomic/blob/master/img/screenshots/vim.png)
+
+![Testing Atomic with cmatrix](https://github.com/gerardbm/atomic/blob/master/img/screenshots/cmatrix.png)
 
 ## Old atomic color scheme
 
