@@ -38,7 +38,7 @@ This is an alternative mode with purple color.
 
 **Blood Mode**: base colors use the red color (hue 0°).
 
-This is an alternative mode with blood color.
+This is an alternative mode with red color.
 
 ![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/atomic-blood-mc.png)
 
