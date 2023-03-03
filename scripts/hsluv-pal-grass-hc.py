@@ -4,24 +4,29 @@
 """Atomic Grass High Contrast"""
 
 import os
+import sys
 from hsluv import hsluv_to_rgb
 from PIL import Image, ImageDraw, ImageFont
+
+# Preview
+xres = False
+shot = False
 
 # Colors
 BA = 120
 
 # Saturation
-Sn = 100
-Sb = 65
+Sn = 95
+Sb = 70
 
 # Lightness
 Ln = 65
-Lb = 68
+Lb = 70
 
-H01 = BA  ; S01 = 30 ; L01 = 3  ; BASE1 = [] ; ZASE1 = [] #base1
-H02 = BA  ; S02 = 30 ; L02 = 6  ; BASE2 = [] ; ZASE2 = [] #base2
-H03 = BA  ; S03 = 30 ; L03 = 50 ; BASE3 = [] ; ZASE3 = [] #base3
-H04 = BA  ; S04 = 30 ; L04 = Lb ; BASE4 = [] ; ZASE4 = [] #base4
+H01 = BA  ; S01 = 34 ; L01 = 3  ; BASE1 = [] ; ZASE1 = [] #base1
+H02 = BA  ; S02 = 34 ; L02 = 6  ; BASE2 = [] ; ZASE2 = [] #base2
+H03 = BA  ; S03 = 21 ; L03 = 50 ; BASE3 = [] ; ZASE3 = [] #base3
+H04 = BA  ; S04 = 13 ; L04 = Lb ; BASE4 = [] ; ZASE4 = [] #base4
 H05 = 0   ; S05 = Sn ; L05 = Ln ; BACR1 = [] ; ZACR1 = [] #acr50
 H06 = 60  ; S06 = Sn ; L06 = Ln ; BACO1 = [] ; ZACO1 = [] #aco50
 H07 = 120 ; S07 = Sn ; L07 = Ln ; BACG1 = [] ; ZACG1 = [] #acg50
@@ -395,24 +400,120 @@ num15_x = ImageDraw.Draw(image)
 num15_x.text((T+W*7, SV+H*2+SEP), HEX14, font=font, fill=HEX14)
 
 # Output for URxvt
-print("#define base1", HEX01)
-print("#define base2", HEX02)
-print("#define base3", HEX03)
-print("#define base4", HEX04)
-print("#define acr50", HEX05)
-print("#define aco50", HEX06)
-print("#define acg50", HEX07)
-print("#define acc50", HEX08)
-print("#define acb50", HEX09)
-print("#define acv50", HEX10)
-print("#define acr70", HEX11)
-print("#define aco70", HEX12)
-print("#define acg70", HEX13)
-print("#define acc70", HEX14)
-print("#define acb70", HEX15)
-print("#define acv70", HEX16)
+if xres is True:
+    print("#define base1", HEX01)
+    print("#define base2", HEX02)
+    print("#define base3", HEX03)
+    print("#define base4", HEX04)
+    print("#define acr50", HEX05)
+    print("#define aco50", HEX06)
+    print("#define acg50", HEX07)
+    print("#define acc50", HEX08)
+    print("#define acb50", HEX09)
+    print("#define acv50", HEX10)
+    print("#define acr70", HEX11)
+    print("#define aco70", HEX12)
+    print("#define acg70", HEX13)
+    print("#define acc70", HEX14)
+    print("#define acb70", HEX15)
+    print("#define acv70", HEX16)
 
-print(f"URxvt.keysym.C-F7: command:\\033]10;{HEX04}\\007\\033]11;{HEX01}\\007\\033]12;{HEX04}\\007\\033]704;{HEX11}\\007\\033]706;{HEX14}\\007\\033]707;{HEX15}\\007\\033]708;{HEX01}\\007\\033]4;0;{HEX01}\\007\\033]4;1;{HEX05}\\007\\033]4;2;{HEX07}\\007\\033]4;3;{HEX06}\\007\\033]4;4;{HEX09}\\007\\033]4;5;{HEX10}\\007\\033]4;6;{HEX08}\\007\\033]4;7;{HEX03}\\007\\033]4;8;{HEX02}\\007\\033]4;9;{HEX11}\\007\\033]4;10;{HEX13}\\007\\033]4;11;{HEX12}\\007\\033]4;12;{HEX15}\\007\\033]4;13;{HEX16}\\007\\033]4;14;{HEX14}\\007\\033]4;15;{HEX04}\\007")
+original_stdout = sys.stdout
+
+# Output the values
+with open('../xresources/Xresources.grass_hc', 'w') as f:
+    sys.stdout = f
+    print("! Atomic Grass HC")
+    print("#define base1", HEX01)
+    print("#define base2", HEX02)
+    print("#define base3", HEX03)
+    print("#define base4", HEX04)
+    print("#define acr50", HEX05)
+    print("#define aco50", HEX06)
+    print("#define acg50", HEX07)
+    print("#define acc50", HEX08)
+    print("#define acb50", HEX09)
+    print("#define acv50", HEX10)
+    print("#define acr70", HEX11)
+    print("#define aco70", HEX12)
+    print("#define acg70", HEX13)
+    print("#define acc70", HEX14)
+    print("#define acb70", HEX15)
+    print("#define acv70", HEX16)
+    print("")
+    print("*.foreground  : base4")
+    print("*.background  : base1")
+    print("*.cursorColor : base4")
+    print("")
+    print("*.color0  : base1")
+    print("*.color1  : acr50")
+    print("*.color2  : acg50")
+    print("*.color3  : aco50")
+    print("*.color4  : acb50")
+    print("*.color5  : acv50")
+    print("*.color6  : acc50")
+    print("*.color7  : base3")
+    print("*.color8  : base2")
+    print("*.color9  : acr70")
+    print("*.color10 : acg70")
+    print("*.color11 : aco70")
+    print("*.color12 : acb70")
+    print("*.color13 : acv70")
+    print("*.color14 : acc70")
+    print("*.color15 : base4")
+    print("")
+    print("! Manpage colors")
+    print("*.colorIT : acr70")
+    print("*.colorBD : acc70")
+    print("*.colorUL : acb70")
+    print("")
+    print("! XTerm")
+    print("xterm*background  : base1")
+    print("xterm*foreground  : base4")
+    print("xterm*cursorColor : base4")
+    print("")
+    print("xterm*color0  : base1")
+    print("xterm*color1  : acr50")
+    print("xterm*color2  : acg50")
+    print("xterm*color3  : aco50")
+    print("xterm*color4  : acb50")
+    print("xterm*color5  : acv50")
+    print("xterm*color6  : acc50")
+    print("xterm*color7  : base3")
+    print("xterm*color8  : base2")
+    print("xterm*color9  : acr70")
+    print("xterm*color10 : acg70")
+    print("xterm*color11 : aco70")
+    print("xterm*color12 : acb70")
+    print("xterm*color13 : acv70")
+    print("xterm*color14 : acc70")
+    print("xterm*color15 : base4")
+    print("")
+    print("xterm*colorIT : acr70")
+    print("xterm*colorBD : acc70")
+    print("xterm*colorUL : acb70")
+    print("")
+    print("! Rofi colors       bg     fg     altbg  hlbg   hlfg")
+    print("rofi.color-normal : base1, base4, base1, base2, acc50")
+    print("rofi.color-urgent : base1, acg50, base2, base1, acc50")
+    print("rofi.color-active : base1, acg50, base2, base2, acg50")
+    print("rofi.color-window : base1, acc50, base3")
+    print("rofi.bw           : 1")
+    sys.stdout = original_stdout
+
+with open('../xresources/Xresources.URxvtSwitch', 'a+') as f:
+    sys.stdout = f
+    print("")
+    print("! Grass HC")
+    print(f"URxvt.keysym.C-F7: command:\\033]10;{HEX04}\\007\\033]11;{HEX01}\\007\\")
+    print(f"\\033]12;{HEX04}\\007\\033]704;{HEX11}\\007\\033]706;{HEX14}\\007\\")
+    print(f"\\033]707;{HEX15}\\007\\033]708;{HEX01}\\007\\033]4;0;{HEX01}\\007\\")
+    print(f"\\033]4;1;{HEX05}\\007\\033]4;2;{HEX07}\\007\\033]4;3;{HEX06}\\007\\")
+    print(f"\\033]4;4;{HEX09}\\007\\033]4;5;{HEX10}\\007\\033]4;6;{HEX08}\\007\\")
+    print(f"\\033]4;7;{HEX03}\\007\\033]4;8;{HEX02}\\007\\033]4;9;{HEX11}\\007\\")
+    print(f"\\033]4;10;{HEX13}\\007\\033]4;11;{HEX12}\\007\\033]4;12;{HEX15}\\007\\")
+    print(f"\\033]4;13;{HEX16}\\007\\033]4;14;{HEX14}\\007\\033]4;15;{HEX04}\\007")
+    sys.stdout = original_stdout
 
 for i in A01: RGBr01 = round(A01[0]*255); RGBg01 = round(A01[1]*255); RGBb01 = round(A01[2]*255)
 for i in A02: RGBr02 = round(A02[0]*255); RGBg02 = round(A02[1]*255); RGBb02 = round(A02[2]*255)
@@ -432,26 +533,33 @@ for i in A15: RGBr15 = round(A15[0]*255); RGBg15 = round(A15[1]*255); RGBb15 = r
 for i in A16: RGBr16 = round(A16[0]*255); RGBg16 = round(A16[1]*255); RGBb16 = round(A16[2]*255)
 
 # Output the values
-print("Id Color            Hue   Sat   Luv    Hex    (R - G - B)")
-print("-- --------------  ----  ----  ----  -------  -----------")
-print(f"{'01':<2} {'Base 1':<14} {H01:>4}° {S01:>4}% {L01:>4}% {HEX01:>8} {RGBr01:>4} {RGBg01:>3} {RGBb01:>3}")
-print(f"{'09':<2} {'Base 2':<14} {H02:>4}° {S02:>4}% {L02:>4}% {HEX02:>8} {RGBr02:>4} {RGBg02:>3} {RGBb02:>3}")
-print(f"{'08':<2} {'Base 3':<14} {H03:>4}° {S03:>4}% {L03:>4}% {HEX03:>8} {RGBr03:>4} {RGBg03:>3} {RGBb03:>3}")
-print(f"{'16':<2} {'Base 4':<14} {H04:>4}° {S04:>4}% {L04:>4}% {HEX04:>8} {RGBr04:>4} {RGBg04:>3} {RGBb04:>3}")
-print("-- --------------  ----  ----  ----  -------  -----------")
-print(f"{'02':<2} {'Dark Red':<14} {H05:>4}° {S05:>4}% {L05:>4}% {HEX05:>8} {RGBr05:>4} {RGBg05:>3} {RGBb05:>3}")
-print(f"{'04':<2} {'Dark Orange':<14} {H06:>4}° {S06:>4}% {L06:>4}% {HEX06:>8} {RGBr06:>4} {RGBg06:>3} {RGBb06:>3}")
-print(f"{'03':<2} {'Dark Green':<14} {H07:>4}° {S07:>4}% {L07:>4}% {HEX07:>8} {RGBr07:>4} {RGBg07:>3} {RGBb07:>3}")
-print(f"{'07':<2} {'Dark Cyan':<14} {H08:>4}° {S08:>4}% {L08:>4}% {HEX08:>8} {RGBr08:>4} {RGBg08:>3} {RGBb08:>3}")
-print(f"{'05':<2} {'Dark Blue':<14} {H09:>4}° {S09:>4}% {L09:>4}% {HEX09:>8} {RGBr09:>4} {RGBg09:>3} {RGBb09:>3}")
-print(f"{'06':<2} {'Dark Violet':<14} {H10:>4}° {S10:>4}% {L10:>4}% {HEX10:>8} {RGBr10:>4} {RGBg10:>3} {RGBb10:>3}")
-print("-- --------------  ----  ----  ----  -------  -----------")
-print(f"{'10':<2} {'Light Red':<14} {H11:>4}° {S11:>4}% {L11:>4}% {HEX11:>8} {RGBr11:>4} {RGBg11:>3} {RGBb11:>3}")
-print(f"{'12':<2} {'Light Orange':<14} {H12:>4}° {S12:>4}% {L12:>4}% {HEX12:>8} {RGBr12:>4} {RGBg12:>3} {RGBb12:>3}")
-print(f"{'11':<2} {'Light Green':<14} {H13:>4}° {S13:>4}% {L13:>4}% {HEX13:>8} {RGBr13:>4} {RGBg13:>3} {RGBb13:>3}")
-print(f"{'15':<2} {'Light Cyan':<14} {H14:>4}° {S14:>4}% {L14:>4}% {HEX14:>8} {RGBr14:>4} {RGBg14:>3} {RGBb14:>3}")
-print(f"{'13':<2} {'Light Blue':<14} {H15:>4}° {S15:>4}% {L15:>4}% {HEX15:>8} {RGBr15:>4} {RGBg15:>3} {RGBb15:>3}")
-print(f"{'14':<2} {'Light Violet':<14} {H16:>4}° {S16:>4}% {L16:>4}% {HEX16:>8} {RGBr16:>4} {RGBg16:>3} {RGBb16:>3}")
+with open('../values/atomic-grass-hc.md', 'w') as f:
+    sys.stdout = f
+    print("# Atomic Grass High Contrast")
+    print("")
+    print("```")
+    print("Id Color            Hue   Sat   Luv    Hex    (R - G - B)")
+    print("-- --------------  ----  ----  ----  -------  -----------")
+    print(f"{'01':<2} {'Base 1':<14} {H01:>4}° {S01:>4}% {L01:>4}% {HEX01:>8} {RGBr01:>4} {RGBg01:>3} {RGBb01:>3}")
+    print(f"{'09':<2} {'Base 2':<14} {H02:>4}° {S02:>4}% {L02:>4}% {HEX02:>8} {RGBr02:>4} {RGBg02:>3} {RGBb02:>3}")
+    print(f"{'08':<2} {'Base 3':<14} {H03:>4}° {S03:>4}% {L03:>4}% {HEX03:>8} {RGBr03:>4} {RGBg03:>3} {RGBb03:>3}")
+    print(f"{'16':<2} {'Base 4':<14} {H04:>4}° {S04:>4}% {L04:>4}% {HEX04:>8} {RGBr04:>4} {RGBg04:>3} {RGBb04:>3}")
+    print("-- --------------  ----  ----  ----  -------  -----------")
+    print(f"{'02':<2} {'Dark Red':<14} {H05:>4}° {S05:>4}% {L05:>4}% {HEX05:>8} {RGBr05:>4} {RGBg05:>3} {RGBb05:>3}")
+    print(f"{'04':<2} {'Dark Orange':<14} {H06:>4}° {S06:>4}% {L06:>4}% {HEX06:>8} {RGBr06:>4} {RGBg06:>3} {RGBb06:>3}")
+    print(f"{'03':<2} {'Dark Green':<14} {H07:>4}° {S07:>4}% {L07:>4}% {HEX07:>8} {RGBr07:>4} {RGBg07:>3} {RGBb07:>3}")
+    print(f"{'07':<2} {'Dark Cyan':<14} {H08:>4}° {S08:>4}% {L08:>4}% {HEX08:>8} {RGBr08:>4} {RGBg08:>3} {RGBb08:>3}")
+    print(f"{'05':<2} {'Dark Blue':<14} {H09:>4}° {S09:>4}% {L09:>4}% {HEX09:>8} {RGBr09:>4} {RGBg09:>3} {RGBb09:>3}")
+    print(f"{'06':<2} {'Dark Violet':<14} {H10:>4}° {S10:>4}% {L10:>4}% {HEX10:>8} {RGBr10:>4} {RGBg10:>3} {RGBb10:>3}")
+    print("-- --------------  ----  ----  ----  -------  -----------")
+    print(f"{'10':<2} {'Light Red':<14} {H11:>4}° {S11:>4}% {L11:>4}% {HEX11:>8} {RGBr11:>4} {RGBg11:>3} {RGBb11:>3}")
+    print(f"{'12':<2} {'Light Orange':<14} {H12:>4}° {S12:>4}% {L12:>4}% {HEX12:>8} {RGBr12:>4} {RGBg12:>3} {RGBb12:>3}")
+    print(f"{'11':<2} {'Light Green':<14} {H13:>4}° {S13:>4}% {L13:>4}% {HEX13:>8} {RGBr13:>4} {RGBg13:>3} {RGBb13:>3}")
+    print(f"{'15':<2} {'Light Cyan':<14} {H14:>4}° {S14:>4}% {L14:>4}% {HEX14:>8} {RGBr14:>4} {RGBg14:>3} {RGBb14:>3}")
+    print(f"{'13':<2} {'Light Blue':<14} {H15:>4}° {S15:>4}% {L15:>4}% {HEX15:>8} {RGBr15:>4} {RGBg15:>3} {RGBb15:>3}")
+    print(f"{'14':<2} {'Light Violet':<14} {H16:>4}° {S16:>4}% {L16:>4}% {HEX16:>8} {RGBr16:>4} {RGBg16:>3} {RGBb16:>3}")
+    print("```")
+    sys.stdout = original_stdout
 
 # Generate the image
 IMAGE='../img/atomic-grass-hc.png'
@@ -459,10 +567,10 @@ image.save(IMAGE)
 
 PS=str("ps -ef | grep -v grep | grep 'mupdf' ")
 FL=str("| grep -o '" + IMAGE + "' > /dev/null")
-
 CHECK=os.system(PS+FL)
 
-if CHECK == 256:
-    os.system("mupdf '" + IMAGE + "' 2>/dev/null &")
-else:
-    os.system("pkill -HUP mupdf 2>/dev/null")
+if shot is True:
+    if CHECK == 256:
+        os.system("mupdf '" + IMAGE + "' 2>/dev/null &")
+    else:
+        os.system("pkill -HUP mupdf 2>/dev/null")

@@ -1,20 +1,20 @@
 ! Atomic Night HC
 #define base1 #0D0B07
-#define base2 #16130E
-#define base3 #827562
-#define base4 #B5A38A
-#define acr50 #FF6C91
-#define aco50 #C59700
-#define acg50 #55B300
-#define acc50 #00B1A4
-#define acb50 #00A7F0
-#define acv50 #EA65FF
-#define acr70 #E58C9F
-#define aco70 #C3A161
-#define acg70 #78B560
-#define acc70 #66B3AA
-#define acb70 #6CACDF
-#define acv70 #D38CE0
+#define base2 #16130D
+#define base3 #7F7669
+#define base4 #B2AA9F
+#define acr50 #FB6F92
+#define aco50 #C39720
+#define acg50 #5AB220
+#define acc50 #23B0A3
+#define acb50 #27A7EC
+#define acv50 #E66AFA
+#define acr70 #EA92A4
+#define aco70 #CBA65D
+#define acg70 #78BC5C
+#define acc70 #62BAB0
+#define acb70 #6FB1E7
+#define acv70 #D991E6
 
 *.foreground  : base4
 *.background  : base1

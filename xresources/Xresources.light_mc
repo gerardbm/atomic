@@ -1,8 +1,8 @@
 ! Atomic Light MC
-#define base1 #F6E9D7
-#define base2 #F0E0CA
-#define base3 #84755E
-#define base4 #4F4537
+#define base1 #FAECD8
+#define base2 #F9E6CA
+#define base3 #4D463B
+#define base4 #867558
 #define acr50 #BC004F
 #define aco50 #775A00
 #define acg50 #306B00
