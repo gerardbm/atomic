@@ -18,15 +18,27 @@ Manually copy the file `atomic.vim` contained into the `vim` directory of this r
 
 1. Set the colorscheme in your Vim/Neovim configuration file: `colorscheme atomic`.
 2. If you are in a GUI for Vim (as gvim), you have commands to switch between modes:
-- (1) `AtomicSpaceHC`: sets the space mode (blue hue, dark background) in hard contrast (+4%).
+- (1) `AtomicSpaceHC`: sets the space mode (blue hue, dark background) in hard contrast (+3%).
 - (2) `AtomicSpaceMC`: sets the space mode (blue hue, dark background) in medium contrast (default).
-- (3) `AtomicSpaceLC`: sets the space mode (blue hue, dark background) in hard contrast (-4%).
-- (4) `AtomicNightHC`: sets the night mode (orange hue, dark background) in hard contrast (+4%).
-- (5) `AtomicNightMC`: sets the night mode (orange hue, dark background) in medium contrast (default).
-- (6) `AtomicNightLC`: sets the night mode (orange hue, dark background) in hard contrast (-4%).
-- (7) `AtomicLightHC`: sets the light mode (orange hue, light background) in hard contrast (+4%).
-- (8) `AtomicLightMC`: sets the light mode (orange hue, light background) in medium contrast (default).
-- (9) `AtomicLightLC`: sets the light mode (orange hue, light background) in hard contrast (-4%).
+- (3) `AtomicSpaceLC`: sets the space mode (blue hue, dark background) in hard contrast (-3%).
+- (4) `AtomicOnionHC`: sets the onion mode (purple hue, dark background) in hard contrast (+3%).
+- (5) `AtomicOnionMC`: sets the onion mode (purple hue, dark background) in medium contrast (default).
+- (6) `AtomicOnionLC`: sets the onion mode (purple hue, dark background) in hard contrast (-3%).
+- (7) `AtomicBloodHC`: sets the blood mode (red hue, dark background) in hard contrast (+3%).
+- (8) `AtomicBloodMC`: sets the blood mode (red hue, dark background) in medium contrast (default).
+- (9) `AtomicBloodLC`: sets the blood mode (red hue, dark background) in hard contrast (-3%).
+- (10) `AtomicNightHC`: sets the night mode (orange hue, dark background) in hard contrast (+3%).
+- (11) `AtomicNightMC`: sets the night mode (orange hue, dark background) in medium contrast (default).
+- (12) `AtomicNightLC`: sets the night mode (orange hue, dark background) in hard contrast (-3%).
+- (13) `AtomicGrassHC`: sets the grass mode (green hue, dark background) in hard contrast (+3%).
+- (14) `AtomicGrassMC`: sets the grass mode (green hue, dark background) in medium contrast (default).
+- (15) `AtomicGrassLC`: sets the grass mode (green hue, dark background) in hard contrast (-3%).
+- (16) `AtomicOceanHC`: sets the ocean mode (cyan hue, dark background) in hard contrast (+3%).
+- (17) `AtomicOceanMC`: sets the ocean mode (cyan hue, dark background) in medium contrast (default).
+- (18) `AtomicOceanLC`: sets the ocean mode (cyan hue, dark background) in hard contrast (-3%).
+- (19) `AtomicLightHC`: sets the light mode (orange hue, light background) in hard contrast (+3%).
+- (20) `AtomicLightMC`: sets the light mode (orange hue, light background) in medium contrast (default).
+- (21) `AtomicLightLC`: sets the light mode (orange hue, light background) in hard contrast (-3%).
 
 Or switch them depending on the current time. In your `.gvimrc`:
 
@@ -40,7 +52,7 @@ function! AtomicSwitcher()
 endfunction
 ```
 
-Even cycle them (from 1 to 9) with a shortcut. Paste this in your `.gvimrc`:
+Even cycle them (from 1 to 21) with a shortcut. Paste this in your `.gvimrc`:
 
 ```viml
 nnoremap <F9> :call CycleModes()<CR>:colorscheme atomic<CR>
@@ -62,6 +74,6 @@ let g:airline#extensions#tabline#enabled = 1
 call airline#parts#define_accent('mode', 'black')
 ```
 
-For better contrast, install the plugin [vim-atomic](https://github.com/gerardbm/vim-atomic) and set by default the atomic colorscheme. If it's not installed, it will use the colors of your current colorscheme. If it's installed, vim-airline-atomic will be adapted to the current atomic mode (`Space`, `Night`, `Light`) automatically.
+For better contrast, install the plugin [vim-atomic](https://github.com/gerardbm/vim-atomic) and set by default the atomic colorscheme. If it's not installed, it will use the colors of your current colorscheme. If it's installed, vim-airline-atomic will be adapted to the current atomic mode (`Space`, `Onion`, `Blood`, `Night`, `Grass`, `Ocean`, `Light`) automatically.
 
 Make sure you have the Powerline fonts installed.

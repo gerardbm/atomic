@@ -2,7 +2,7 @@
 
 ## URxvt and XTerm
 
-Installation for **URxvt** and **XTerm** (include extra modes with +4% contrast).
+Installation for **URxvt** and **XTerm** (include extra modes with +3% contrast).
 
 1. Copy the content from the files `Xresources.*` to your `.Xresources`.
 2. Load the resource file with the command: `xrdb ~/.Xresources`.
