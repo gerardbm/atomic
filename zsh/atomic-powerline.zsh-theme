@@ -8,7 +8,7 @@
 #
 # -----------------------------------------------------------------------------
 #  Theme   : atomic-powerline
-#  Version : 2.0.0
+#  Version : 2.1.0
 #  License : MIT
 #  Author  : Gerard Bajona
 #  URL     : https://github.com/gerardbm/atomic
@@ -72,14 +72,14 @@ ZSH_THEME_GIT_PROMPT_DIVERGED="/"
 ZSH_THEME_GIT_PROMPT_EQUAL_REMOTE="="
 
 # Git right prompt
-function atomic_rprompt() {
-	SHORT_SHA=$(git_prompt_short_sha)
-	if [[ -n $SHORT_SHA ]] && SHORT_SHA="$SHORT_SHA"; then
-		PREFIX="%{$fg[white]%}%{$reset_color%}"
-		RPROMPT="%{$fg[black]$bg[white]%} $SHORT_SHA "
-		echo "$PREFIX$RPROMPT"
-	fi
-}
+# function atomic_rprompt() {
+#   SHORT_SHA=$(git_prompt_short_sha)
+#   if [[ -n $SHORT_SHA ]] && SHORT_SHA="$SHORT_SHA"; then
+#     PREFIX="%{$fg[white]%}%{$reset_color%}"
+#     RPROMPT="%{$fg[black]$bg[white]%} $SHORT_SHA "
+#     echo "$PREFIX$RPROMPT"
+#   fi
+# }
 
 # Prompt
 PROMPT='
@@ -87,4 +87,4 @@ $(status_machine)\
 %{$fg[black]$bg[white]%} $(get_pwd) \
 %{$fg[white]$bg[default]%}$(atomic_git) %{$reset_color%}'
 
-RPROMPT='$(atomic_rprompt)%{$reset_color%}'
+# RPROMPT='$(atomic_rprompt)%{$reset_color%}'

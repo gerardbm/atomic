@@ -8,7 +8,7 @@
 #
 # -----------------------------------------------------------------------------
 #  Theme   : atomic-lambda
-#  Version : 1.0.1
+#  Version : 1.1.0
 #  License : MIT
 #  Author  : Gerard Bajona
 #  URL     : https://github.com/gerardbm/atomic
@@ -64,12 +64,12 @@ ZSH_THEME_GIT_PROMPT_DIVERGED="%{$fg[blue]%}/%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_EQUAL_REMOTE="%{$fg[blue]%}=%{$reset_color%}"
 
 # Git right prompt
-function atomic_rprompt() {
-	SHORT_SHA=$(git_prompt_short_sha)
-	if [[ -n $SHORT_SHA ]] && SHORT_SHA="$SHORT_SHA"; then
-		echo "%{$fg[cyan]%}[$SHORT_SHA]"
-	fi
-}
+# function atomic_rprompt() {
+#   SHORT_SHA=$(git_prompt_short_sha)
+#   if [[ -n $SHORT_SHA ]] && SHORT_SHA="$SHORT_SHA"; then
+#     echo "%{$fg[cyan]%}[$SHORT_SHA]"
+#   fi
+# }
 
 # Arrow
 function atomic_arrow() {
@@ -85,4 +85,4 @@ $(status_lambda) \
 %{$fg_bold[yellow]%}$(get_pwd)%{$reset_color%} \
 $(atomic_git)$(atomic_arrow) %{$reset_color%}'
 
-RPROMPT='$(atomic_rprompt)%{$reset_color%}'
+# RPROMPT='$(atomic_rprompt)%{$reset_color%}'
