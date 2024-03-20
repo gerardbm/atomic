@@ -1,20 +1,20 @@
 ! Atomic Light MC
 #define base1 #FAECD8
 #define base2 #F9E6CA
-#define base3 #4D463B
-#define base4 #867558
-#define acr50 #BC004F
-#define aco50 #775A00
-#define acg50 #306B00
-#define acc50 #006A62
-#define acb50 #006492
-#define acv50 #A400B6
-#define acr70 #EA0064
-#define aco70 #957200
-#define acg70 #3F8700
-#define acc70 #00867C
-#define acb70 #007EB7
-#define acv70 #CD00E2
+#define base3 #34302A
+#define base4 #766955
+#define acr50 #A60045
+#define aco50 #684F00
+#define acg50 #2A5E00
+#define acc50 #005D56
+#define acb50 #005881
+#define acv50 #9000A0
+#define acr70 #D3005A
+#define aco70 #866600
+#define acg70 #387900
+#define acc70 #00786F
+#define acb70 #0071A4
+#define acv70 #B800CC
 
 *.foreground  : base4
 *.background  : base1

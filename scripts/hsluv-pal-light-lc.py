@@ -20,13 +20,13 @@ Sn = 100
 Sb = 100
 
 # Lightness
-Ln = 40
-Lb = 50
+Ln = 35
+Lb = 45
 
 H01 = BA  ; S01 = 70 ; L01 = 91 ; BASE1 = [] ; ZASE1 = [] #base1
 H02 = BA  ; S02 = 70 ; L02 = 89 ; BASE2 = [] ; ZASE2 = [] #base2
-H03 = BA  ; S03 = 27 ; L03 = 30 ; BASE3 = [] ; ZASE3 = [] #base4
-H04 = BA  ; S04 = 43 ; L04 = 50 ; BASE4 = [] ; ZASE4 = [] #base3
+H03 = BA  ; S03 = 21 ; L03 = 20 ; BASE3 = [] ; ZASE3 = [] #base4
+H04 = BA  ; S04 = 34 ; L04 = Lb ; BASE4 = [] ; ZASE4 = [] #base3
 H05 = 0   ; S05 = Sn ; L05 = Ln ; BACR1 = [] ; ZACR1 = [] #acr50
 H06 = 60  ; S06 = Sn ; L06 = Ln ; BACO1 = [] ; ZACO1 = [] #aco50
 H07 = 120 ; S07 = Sn ; L07 = Ln ; BACG1 = [] ; ZACG1 = [] #acg50
