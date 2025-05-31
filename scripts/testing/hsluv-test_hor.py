@@ -1,20 +1,25 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""Create a color palette"""
+"""Create a color palette in horizontal format"""
 
 import os
 from hsluv import hsluv_to_rgb
 from PIL import Image, ImageDraw
 
 H = 0
-S = 85
-LUV = 55
+S = 40
+LUV = 40
 
 GAP = 0
-DEG = 30
+DEG = 1
 RAD = int(360/DEG)
-w, h = 400, RAD*30
-image = Image.new("RGB", (w, h), color=("#0D0E0F"))
+
+RECT_WIDTH = 2
+RECT_HEIGHT = 100
+w, h = RAD * RECT_WIDTH, RECT_HEIGHT
+
+# w, h = 400, RAD*30
+image = Image.new("RGB", (w, h), color=("#fff"))
 
 for c in range(RAD):
     hsluv = hsluv_to_rgb([H, S, LUV])
@@ -35,16 +40,17 @@ for c in range(RAD):
 
     # print("Color", c, HEX)
 
-    shape = [(100, GAP), (300, GAP+30)]
+    shape = [(GAP, 0), (GAP + RECT_WIDTH, RECT_HEIGHT)]
 
     fig = ImageDraw.Draw(image)
     fig.rectangle(shape, fill=HEX)
-    GAP = GAP+30
+    GAP = GAP + RECT_WIDTH
     H = H+DEG
 
 # Instant preview
 
-IMAGE='conversion.png'
+IMAGE=f"HSLuv-s{S}-luv{LUV}-deg{DEG}.png"
+# IMAGE="conversion.png"
 image.save(IMAGE)
 
 PS=str("ps -ef | grep -v grep | grep 'mupdf' ")

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # pylint: disable=C0103,C0321,C0301
-"""Atomic Light Medium Contrast"""
+"""Atomic Old Book"""
 
 import os
 import sys
@@ -20,12 +20,12 @@ Sn = 100
 Sb = 100
 
 # Lightness
-Ln = 35
-Lb = 45
+Ln = 30
+Lb = 40
 
-H01 = BA  ; S01 = 34 ; L01 = 94 ; BASE1 = [] ; ZASE1 = [] #base1
-H02 = BA  ; S02 = 34 ; L02 = 91 ; BASE2 = [] ; ZASE2 = [] #base2
-H03 = BA  ; S03 = 13 ; L03 = 25 ; BASE3 = [] ; ZASE3 = [] #base4
+H01 = BA  ; S01 = 55 ; L01 = 90 ; BASE1 = [] ; ZASE1 = [] #base1
+H02 = BA  ; S02 = 55 ; L02 = 87 ; BASE2 = [] ; ZASE2 = [] #base2
+H03 = BA  ; S03 = 13 ; L03 = 20 ; BASE3 = [] ; ZASE3 = [] #base4
 H04 = BA  ; S04 = 21 ; L04 = Lb ; BASE4 = [] ; ZASE4 = [] #base3
 H05 = 10  ; S05 = Sn ; L05 = Ln ; BACR1 = [] ; ZACR1 = [] #acr50
 H06 = 45  ; S06 = Sn ; L06 = Ln ; BACO1 = [] ; ZACO1 = [] #aco50
@@ -421,9 +421,9 @@ if xres is True:
 original_stdout = sys.stdout
 
 # Output the values
-with open('../xresources/Xresources.light_mc', 'w') as f:
+with open('../xresources/Xresources.old_book', 'w') as f:
     sys.stdout = f
-    print("! Atomic Light MC")
+    print("! Atomic Old Book")
     print("#define base1", HEX01)
     print("#define base2", HEX02)
     print("#define base3", HEX03)
@@ -504,8 +504,8 @@ with open('../xresources/Xresources.light_mc', 'w') as f:
 with open('../xresources/Xresources.URxvtSwitch', 'a+') as f:
     sys.stdout = f
     print("")
-    print("! Light MC")
-    print(f"URxvt.keysym.C-8: command:\\033]10;{HEX03}\\007\\033]11;{HEX01}\\007\\")
+    print("! Old Book")
+    print(f"URxvt.keysym.C-0: command:\\033]10;{HEX03}\\007\\033]11;{HEX01}\\007\\")
     print(f"\\033]12;{HEX03}\\007\\033]704;{HEX11}\\007\\033]706;{HEX14}\\007\\")
     print(f"\\033]707;{HEX15}\\007\\033]708;{HEX01}\\007\\033]4;0;{HEX01}\\007\\")
     print(f"\\033]4;1;{HEX05}\\007\\033]4;2;{HEX07}\\007\\033]4;3;{HEX06}\\007\\")
@@ -533,9 +533,9 @@ for i in A15: RGBr15 = round(A15[0]*255); RGBg15 = round(A15[1]*255); RGBb15 = r
 for i in A16: RGBr16 = round(A16[0]*255); RGBg16 = round(A16[1]*255); RGBb16 = round(A16[2]*255)
 
 # Output the values
-with open('../values/atomic-light-mc.md', 'w') as f:
+with open('../values/atomic-old-book.md', 'w') as f:
     sys.stdout = f
-    print("# Atomic Light Medium Contrast")
+    print("# Atomic Old Book")
     print("")
     print("```")
     print("Id Color            Hue   Sat   Luv    Hex    (R - G - B)")
@@ -562,7 +562,7 @@ with open('../values/atomic-light-mc.md', 'w') as f:
     sys.stdout = original_stdout
 
 # Generate the image
-IMAGE='../img/atomic-light-mc.png'
+IMAGE='../img/atomic-old-book.png'
 image.save(IMAGE)
 
 PS=str("ps -ef | grep -v grep | grep 'mupdf' ")

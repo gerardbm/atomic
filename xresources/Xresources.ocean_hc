@@ -1,20 +1,20 @@
 ! Atomic Ocean HC
-#define base1 #070C0B
-#define base2 #0E1514
-#define base3 #6A7A78
-#define base4 #A1AEAC
-#define acr50 #FB6F92
-#define aco50 #C39720
-#define acg50 #5AB220
-#define acc50 #23B0A3
-#define acb50 #27A7EC
-#define acv50 #E66AFA
-#define acr70 #EA92A4
-#define aco70 #CBA65D
-#define acg70 #78BC5C
-#define acc70 #62BAB0
-#define acb70 #6FB1E7
-#define acv70 #D991E6
+#define base1 #090C0B
+#define base2 #101414
+#define base3 #768785
+#define base4 #ADBCBA
+#define acr50 #FB7279
+#define aco50 #D88E20
+#define acg50 #79AD20
+#define acc50 #23B0A5
+#define acb50 #5A9FFA
+#define acv50 #D576FA
+#define acr70 #F0A5A8
+#define aco70 #F1AA5C
+#define acg70 #97C75B
+#define acc70 #62C9C0
+#define acb70 #9DB9EE
+#define acv70 #D7A7EE
 
 *.foreground  : base4
 *.background  : base1

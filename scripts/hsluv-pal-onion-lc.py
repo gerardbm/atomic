@@ -13,32 +13,32 @@ xres = False
 shot = False
 
 # Colors
-BA = 300
+BA = 293
 
 # Saturation
 Sn = 95
-Sb = 70
+Sb = 75
 
 # Lightness
 Ln = 65
-Lb = 70
+Lb = 75
 
-H01 = BA  ; S01 = 34 ; L01 = 9  ; BASE1 = [] ; ZASE1 = [] #base1
-H02 = BA  ; S02 = 34 ; L02 = 12 ; BASE2 = [] ; ZASE2 = [] #base2
-H03 = BA  ; S03 = 21 ; L03 = 50 ; BASE3 = [] ; ZASE3 = [] #base3
+H01 = BA  ; S01 = 21 ; L01 = 9  ; BASE1 = [] ; ZASE1 = [] #base1
+H02 = BA  ; S02 = 21 ; L02 = 12 ; BASE2 = [] ; ZASE2 = [] #base2
+H03 = BA  ; S03 = 21 ; L03 = 55 ; BASE3 = [] ; ZASE3 = [] #base3
 H04 = BA  ; S04 = 13 ; L04 = Lb ; BASE4 = [] ; ZASE4 = [] #base4
-H05 = 0   ; S05 = Sn ; L05 = Ln ; BACR1 = [] ; ZACR1 = [] #acr50
-H06 = 60  ; S06 = Sn ; L06 = Ln ; BACO1 = [] ; ZACO1 = [] #aco50
-H07 = 120 ; S07 = Sn ; L07 = Ln ; BACG1 = [] ; ZACG1 = [] #acg50
-H08 = 180 ; S08 = Sn ; L08 = Ln ; BACC1 = [] ; ZACC1 = [] #acc50
-H09 = 240 ; S09 = Sn ; L09 = Ln ; BACB1 = [] ; ZACB1 = [] #acb50
-H10 = 300 ; S10 = Sn ; L10 = Ln ; BACV1 = [] ; ZACV1 = [] #acv50
-H11 = 0   ; S11 = Sb ; L11 = Lb ; BACR2 = [] ; ZACR2 = [] #acr70
-H12 = 60  ; S12 = Sb ; L12 = Lb ; BACO2 = [] ; ZACO2 = [] #aco70
-H13 = 120 ; S13 = Sb ; L13 = Lb ; BACG2 = [] ; ZACG2 = [] #acg70
-H14 = 180 ; S14 = Sb ; L14 = Lb ; BACC2 = [] ; ZACC2 = [] #acc70
-H15 = 240 ; S15 = Sb ; L15 = Lb ; BACB2 = [] ; ZACB2 = [] #acb70
-H16 = 300 ; S16 = Sb ; L16 = Lb ; BACV2 = [] ; ZACV2 = [] #acv70
+H05 = 10  ; S05 = Sn ; L05 = Ln ; BACR1 = [] ; ZACR1 = [] #acr50
+H06 = 45  ; S06 = Sn ; L06 = Ln ; BACO1 = [] ; ZACO1 = [] #aco50
+H07 = 110 ; S07 = Sn ; L07 = Ln ; BACG1 = [] ; ZACG1 = [] #acg50
+H08 = 182 ; S08 = Sn ; L08 = Ln ; BACC1 = [] ; ZACC1 = [] #acc50
+H09 = 251 ; S09 = Sn ; L09 = Ln ; BACB1 = [] ; ZACB1 = [] #acb50
+H10 = 293 ; S10 = Sn ; L10 = Ln ; BACV1 = [] ; ZACV1 = [] #acv50
+H11 = 10  ; S11 = Sb ; L11 = Lb ; BACR2 = [] ; ZACR2 = [] #acr70
+H12 = 45  ; S12 = Sb ; L12 = Lb ; BACO2 = [] ; ZACO2 = [] #aco70
+H13 = 110 ; S13 = Sb ; L13 = Lb ; BACG2 = [] ; ZACG2 = [] #acg70
+H14 = 182 ; S14 = Sb ; L14 = Lb ; BACC2 = [] ; ZACC2 = [] #acc70
+H15 = 251 ; S15 = Sb ; L15 = Lb ; BACB2 = [] ; ZACB2 = [] #acb70
+H16 = 293 ; S16 = Sb ; L16 = Lb ; BACV2 = [] ; ZACV2 = [] #acv70
 
 # Conversion to RGB
 

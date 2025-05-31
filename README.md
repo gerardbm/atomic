@@ -14,51 +14,47 @@ Atomic is a dark color scheme designed to use with terminals. This repository pr
 
 ### Color palette
 
-The color palette consists of **sixteen precision colors** selected procedurally (algorithms), distributed in six hues and four perceived lightness, according to the color space **HSLuv** («_an alternative to HSL designed for perceptual uniformity based on human experiments_».
+The color palette consists of **sixteen precision colors** selected procedurally through algorithms. Colors are distributed across six distinct hues and four levels of perceived lightness, based on the perceptually uniform color space **HSLuv** —an alternative to HSL designed to better reflect human perception of color differences.
 
-Don't confuse the perceived brightness with the lightness of the HSL color model. Human vision doesn't detect brightness linearly with color: in a pixel (R'G'B') we see red color (`#FF0000`) darker than green color (`#00FF00`), and green color (`#00FF00`) brighter than red (`#FF0000`) and blue (`#0000FF`) colors.
+Unlike traditional HSL, HSLuv ensures that **equal lightness values correspond more closely to equal perceived brightess**. Human nvision doesn't perceive brightess linearly: for example, a pure green color (`#00FF00`) appears brighter than pure red (`#FF0000`), and this one appears brighter than pure blue (`#0000FF`), despite having the same nominal lightness in HSL. To address this, the palette uses HSLuv to balance the perceived lightness consistently, with dark colors using 65% lightness and bright colors using 75%.
 
-So the perceived lightness has been balanced according to the ITU-R Recommendation BT.709:
+Regarding hue selection: although there are six main hues, they are **not spaced evenly by degrees (e.g., every 60°)**. This is because **human perception is not uniform around the hue wheel**: for example, some colors, like blue and cyan, require greater angular separation to be distinguishable, while reds and oranges can be closer. To ensure perceptual distinctness between hues, their separation has been validated using the **CIEDE2000 Delta E (ΔE00)** formula, a standard metric for color difference in the CIE LAB color space.
 
-`Luma (Y') = 0.2126 R' + 0.7152 G' + 0.0722 B'`
-
-In a RGB color wheel, hues have been selected in order to be distinguishable for the human eye and keeping harmony: that means **one color every 60°**.
-
-**Space Mode**: base colors use the blue color (hue 240°).
+**Space Mode**: base colors use the blue color (hue 251°).
 
 ![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/atomic-space-mc.png)
 
-**Onion Mode**: base colors use the purple color (hue 300°).
+**Onion Mode**: base colors use the purple color (hue 293°).
 
 This is an alternative mode with purple color.
 
 ![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/atomic-onion-mc.png)
 
-**Blood Mode**: base colors use the red color (hue 0°).
+**Blood Mode**: base colors use the red color (hue 10°).
 
 This is an alternative mode with red color.
 
 ![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/atomic-blood-mc.png)
 
-**Night Mode**: base colors use the orange color (hue 60°).
+**Night Mode**: base colors use the orange color (hue 45°).
 
 This is an alternative mode with orange color.
 
 ![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/atomic-night-mc.png)
 
-**Grass Mode**: base colors use the green color (hue 120°).
+**Grass Mode**: base colors use the green color (hue 110°).
 
 This is an alternative mode with green color.
 
 ![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/atomic-grass-mc.png)
 
-**Ocean Mode**: base colors use the cyan color (hue 180°).
+**Ocean Mode**: base colors use the cyan color (hue 182°).
 
 This is an alternative mode with cyan color.
 
 ![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/atomic-ocean-mc.png)
 
-**Light Mode**: base colors use the orange color (hue 60°).
+**Light Mode**: base colors use the orange color (hue 45°).
 
 Light mode is useful when the screen receives a high illumination or we have to code in a bright environment. Our eyes will not have to adapt the light sensibility every time we look at the screen.
 

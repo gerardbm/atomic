@@ -1,20 +1,20 @@
 ! Atomic Blood MC
-#define base1 #200E12
-#define base2 #291318
-#define base3 #996A73
-#define base4 #B9A7AA
-#define acr50 #FB6F92
-#define aco50 #C39720
-#define acg50 #5AB220
-#define acc50 #23B0A3
-#define acb50 #27A7EC
-#define acv50 #E66AFA
-#define acr70 #EA92A4
-#define aco70 #CBA65D
-#define acg70 #78BC5C
-#define acc70 #62BAB0
-#define acb70 #6FB1E7
-#define acv70 #D991E6
+#define base1 #1D1010
+#define base2 #251516
+#define base3 #AA7678
+#define base4 #C4B5B6
+#define acr50 #FB7279
+#define aco50 #D88E20
+#define acg50 #79AD20
+#define acc50 #23B0A5
+#define acb50 #5A9FFA
+#define acv50 #D576FA
+#define acr70 #F0A5A8
+#define aco70 #F1AA5C
+#define acg70 #97C75B
+#define acc70 #62C9C0
+#define acb70 #9DB9EE
+#define acv70 #D7A7EE
 
 *.foreground  : base4
 *.background  : base1

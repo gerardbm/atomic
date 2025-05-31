@@ -19,6 +19,7 @@ python hsluv-pal-night-lc.py
 python hsluv-pal-light-hc.py
 python hsluv-pal-light-mc.py
 python hsluv-pal-light-lc.py
+python hsluv-pal-old-book.py
 
 python hsluv-pal-onion-hc.py
 python hsluv-pal-onion-mc.py
