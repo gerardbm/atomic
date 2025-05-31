@@ -1,6 +1,6 @@
 # Atomic Color Scheme
 
-Colors have been recalculated in 2023 using HSLuv!
+Note: Colors were recalculated using HSLuv in 2023 and the CIEDE2000 Delta E (ΔE00) metric in 2025, so colors may differ slightly from previous versions.
 
 ### Multiple colors for multiple applications
 
