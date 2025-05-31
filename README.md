@@ -6,17 +6,19 @@ Colors have been recalculated in 2023 using HSLuv!
 
 Atomic is a dark color scheme designed to use with terminals. This repository provides support for URxvt and XTerm; it also includes themes for some terminal applications (vim-airline, irssi, mutt, cmus, vifm) and Zsh. To use it in Vim/Neovim, check the repository [vim-atomic](https://github.com/gerardbm/vim-atomic).
 
-![Atomic Space Screenshot](https://github.com/gerardbm/atomic/blob/master/img/screenshots/Atomic-Space-Screenshot.png)
+![Atomic Space Screenshot](https://github.com/gerardbm/atomic/blob/master/img/screenshots/Atomic-Space-Screenshot_v2.png)
 
-![Atomic Night Screenshot](https://github.com/gerardbm/atomic/blob/master/img/screenshots/Atomic-Night-Screenshot.png)
+![Atomic Night Screenshot](https://github.com/gerardbm/atomic/blob/master/img/screenshots/Atomic-Night-Screenshot_v2.png)
 
-![Atomic Light Screenshot](https://github.com/gerardbm/atomic/blob/master/img/screenshots/Atomic-Light-Screenshot.png)
+![Atomic Light Screenshot](https://github.com/gerardbm/atomic/blob/master/img/screenshots/Atomic-Light-Screenshot_v2.png)
+
+![Atomic Old Book Screenshot](https://github.com/gerardbm/atomic/blob/master/img/screenshots/Atomic-Old-Book-Screenshot_v1.png)
 
 ### Color palette
 
 The color palette consists of **sixteen precision colors** selected procedurally through algorithms. Colors are distributed across six distinct hues and four levels of perceived lightness, based on the perceptually uniform color space **HSLuv** —an alternative to HSL designed to better reflect human perception of color differences.
 
-Unlike traditional HSL, HSLuv ensures that **equal lightness values correspond more closely to equal perceived brightess**. Human nvision doesn't perceive brightess linearly: for example, a pure green color (`#00FF00`) appears brighter than pure red (`#FF0000`), and this one appears brighter than pure blue (`#0000FF`), despite having the same nominal lightness in HSL. To address this, the palette uses HSLuv to balance the perceived lightness consistently, with dark colors using 65% lightness and bright colors using 75%.
+Unlike traditional HSL, HSLuv ensures that **equal lightness values correspond more closely to equal perceived brightess**. Human nvision doesn't perceive brightess linearly: for example, a pure green color (`#00FF00`) appears brighter than pure red (`#FF0000`), despite having the same nominal lightness in HSL. To address this, the palette uses HSLuv to balance the perceived lightness consistently, with dark colors using 65% lightness and bright colors using 75%.
 
 Regarding hue selection: although there are six main hues, they are **not spaced evenly by degrees (e.g., every 60°)**. This is because **human perception is not uniform around the hue wheel**: for example, some colors, like blue and cyan, require greater angular separation to be distinguishable, while reds and oranges can be closer. To ensure perceptual distinctness between hues, their separation has been validated using the **CIEDE2000 Delta E (ΔE00)** formula, a standard metric for color difference in the CIE LAB color space.
 
@@ -107,12 +109,6 @@ Atomic is designed to look good with any kind of typography, as colors are disti
 
 Some themes (vim-airline, zsh) require the installation of Powerline fonts.
 URL: https://github.com/powerline/fonts
-
-## Testing Atomic
-
-![Testing Atomic with vim](https://github.com/gerardbm/atomic/blob/master/img/screenshots/vim.png)
-
-![Testing Atomic with cmatrix](https://github.com/gerardbm/atomic/blob/master/img/screenshots/cmatrix.png)
 
 ## Old atomic color scheme
 
