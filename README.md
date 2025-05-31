@@ -6,13 +6,13 @@ Colors have been recalculated in 2023 using HSLuv!
 
 Atomic is a dark color scheme designed to use with terminals. This repository provides support for URxvt and XTerm; it also includes themes for some terminal applications (vim-airline, irssi, mutt, cmus, vifm) and Zsh. To use it in Vim/Neovim, check the repository [vim-atomic](https://github.com/gerardbm/vim-atomic).
 
-![Atomic Space Screenshot](https://github.com/gerardbm/atomic/blob/master/img/screenshots/Atomic-Space-Screenshot_v2.png)
+![Atomic Space Screenshot](https://github.com/gerardbm/atomic/blob/master/img/screenshots/Atomic-Space-Screenshot_v3.png)
 
-![Atomic Night Screenshot](https://github.com/gerardbm/atomic/blob/master/img/screenshots/Atomic-Night-Screenshot_v2.png)
+![Atomic Night Screenshot](https://github.com/gerardbm/atomic/blob/master/img/screenshots/Atomic-Night-Screenshot_v3.png)
 
-![Atomic Light Screenshot](https://github.com/gerardbm/atomic/blob/master/img/screenshots/Atomic-Light-Screenshot_v2.png)
+![Atomic Light Screenshot](https://github.com/gerardbm/atomic/blob/master/img/screenshots/Atomic-Light-Screenshot_v3.png)
 
-![Atomic Old Book Screenshot](https://github.com/gerardbm/atomic/blob/master/img/screenshots/Atomic-Old-Book-Screenshot_v1.png)
+![Atomic Old Book Screenshot](https://github.com/gerardbm/atomic/blob/master/img/screenshots/Atomic-Old-Book-Screenshot_v3.png)
 
 ### Color palette
 
