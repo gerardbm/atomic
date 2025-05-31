@@ -21,7 +21,7 @@ Sb = 100
 
 # Lightness
 Ln = 35
-Lb = 45
+Lb = 43
 
 H01 = BA  ; S01 = 34 ; L01 = 97 ; BASE1 = [] ; ZASE1 = [] #base1
 H02 = BA  ; S02 = 34 ; L02 = 94 ; BASE2 = [] ; ZASE2 = [] #base2

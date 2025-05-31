@@ -2,19 +2,19 @@
 #define base1 #101414
 #define base2 #161A1A
 #define base3 #768785
-#define base4 #ADBCBA
+#define base4 #A8B6B4
 #define acr50 #FB7279
 #define aco50 #D88E20
 #define acg50 #79AD20
 #define acc50 #23B0A5
 #define acb50 #5A9FFA
 #define acv50 #D576FA
-#define acr70 #F0A5A8
-#define aco70 #F1AA5C
-#define acg70 #97C75B
-#define acc70 #62C9C0
-#define acb70 #9DB9EE
-#define acv70 #D7A7EE
+#define acr70 #EF9DA0
+#define aco70 #EAA559
+#define acg70 #93C159
+#define acc70 #5FC3BA
+#define acb70 #95B4ED
+#define acv70 #D4A0ED
 
 *.foreground  : base4
 *.background  : base1

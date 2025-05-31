@@ -1,20 +1,20 @@
 ! Atomic Old Book
-#define base1 #F3DFD1
-#define base2 #F0D5C2
+#define base1 #F4E2D6
+#define base2 #F1D8C7
 #define base3 #342F2C
-#define base4 #695C53
+#define base4 #64574E
 #define acr50 #930017
 #define aco50 #643E00
 #define acg50 #344E00
 #define acc50 #00504B
 #define acb50 #004882
 #define acv50 #790096
-#define acr70 #BF0021
-#define aco70 #845400
-#define acg70 #466800
-#define acc70 #006A63
-#define acb70 #0060AA
-#define acv70 #9E00C3
+#define acr70 #B6001F
+#define aco70 #7E4F00
+#define acg70 #426300
+#define acc70 #00655E
+#define acb70 #005BA2
+#define acv70 #9700BA
 
 *.foreground  : base4
 *.background  : base1
