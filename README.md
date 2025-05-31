@@ -62,6 +62,12 @@ Light mode is useful when the screen receives a high illumination or we have to 
 
 ![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/atomic-light-mc.png)
 
+**Old Book Mode**: base colors use the orange color (hue 45°) with more saturation.
+
+This bright mode is an alternative emulating the look of old books paper. It features an increased contrast.
+
+![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/atomic-old-book.png)
+
 ### Code editors and IDEs
 
 - [x] Terminal
