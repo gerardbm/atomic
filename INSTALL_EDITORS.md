@@ -18,44 +18,44 @@ Manually copy the file `atomic.vim` contained into the `vim` directory of this r
 
 1. Set the colorscheme in your Vim/Neovim configuration file: `colorscheme atomic`.
 2. If you are in a GUI for Vim (as gvim), you have commands to switch between modes:
-- (1) `AtomicSpaceHC`: sets the space mode (blue hue, dark background) in hard contrast (+3%).
+- (1) `AtomicSpaceHC`: sets the space mode (blue hue, dark background) in high contrast (+3%).
 - (2) `AtomicSpaceMC`: sets the space mode (blue hue, dark background) in medium contrast (default).
-- (3) `AtomicSpaceLC`: sets the space mode (blue hue, dark background) in hard contrast (-3%).
-- (4) `AtomicOnionHC`: sets the onion mode (purple hue, dark background) in hard contrast (+3%).
+- (3) `AtomicSpaceLC`: sets the space mode (blue hue, dark background) in low contrast (-3%).
+- (4) `AtomicOnionHC`: sets the onion mode (purple hue, dark background) in high contrast (+3%).
 - (5) `AtomicOnionMC`: sets the onion mode (purple hue, dark background) in medium contrast (default).
-- (6) `AtomicOnionLC`: sets the onion mode (purple hue, dark background) in hard contrast (-3%).
-- (7) `AtomicBloodHC`: sets the blood mode (red hue, dark background) in hard contrast (+3%).
+- (6) `AtomicOnionLC`: sets the onion mode (purple hue, dark background) in low contrast (-3%).
+- (7) `AtomicBloodHC`: sets the blood mode (red hue, dark background) in high contrast (+3%).
 - (8) `AtomicBloodMC`: sets the blood mode (red hue, dark background) in medium contrast (default).
-- (9) `AtomicBloodLC`: sets the blood mode (red hue, dark background) in hard contrast (-3%).
-- (10) `AtomicNightHC`: sets the night mode (orange hue, dark background) in hard contrast (+3%).
+- (9) `AtomicBloodLC`: sets the blood mode (red hue, dark background) in low contrast (-3%).
+- (10) `AtomicNightHC`: sets the night mode (orange hue, dark background) in high contrast (+3%).
 - (11) `AtomicNightMC`: sets the night mode (orange hue, dark background) in medium contrast (default).
-- (12) `AtomicNightLC`: sets the night mode (orange hue, dark background) in hard contrast (-3%).
-- (13) `AtomicGrassHC`: sets the grass mode (green hue, dark background) in hard contrast (+3%).
+- (12) `AtomicNightLC`: sets the night mode (orange hue, dark background) in low contrast (-3%).
+- (13) `AtomicGrassHC`: sets the grass mode (green hue, dark background) in high contrast (+3%).
 - (14) `AtomicGrassMC`: sets the grass mode (green hue, dark background) in medium contrast (default).
-- (15) `AtomicGrassLC`: sets the grass mode (green hue, dark background) in hard contrast (-3%).
-- (16) `AtomicOceanHC`: sets the ocean mode (cyan hue, dark background) in hard contrast (+3%).
+- (15) `AtomicGrassLC`: sets the grass mode (green hue, dark background) in low contrast (-3%).
+- (16) `AtomicOceanHC`: sets the ocean mode (cyan hue, dark background) in high contrast (+3%).
 - (17) `AtomicOceanMC`: sets the ocean mode (cyan hue, dark background) in medium contrast (default).
-- (18) `AtomicOceanLC`: sets the ocean mode (cyan hue, dark background) in hard contrast (-3%).
-- (19) `AtomicLightHC`: sets the light mode (orange hue, light background) in hard contrast (+3%).
+- (18) `AtomicOceanLC`: sets the ocean mode (cyan hue, dark background) in low contrast (-3%).
+- (19) `AtomicLightHC`: sets the light mode (orange hue, light background) in high contrast (+3%).
 - (20) `AtomicLightMC`: sets the light mode (orange hue, light background) in medium contrast (default).
-- (21) `AtomicLightLC`: sets the light mode (orange hue, light background) in hard contrast (-3%).
+- (21) `AtomicLightLC`: sets the light mode (orange hue, light background) in low contrast (-3%).
 
 Or switch them depending on the current time. In your `.gvimrc`:
 
 ```viml
 function! AtomicSwitcher()
 	if (strftime('%H') > 8) && (strftime('%H') < 20)
-		AtomicSpaceHC
+		AtomicLightMC
 	else
 		AtomicNightHC
 	endif
 endfunction
 ```
 
-Even cycle them (from 1 to 21) with a shortcut. Paste this in your `.gvimrc`:
+Alternatively, you can cycle them (from 1 to 22) with a shortcut (for example: <kbd>Shift</kbd>+<kbd>F9</kbd>). Paste this in your `~/.vimrc` or `~/.gvimrc`:
 
 ```viml
-nnoremap <F9> :call CycleModes()<CR>:colorscheme atomic<CR>
+nnoremap <S-F9> :call CycleModes()<CR>:colorscheme atomic<CR>
 ```
 
 ### Vim-airline
