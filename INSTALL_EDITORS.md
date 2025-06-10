@@ -39,6 +39,7 @@ Manually copy the file `atomic.vim` contained into the `vim` directory of this r
 - (19) `AtomicLightHC`: sets the light mode (orange hue, light background) in high contrast (+3%).
 - (20) `AtomicLightMC`: sets the light mode (orange hue, light background) in medium contrast (default).
 - (21) `AtomicLightLC`: sets the light mode (orange hue, light background) in low contrast (-3%).
+- (22) `AtomicOldBook`: sets the light mode (orange hue, sepia background) in high contrast (+2%).
 
 Or switch them depending on the current time. In your `.gvimrc`:
 
