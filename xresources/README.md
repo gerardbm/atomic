@@ -30,7 +30,9 @@ To use one of these color schemes, copy the content from one of these files to y
 - `Xresources.light_mc`  => Light Mode, medium contrast (default)
 - `Xresources.light_lc`  => Light Mode, low contrast (-3%)
 
-If you use URxvt, you have the optional `Xresources.URxvtSwitch`. This file contains 9 commands to switch between the Space, Night and Light modes and their 3 contrast options, on the fly! This is the commands list:
+- `Xresources.old_book`  => Sepia Mode, high contrast (+2%)
+
+If you use URxvt, you have the optional `Xresources.URxvtSwitch`. This file contains 22 commands to switch between the Space, Onion, Blood, Night, Grass, Ocean and Light modes and their 3 contrast options, on the fly! This is the commands list:
 
 - <kbd>CTRL</kbd>+<kbd>1</kbd> => Space Mode HC
 - <kbd>CTRL</kbd>+<kbd>2</kbd> => Space Mode MC
@@ -41,5 +43,18 @@ If you use URxvt, you have the optional `Xresources.URxvtSwitch`. This file cont
 - <kbd>CTRL</kbd>+<kbd>7</kbd> => Light Mode HC
 - <kbd>CTRL</kbd>+<kbd>8</kbd> => Light Mode MC
 - <kbd>CTRL</kbd>+<kbd>9</kbd> => Light Mode LC
+- <kbd>CTRL</kbd>+<kbd>0</kbd> => Old Book Mode
+- <kbd>CTRL</kbd>+<kbd>F1</kbd> => Onion Mode HC
+- <kbd>CTRL</kbd>+<kbd>F2</kbd> => Onion Mode MC
+- <kbd>CTRL</kbd>+<kbd>F3</kbd> => Onion Mode LC
+- <kbd>CTRL</kbd>+<kbd>F4</kbd> => Blood Mode HC
+- <kbd>CTRL</kbd>+<kbd>F5</kbd> => Blood Mode MC
+- <kbd>CTRL</kbd>+<kbd>F6</kbd> => Blood Mode LC
+- <kbd>CTRL</kbd>+<kbd>F7</kbd> => Grass Mode HC
+- <kbd>CTRL</kbd>+<kbd>F8</kbd> => Grass Mode MC
+- <kbd>CTRL</kbd>+<kbd>F9</kbd> => Grass Mode LC
+- <kbd>CTRL</kbd>+<kbd>F10</kbd> => Ocean Mode HC
+- <kbd>CTRL</kbd>+<kbd>F11</kbd> => Ocean Mode MC
+- <kbd>CTRL</kbd>+<kbd>F12</kbd> => Ocean Mode LC
 
 Feel free to remap it to feed your needs.
