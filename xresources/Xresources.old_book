@@ -1,8 +1,8 @@
 ! Atomic Old Book
-#define base1 #F4E2D6
-#define base2 #F1D8C7
-#define base3 #342F2C
-#define base4 #64574E
+#define base1 #F4E3CF
+#define base2 #F1D9BE
+#define base3 #33302C
+#define base4 #61584E
 #define acr50 #930017
 #define aco50 #643E00
 #define acg50 #344E00

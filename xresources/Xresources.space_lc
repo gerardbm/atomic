@@ -1,8 +1,8 @@
 ! Atomic Space LC
-#define base1 #171A20
-#define base2 #1C2027
-#define base3 #79849A
-#define base4 #AFB3BE
+#define base1 #141B1E
+#define base2 #192124
+#define base3 #77868D
+#define base4 #A9B5BB
 #define acr50 #FB7279
 #define aco50 #D88E20
 #define acg50 #79AD20

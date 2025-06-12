@@ -1,8 +1,8 @@
 ! Atomic Light LC
-#define base1 #EFE3DC
-#define base2 #EADAD0
-#define base3 #403A37
-#define base4 #716359
+#define base1 #EFE4D8
+#define base2 #EADACA
+#define base3 #3F3B37
+#define base4 #6E6459
 #define acr50 #A9001C
 #define aco50 #744900
 #define acg50 #3D5B00

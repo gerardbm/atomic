@@ -1,6 +1,6 @@
 ! Atomic Grass HC
-#define base1 #0A0C08
-#define base2 #121410
+#define base1 #090C07
+#define base2 #11140D
 #define base3 #7D8774
 #define base4 #AEB6A6
 #define acr50 #FB7279

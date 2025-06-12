@@ -1,8 +1,8 @@
 ! Atomic Light HC
-#define base1 #F9F6F3
-#define base2 #F4ECE8
-#define base3 #403A37
-#define base4 #716359
+#define base1 #F9F6F2
+#define base2 #F4EDE5
+#define base3 #3F3B37
+#define base4 #6E6459
 #define acr50 #A9001C
 #define aco50 #744900
 #define acg50 #3D5B00

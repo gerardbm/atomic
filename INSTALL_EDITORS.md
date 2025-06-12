@@ -18,9 +18,9 @@ Manually copy the file `atomic.vim` contained into the `vim` directory of this r
 
 1. Set the colorscheme in your Vim/Neovim configuration file: `colorscheme atomic`.
 2. If you are in a GUI for Vim (as gvim), you have commands to switch between modes:
-- (1) `AtomicSpaceHC`: sets the space mode (blue hue, dark background) in high contrast (+3%).
-- (2) `AtomicSpaceMC`: sets the space mode (blue hue, dark background) in medium contrast (default).
-- (3) `AtomicSpaceLC`: sets the space mode (blue hue, dark background) in low contrast (-3%).
+- (1) `AtomicSpaceHC`: sets the space mode (teal hue, dark background) in high contrast (+3%).
+- (2) `AtomicSpaceMC`: sets the space mode (teal hue, dark background) in medium contrast (default).
+- (3) `AtomicSpaceLC`: sets the space mode (teal hue, dark background) in low contrast (-3%).
 - (4) `AtomicOnionHC`: sets the onion mode (purple hue, dark background) in high contrast (+3%).
 - (5) `AtomicOnionMC`: sets the onion mode (purple hue, dark background) in medium contrast (default).
 - (6) `AtomicOnionLC`: sets the onion mode (purple hue, dark background) in low contrast (-3%).
@@ -33,9 +33,9 @@ Manually copy the file `atomic.vim` contained into the `vim` directory of this r
 - (13) `AtomicGrassHC`: sets the grass mode (green hue, dark background) in high contrast (+3%).
 - (14) `AtomicGrassMC`: sets the grass mode (green hue, dark background) in medium contrast (default).
 - (15) `AtomicGrassLC`: sets the grass mode (green hue, dark background) in low contrast (-3%).
-- (16) `AtomicOceanHC`: sets the ocean mode (cyan hue, dark background) in high contrast (+3%).
-- (17) `AtomicOceanMC`: sets the ocean mode (cyan hue, dark background) in medium contrast (default).
-- (18) `AtomicOceanLC`: sets the ocean mode (cyan hue, dark background) in low contrast (-3%).
+- (16) `AtomicOceanHC`: sets the ocean mode (blue hue, dark background) in high contrast (+3%).
+- (17) `AtomicOceanMC`: sets the ocean mode (blue hue, dark background) in medium contrast (default).
+- (18) `AtomicOceanLC`: sets the ocean mode (blue hue, dark background) in low contrast (-3%).
 - (19) `AtomicLightHC`: sets the light mode (orange hue, light background) in high contrast (+3%).
 - (20) `AtomicLightMC`: sets the light mode (orange hue, light background) in medium contrast (default).
 - (21) `AtomicLightLC`: sets the light mode (orange hue, light background) in low contrast (-3%).

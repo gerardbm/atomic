@@ -1,8 +1,8 @@
 ! Atomic Space HC
-#define base1 #090B0F
-#define base2 #111318
-#define base3 #79849A
-#define base4 #AFB3BE
+#define base1 #070C0E
+#define base2 #0E1417
+#define base3 #77868D
+#define base4 #A9B5BB
 #define acr50 #FB7279
 #define aco50 #D88E20
 #define acg50 #79AD20

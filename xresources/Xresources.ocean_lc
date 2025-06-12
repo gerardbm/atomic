@@ -1,8 +1,8 @@
 ! Atomic Ocean LC
-#define base1 #161A1A
-#define base2 #1B2120
-#define base3 #768785
-#define base4 #A8B6B4
+#define base1 #151A23
+#define base2 #1A202B
+#define base3 #79849A
+#define base4 #AFB3BE
 #define acr50 #FB7279
 #define aco50 #D88E20
 #define acg50 #79AD20

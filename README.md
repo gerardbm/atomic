@@ -22,9 +22,15 @@ Unlike traditional HSL, HSLuv ensures that **equal lightness values correspond m
 
 Regarding hue selection: although there are six main hues, they are **not spaced evenly by degrees (e.g., every 60°)**. This is because **human perception is not uniform around the hue wheel**: for example, some colors, like blue and cyan, require greater angular separation to be distinguishable, while reds and oranges can be closer. To ensure perceptual distinctness between hues, their separation has been validated using the **CIEDE2000 Delta E (ΔE00)** formula, a standard metric for color difference in the CIE LAB color space.
 
-**Space Mode**: base colors use the blue color (hue 251°).
+**Space Mode**: base colors use the teal color (hue 222°).
 
 ![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/atomic-space-mc.png)
+
+**Ocean Mode**: base colors use the cyan color (hue 251°).
+
+This is an alternative mode with cyan color.
+
+![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/atomic-ocean-mc.png)
 
 **Onion Mode**: base colors use the purple color (hue 293°).
 
@@ -50,19 +56,13 @@ This is an alternative mode with green color.
 
 ![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/atomic-grass-mc.png)
 
-**Ocean Mode**: base colors use the cyan color (hue 182°).
-
-This is an alternative mode with cyan color.
-
-![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/atomic-ocean-mc.png)
-
-**Light Mode**: base colors use the orange color (hue 45°).
+**Light Mode**: base colors use the orange color (hue 55°).
 
 Light mode is useful when the screen receives a high illumination or we have to code in a bright environment. Our eyes will not have to adapt the light sensibility every time we look at the screen.
 
 ![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/atomic-light-mc.png)
 
-**Old Book Mode**: base colors use the orange color (hue 45°) with more saturation.
+**Old Book Mode**: base colors use the orange color (hue 55°) with more saturation.
 
 This bright mode is an alternative emulating the look of old books paper. It features an increased contrast.
 

@@ -1,8 +1,8 @@
 ! Atomic Ocean HC
-#define base1 #090C0B
-#define base2 #101414
-#define base3 #768785
-#define base4 #A8B6B4
+#define base1 #080B11
+#define base2 #0F131C
+#define base3 #79849A
+#define base4 #AFB3BE
 #define acr50 #FB7279
 #define aco50 #D88E20
 #define acg50 #79AD20

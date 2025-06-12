@@ -1,6 +1,6 @@
 ! Atomic Onion HC
-#define base1 #0E0910
-#define base2 #17111A
+#define base1 #0F0813
+#define base2 #19101E
 #define base3 #927C9E
 #define base4 #B9B0BE
 #define acr50 #FB7279
