@@ -26,9 +26,9 @@ Regarding hue selection: although there are six main hues, they are **not spaced
 
 ![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/atomic-space-mc.png)
 
-**Ocean Mode**: base colors use the cyan color (hue 251°).
+**Ocean Mode**: base colors use the blue color (hue 251°).
 
-This is an alternative mode with cyan color.
+This is an alternative mode with blue color.
 
 ![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/atomic-ocean-mc.png)
 
