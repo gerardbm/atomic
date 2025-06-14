@@ -13,7 +13,7 @@ xres = False
 shot = False
 
 # Colors
-BA = 251
+BA = 260
 
 # Saturation
 Sn = 95

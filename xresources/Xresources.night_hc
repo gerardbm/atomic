@@ -1,8 +1,8 @@
 ! Atomic Night HC
-#define base1 #0F0A07
-#define base2 #18120D
-#define base3 #928074
-#define base4 #BFB1A7
+#define base1 #0E0A07
+#define base2 #17130D
+#define base3 #8E8274
+#define base4 #BCB2A7
 #define acr50 #FB7279
 #define aco50 #D88E20
 #define acg50 #79AD20

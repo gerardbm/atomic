@@ -1,8 +1,8 @@
 ! Atomic Night LC
-#define base1 #1F1812
-#define base2 #261E17
-#define base3 #928074
-#define base4 #BFB1A7
+#define base1 #1E1912
+#define base2 #251F17
+#define base3 #8E8274
+#define base4 #BCB2A7
 #define acr50 #FB7279
 #define aco50 #D88E20
 #define acg50 #79AD20

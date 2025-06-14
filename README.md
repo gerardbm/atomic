@@ -34,7 +34,7 @@ Regarding hue selection: although there are six main hues, they are **not spaced
 
 ![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/atomic-space-mc.png)
 
-**Ocean Mode**: base colors use the blue color (hue 251°).
+**Ocean Mode**: base colors use the blue color (hue 260°).
 
 This is an alternative mode with blue color.
 
@@ -52,7 +52,7 @@ This is an alternative mode with red color.
 
 ![Atomic-scheme](https://github.com/gerardbm/Atomic/blob/master/img/atomic-blood-mc.png)
 
-**Night Mode**: base colors use the orange color (hue 45°).
+**Night Mode**: base colors use the orange color (hue 55°).
 
 This is an alternative mode with orange color.
 

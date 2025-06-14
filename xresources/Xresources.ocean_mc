@@ -1,8 +1,8 @@
 ! Atomic Ocean MC
-#define base1 #0F131C
-#define base2 #151A23
-#define base3 #79849A
-#define base4 #AFB3BE
+#define base1 #101320
+#define base2 #151928
+#define base3 #7D829F
+#define base4 #B1B3BE
 #define acr50 #FB7279
 #define aco50 #D88E20
 #define acg50 #79AD20
