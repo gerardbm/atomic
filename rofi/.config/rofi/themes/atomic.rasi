@@ -1,0 +1,119 @@
+/* atomic.rasi */
+
+* {
+  base1: #0E1417;
+  base2: #141B1E;
+  base3: #77868D;
+  base4: #A9B5BB;
+  acr50: #FB7279;
+  aco50: #D88E20;
+  acg50: #79AD20;
+  acc50: #23B0A5;
+  acb50: #5A9FFA;
+  acv50: #D576FA;
+  acr70: #EF9DA0;
+  aco70: #EAA559;
+  acg70: #93C159;
+  acc70: #5FC3BA;
+  acb70: #95B4ED;
+  acv70: #D4A0ED;
+  font: "Terminus 13";
+}
+
+window {
+  transparency: "none";
+  location: center;
+  anchor: center;
+  fullscreen: false;
+  background-color: @base1;
+  border: 1;
+  border-color: @acc50;
+  padding: 5px;
+  width: 450px;
+}
+
+inputbar {
+  background-color: @base1;
+  text-color: @base4;
+  padding: 5px;
+  children: ["textbox-prompt-colon", "entry"];
+}
+
+textbox-prompt-colon {
+  background-color: @base1;
+  text-color: @acc50;
+  expand: false;
+  str: "> ";
+}
+
+entry {
+  background-color: @base1;
+  text-color: @base4;
+  placeholder: "Search";
+  placeholder-color: @base3;
+}
+
+mainbox {
+  background-color: @acc50;
+  border: 1px;
+  spacing: 1px;
+  padding: 1px;
+  /* message not included in children */
+  children: [inputbar, listview, mode-switcher]; }
+
+listview {
+  background-color: @base1;
+  text-color: @acc50;
+  lines: 8;
+  columns: 1;
+  cycle: true;
+  fixed-height: true;
+  scrollbar: true;
+  layout: vertical;
+  spacing: 0px;
+  padding: 1px 0;
+}
+
+scrollbar {
+  handle-width: 10px;
+  handle-color: @base3;
+  background-color: @base1;
+}
+
+element-text {
+  padding: 1px 5px;
+  background-color: @base1;
+  text-color: @base4;
+}
+
+element-text selected {
+  background-color: @base2;
+  text-color: @acc50;
+}
+
+element-text active {
+  background-color: @base1;
+  text-color: @acg50;
+}
+
+mode-switcher {
+  spacing: 0px;
+}
+
+button {
+  background-color: @base1;
+  text-color: @base4;
+  padding: 3px 0;
+}
+
+button selected {
+  background-color: @base2;
+  text-color: @acc50;
+}
+
+textbox {
+  padding: 5px;
+  background-color: @base2;
+  text-color: @acb50;
+  markup: true;
+}

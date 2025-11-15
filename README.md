@@ -86,34 +86,24 @@ This bright mode is an alternative emulating the look of old books paper. It fea
 
 ### Themes
 
+- [x] Cmus
 - [x] Irssi
 - [x] Mutt
-- [x] Cmus
+- [x] Rofi
 - [x] Vifm
 - [x] Zsh
-- [x] Rofi (`.Xresources`)
 
 ## Installation
-
-Atomic themes for cmus, irssi, mutt, vifm and zsh can be installed using the script `install.sh`. For example, to copy `atomic.zsh-theme` into its path use the following command:
-
-`./install.sh -m copy zsh`
-
-If you want to 'symlink' instead of 'copy', use the symlink option:
-
-`./install.sh -m symlink cmus irssi`
 
 Atomic colorscheme for Vim and Neovim can be installed directly from the following repository: [gerardbm/vim-atomic](https://github.com/gerardbm/vim-atomic).
 
 Atomic theme for vim-airline is available from the official repository, just type: `:AirlineTheme atomic`.
 
-Atomic colorscheme for Sublime Text is available from the official package manager.
-
 For more specific information, read the following articles:
 
 1. Installation for [terminals](https://github.com/gerardbm/atomic/blob/master/INSTALL_TERM.md) (URxvt, XTerm).
 2. Installation for [code editors](https://github.com/gerardbm/atomic/blob/master/INSTALL_EDITORS.md) (Vim, Neovim, vim-airline).
-3. Installation for [command-line tools](https://github.com/gerardbm/atomic/blob/master/INSTALL_TOOLS.md) (cmus, irssi, mutt, vifm, zsh).
+3. Installation for [cli-tools](https://github.com/gerardbm/atomic/blob/master/INSTALL_TOOLS.md) (cmus, irssi, mutt, rofi, vifm, zsh).
 
 - - -
 
