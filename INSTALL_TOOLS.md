@@ -26,6 +26,17 @@ There are two ways:
 1. Copy the file `atomic.rasi` to this directory: `~/.config/rofi/themes/`.
 2. Then, in your `config.rasi` insert this `@theme "atomic"`.
 
+## Tty
+
+1. Copy the file `atomic-tty.sh` to bin: `~/.local/bin/`.
+2. Source it in your `.zshrc`:
+
+```zsh
+if [[ -a ~/.local/bin/atomic-tty.sh ]]; then
+    source ~/.local/bin/atomic-tty.sh
+fi
+```
+
 ## Vifm
 
 1. Copy the file `atomic.vifm` to this directory: `~/.config/vifm/colors/`.
